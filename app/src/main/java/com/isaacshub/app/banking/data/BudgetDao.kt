@@ -35,13 +35,4 @@ interface BudgetDao {
 
     @Query("SELECT * FROM budget_account_selections WHERE accountId = :accountId")
     suspend fun getAccountSelection(accountId: String): BudgetAccountSelectionEntity?
-
-    // Combined query for budget calculation
-    @Transaction
-    @Query("""
-        SELECT ba.* FROM bank_accounts ba
-        INNER JOIN budget_account_selections bas ON ba.id = bas.accountId
-        WHERE bas.isIncluded = 1
-    """)
-    fun getSelectedAccounts(): Flow<List<BankAccountEntity>>
 }

@@ -127,10 +127,13 @@ class BankingRepository(
     }
 
     // Budget Account Selection
-    fun observeSelectedAccounts(): Flow<List<BankAccount>> =
-        budgetDao.getSelectedAccounts().map { entities ->
-            entities.map { it.toDomain() }
-        }
+    fun observeSelectedAccounts(): Flow<List<BankAccount>> = combine(
+        accountDao.getAllAccounts(),
+        budgetDao.getSelectedAccountIds()
+    ) { allAccounts, selections ->
+        val selectedIds = selections.filter { it.isIncluded }.map { it.accountId }.toSet()
+        allAccounts.filter { it.id in selectedIds }.map { it.toDomain() }
+    }
 
     suspend fun setAccountIncluded(accountId: String, isIncluded: Boolean) {
         val existing = budgetDao.getAccountSelection(accountId)
@@ -150,7 +153,7 @@ class BankingRepository(
     // Budget State Calculation
     fun observeBudgetState(): Flow<BudgetState> = combine(
         budgetDao.getAllCategories(),
-        budgetDao.getSelectedAccounts()
+        observeSelectedAccounts()
     ) { categories, selectedAccounts ->
         val totalBalance = selectedAccounts.sumOf { it.balance }
         val domainCategories = categories.map { it.toDomain() }
