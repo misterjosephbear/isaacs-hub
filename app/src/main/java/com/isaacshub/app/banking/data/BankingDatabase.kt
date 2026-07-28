@@ -14,7 +14,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase
         BudgetCategoryEntity::class,
         BudgetAccountSelectionEntity::class
     ],
-    version = 2,
+    version = 3,
     exportSchema = true
 )
 abstract class BankingDatabase : RoomDatabase() {
@@ -40,17 +40,31 @@ abstract class BankingDatabase : RoomDatabase() {
                 """)
 
                 // Create budget_account_selections table
+                // Note: No foreign key to bank_accounts since that table is in AppDatabase
                 database.execSQL("""
                     CREATE TABLE IF NOT EXISTS budget_account_selections (
                         accountId TEXT PRIMARY KEY NOT NULL,
-                        isIncluded INTEGER NOT NULL DEFAULT 0,
-                        FOREIGN KEY(accountId) REFERENCES bank_accounts(id) ON DELETE CASCADE
+                        isIncluded INTEGER NOT NULL DEFAULT 0
                     )
                 """)
 
                 // Insert default categories
                 database.execSQL("""
                     INSERT INTO budget_categories VALUES
+                    ('crucial', 'Crucial Budget', 2000.0, 0, '#FF6200EE', '🏠'),
+                    ('utility', 'Utility Budget', 1500.0, 1, '#FF03DAC5', '🔧'),
+                    ('convenience', 'Convenience Budget', 1000.0, 2, '#FF018786', '🎁'),
+                    ('frivolous', 'Frivolous Budget', 500.0, 3, '#FFB00020', '💎')
+                """)
+            }
+        }
+
+        private val MIGRATION_2_3 = object : Migration(2, 3) {
+            override fun migrate(database: SupportSQLiteDatabase) {
+                // Ensure default categories exist (in case they weren't inserted in 1→2 migration)
+                // Use INSERT OR IGNORE to avoid errors if categories already exist
+                database.execSQL("""
+                    INSERT OR IGNORE INTO budget_categories VALUES
                     ('crucial', 'Crucial Budget', 2000.0, 0, '#FF6200EE', '🏠'),
                     ('utility', 'Utility Budget', 1500.0, 1, '#FF03DAC5', '🔧'),
                     ('convenience', 'Convenience Budget', 1000.0, 2, '#FF018786', '🎁'),
@@ -66,7 +80,7 @@ abstract class BankingDatabase : RoomDatabase() {
                     BankingDatabase::class.java,
                     "banking.db"
                 )
-                .addMigrations(MIGRATION_1_2)
+                .addMigrations(MIGRATION_1_2, MIGRATION_2_3)
                 .build()
                 .also { instance = it }
             }
