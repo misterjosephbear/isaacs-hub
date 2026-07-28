@@ -183,9 +183,9 @@ private fun AccountsList(
         contentPadding = androidx.compose.foundation.layout.PaddingValues(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
-        // Budget Tower Card
+        // Budget Tower Card - always show if categories exist so user can configure
         budgetState?.let { state ->
-            if (state.categories.isNotEmpty() && state.totalBalance > 0) {
+            if (state.categories.isNotEmpty()) {
                 item {
                     com.isaacshub.app.banking.ui.components.BudgetTowerCard(
                         budgetState = state,
