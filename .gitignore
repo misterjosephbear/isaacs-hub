@@ -13,3 +13,7 @@ local.properties
 
 # Release signing key - never commit. Back this up somewhere durable outside this repo.
 /keystore/
+
+# graphify knowledge graph (see CLAUDE.md Context Navigation section):
+# keep graph.json and GRAPH_REPORT.md tracked, cache/ is machine-local/regenerable
+graphify-out/cache/
