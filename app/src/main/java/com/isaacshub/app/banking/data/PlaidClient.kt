@@ -225,16 +225,20 @@ class PlaidClient(
                 }
             }
 
+            // Get name and merchant_name, handling null/empty values
+            val rawName = txnJson.optString("name", "").takeIf { it.isNotBlank() }
+            val rawMerchantName = txnJson.optString("merchant_name", "").takeIf { it.isNotBlank() }
+
             Transaction(
                 id = txnJson.getString("transaction_id"),
                 accountId = txnJson.getString("account_id"),
                 amount = txnJson.getDouble("amount"),
                 date = date,
-                name = txnJson.optString("name", "Transaction"),
-                merchantName = txnJson.optString("merchant_name", null),
+                name = rawName ?: "Transaction",
+                merchantName = rawMerchantName,
                 category = categories.takeIf { it.isNotEmpty() },
                 pending = txnJson.optBoolean("pending", false),
-                paymentChannel = txnJson.optString("payment_channel", null),
+                paymentChannel = txnJson.optString("payment_channel", "").takeIf { it.isNotBlank() },
                 lastUpdated = currentTime
             )
         }

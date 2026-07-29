@@ -1,0 +1,1587 @@
+{
+  "app/build.gradle.kts": {
+    "mtime": 1785237601.4813344,
+    "ast_hash": "fe475d8502ed366e826031c6d6f40c0d",
+    "semantic_hash": "fe475d8502ed366e826031c6d6f40c0d"
+  },
+  "app/schemas/com.isaacshub.app.banking.data.BankingDatabase/1.json": {
+    "mtime": 1785246922.453887,
+    "ast_hash": "c7ae4e98ffa44804103e2ed57bb9708a",
+    "semantic_hash": "c7ae4e98ffa44804103e2ed57bb9708a"
+  },
+  "app/schemas/com.isaacshub.app.banking.data.BankingDatabase/2.json": {
+    "mtime": 1785237406.6958442,
+    "ast_hash": "ef03a0b2b0555eb23d27dfc94b9fd1fc",
+    "semantic_hash": "ef03a0b2b0555eb23d27dfc94b9fd1fc"
+  },
+  "app/schemas/com.isaacshub.app.banking.data.BankingDatabase/3.json": {
+    "mtime": 1785246641.4656298,
+    "ast_hash": "60d61635d7f7ec5203023b978be56ba4",
+    "semantic_hash": "60d61635d7f7ec5203023b978be56ba4"
+  },
+  "app/schemas/com.isaacshub.app.core.data.AppDatabase/1.json": {
+    "mtime": 1785237406.6958442,
+    "ast_hash": "20288e7ae8a83f09384827ba588b4997",
+    "semantic_hash": "20288e7ae8a83f09384827ba588b4997"
+  },
+  "app/schemas/com.isaacshub.app.core.data.WorkDatabase/1.json": {
+    "mtime": 1785237406.6958442,
+    "ast_hash": "939f56058d353db08914fe387b1420bf",
+    "semantic_hash": "939f56058d353db08914fe387b1420bf"
+  },
+  "app/schemas/com.isaacshub.app.essentials.data.EssentialsDatabase/1.json": {
+    "mtime": 1785237406.6958442,
+    "ast_hash": "b3dc52dd23e8f66f68bece253eee15bd",
+    "semantic_hash": "b3dc52dd23e8f66f68bece253eee15bd"
+  },
+  "app/schemas/com.isaacshub.app.featurefunnel.data.FeatureFunnelDatabase/1.json": {
+    "mtime": 1785237406.6958442,
+    "ast_hash": "a4dafdbe220adbfdc175fc28a468a238",
+    "semantic_hash": "a4dafdbe220adbfdc175fc28a468a238"
+  },
+  "app/schemas/com.isaacshub.app.routehelper.data.RouteHelperDatabase/1.json": {
+    "mtime": 1785237406.6958442,
+    "ast_hash": "2a082c3555c5481bc5fb724c69a72c41",
+    "semantic_hash": "2a082c3555c5481bc5fb724c69a72c41"
+  },
+  "app/schemas/com.isaacshub.app.routehelper.data.RouteHelperDatabase/2.json": {
+    "mtime": 1785237406.6970756,
+    "ast_hash": "f7e10a5be843ceab31f36e3d51729051",
+    "semantic_hash": "f7e10a5be843ceab31f36e3d51729051"
+  },
+  "app/schemas/com.isaacshub.app.routehelper.data.RouteHelperDatabase/3.json": {
+    "mtime": 1785237406.6970756,
+    "ast_hash": "b7801a13a8d54ad2fc71f70b746eac70",
+    "semantic_hash": "b7801a13a8d54ad2fc71f70b746eac70"
+  },
+  "app/schemas/com.isaacshub.app.routehelper.data.RouteHelperDatabase/4.json": {
+    "mtime": 1785237406.6970756,
+    "ast_hash": "2f0f7227df974190b2ca9d54c33c1b6b",
+    "semantic_hash": "2f0f7227df974190b2ca9d54c33c1b6b"
+  },
+  "app/schemas/com.isaacshub.app.routehelper.data.RouteHelperDatabase/5.json": {
+    "mtime": 1785237406.6970756,
+    "ast_hash": "c53d5be214cd10fc1b0a38fdb12aeeb9",
+    "semantic_hash": "c53d5be214cd10fc1b0a38fdb12aeeb9"
+  },
+  "app/schemas/com.isaacshub.app.routehelper.data.RouteHelperDatabase/6.json": {
+    "mtime": 1785237406.6974113,
+    "ast_hash": "95790b55cf0539452d1789490d1aee20",
+    "semantic_hash": "95790b55cf0539452d1789490d1aee20"
+  },
+  "app/schemas/com.isaacshub.app.routehelper.data.RouteHelperDatabase/7.json": {
+    "mtime": 1785237406.6974113,
+    "ast_hash": "971a83d5d46e064f30e76e579d6674a7",
+    "semantic_hash": "971a83d5d46e064f30e76e579d6674a7"
+  },
+  "app/schemas/com.isaacshub.app.routehelper.data.RouteHelperDatabase/8.json": {
+    "mtime": 1785237406.6974113,
+    "ast_hash": "fb2aff8e7226e8f5887a927dff1efc2c",
+    "semantic_hash": "fb2aff8e7226e8f5887a927dff1efc2c"
+  },
+  "app/schemas/com.isaacshub.app.routehelper.data.RouteHelperDatabase/9.json": {
+    "mtime": 1785237406.6974113,
+    "ast_hash": "bd342d6ca42e2321435a0a462ba6c48e",
+    "semantic_hash": "bd342d6ca42e2321435a0a462ba6c48e"
+  },
+  "app/schemas/com.isaacshub.app.sleep.data.SleepDatabase/1.json": {
+    "mtime": 1785237406.6974113,
+    "ast_hash": "30e39faaef49d25533d760647d8a91f3",
+    "semantic_hash": "30e39faaef49d25533d760647d8a91f3"
+  },
+  "app/schemas/com.isaacshub.app.timetracking.data.TimeTrackingDatabase/3.json": {
+    "mtime": 1785237406.6974113,
+    "ast_hash": "9f98c9b3792711d08da6d9b6e84bdf83",
+    "semantic_hash": "9f98c9b3792711d08da6d9b6e84bdf83"
+  },
+  "app/schemas/com.isaacshub.app.timetracking.data.TimeTrackingDatabase/4.json": {
+    "mtime": 1785237406.699195,
+    "ast_hash": "5ed64e6d96aaaa74803bdeb17eef4797",
+    "semantic_hash": "5ed64e6d96aaaa74803bdeb17eef4797"
+  },
+  "app/schemas/com.isaacshub.app.timetracking.data.TimeTrackingDatabase/5.json": {
+    "mtime": 1785237406.699195,
+    "ast_hash": "a5f29b62d5b269d3cbd2c3678d3db1aa",
+    "semantic_hash": "a5f29b62d5b269d3cbd2c3678d3db1aa"
+  },
+  "app/schemas/com.isaacshub.app.timetracking.data.TimeTrackingDatabase/6.json": {
+    "mtime": 1785237406.699195,
+    "ast_hash": "63f87292436868c1af91d6cc440368f8",
+    "semantic_hash": "63f87292436868c1af91d6cc440368f8"
+  },
+  "app/schemas/com.isaacshub.app.timetracking.data.TimeTrackingDatabase/7.json": {
+    "mtime": 1785237406.699195,
+    "ast_hash": "547f0f4327915522332c6473a9cbd1c6",
+    "semantic_hash": "547f0f4327915522332c6473a9cbd1c6"
+  },
+  "app/src/main/java/com/isaacshub/app/App.kt": {
+    "mtime": 1785237406.7013316,
+    "ast_hash": "4bb53fee6afa88c27eb7dee0f63a33be",
+    "semantic_hash": "4bb53fee6afa88c27eb7dee0f63a33be"
+  },
+  "app/src/main/java/com/isaacshub/app/MainActivity.kt": {
+    "mtime": 1785237406.701633,
+    "ast_hash": "1e397ff10581e26fc1ca8051577bd9a4",
+    "semantic_hash": "1e397ff10581e26fc1ca8051577bd9a4"
+  },
+  "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperApiClient.kt": {
+    "mtime": 1785237406.7017066,
+    "ast_hash": "541ca529bb0590c4085c6216c3620d81",
+    "semantic_hash": "541ca529bb0590c4085c6216c3620d81"
+  },
+  "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperModels.kt": {
+    "mtime": 1785237406.7019994,
+    "ast_hash": "74cc0845fb6ec01b7db901426d90d6b4",
+    "semantic_hash": "74cc0845fb6ec01b7db901426d90d6b4"
+  },
+  "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperRepository.kt": {
+    "mtime": 1785237406.7019994,
+    "ast_hash": "fd0d80baf9d349bbe313a14a7dc55cf8",
+    "semantic_hash": "fd0d80baf9d349bbe313a14a7dc55cf8"
+  },
+  "app/src/main/java/com/isaacshub/app/activitymapper/ui/ActivityMapperHomeScreen.kt": {
+    "mtime": 1785237406.7019994,
+    "ast_hash": "ceaf54f30834a0d79ab1387860ce3daf",
+    "semantic_hash": "ceaf54f30834a0d79ab1387860ce3daf"
+  },
+  "app/src/main/java/com/isaacshub/app/activitymapper/ui/ActivityMapperViewModel.kt": {
+    "mtime": 1785237406.7026887,
+    "ast_hash": "5645f173ffd2f60334c4869e8e5e2c21",
+    "semantic_hash": "5645f173ffd2f60334c4869e8e5e2c21"
+  },
+  "app/src/main/java/com/isaacshub/app/activitymapper/ui/EditRichPresenceProfileScreen.kt": {
+    "mtime": 1785237406.7026887,
+    "ast_hash": "9d364b397b76770c2768fc6ead7f5b46",
+    "semantic_hash": "9d364b397b76770c2768fc6ead7f5b46"
+  },
+  "app/src/main/java/com/isaacshub/app/activitymapper/ui/EditRuleScreen.kt": {
+    "mtime": 1785237406.7026887,
+    "ast_hash": "c4b3792b15124edc623153a0621f4b0a",
+    "semantic_hash": "c4b3792b15124edc623153a0621f4b0a"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/BankAccountDao.kt": {
+    "mtime": 1785237406.7035809,
+    "ast_hash": "6063f56e6b56e31f0fb7205424399582",
+    "semantic_hash": "6063f56e6b56e31f0fb7205424399582"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/BankAccountEntity.kt": {
+    "mtime": 1785237406.70365,
+    "ast_hash": "886b9ab9f87578b3c06d7c0f5d184151",
+    "semantic_hash": "886b9ab9f87578b3c06d7c0f5d184151"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/BankConnectionDao.kt": {
+    "mtime": 1785237406.70365,
+    "ast_hash": "60b8c939aa86c125f1abccea7e208dd8",
+    "semantic_hash": "60b8c939aa86c125f1abccea7e208dd8"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/BankConnectionEntity.kt": {
+    "mtime": 1785237406.70365,
+    "ast_hash": "efd36eae0361fd757ee1032698d5d18b",
+    "semantic_hash": "efd36eae0361fd757ee1032698d5d18b"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/BankingApiClient.kt": {
+    "mtime": 1785237406.70365,
+    "ast_hash": "3f59313bfcddcf291607e172bbf019c6",
+    "semantic_hash": "3f59313bfcddcf291607e172bbf019c6"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/BankingDao.kt": {
+    "mtime": 1785237406.70365,
+    "ast_hash": "8c6a53e28906596dd8fe499f50ebf6a5",
+    "semantic_hash": "8c6a53e28906596dd8fe499f50ebf6a5"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/BankingDatabase.kt": {
+    "mtime": 1785246847.9645536,
+    "ast_hash": "ee7ef89493eddd19826df3d117c5103e",
+    "semantic_hash": "ee7ef89493eddd19826df3d117c5103e"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/BankingRepository.kt": {
+    "mtime": 1785283168.255794,
+    "ast_hash": "88fe9b8d269f25fbcd106558b7ce4bbe",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/BankingRepositoryImpl.kt": {
+    "mtime": 1785237406.70365,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/BudgetAccountSelectionEntity.kt": {
+    "mtime": 1785246908.145823,
+    "ast_hash": "20d8696252fd303b87cd01dfd0dd6bcd",
+    "semantic_hash": "20d8696252fd303b87cd01dfd0dd6bcd"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/BudgetCategoryEntity.kt": {
+    "mtime": 1785237406.70365,
+    "ast_hash": "423b6b634549a560166b1cd9f8a94324",
+    "semantic_hash": "423b6b634549a560166b1cd9f8a94324"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/BudgetDao.kt": {
+    "mtime": 1785245369.4209714,
+    "ast_hash": "a92c1b60b6a7247fd0a94f4c2c17fe11",
+    "semantic_hash": "a92c1b60b6a7247fd0a94f4c2c17fe11"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/PlaidClient.kt": {
+    "mtime": 1785283126.8106136,
+    "ast_hash": "9242ceea83f12359c29cc1c568df6ee5",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/PlaidConfig.kt": {
+    "mtime": 1785237406.70365,
+    "ast_hash": "3c8b37bc6f68a7d92ff11dd426009edf",
+    "semantic_hash": "3c8b37bc6f68a7d92ff11dd426009edf"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/domain/BankAccount.kt": {
+    "mtime": 1785237406.70365,
+    "ast_hash": "77c540a24e9270de58a768de7ca74a7e",
+    "semantic_hash": "77c540a24e9270de58a768de7ca74a7e"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/domain/BankConnection.kt": {
+    "mtime": 1785237406.7046032,
+    "ast_hash": "2aab63137dba0583a1bd420cec4fcb47",
+    "semantic_hash": "2aab63137dba0583a1bd420cec4fcb47"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/domain/BudgetCategory.kt": {
+    "mtime": 1785237406.7046032,
+    "ast_hash": "4d47cb21e2c8c22cc267e1ed432a64eb",
+    "semantic_hash": "4d47cb21e2c8c22cc267e1ed432a64eb"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/domain/BudgetState.kt": {
+    "mtime": 1785237406.7046032,
+    "ast_hash": "a259acd391f57acf9570dfba680a4ea9",
+    "semantic_hash": "a259acd391f57acf9570dfba680a4ea9"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/ui/components/AccountSelectionDialog.kt": {
+    "mtime": 1785237406.7047822,
+    "ast_hash": "7455457acd56a1e8e18f745725d58746",
+    "semantic_hash": "7455457acd56a1e8e18f745725d58746"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/ui/components/BudgetCategoryBar.kt": {
+    "mtime": 1785237406.7048693,
+    "ast_hash": "1a232b30a6fdc9ec98f69b37fcbe8a30",
+    "semantic_hash": "1a232b30a6fdc9ec98f69b37fcbe8a30"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/ui/components/BudgetTowerCard.kt": {
+    "mtime": 1785237406.7048693,
+    "ast_hash": "aa6b12f1554bb596004c71127c438214",
+    "semantic_hash": "aa6b12f1554bb596004c71127c438214"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/ui/components/CategoryEditDialog.kt": {
+    "mtime": 1785237406.7048693,
+    "ast_hash": "6cd49cce14c8a068829c6edf9a8b18c2",
+    "semantic_hash": "6cd49cce14c8a068829c6edf9a8b18c2"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/ui/config/BudgetConfigScreen.kt": {
+    "mtime": 1785237406.7048693,
+    "ast_hash": "6c1b9468d3c45cd5225a932beedf6628",
+    "semantic_hash": "6c1b9468d3c45cd5225a932beedf6628"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/ui/config/BudgetConfigViewModel.kt": {
+    "mtime": 1785237406.7051516,
+    "ast_hash": "c25ecee967685fae744a1abfc68d7f65",
+    "semantic_hash": "c25ecee967685fae744a1abfc68d7f65"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/ui/home/BankingHomeScreen.kt": {
+    "mtime": 1785283304.2403862,
+    "ast_hash": "007f7a7231a228735926383b01e0125f",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/ui/home/BankingHomeViewModel.kt": {
+    "mtime": 1785237406.7053516,
+    "ast_hash": "f0fb807daa076b98e149de16f4f2dfc8",
+    "semantic_hash": "f0fb807daa076b98e149de16f4f2dfc8"
+  },
+  "app/src/main/java/com/isaacshub/app/banking/ui/setup/PlaidConnectionSetupScreen.kt": {
+    "mtime": 1785283201.117937,
+    "ast_hash": "8e4871ec8affdb5a463fef8da9e421d7",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/ui/setup/PlaidConnectionSetupViewModel.kt": {
+    "mtime": 1785237406.7055104,
+    "ast_hash": "38a4801cf4d11d6e83b605d7a8f54811",
+    "semantic_hash": "38a4801cf4d11d6e83b605d7a8f54811"
+  },
+  "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt": {
+    "mtime": 1785283088.6704473,
+    "ast_hash": "6abc5703c015cc62b8ef979a7a477f40",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/core/data/DatabaseMigrationHelper.kt": {
+    "mtime": 1785237406.7060738,
+    "ast_hash": "54233eb8d5e5c3297bb80e28399344e5",
+    "semantic_hash": "54233eb8d5e5c3297bb80e28399344e5"
+  },
+  "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt": {
+    "mtime": 1785237406.7060738,
+    "ast_hash": "023a2e19baa7b4b4cc05d32d5b4fc086",
+    "semantic_hash": "023a2e19baa7b4b4cc05d32d5b4fc086"
+  },
+  "app/src/main/java/com/isaacshub/app/core/data/prefs/UserPreferencesRepository.kt": {
+    "mtime": 1785237406.7060738,
+    "ast_hash": "76d88e3503d4c65e0193cb43022f9426",
+    "semantic_hash": "76d88e3503d4c65e0193cb43022f9426"
+  },
+  "app/src/main/java/com/isaacshub/app/core/network/BaseApiClient.kt": {
+    "mtime": 1785237406.7060738,
+    "ast_hash": "e7d06304e235bff0cb96ab213d3d428d",
+    "semantic_hash": "e7d06304e235bff0cb96ab213d3d428d"
+  },
+  "app/src/main/java/com/isaacshub/app/core/network/MultiUrlApiClient.kt": {
+    "mtime": 1785237406.707082,
+    "ast_hash": "0958389bd04f171ebe843c274b4d0ea2",
+    "semantic_hash": "0958389bd04f171ebe843c274b4d0ea2"
+  },
+  "app/src/main/java/com/isaacshub/app/debug/DebugLogger.kt": {
+    "mtime": 1785237406.707082,
+    "ast_hash": "c278117991c23eea35cf1db659298b19",
+    "semantic_hash": "c278117991c23eea35cf1db659298b19"
+  },
+  "app/src/main/java/com/isaacshub/app/discord/DiscordRichPresenceManager.kt": {
+    "mtime": 1785237406.707082,
+    "ast_hash": "33ed8e9e7b9b31e2ae88634933d2b592",
+    "semantic_hash": "33ed8e9e7b9b31e2ae88634933d2b592"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/data/ChildAccountDao.kt": {
+    "mtime": 1785237406.7079322,
+    "ast_hash": "d36bed7b2bbf24dc0bfc5a0e8c60f3af",
+    "semantic_hash": "d36bed7b2bbf24dc0bfc5a0e8c60f3af"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/data/ChildAccountEntity.kt": {
+    "mtime": 1785237406.7081902,
+    "ast_hash": "75f96ef545ed7fb9d1f5efcbb53d8752",
+    "semantic_hash": "75f96ef545ed7fb9d1f5efcbb53d8752"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/data/ChoreCompletionDao.kt": {
+    "mtime": 1785237406.7081902,
+    "ast_hash": "0c5646eeb8814c351c7fb2214d19c96d",
+    "semantic_hash": "0c5646eeb8814c351c7fb2214d19c96d"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/data/ChoreCompletionEntity.kt": {
+    "mtime": 1785237406.7081902,
+    "ast_hash": "7cea4b9e9ff7a0bb3e215c57b15e6875",
+    "semantic_hash": "7cea4b9e9ff7a0bb3e215c57b15e6875"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/data/ChoreDao.kt": {
+    "mtime": 1785237406.7081902,
+    "ast_hash": "45e29a9e069f855e5946cac1b0bbcf10",
+    "semantic_hash": "45e29a9e069f855e5946cac1b0bbcf10"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/data/ChoreEntity.kt": {
+    "mtime": 1785237406.7081902,
+    "ast_hash": "531fe2e4ae290b5e1b1e496303fd06dc",
+    "semantic_hash": "531fe2e4ae290b5e1b1e496303fd06dc"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt": {
+    "mtime": 1785237406.7084112,
+    "ast_hash": "1fb23603659a7f1408ab8e7c39cf8f63",
+    "semantic_hash": "1fb23603659a7f1408ab8e7c39cf8f63"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsDatabase.kt": {
+    "mtime": 1785237406.7084112,
+    "ast_hash": "de3caa6993de898c82ccfc866a3ce297",
+    "semantic_hash": "de3caa6993de898c82ccfc866a3ce297"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsRepository.kt": {
+    "mtime": 1785237406.7084112,
+    "ast_hash": "9727d4225b5ddb2249780f7e4cf2bd2b",
+    "semantic_hash": "9727d4225b5ddb2249780f7e4cf2bd2b"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/ui/admin/CreateChoreScreen.kt": {
+    "mtime": 1785237406.7096775,
+    "ast_hash": "ce035a634b61f1510b3675ceae403236",
+    "semantic_hash": "ce035a634b61f1510b3675ceae403236"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/ui/admin/CreateChoreViewModel.kt": {
+    "mtime": 1785237406.709873,
+    "ast_hash": "da5216e910c1c4effff0ce17488d44dc",
+    "semantic_hash": "da5216e910c1c4effff0ce17488d44dc"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/ui/admin/EssentialsAdminHome.kt": {
+    "mtime": 1785237406.709873,
+    "ast_hash": "23452e0fc9b05ae0a0996a9273d05dfe",
+    "semantic_hash": "23452e0fc9b05ae0a0996a9273d05dfe"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/ui/admin/EssentialsAdminViewModel.kt": {
+    "mtime": 1785237406.709873,
+    "ast_hash": "98e3360148780db16a49fafa1717e9a3",
+    "semantic_hash": "98e3360148780db16a49fafa1717e9a3"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/ui/admin/ManageFamilyScreen.kt": {
+    "mtime": 1785237406.709873,
+    "ast_hash": "1b666cade73e45ee06f8e04c2b0cb266",
+    "semantic_hash": "1b666cade73e45ee06f8e04c2b0cb266"
+  },
+  "app/src/main/java/com/isaacshub/app/essentials/ui/admin/ManageFamilyViewModel.kt": {
+    "mtime": 1785237406.709873,
+    "ast_hash": "f143a0d46821b914709995bedfd4a41b",
+    "semantic_hash": "f143a0d46821b914709995bedfd4a41b"
+  },
+  "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeatureFunnelApiClient.kt": {
+    "mtime": 1785237406.710746,
+    "ast_hash": "f63b8a082634872413f117fb83215e7b",
+    "semantic_hash": "f63b8a082634872413f117fb83215e7b"
+  },
+  "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeatureFunnelDatabase.kt": {
+    "mtime": 1785237406.7110152,
+    "ast_hash": "c6326515cc488b53eacca1a4c6159c3e",
+    "semantic_hash": "c6326515cc488b53eacca1a4c6159c3e"
+  },
+  "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeatureFunnelPreferencesRepository.kt": {
+    "mtime": 1785237406.7110152,
+    "ast_hash": "78c759855873c9a7523b606498333c5a",
+    "semantic_hash": "78c759855873c9a7523b606498333c5a"
+  },
+  "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeatureFunnelRepository.kt": {
+    "mtime": 1785237406.7110152,
+    "ast_hash": "c078fe537c52cbb347290d603b7ac1db",
+    "semantic_hash": "c078fe537c52cbb347290d603b7ac1db"
+  },
+  "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeaturePromptDao.kt": {
+    "mtime": 1785237406.7110152,
+    "ast_hash": "318551ee9b13b33715b95fe77c7faa36",
+    "semantic_hash": "318551ee9b13b33715b95fe77c7faa36"
+  },
+  "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeaturePromptEntity.kt": {
+    "mtime": 1785237406.7110152,
+    "ast_hash": "29db72bf492f3f08e0a9bcb961ca1216",
+    "semantic_hash": "29db72bf492f3f08e0a9bcb961ca1216"
+  },
+  "app/src/main/java/com/isaacshub/app/featurefunnel/ui/edit/EditPromptScreen.kt": {
+    "mtime": 1785237406.7118917,
+    "ast_hash": "0db84fb13329f818c41ce4133b9408bb",
+    "semantic_hash": "0db84fb13329f818c41ce4133b9408bb"
+  },
+  "app/src/main/java/com/isaacshub/app/featurefunnel/ui/edit/EditPromptViewModel.kt": {
+    "mtime": 1785237406.7120314,
+    "ast_hash": "a47c4238632bcb2988d61363ab44ea0a",
+    "semantic_hash": "a47c4238632bcb2988d61363ab44ea0a"
+  },
+  "app/src/main/java/com/isaacshub/app/featurefunnel/ui/home/FeatureFunnelHomeScreen.kt": {
+    "mtime": 1785237406.7120314,
+    "ast_hash": "a15ac90e79bc866c4b2cfc388f88be85",
+    "semantic_hash": "a15ac90e79bc866c4b2cfc388f88be85"
+  },
+  "app/src/main/java/com/isaacshub/app/featurefunnel/ui/home/FeatureFunnelHomeViewModel.kt": {
+    "mtime": 1785237406.7124014,
+    "ast_hash": "41adedd0d92a509e051617a8fc8bf67c",
+    "semantic_hash": "41adedd0d92a509e051617a8fc8bf67c"
+  },
+  "app/src/main/java/com/isaacshub/app/featurefunnel/worker/FeatureFunnelScheduler.kt": {
+    "mtime": 1785237406.7124014,
+    "ast_hash": "b178db5c2faf54239c7431da28c9c867",
+    "semantic_hash": "b178db5c2faf54239c7431da28c9c867"
+  },
+  "app/src/main/java/com/isaacshub/app/featurefunnel/worker/FeatureFunnelWorker.kt": {
+    "mtime": 1785237406.7128608,
+    "ast_hash": "630827b82bddf1216ce22cb9170469e6",
+    "semantic_hash": "630827b82bddf1216ce22cb9170469e6"
+  },
+  "app/src/main/java/com/isaacshub/app/landing/data/LandingPreferencesRepository.kt": {
+    "mtime": 1785237406.713039,
+    "ast_hash": "8ad1818bf1837b7eb8fcff0d9e72437a",
+    "semantic_hash": "8ad1818bf1837b7eb8fcff0d9e72437a"
+  },
+  "app/src/main/java/com/isaacshub/app/landing/ui/LandingScreen.kt": {
+    "mtime": 1785237406.713039,
+    "ast_hash": "d47daf2fe08411cd590b3d92d1686b7d",
+    "semantic_hash": "d47daf2fe08411cd590b3d92d1686b7d"
+  },
+  "app/src/main/java/com/isaacshub/app/landing/ui/LandingViewModel.kt": {
+    "mtime": 1785237406.7135527,
+    "ast_hash": "6a06704fbe4d84df2345d22263056688",
+    "semantic_hash": "6a06704fbe4d84df2345d22263056688"
+  },
+  "app/src/main/java/com/isaacshub/app/navigation/AppNavHost.kt": {
+    "mtime": 1785283361.9056375,
+    "ast_hash": "4cb3435e0c01418cfeabe45e9b516f27",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/navigation/Routes.kt": {
+    "mtime": 1785283332.4915092,
+    "ast_hash": "bfa0f9e7d6c2f109a3d4336cd4b0507e",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDao.kt": {
+    "mtime": 1785237406.7139258,
+    "ast_hash": "3f0043ba7ca5d8269f03a495ecac5b4e",
+    "semantic_hash": "3f0043ba7ca5d8269f03a495ecac5b4e"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt": {
+    "mtime": 1785237406.7142048,
+    "ast_hash": "0d1c61f804a33018196955c6ba8aa7dc",
+    "semantic_hash": "0d1c61f804a33018196955c6ba8aa7dc"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperEntities.kt": {
+    "mtime": 1785237406.7142048,
+    "ast_hash": "384adde0dcec121e40e26106ed35a6b3",
+    "semantic_hash": "384adde0dcec121e40e26106ed35a6b3"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperRepository.kt": {
+    "mtime": 1785237406.7142048,
+    "ast_hash": "00738d0587a1c929bc05ef1077dfd11a",
+    "semantic_hash": "00738d0587a1c929bc05ef1077dfd11a"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt": {
+    "mtime": 1785237406.7142048,
+    "ast_hash": "b386e023f01c46c60296ab7b139c6ae9",
+    "semantic_hash": "b386e023f01c46c60296ab7b139c6ae9"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilter.kt": {
+    "mtime": 1785237406.7149582,
+    "ast_hash": "47a537cc1f753e5e9bc9c9fa49ce8f52",
+    "semantic_hash": "47a537cc1f753e5e9bc9c9fa49ce8f52"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/domain/GeoPoint.kt": {
+    "mtime": 1785237406.7149582,
+    "ast_hash": "f54c7089b8c2b629dc9941468ad91557",
+    "semantic_hash": "f54c7089b8c2b629dc9941468ad91557"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/domain/LocationSample.kt": {
+    "mtime": 1785237406.7149582,
+    "ast_hash": "ead29cbdf95398231bc7144bf42b7d91",
+    "semantic_hash": "ead29cbdf95398231bc7144bf42b7d91"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/domain/MailScanParser.kt": {
+    "mtime": 1785237406.7149582,
+    "ast_hash": "44cd42f37e6201dfdcf03bc609e6b9a6",
+    "semantic_hash": "44cd42f37e6201dfdcf03bc609e6b9a6"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/domain/NearestAddresses.kt": {
+    "mtime": 1785237406.7149582,
+    "ast_hash": "9b96752e8415fa8b1b53e0796531a340",
+    "semantic_hash": "9b96752e8415fa8b1b53e0796531a340"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/domain/PolylineOffset.kt": {
+    "mtime": 1785237406.7149582,
+    "ast_hash": "64a6c826418cf4fbd0366d271b3582ae",
+    "semantic_hash": "64a6c826418cf4fbd0366d271b3582ae"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/domain/RoutePlayback.kt": {
+    "mtime": 1785237406.7149582,
+    "ast_hash": "5623224ad911ecf515bb0c33cada3cee",
+    "semantic_hash": "5623224ad911ecf515bb0c33cada3cee"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt": {
+    "mtime": 1785237406.7149582,
+    "ast_hash": "70fa474a87506320c4435c783c9e04f5",
+    "semantic_hash": "70fa474a87506320c4435c783c9e04f5"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/location/LocationTracker.kt": {
+    "mtime": 1785237406.7149582,
+    "ast_hash": "7ade19975470b9e60dd77ddf46356d3a",
+    "semantic_hash": "7ade19975470b9e60dd77ddf46356d3a"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/network/AddressFetchResult.kt": {
+    "mtime": 1785237406.7149582,
+    "ast_hash": "70969f7b67693e357da1d392bdd3e10d",
+    "semantic_hash": "70969f7b67693e357da1d392bdd3e10d"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcher.kt": {
+    "mtime": 1785237406.7161846,
+    "ast_hash": "fbc9b85beabdd7949bb3c252270e2b3e",
+    "semantic_hash": "fbc9b85beabdd7949bb3c252270e2b3e"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/network/CountyFipsLookup.kt": {
+    "mtime": 1785237406.7161846,
+    "ast_hash": "5c4f650a4207e8da51f0a4fd2a9c49d7",
+    "semantic_hash": "5c4f650a4207e8da51f0a4fd2a9c49d7"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/network/IndianaAddressPointFetcher.kt": {
+    "mtime": 1785237406.7161846,
+    "ast_hash": "2d3e77f9460ff39955c4a14de55586f5",
+    "semantic_hash": "2d3e77f9460ff39955c4a14de55586f5"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/network/NominatimGeocoder.kt": {
+    "mtime": 1785237406.7161846,
+    "ast_hash": "f0e796deec7ec78e3309fc2c3c8353e3",
+    "semantic_hash": "f0e796deec7ec78e3309fc2c3c8353e3"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/network/RouteDirectionsFetcher.kt": {
+    "mtime": 1785237406.7161846,
+    "ast_hash": "dbbce54da7e1bfef75cbee3965c8e898",
+    "semantic_hash": "dbbce54da7e1bfef75cbee3965c8e898"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/network/RouteHelperAddressFetcher.kt": {
+    "mtime": 1785237406.7164114,
+    "ast_hash": "fc53cc39a70971ff79913b6fc9206bd2",
+    "semantic_hash": "fc53cc39a70971ff79913b6fc9206bd2"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt": {
+    "mtime": 1785237406.7164114,
+    "ast_hash": "24c06142551b19299a1c6b99dc3bb18a",
+    "semantic_hash": "24c06142551b19299a1c6b99dc3bb18a"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/network/TigerShapefileParser.kt": {
+    "mtime": 1785237406.7164114,
+    "ast_hash": "7659947d3f71687566a3cee879704b04",
+    "semantic_hash": "7659947d3f71687566a3cee879704b04"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/service/OverlayTouchListener.kt": {
+    "mtime": 1785237406.7164114,
+    "ast_hash": "161c8e178c1e59538a2dfa2bc6facf86",
+    "semantic_hash": "161c8e178c1e59538a2dfa2bc6facf86"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/service/RoutePlayerService.kt": {
+    "mtime": 1785237406.7177854,
+    "ast_hash": "771851e51869c76d23bd30d283ff2eb6",
+    "semantic_hash": "771851e51869c76d23bd30d283ff2eb6"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderScreen.kt": {
+    "mtime": 1785237406.718083,
+    "ast_hash": "3a6bb7a2a5c619e4b5b1fa193c9485d1",
+    "semantic_hash": "3a6bb7a2a5c619e4b5b1fa193c9485d1"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt": {
+    "mtime": 1785237406.7183485,
+    "ast_hash": "eb092b19b325ef4eb329c17ddb4badfe",
+    "semantic_hash": "eb092b19b325ef4eb329c17ddb4badfe"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/common/AddressActionCard.kt": {
+    "mtime": 1785237406.7183485,
+    "ast_hash": "09999b42519873a9e8da4ce90e22d3e3",
+    "semantic_hash": "09999b42519873a9e8da4ce90e22d3e3"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/common/OsmMapView.kt": {
+    "mtime": 1785237406.7187066,
+    "ast_hash": "b2a3cb06b629bbe6e6f075c28a25220d",
+    "semantic_hash": "b2a3cb06b629bbe6e6f075c28a25220d"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/edit/RouteEditScreen.kt": {
+    "mtime": 1785237406.7187066,
+    "ast_hash": "d6679c859a3497beed0bf8d59727c601",
+    "semantic_hash": "d6679c859a3497beed0bf8d59727c601"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/edit/RouteEditViewModel.kt": {
+    "mtime": 1785237406.719143,
+    "ast_hash": "77d3bfadada501c85f5931673d8767ec",
+    "semantic_hash": "77d3bfadada501c85f5931673d8767ec"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/home/RouteHelperHomeScreen.kt": {
+    "mtime": 1785237406.719143,
+    "ast_hash": "56a14909dc989b6217792d0d53df2bfc",
+    "semantic_hash": "56a14909dc989b6217792d0d53df2bfc"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/home/RouteHelperHomeViewModel.kt": {
+    "mtime": 1785237406.7197475,
+    "ast_hash": "2d7be991c5f9ac1cb257e34aed121689",
+    "semantic_hash": "2d7be991c5f9ac1cb257e34aed121689"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/player/AmazonLoadTruckScreen.kt": {
+    "mtime": 1785237406.7197475,
+    "ast_hash": "edb9411ada13dd7d7ba2bd813719b93b",
+    "semantic_hash": "edb9411ada13dd7d7ba2bd813719b93b"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/player/MailScanScreen.kt": {
+    "mtime": 1785237406.7202966,
+    "ast_hash": "3e092370e217ef31f4e0dba5e955533c",
+    "semantic_hash": "3e092370e217ef31f4e0dba5e955533c"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/player/MailScanViewModel.kt": {
+    "mtime": 1785237406.7202966,
+    "ast_hash": "8c22d3a8f8e39a75cfcd35b4f247b6ca",
+    "semantic_hash": "8c22d3a8f8e39a75cfcd35b4f247b6ca"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/player/PackageScanScreen.kt": {
+    "mtime": 1785237406.7204113,
+    "ast_hash": "a274763bbe85d806e83b4ed1b6355875",
+    "semantic_hash": "a274763bbe85d806e83b4ed1b6355875"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt": {
+    "mtime": 1785237406.7204113,
+    "ast_hash": "f0b77a836909f43b56e06c8edcf9cad2",
+    "semantic_hash": "f0b77a836909f43b56e06c8edcf9cad2"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerViewModel.kt": {
+    "mtime": 1785237406.7214115,
+    "ast_hash": "cb4f1baa81777d18d0a6b3b785e8e88e",
+    "semantic_hash": "cb4f1baa81777d18d0a6b3b785e8e88e"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/scanner/AmazonAddressParser.kt": {
+    "mtime": 1785237406.7214115,
+    "ast_hash": "45b81d1cea3ee8e44c7922200fa0b4f8",
+    "semantic_hash": "45b81d1cea3ee8e44c7922200fa0b4f8"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/scanner/AmazonRouteScannerScreen.kt": {
+    "mtime": 1785237406.7225986,
+    "ast_hash": "aa24f4c50eb87dde94613597c872d6d3",
+    "semantic_hash": "aa24f4c50eb87dde94613597c872d6d3"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/scanner/AmazonRouteScannerViewModel.kt": {
+    "mtime": 1785237406.7225986,
+    "ast_hash": "2b33bda49cde106ebd00f81d0a145168",
+    "semantic_hash": "2b33bda49cde106ebd00f81d0a145168"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/test/RouteHelperTestScreen.kt": {
+    "mtime": 1785237406.7225986,
+    "ast_hash": "26d1f64b2941feb2237bac75febd99fd",
+    "semantic_hash": "26d1f64b2941feb2237bac75febd99fd"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/ui/test/RouteHelperTestViewModel.kt": {
+    "mtime": 1785237406.7232647,
+    "ast_hash": "cdebd19372a57c3f91b122b2a4d44d90",
+    "semantic_hash": "cdebd19372a57c3f91b122b2a4d44d90"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/util/AddressMatching.kt": {
+    "mtime": 1785237406.7232647,
+    "ast_hash": "ffb74410c924d39a76563360fb079097",
+    "semantic_hash": "ffb74410c924d39a76563360fb079097"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/work/PackageCleanupScheduler.kt": {
+    "mtime": 1785237406.7232647,
+    "ast_hash": "c5ef8efe7383e01e21f7634147a7f2ae",
+    "semantic_hash": "c5ef8efe7383e01e21f7634147a7f2ae"
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/work/PackageCleanupWorker.kt": {
+    "mtime": 1785237406.7239068,
+    "ast_hash": "62e3c8c495931aaf8cf9dcf0d3c6d9a6",
+    "semantic_hash": "62e3c8c495931aaf8cf9dcf0d3c6d9a6"
+  },
+  "app/src/main/java/com/isaacshub/app/settings/data/SettingsApiClient.kt": {
+    "mtime": 1785237406.7242413,
+    "ast_hash": "8f79f71c51796b7e5a9defbf52b5c089",
+    "semantic_hash": "8f79f71c51796b7e5a9defbf52b5c089"
+  },
+  "app/src/main/java/com/isaacshub/app/settings/ui/SettingsScreen.kt": {
+    "mtime": 1785237406.7242413,
+    "ast_hash": "7c94bb5114d36e04ead77c01603263d0",
+    "semantic_hash": "7c94bb5114d36e04ead77c01603263d0"
+  },
+  "app/src/main/java/com/isaacshub/app/settings/ui/SettingsViewModel.kt": {
+    "mtime": 1785237406.7248216,
+    "ast_hash": "96bfd11b0fd4f1b56191eb2713cf84e1",
+    "semantic_hash": "96bfd11b0fd4f1b56191eb2713cf84e1"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/data/SleepDatabase.kt": {
+    "mtime": 1785237406.724992,
+    "ast_hash": "90a6c1af1b70db886f954aa0e422ca1d",
+    "semantic_hash": "90a6c1af1b70db886f954aa0e422ca1d"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/data/SleepRepository.kt": {
+    "mtime": 1785237406.7250543,
+    "ast_hash": "b21ac230fce29d598562d47d522ad586",
+    "semantic_hash": "b21ac230fce29d598562d47d522ad586"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/data/SleepSessionDao.kt": {
+    "mtime": 1785237406.7250543,
+    "ast_hash": "3e6c0a458f3f97b91e72888c7445d132",
+    "semantic_hash": "3e6c0a458f3f97b91e72888c7445d132"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/data/SleepSessionEntity.kt": {
+    "mtime": 1785237406.7250543,
+    "ast_hash": "bfc72b61954f0850509bb14f6ecaef4d",
+    "semantic_hash": "bfc72b61954f0850509bb14f6ecaef4d"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/detection/BootCompletedReceiver.kt": {
+    "mtime": 1785237406.7250543,
+    "ast_hash": "48d59c1e1f8881fa85facbb9733253be",
+    "semantic_hash": "48d59c1e1f8881fa85facbb9733253be"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/detection/SleepDetectionController.kt": {
+    "mtime": 1785237406.7252655,
+    "ast_hash": "bc506c1566bc0e2c04bda771df4fd1fd",
+    "semantic_hash": "bc506c1566bc0e2c04bda771df4fd1fd"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/detection/SleepDetectionService.kt": {
+    "mtime": 1785237406.7252655,
+    "ast_hash": "af028cf816b5a9d3603f25f1c714ff9d",
+    "semantic_hash": "af028cf816b5a9d3603f25f1c714ff9d"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/detection/SleepNotifications.kt": {
+    "mtime": 1785237406.7252655,
+    "ast_hash": "80261cbe97d799aedd8587cf92b57f03",
+    "semantic_hash": "80261cbe97d799aedd8587cf92b57f03"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/domain/SleepDebtUseCase.kt": {
+    "mtime": 1785237406.7252655,
+    "ast_hash": "18bb50d50a409fbf147ddc04c8360e7d",
+    "semantic_hash": "18bb50d50a409fbf147ddc04c8360e7d"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/nap/NapAlarmController.kt": {
+    "mtime": 1785237406.7252655,
+    "ast_hash": "a562c9c95f5b63c070a27d4ccd977d51",
+    "semantic_hash": "a562c9c95f5b63c070a27d4ccd977d51"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/nap/NapAlarmReceiver.kt": {
+    "mtime": 1785237406.7257318,
+    "ast_hash": "e467600fc6ec66a2314db6ca79676602",
+    "semantic_hash": "e467600fc6ec66a2314db6ca79676602"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/nap/NapAlarmScheduler.kt": {
+    "mtime": 1785237406.7257318,
+    "ast_hash": "553da7a7e092a396be9c873f3ff418c2",
+    "semantic_hash": "553da7a7e092a396be9c873f3ff418c2"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/nap/NapAlarmService.kt": {
+    "mtime": 1785237406.7257318,
+    "ast_hash": "0865fad0bea969f931fdb5795a1ab476",
+    "semantic_hash": "0865fad0bea969f931fdb5795a1ab476"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/nap/NapNotifications.kt": {
+    "mtime": 1785237406.7257318,
+    "ast_hash": "27cab0f11ffb194ae5e8b937a8d41b66",
+    "semantic_hash": "27cab0f11ffb194ae5e8b937a8d41b66"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/nap/NapState.kt": {
+    "mtime": 1785237406.7257318,
+    "ast_hash": "ffbbfc1f4c454ae9945af7621833ef2e",
+    "semantic_hash": "ffbbfc1f4c454ae9945af7621833ef2e"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/ui/components/EnergyForecastChart.kt": {
+    "mtime": 1785237406.7259688,
+    "ast_hash": "21e8eb81959dfff4ab3ce911a76aff1a",
+    "semantic_hash": "21e8eb81959dfff4ab3ce911a76aff1a"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/ui/components/SleepDebtRing.kt": {
+    "mtime": 1785237406.7260473,
+    "ast_hash": "2405744617cea05c26afbb86f83373c9",
+    "semantic_hash": "2405744617cea05c26afbb86f83373c9"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/ui/edit/EditSessionScreen.kt": {
+    "mtime": 1785237406.7260473,
+    "ast_hash": "d5a932020c257ec6e40f794997b4c3df",
+    "semantic_hash": "d5a932020c257ec6e40f794997b4c3df"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/ui/edit/EditSessionViewModel.kt": {
+    "mtime": 1785237406.7261856,
+    "ast_hash": "5e5899c29ef24a9d5890e3358a4d4854",
+    "semantic_hash": "5e5899c29ef24a9d5890e3358a4d4854"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/ui/history/HistoryScreen.kt": {
+    "mtime": 1785237406.7261856,
+    "ast_hash": "c0eb834048cd3d5cb802341e5cc648f6",
+    "semantic_hash": "c0eb834048cd3d5cb802341e5cc648f6"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/ui/history/HistoryViewModel.kt": {
+    "mtime": 1785237406.7263806,
+    "ast_hash": "e104c5f75df21a7e3a491b2a4e52f7a6",
+    "semantic_hash": "e104c5f75df21a7e3a491b2a4e52f7a6"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/ui/home/HomeScreen.kt": {
+    "mtime": 1785237406.7263806,
+    "ast_hash": "cee22245085d5df0398be75c40eaa2af",
+    "semantic_hash": "cee22245085d5df0398be75c40eaa2af"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/ui/home/HomeViewModel.kt": {
+    "mtime": 1785237406.7265587,
+    "ast_hash": "e564a2f5d7a1229ba8b08264d84fbb74",
+    "semantic_hash": "e564a2f5d7a1229ba8b08264d84fbb74"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/ui/nap/NapScreen.kt": {
+    "mtime": 1785237406.7265587,
+    "ast_hash": "4d35c010ba37d5ddec29f747b66399b7",
+    "semantic_hash": "4d35c010ba37d5ddec29f747b66399b7"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/ui/nap/NapViewModel.kt": {
+    "mtime": 1785237406.7269037,
+    "ast_hash": "8156c7ada37c9dfb95c6f7379fc655c8",
+    "semantic_hash": "8156c7ada37c9dfb95c6f7379fc655c8"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/ui/settings/SettingsScreen.kt": {
+    "mtime": 1785237406.7269037,
+    "ast_hash": "4893da9bdf26fe0f4b72df68ad17d56a",
+    "semantic_hash": "4893da9bdf26fe0f4b72df68ad17d56a"
+  },
+  "app/src/main/java/com/isaacshub/app/sleep/ui/settings/SettingsViewModel.kt": {
+    "mtime": 1785237406.7274344,
+    "ast_hash": "e5d4f2e095ab8fcaaa9c5f7cf48b8a5f",
+    "semantic_hash": "e5d4f2e095ab8fcaaa9c5f7cf48b8a5f"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/data/DeductionDao.kt": {
+    "mtime": 1785237406.7277062,
+    "ast_hash": "dae831a5fb5eedf6c9f6714058aa50e5",
+    "semantic_hash": "dae831a5fb5eedf6c9f6714058aa50e5"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/data/DeductionEntity.kt": {
+    "mtime": 1785237406.7277586,
+    "ast_hash": "25bc468a3da98e73822454037f3802d2",
+    "semantic_hash": "25bc468a3da98e73822454037f3802d2"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/data/RouteDao.kt": {
+    "mtime": 1785237406.7277586,
+    "ast_hash": "086d48ea6264f213a9d9f93bde263420",
+    "semantic_hash": "086d48ea6264f213a9d9f93bde263420"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/data/RouteEntity.kt": {
+    "mtime": 1785237406.7277586,
+    "ast_hash": "d25bde627f11674d7c131a613fd38610",
+    "semantic_hash": "d25bde627f11674d7c131a613fd38610"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/data/RouteScheduleOverrideDao.kt": {
+    "mtime": 1785237406.7277586,
+    "ast_hash": "1f1052f9eb4078f7fed67e1d8ff877b0",
+    "semantic_hash": "1f1052f9eb4078f7fed67e1d8ff877b0"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/data/RouteScheduleOverrideEntity.kt": {
+    "mtime": 1785237406.7277586,
+    "ast_hash": "4261feed12e9bf6a646c64e40967193a",
+    "semantic_hash": "4261feed12e9bf6a646c64e40967193a"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/data/TimeEntryDao.kt": {
+    "mtime": 1785237406.7277586,
+    "ast_hash": "e2cc4a8d4efde7e90f94220f2c572e01",
+    "semantic_hash": "e2cc4a8d4efde7e90f94220f2c572e01"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/data/TimeEntryEntity.kt": {
+    "mtime": 1785237406.7277586,
+    "ast_hash": "0aaa4b90e3b401451076a4916da83907",
+    "semantic_hash": "0aaa4b90e3b401451076a4916da83907"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/data/TimeTrackingDatabase.kt": {
+    "mtime": 1785237406.7277586,
+    "ast_hash": "5366b7420dc3e3e04b5477c2cc9ede37",
+    "semantic_hash": "5366b7420dc3e3e04b5477c2cc9ede37"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/data/TimeTrackingRepository.kt": {
+    "mtime": 1785237406.7277586,
+    "ast_hash": "c2f9008d8d4c63189233c8c0c0f10771",
+    "semantic_hash": "c2f9008d8d4c63189233c8c0c0f10771"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/domain/PayPeriod.kt": {
+    "mtime": 1785237406.7277586,
+    "ast_hash": "8b69d21565253316b3738d1d74b7fb21",
+    "semantic_hash": "8b69d21565253316b3738d1d74b7fb21"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/domain/PayPeriodSummary.kt": {
+    "mtime": 1785237406.7283156,
+    "ast_hash": "bf790410dd14bacc664e161d4eb2e309",
+    "semantic_hash": "bf790410dd14bacc664e161d4eb2e309"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/domain/RouteSchedule.kt": {
+    "mtime": 1785237406.7283156,
+    "ast_hash": "bd56c57142eaa937c07ce2f4550a6c7d",
+    "semantic_hash": "bd56c57142eaa937c07ce2f4550a6c7d"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/domain/WeekSchedule.kt": {
+    "mtime": 1785237406.7283156,
+    "ast_hash": "4329cc2490c449dca37babfdd8aded61",
+    "semantic_hash": "4329cc2490c449dca37babfdd8aded61"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/domain/WeeklySummary.kt": {
+    "mtime": 1785237406.7283156,
+    "ast_hash": "bbbffc2140a8231feaabc15a83a335cd",
+    "semantic_hash": "bbbffc2140a8231feaabc15a83a335cd"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/NumberFormatting.kt": {
+    "mtime": 1785237406.7283156,
+    "ast_hash": "bf4da23c5f51868a2b78ca54bbeba1e2",
+    "semantic_hash": "bf4da23c5f51868a2b78ca54bbeba1e2"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/components/PayPeriodSummaryCard.kt": {
+    "mtime": 1785237406.7289228,
+    "ast_hash": "43e957b5bb6318c13f7802711943d0f2",
+    "semantic_hash": "43e957b5bb6318c13f7802711943d0f2"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/components/TimeEntryRow.kt": {
+    "mtime": 1785237406.7291586,
+    "ast_hash": "6932cfaea18053d65637695db44999bf",
+    "semantic_hash": "6932cfaea18053d65637695db44999bf"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/components/WeeklyHoursBar.kt": {
+    "mtime": 1785237406.7291586,
+    "ast_hash": "4f1cbfc5321ffad8034e2c643b412056",
+    "semantic_hash": "4f1cbfc5321ffad8034e2c643b412056"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/editentry/EditTimeEntryScreen.kt": {
+    "mtime": 1785237406.7291586,
+    "ast_hash": "9a83f0f54a30d2a6409ed21360c010a0",
+    "semantic_hash": "9a83f0f54a30d2a6409ed21360c010a0"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/editentry/EditTimeEntryViewModel.kt": {
+    "mtime": 1785237406.7293205,
+    "ast_hash": "20f00a73a17913b1cc668163fcbf3f6f",
+    "semantic_hash": "20f00a73a17913b1cc668163fcbf3f6f"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/editroute/EditRouteScreen.kt": {
+    "mtime": 1785237406.7293205,
+    "ast_hash": "ac9b95cd1f4108ecebf2f002b4640d54",
+    "semantic_hash": "ac9b95cd1f4108ecebf2f002b4640d54"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/editroute/EditRouteViewModel.kt": {
+    "mtime": 1785237406.72943,
+    "ast_hash": "3f3a79c08d3ce0720726c104a2975a5b",
+    "semantic_hash": "3f3a79c08d3ce0720726c104a2975a5b"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/routes/RoutesScreen.kt": {
+    "mtime": 1785237406.72943,
+    "ast_hash": "8cd16853cdbf15812508ceaf48c1a3f9",
+    "semantic_hash": "8cd16853cdbf15812508ceaf48c1a3f9"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/routes/RoutesViewModel.kt": {
+    "mtime": 1785237406.7295425,
+    "ast_hash": "19c9d41bf8284ac1610183ba9a1fcc96",
+    "semantic_hash": "19c9d41bf8284ac1610183ba9a1fcc96"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/schedule/WeekScheduleScreen.kt": {
+    "mtime": 1785237406.7295425,
+    "ast_hash": "beaadf028230505ed0a1590634fb82a7",
+    "semantic_hash": "beaadf028230505ed0a1590634fb82a7"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/schedule/WeekScheduleViewModel.kt": {
+    "mtime": 1785237406.729836,
+    "ast_hash": "94bd686e18f19fc7b2e82e5b9434d091",
+    "semantic_hash": "94bd686e18f19fc7b2e82e5b9434d091"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/settings/TimeTrackerSettingsScreen.kt": {
+    "mtime": 1785237406.729836,
+    "ast_hash": "cc8600d1c4fa28e4cd20c344a1b5f2df",
+    "semantic_hash": "cc8600d1c4fa28e4cd20c344a1b5f2df"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/settings/TimeTrackerSettingsViewModel.kt": {
+    "mtime": 1785237406.7302785,
+    "ast_hash": "26cfb5422b8fbb12ddac960c833d8a26",
+    "semantic_hash": "26cfb5422b8fbb12ddac960c833d8a26"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/week/TimeTrackingHomeScreen.kt": {
+    "mtime": 1785237406.7302785,
+    "ast_hash": "f6e745d02f9896e7d35e623675f88ef7",
+    "semantic_hash": "f6e745d02f9896e7d35e623675f88ef7"
+  },
+  "app/src/main/java/com/isaacshub/app/timetracking/ui/week/TimeTrackingHomeViewModel.kt": {
+    "mtime": 1785237406.730492,
+    "ast_hash": "2a8cefe2c9a1d613cbae058efd212a56",
+    "semantic_hash": "2a8cefe2c9a1d613cbae058efd212a56"
+  },
+  "app/src/main/java/com/isaacshub/app/ui/theme/Color.kt": {
+    "mtime": 1785237406.7306619,
+    "ast_hash": "c1f404f6978a2360f5bc4c57ab04337c",
+    "semantic_hash": "c1f404f6978a2360f5bc4c57ab04337c"
+  },
+  "app/src/main/java/com/isaacshub/app/ui/theme/Theme.kt": {
+    "mtime": 1785237406.7307143,
+    "ast_hash": "6720ca403239aa4c6b69200bc106eb2a",
+    "semantic_hash": "6720ca403239aa4c6b69200bc106eb2a"
+  },
+  "app/src/main/java/com/isaacshub/app/ui/theme/Type.kt": {
+    "mtime": 1785237406.7307143,
+    "ast_hash": "1bf90b541f395d352c23a3a231542552",
+    "semantic_hash": "1bf90b541f395d352c23a3a231542552"
+  },
+  "app/src/main/java/com/isaacshub/app/update/UpdateBanner.kt": {
+    "mtime": 1785237406.7307143,
+    "ast_hash": "61eb15193bd9b1b955de875bf27cdcd7",
+    "semantic_hash": "61eb15193bd9b1b955de875bf27cdcd7"
+  },
+  "app/src/main/java/com/isaacshub/app/update/UpdateChecker.kt": {
+    "mtime": 1785237406.7308705,
+    "ast_hash": "08aa426a4b8bef7bc7dbb9476aa0aa47",
+    "semantic_hash": "08aa426a4b8bef7bc7dbb9476aa0aa47"
+  },
+  "app/src/main/java/com/isaacshub/app/update/UpdateInstaller.kt": {
+    "mtime": 1785237406.7308705,
+    "ast_hash": "1e297ce0b678e8109b45ac773adcad99",
+    "semantic_hash": "1e297ce0b678e8109b45ac773adcad99"
+  },
+  "app/src/main/java/com/isaacshub/app/update/UpdateViewModel.kt": {
+    "mtime": 1785237406.7308705,
+    "ast_hash": "98e54872dd72bade05d43ba778f0a7ff",
+    "semantic_hash": "98e54872dd72bade05d43ba778f0a7ff"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/backup/AppDataBackupScheduler.kt": {
+    "mtime": 1785237406.7310622,
+    "ast_hash": "de8bc1d062a5b0c0a390037b545ebc21",
+    "semantic_hash": "de8bc1d062a5b0c0a390037b545ebc21"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/backup/AppDataBackupWorker.kt": {
+    "mtime": 1785237406.7311275,
+    "ast_hash": "9e3d40fbad231301c65070de5715bfca",
+    "semantic_hash": "9e3d40fbad231301c65070de5715bfca"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/backup/PreferencesJson.kt": {
+    "mtime": 1785237406.7311275,
+    "ast_hash": "b9b4016fb94f2c0408bfcef7c7e48cbe",
+    "semantic_hash": "b9b4016fb94f2c0408bfcef7c7e48cbe"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/data/VaultApiClient.kt": {
+    "mtime": 1785237406.7311275,
+    "ast_hash": "59f319ca098cc68c839c5cafc02c0963",
+    "semantic_hash": "59f319ca098cc68c839c5cafc02c0963"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/data/VaultPreferencesRepository.kt": {
+    "mtime": 1785237406.731843,
+    "ast_hash": "9f6dd222041b7f40b8f5bc3f6b1cb0cf",
+    "semantic_hash": "9f6dd222041b7f40b8f5bc3f6b1cb0cf"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/domain/PhotoSyncPlanner.kt": {
+    "mtime": 1785237406.731843,
+    "ast_hash": "19810b2576215e3a1fc785c394452755",
+    "semantic_hash": "19810b2576215e3a1fc785c394452755"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/domain/VaultConnection.kt": {
+    "mtime": 1785237406.7319772,
+    "ast_hash": "304a85d661b0add7f1ee35520b008699",
+    "semantic_hash": "304a85d661b0add7f1ee35520b008699"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/media/MediaStoreScanner.kt": {
+    "mtime": 1785237406.7319772,
+    "ast_hash": "6036cf14b179ca39d7cd9bc8f17f2f7e",
+    "semantic_hash": "6036cf14b179ca39d7cd9bc8f17f2f7e"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/ui/home/VaultHomeScreen.kt": {
+    "mtime": 1785237406.7321339,
+    "ast_hash": "c22e16e4ae7a15c3cea4bf000c4f46e5",
+    "semantic_hash": "c22e16e4ae7a15c3cea4bf000c4f46e5"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/ui/home/VaultHomeViewModel.kt": {
+    "mtime": 1785237406.732434,
+    "ast_hash": "1f89688543993846f4900b92b45ca150",
+    "semantic_hash": "1f89688543993846f4900b92b45ca150"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/ui/pairing/PairingScreen.kt": {
+    "mtime": 1785237406.732434,
+    "ast_hash": "aa5c4cda237697d19758494379e6c343",
+    "semantic_hash": "aa5c4cda237697d19758494379e6c343"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/ui/pairing/PairingViewModel.kt": {
+    "mtime": 1785237406.732609,
+    "ast_hash": "859947d98ac78fb1eaf1cbff6287fede",
+    "semantic_hash": "859947d98ac78fb1eaf1cbff6287fede"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/ui/restore/RestoreScreen.kt": {
+    "mtime": 1785237406.732609,
+    "ast_hash": "a876bbfec06fc85f7eb350685fe2ccfa",
+    "semantic_hash": "a876bbfec06fc85f7eb350685fe2ccfa"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/ui/restore/RestoreViewModel.kt": {
+    "mtime": 1785237406.7329311,
+    "ast_hash": "f1024b726970e305ca92535261450efe",
+    "semantic_hash": "f1024b726970e305ca92535261450efe"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/work/ManualUploadWorker.kt": {
+    "mtime": 1785237406.7329311,
+    "ast_hash": "1232d26b7ce3e68b9cbad3adbae14525",
+    "semantic_hash": "1232d26b7ce3e68b9cbad3adbae14525"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/work/PhotoBackupScheduler.kt": {
+    "mtime": 1785237406.7333212,
+    "ast_hash": "4875006b7eff0ee62ea48ea8c539224e",
+    "semantic_hash": "4875006b7eff0ee62ea48ea8c539224e"
+  },
+  "app/src/main/java/com/isaacshub/app/vault/work/PhotoBackupWorker.kt": {
+    "mtime": 1785237406.7333212,
+    "ast_hash": "898437b6d85bac8cd24bbde7de41f2fa",
+    "semantic_hash": "898437b6d85bac8cd24bbde7de41f2fa"
+  },
+  "app/src/test/java/com/isaacshub/app/routehelper/domain/AddressInterpolationTest.kt": {
+    "mtime": 1785237406.7340891,
+    "ast_hash": "d5a3887fda5cf4703bd3e300c45bd897",
+    "semantic_hash": "d5a3887fda5cf4703bd3e300c45bd897"
+  },
+  "app/src/test/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilterTest.kt": {
+    "mtime": 1785237406.7342093,
+    "ast_hash": "7d3bb64925c24edfd0d57f69557f1f37",
+    "semantic_hash": "7d3bb64925c24edfd0d57f69557f1f37"
+  },
+  "app/src/test/java/com/isaacshub/app/routehelper/domain/LocationSampleTest.kt": {
+    "mtime": 1785237406.7342093,
+    "ast_hash": "045a4a943bb579d9f49893736738c8da",
+    "semantic_hash": "045a4a943bb579d9f49893736738c8da"
+  },
+  "app/src/test/java/com/isaacshub/app/routehelper/domain/MailScanParserTest.kt": {
+    "mtime": 1785237406.7342093,
+    "ast_hash": "ced7adcf734c940888871b1a4de5da57",
+    "semantic_hash": "ced7adcf734c940888871b1a4de5da57"
+  },
+  "app/src/test/java/com/isaacshub/app/routehelper/domain/NearestAddressesTest.kt": {
+    "mtime": 1785237406.7342093,
+    "ast_hash": "8f774beb432e33047ce52cee8d10cd8c",
+    "semantic_hash": "8f774beb432e33047ce52cee8d10cd8c"
+  },
+  "app/src/test/java/com/isaacshub/app/routehelper/domain/RoutePlaybackTest.kt": {
+    "mtime": 1785237406.7342093,
+    "ast_hash": "f09d605cbd4c71569731ecff0e2c2e47",
+    "semantic_hash": "f09d605cbd4c71569731ecff0e2c2e47"
+  },
+  "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt": {
+    "mtime": 1785237406.7342093,
+    "ast_hash": "c2430298cd13d6fea2687f4b807f7c92",
+    "semantic_hash": "c2430298cd13d6fea2687f4b807f7c92"
+  },
+  "app/src/test/java/com/isaacshub/app/routehelper/domain/StopSideTest.kt": {
+    "mtime": 1785237406.7342093,
+    "ast_hash": "0a2430b81cd69d745bc0de56e84d269f",
+    "semantic_hash": "0a2430b81cd69d745bc0de56e84d269f"
+  },
+  "app/src/test/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcherTest.kt": {
+    "mtime": 1785237406.7342093,
+    "ast_hash": "565accaa877599ce6ac879b28d1a5b81",
+    "semantic_hash": "565accaa877599ce6ac879b28d1a5b81"
+  },
+  "app/src/test/java/com/isaacshub/app/routehelper/network/IndianaAddressPointFetcherTest.kt": {
+    "mtime": 1785237406.7348814,
+    "ast_hash": "a1f31363d265d90e5c232dbda3fe7a61",
+    "semantic_hash": "a1f31363d265d90e5c232dbda3fe7a61"
+  },
+  "app/src/test/java/com/isaacshub/app/routehelper/network/TigerShapefileParserTest.kt": {
+    "mtime": 1785237406.7348814,
+    "ast_hash": "e592a071e66d4495da1716c9d3ef1631",
+    "semantic_hash": "e592a071e66d4495da1716c9d3ef1631"
+  },
+  "app/src/test/java/com/isaacshub/app/timetracking/domain/WeeklySummaryTest.kt": {
+    "mtime": 1785237406.735,
+    "ast_hash": "e80205b2724472822f7bb05d106e5dd2",
+    "semantic_hash": "e80205b2724472822f7bb05d106e5dd2"
+  },
+  "app/src/test/java/com/isaacshub/app/vault/backup/PreferencesJsonTest.kt": {
+    "mtime": 1785237406.7350855,
+    "ast_hash": "9d3bf1e58551aa3ad97c6d633af0f941",
+    "semantic_hash": "9d3bf1e58551aa3ad97c6d633af0f941"
+  },
+  "app/src/test/java/com/isaacshub/app/vault/domain/PhotoSyncPlannerTest.kt": {
+    "mtime": 1785237406.7350855,
+    "ast_hash": "79402c348234302cc00c99d8becb525e",
+    "semantic_hash": "79402c348234302cc00c99d8becb525e"
+  },
+  "app/src/test/java/com/isaacshub/app/vault/domain/VaultConnectionTest.kt": {
+    "mtime": 1785237406.7352216,
+    "ast_hash": "7483c4423b9f82e796e9e31454854a3f",
+    "semantic_hash": "7483c4423b9f82e796e9e31454854a3f"
+  },
+  "build.gradle.kts": {
+    "mtime": 1785237406.7352216,
+    "ast_hash": "d8208f49e61f39dbbc92da41b05d28d7",
+    "semantic_hash": "d8208f49e61f39dbbc92da41b05d28d7"
+  },
+  "data/settings.json": {
+    "mtime": 1785237406.7352216,
+    "ast_hash": "30c72072eaa2f4291a0ff0cb2bf7634c",
+    "semantic_hash": "30c72072eaa2f4291a0ff0cb2bf7634c"
+  },
+  "deploy-apk.sh": {
+    "mtime": 1785237406.7352216,
+    "ast_hash": "5f49ccf31d55e79aae5f41ad4adba60a",
+    "semantic_hash": "5f49ccf31d55e79aae5f41ad4adba60a"
+  },
+  "essentials-family-app/build.gradle.kts": {
+    "mtime": 1785237406.7352216,
+    "ast_hash": "263c3989baa5fb893e66fdee905ee156",
+    "semantic_hash": "263c3989baa5fb893e66fdee905ee156"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/EssentialsApp.kt": {
+    "mtime": 1785237407.7311814,
+    "ast_hash": "0731f6d1f9a5889021f61ec7c69eb3f3",
+    "semantic_hash": "0731f6d1f9a5889021f61ec7c69eb3f3"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/MainActivity.kt": {
+    "mtime": 1785237407.7312806,
+    "ast_hash": "7aec179885a6afd32d7c6688b1b1a87c",
+    "semantic_hash": "7aec179885a6afd32d7c6688b1b1a87c"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/admin/DeviceAdminManager.kt": {
+    "mtime": 1785237407.7312806,
+    "ast_hash": "311bfd4e75d07a5059eeef74e898bc7e",
+    "semantic_hash": "311bfd4e75d07a5059eeef74e898bc7e"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/admin/EssentialsDeviceAdminReceiver.kt": {
+    "mtime": 1785237407.7315867,
+    "ast_hash": "6ff85011441f476fcf0a710c025b5ae4",
+    "semantic_hash": "6ff85011441f476fcf0a710c025b5ae4"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/data/api/EssentialsApiClient.kt": {
+    "mtime": 1785237407.731667,
+    "ast_hash": "d8e9b52e6a10a0239da62342a238a1e6",
+    "semantic_hash": "d8e9b52e6a10a0239da62342a238a1e6"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/data/local/EssentialsDatabase.kt": {
+    "mtime": 1785237407.731667,
+    "ast_hash": "f3c4c0df1b2b0c89449bbe9ea9b7bf5c",
+    "semantic_hash": "f3c4c0df1b2b0c89449bbe9ea9b7bf5c"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/data/local/dao/ChoreDao.kt": {
+    "mtime": 1785237407.73184,
+    "ast_hash": "a81a25f71aee2a4614f2458c406e3743",
+    "semantic_hash": "a81a25f71aee2a4614f2458c406e3743"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/data/local/dao/CompletionDao.kt": {
+    "mtime": 1785237407.731906,
+    "ast_hash": "09d8aaffad88e2820017b3d9c3655df8",
+    "semantic_hash": "09d8aaffad88e2820017b3d9c3655df8"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/data/local/entities/LocalChoreEntity.kt": {
+    "mtime": 1785237407.731906,
+    "ast_hash": "6947e82c63dd9fb9022c9314b82d92ae",
+    "semantic_hash": "6947e82c63dd9fb9022c9314b82d92ae"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/data/local/entities/LocalCompletionEntity.kt": {
+    "mtime": 1785237407.7320294,
+    "ast_hash": "cd0b0bbb0e5306fe17c0a4a39e4b4195",
+    "semantic_hash": "cd0b0bbb0e5306fe17c0a4a39e4b4195"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/data/repository/AuthRepository.kt": {
+    "mtime": 1785237407.7320294,
+    "ast_hash": "caaf9bb59a530b73434a2e7addf661fa",
+    "semantic_hash": "caaf9bb59a530b73434a2e7addf661fa"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/data/repository/EssentialsRepository.kt": {
+    "mtime": 1785237407.7321687,
+    "ast_hash": "805020a730169dff7e23f1be480245e2",
+    "semantic_hash": "805020a730169dff7e23f1be480245e2"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/receiver/ChargingMonitorReceiver.kt": {
+    "mtime": 1785237407.7321687,
+    "ast_hash": "fbd801f62b6854b3b3826b2c073cab7e",
+    "semantic_hash": "fbd801f62b6854b3b3826b2c073cab7e"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/service/AppBlockingService.kt": {
+    "mtime": 1785237407.7321687,
+    "ast_hash": "7e99d38bea9b0e94d9fa24c3704d9b1b",
+    "semantic_hash": "7e99d38bea9b0e94d9fa24c3704d9b1b"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/choredetail/ChoreDetailScreen.kt": {
+    "mtime": 1785237407.7327437,
+    "ast_hash": "a12277f07a63cf50de92d0466995275f",
+    "semantic_hash": "a12277f07a63cf50de92d0466995275f"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/choredetail/ChoreDetailViewModel.kt": {
+    "mtime": 1785237407.7328548,
+    "ast_hash": "d3f4b111aa0b8d437007d019ac3ea803",
+    "semantic_hash": "d3f4b111aa0b8d437007d019ac3ea803"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/home/HomeScreen.kt": {
+    "mtime": 1785237407.7328548,
+    "ast_hash": "ce2c6ce2b8857641c615e2315150d684",
+    "semantic_hash": "ce2c6ce2b8857641c615e2315150d684"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/home/HomeViewModel.kt": {
+    "mtime": 1785237407.7331173,
+    "ast_hash": "4f4bb21ad8198896acbe27c0e5369890",
+    "semantic_hash": "4f4bb21ad8198896acbe27c0e5369890"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/login/LoginScreen.kt": {
+    "mtime": 1785237407.7331173,
+    "ast_hash": "bd4cd67473f7a07146b1e4afecb8f3f3",
+    "semantic_hash": "bd4cd67473f7a07146b1e4afecb8f3f3"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/login/LoginViewModel.kt": {
+    "mtime": 1785237407.7336564,
+    "ast_hash": "8fa3889480e688cbedf300a788bf82c1",
+    "semantic_hash": "8fa3889480e688cbedf300a788bf82c1"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/navigation/NavGraph.kt": {
+    "mtime": 1785237407.7336564,
+    "ast_hash": "62c1c42b98648ed5bd5e5d7373283746",
+    "semantic_hash": "62c1c42b98648ed5bd5e5d7373283746"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/navigation/Routes.kt": {
+    "mtime": 1785237407.7341578,
+    "ast_hash": "635a3959618aadfeb8ca3bafa0986ce4",
+    "semantic_hash": "635a3959618aadfeb8ca3bafa0986ce4"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/photo/PhotoCaptureScreen.kt": {
+    "mtime": 1785237407.7341578,
+    "ast_hash": "fcd7d3b2f00f25a1f1d83c422aeb2f58",
+    "semantic_hash": "fcd7d3b2f00f25a1f1d83c422aeb2f58"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/photo/PhotoCaptureViewModel.kt": {
+    "mtime": 1785237407.7344441,
+    "ast_hash": "881413861283c90bd21de4f679c631ab",
+    "semantic_hash": "881413861283c90bd21de4f679c631ab"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/settings/SettingsScreen.kt": {
+    "mtime": 1785237407.7344441,
+    "ast_hash": "00f0569d0da078f91e181c63be99af68",
+    "semantic_hash": "00f0569d0da078f91e181c63be99af68"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/setup/SetupScreen.kt": {
+    "mtime": 1785237407.7344441,
+    "ast_hash": "62e3c3711b2376b879fea72efc4e5e6e",
+    "semantic_hash": "62e3c3711b2376b879fea72efc4e5e6e"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/theme/Theme.kt": {
+    "mtime": 1785237407.7344441,
+    "ast_hash": "be0702d9bccceceb6d0886b9eef5353c",
+    "semantic_hash": "be0702d9bccceceb6d0886b9eef5353c"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/update/UpdateBanner.kt": {
+    "mtime": 1785237407.7344441,
+    "ast_hash": "671b72db82bdd548070c375406d6c6aa",
+    "semantic_hash": "671b72db82bdd548070c375406d6c6aa"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/update/UpdateChecker.kt": {
+    "mtime": 1785237407.7352684,
+    "ast_hash": "d72d4e78ce53aea9e0dd45d2a8229ca9",
+    "semantic_hash": "d72d4e78ce53aea9e0dd45d2a8229ca9"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/update/UpdateInstaller.kt": {
+    "mtime": 1785237407.7352684,
+    "ast_hash": "a55516294864946c75ea3d901348fb3c",
+    "semantic_hash": "a55516294864946c75ea3d901348fb3c"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/update/UpdateManager.kt": {
+    "mtime": 1785237407.7352684,
+    "ast_hash": "89c672302480a2a2f76e9680239b3e0c",
+    "semantic_hash": "89c672302480a2a2f76e9680239b3e0c"
+  },
+  "essentials-family-app/src/main/java/com/isaacshub/essentials/update/UpdateViewModel.kt": {
+    "mtime": 1785237407.7352684,
+    "ast_hash": "c461413e20f359e1db26775bd6cbab3e",
+    "semantic_hash": "c461413e20f359e1db26775bd6cbab3e"
+  },
+  "essentialscore/build.gradle.kts": {
+    "mtime": 1785237407.7363784,
+    "ast_hash": "9eb11ee2daeee1ad1218b035221c5dd9",
+    "semantic_hash": "9eb11ee2daeee1ad1218b035221c5dd9"
+  },
+  "essentialscore/src/main/java/com/isaacshub/essentialscore/api/EssentialsEndpoints.kt": {
+    "mtime": 1784648764.0161505,
+    "ast_hash": "27e983d9c0945b2a92eb9e0b6d23b554",
+    "semantic_hash": "27e983d9c0945b2a92eb9e0b6d23b554"
+  },
+  "essentialscore/src/main/java/com/isaacshub/essentialscore/models/Chore.kt": {
+    "mtime": 1784648709.1249473,
+    "ast_hash": "a062eded9d37ce2d415125fa7202e5af",
+    "semantic_hash": "a062eded9d37ce2d415125fa7202e5af"
+  },
+  "essentialscore/src/main/java/com/isaacshub/essentialscore/models/ChoreCompletion.kt": {
+    "mtime": 1784648718.3479815,
+    "ast_hash": "77fc3cab49e69dce694d9608b450b0ef",
+    "semantic_hash": "77fc3cab49e69dce694d9608b450b0ef"
+  },
+  "essentialscore/src/main/java/com/isaacshub/essentialscore/models/PhotoVerification.kt": {
+    "mtime": 1784648723.7600014,
+    "ast_hash": "2a1bde374584dfb50939a14508812f69",
+    "semantic_hash": "2a1bde374584dfb50939a14508812f69"
+  },
+  "essentialscore/src/main/java/com/isaacshub/essentialscore/models/UserAccount.kt": {
+    "mtime": 1784648702.5729232,
+    "ast_hash": "b4b0cf8e58c0d4b515f0667deb3a9dfa",
+    "semantic_hash": "b4b0cf8e58c0d4b515f0667deb3a9dfa"
+  },
+  "essentialscore/src/main/java/com/isaacshub/essentialscore/utils/ChoreScheduleCalculator.kt": {
+    "mtime": 1784648750.889102,
+    "ast_hash": "89d28d987f84ccb529d06cfb8b20d39c",
+    "semantic_hash": "89d28d987f84ccb529d06cfb8b20d39c"
+  },
+  "gradlew": {
+    "mtime": 1784112442.2449243,
+    "ast_hash": "794669d78aef1dd5c7d889ef618b311a",
+    "semantic_hash": "794669d78aef1dd5c7d889ef618b311a"
+  },
+  "settings.gradle.kts": {
+    "mtime": 1785237407.7363784,
+    "ast_hash": "7e8b54c85476a77bfc80d6b527e30f1b",
+    "semantic_hash": "7e8b54c85476a77bfc80d6b527e30f1b"
+  },
+  "sleepcore/build.gradle.kts": {
+    "mtime": 1785237407.7363784,
+    "ast_hash": "30704cc3c79b901b11fb3978acc9d4d7",
+    "semantic_hash": "30704cc3c79b901b11fb3978acc9d4d7"
+  },
+  "sleepcore/src/main/kotlin/com/isaacshub/sleep/core/EnergyForecast.kt": {
+    "mtime": 1785237407.736809,
+    "ast_hash": "2de45ed442f929a7334608f2942bcdb6",
+    "semantic_hash": "2de45ed442f929a7334608f2942bcdb6"
+  },
+  "sleepcore/src/main/kotlin/com/isaacshub/sleep/core/SleepDebt.kt": {
+    "mtime": 1785237407.7369313,
+    "ast_hash": "e9c9790e8dab9cebb55542dbaa22033a",
+    "semantic_hash": "e9c9790e8dab9cebb55542dbaa22033a"
+  },
+  "sleepcore/src/main/kotlin/com/isaacshub/sleep/core/SleepDetectionEngine.kt": {
+    "mtime": 1785237407.7369313,
+    "ast_hash": "f5b677889eea1b234c58bf83519cb45d",
+    "semantic_hash": "f5b677889eea1b234c58bf83519cb45d"
+  },
+  "sleepcore/src/main/kotlin/com/isaacshub/sleep/core/WindDown.kt": {
+    "mtime": 1785237407.7369313,
+    "ast_hash": "624717b86b50595ade32ba29f5b4ea0e",
+    "semantic_hash": "624717b86b50595ade32ba29f5b4ea0e"
+  },
+  "sleepcore/src/test/kotlin/com/isaacshub/sleep/core/EnergyForecastCalculatorTest.kt": {
+    "mtime": 1785237407.7371924,
+    "ast_hash": "32dc77af34f525be1e41fdb86a1fa352",
+    "semantic_hash": "32dc77af34f525be1e41fdb86a1fa352"
+  },
+  "sleepcore/src/test/kotlin/com/isaacshub/sleep/core/SleepDebtCalculatorTest.kt": {
+    "mtime": 1785237407.7372897,
+    "ast_hash": "fd8e0f5a36a9bdac700e1a4cf09ceb1d",
+    "semantic_hash": "fd8e0f5a36a9bdac700e1a4cf09ceb1d"
+  },
+  "sleepcore/src/test/kotlin/com/isaacshub/sleep/core/SleepDetectionEngineTest.kt": {
+    "mtime": 1785237407.7372897,
+    "ast_hash": "62f7b6efe385e97133f65320498b00b2",
+    "semantic_hash": "62f7b6efe385e97133f65320498b00b2"
+  },
+  "sleepcore/src/test/kotlin/com/isaacshub/sleep/core/WindDownCalculatorTest.kt": {
+    "mtime": 1785237407.7372897,
+    "ast_hash": "905d1b403ce665027e4bc097d447af12",
+    "semantic_hash": "905d1b403ce665027e4bc097d447af12"
+  },
+  ".github/workflows/release.yml": {
+    "mtime": 1785237406.1966765,
+    "ast_hash": "c2420c57dba00507028a7dd3a31e94ef",
+    "semantic_hash": ""
+  },
+  "AUTO_UPDATE_SYSTEM.md": {
+    "mtime": 1785237406.2024088,
+    "ast_hash": "4dc477eeca174d848bb16a70d092b959",
+    "semantic_hash": ""
+  },
+  "BANKING_SETUP.md": {
+    "mtime": 1785237406.2034087,
+    "ast_hash": "76f1ed08badf567a033fd24719f23836",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1785254156.7745,
+    "ast_hash": "509fbb5d3a36cf3015a68f4a23f62b4f",
+    "semantic_hash": ""
+  },
+  "ESSENTIALS_IMPLEMENTATION.md": {
+    "mtime": 1785237406.2034087,
+    "ast_hash": "93d62b970d9389ddce4ba3129658befc",
+    "semantic_hash": ""
+  },
+  "ESSENTIALS_STATUS.md": {
+    "mtime": 1785237406.2034087,
+    "ast_hash": "3efeffb44818c3e82e40e8b91741ed4a",
+    "semantic_hash": ""
+  },
+  "PROJECT_STATUS.md": {
+    "mtime": 1785237406.2044086,
+    "ast_hash": "4f7f42328ba77e8892be2d3199aa4f2a",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1785237406.2044086,
+    "ast_hash": "f4a67124ffc868d3a04574b79520e662",
+    "semantic_hash": ""
+  },
+  "TURNAROUND_DEBUGGING.md": {
+    "mtime": 1785237406.2044086,
+    "ast_hash": "605267acc06f284b2f49e95f0595758c",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/README.md": {
+    "mtime": 1785237406.7026887,
+    "ast_hash": "1d1e3c7d98273e60728f0d515063a6ad",
+    "semantic_hash": ""
+  },
+  "app/schemas/com.isaacshub.app.core.data.AppDatabase/2.json": {
+    "mtime": 1785283388.3627527,
+    "ast_hash": "c2d435f8c54a6e746a7933957faf9006",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/TransactionDao.kt": {
+    "mtime": 1785283059.3543198,
+    "ast_hash": "4c573edd18bbb5f76d2c84fc0e030140",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/TransactionEntity.kt": {
+    "mtime": 1785283046.095262,
+    "ast_hash": "7f45fc9abd65fdfcc5ca23ea8ff6454b",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/domain/Transaction.kt": {
+    "mtime": 1785283035.7332172,
+    "ast_hash": "ae81e6f2b1a36ffeb108532dbd40924f",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt": {
+    "mtime": 1785283229.1240592,
+    "ast_hash": "7748bb79f2d8c895c6a12c4cae972090",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListViewModel.kt": {
+    "mtime": 1785283247.7781403,
+    "ast_hash": "e45f023c93593e783727c563405efec7",
+    "semantic_hash": ""
+  }
+}
