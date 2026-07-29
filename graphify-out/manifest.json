@@ -220,8 +220,8 @@
     "semantic_hash": "a92c1b60b6a7247fd0a94f4c2c17fe11"
   },
   "app/src/main/java/com/isaacshub/app/banking/data/PlaidClient.kt": {
-    "mtime": 1785283126.8106136,
-    "ast_hash": "9242ceea83f12359c29cc1c568df6ee5",
+    "mtime": 1785285515.9990544,
+    "ast_hash": "e0ac627283e359dfa5f9429ed4ea593e",
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/banking/data/PlaidConfig.kt": {

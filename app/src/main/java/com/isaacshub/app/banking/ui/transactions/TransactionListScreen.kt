@@ -128,7 +128,7 @@ private fun TransactionCard(transaction: Transaction) {
                 modifier = Modifier.weight(1f)
             ) {
                 Text(
-                    transaction.merchantName ?: transaction.name,
+                    transaction.merchantName ?: transaction.name.takeIf { it.isNotBlank() } ?: "Transaction",
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Medium
                 )

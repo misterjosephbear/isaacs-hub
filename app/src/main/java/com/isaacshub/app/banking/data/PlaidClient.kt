@@ -208,6 +208,9 @@ class PlaidClient(
         return (0 until transactionsArray.length()).map { i ->
             val txnJson = transactionsArray.getJSONObject(i)
 
+            // Debug logging to see what Plaid actually returns
+            android.util.Log.d("PlaidClient", "Transaction JSON: $txnJson")
+
             // Parse date string to timestamp
             val dateString = txnJson.getString("date")
             val date = try {
@@ -226,8 +229,14 @@ class PlaidClient(
             }
 
             // Get name and merchant_name, handling null/empty values
-            val rawName = txnJson.optString("name", "").takeIf { it.isNotBlank() }
-            val rawMerchantName = txnJson.optString("merchant_name", "").takeIf { it.isNotBlank() }
+            // Note: optString returns "" when key is missing, but "null" when value is JSON null
+            val rawName = if (txnJson.has("name") && !txnJson.isNull("name")) {
+                txnJson.getString("name").takeIf { it.isNotBlank() && it != "null" }
+            } else null
+
+            val rawMerchantName = if (txnJson.has("merchant_name") && !txnJson.isNull("merchant_name")) {
+                txnJson.getString("merchant_name").takeIf { it.isNotBlank() && it != "null" }
+            } else null
 
             Transaction(
                 id = txnJson.getString("transaction_id"),
@@ -238,9 +247,13 @@ class PlaidClient(
                 merchantName = rawMerchantName,
                 category = categories.takeIf { it.isNotEmpty() },
                 pending = txnJson.optBoolean("pending", false),
-                paymentChannel = txnJson.optString("payment_channel", "").takeIf { it.isNotBlank() },
+                paymentChannel = if (txnJson.has("payment_channel") && !txnJson.isNull("payment_channel")) {
+                    txnJson.getString("payment_channel").takeIf { it.isNotBlank() && it != "null" }
+                } else null,
                 lastUpdated = currentTime
-            )
+            ).also {
+                android.util.Log.d("PlaidClient", "Parsed transaction: name='${it.name}', merchant='${it.merchantName}'")
+            }
         }
     }
 }

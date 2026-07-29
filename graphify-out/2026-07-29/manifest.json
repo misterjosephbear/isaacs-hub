@@ -195,9 +195,9 @@
     "semantic_hash": "ee7ef89493eddd19826df3d117c5103e"
   },
   "app/src/main/java/com/isaacshub/app/banking/data/BankingRepository.kt": {
-    "mtime": 1785245405.2511287,
-    "ast_hash": "5b6bc5db51a599671a555a18e633d12f",
-    "semantic_hash": "5b6bc5db51a599671a555a18e633d12f"
+    "mtime": 1785283168.255794,
+    "ast_hash": "88fe9b8d269f25fbcd106558b7ce4bbe",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/banking/data/BankingRepositoryImpl.kt": {
     "mtime": 1785237406.70365,
@@ -220,9 +220,9 @@
     "semantic_hash": "a92c1b60b6a7247fd0a94f4c2c17fe11"
   },
   "app/src/main/java/com/isaacshub/app/banking/data/PlaidClient.kt": {
-    "mtime": 1785237406.70365,
-    "ast_hash": "d27bbbe89cd228f3e5b6b0c39668efc3",
-    "semantic_hash": "d27bbbe89cd228f3e5b6b0c39668efc3"
+    "mtime": 1785283126.8106136,
+    "ast_hash": "9242ceea83f12359c29cc1c568df6ee5",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/banking/data/PlaidConfig.kt": {
     "mtime": 1785237406.70365,
@@ -280,9 +280,9 @@
     "semantic_hash": "c25ecee967685fae744a1abfc68d7f65"
   },
   "app/src/main/java/com/isaacshub/app/banking/ui/home/BankingHomeScreen.kt": {
-    "mtime": 1785243032.1139343,
-    "ast_hash": "57aa26e2b2846d5b8cdbc63fa694145a",
-    "semantic_hash": "57aa26e2b2846d5b8cdbc63fa694145a"
+    "mtime": 1785283304.2403862,
+    "ast_hash": "007f7a7231a228735926383b01e0125f",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/banking/ui/home/BankingHomeViewModel.kt": {
     "mtime": 1785237406.7053516,
@@ -290,9 +290,9 @@
     "semantic_hash": "f0fb807daa076b98e149de16f4f2dfc8"
   },
   "app/src/main/java/com/isaacshub/app/banking/ui/setup/PlaidConnectionSetupScreen.kt": {
-    "mtime": 1785237406.7053516,
-    "ast_hash": "fb7a9ccea8b55d6e2ce1ad2326bcda8b",
-    "semantic_hash": "fb7a9ccea8b55d6e2ce1ad2326bcda8b"
+    "mtime": 1785283201.117937,
+    "ast_hash": "8e4871ec8affdb5a463fef8da9e421d7",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/banking/ui/setup/PlaidConnectionSetupViewModel.kt": {
     "mtime": 1785237406.7055104,
@@ -300,9 +300,9 @@
     "semantic_hash": "38a4801cf4d11d6e83b605d7a8f54811"
   },
   "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt": {
-    "mtime": 1785237406.7058425,
-    "ast_hash": "2a73539a5ea669d311567966c8e170db",
-    "semantic_hash": "2a73539a5ea669d311567966c8e170db"
+    "mtime": 1785283088.6704473,
+    "ast_hash": "6abc5703c015cc62b8ef979a7a477f40",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/core/data/DatabaseMigrationHelper.kt": {
     "mtime": 1785237406.7060738,
@@ -490,14 +490,14 @@
     "semantic_hash": "6a06704fbe4d84df2345d22263056688"
   },
   "app/src/main/java/com/isaacshub/app/navigation/AppNavHost.kt": {
-    "mtime": 1785237406.7135527,
-    "ast_hash": "cd784b8b56c9e5a36cd2cee4f2bb91cc",
-    "semantic_hash": "cd784b8b56c9e5a36cd2cee4f2bb91cc"
+    "mtime": 1785283361.9056375,
+    "ast_hash": "4cb3435e0c01418cfeabe45e9b516f27",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/navigation/Routes.kt": {
-    "mtime": 1785237406.713837,
-    "ast_hash": "4ab4569ceb2a8bd0c7c67351982e955a",
-    "semantic_hash": "4ab4569ceb2a8bd0c7c67351982e955a"
+    "mtime": 1785283332.4915092,
+    "ast_hash": "bfa0f9e7d6c2f109a3d4336cd4b0507e",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDao.kt": {
     "mtime": 1785237406.7139258,
@@ -1552,6 +1552,36 @@
   "app/src/main/java/com/isaacshub/app/banking/README.md": {
     "mtime": 1785237406.7026887,
     "ast_hash": "1d1e3c7d98273e60728f0d515063a6ad",
+    "semantic_hash": ""
+  },
+  "app/schemas/com.isaacshub.app.core.data.AppDatabase/2.json": {
+    "mtime": 1785283388.3627527,
+    "ast_hash": "c2d435f8c54a6e746a7933957faf9006",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/TransactionDao.kt": {
+    "mtime": 1785283059.3543198,
+    "ast_hash": "4c573edd18bbb5f76d2c84fc0e030140",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/data/TransactionEntity.kt": {
+    "mtime": 1785283046.095262,
+    "ast_hash": "7f45fc9abd65fdfcc5ca23ea8ff6454b",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/domain/Transaction.kt": {
+    "mtime": 1785283035.7332172,
+    "ast_hash": "ae81e6f2b1a36ffeb108532dbd40924f",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt": {
+    "mtime": 1785283229.1240592,
+    "ast_hash": "7748bb79f2d8c895c6a12c4cae972090",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListViewModel.kt": {
+    "mtime": 1785283247.7781403,
+    "ast_hash": "e45f023c93593e783727c563405efec7",
     "semantic_hash": ""
   }
 }
