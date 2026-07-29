@@ -163,7 +163,10 @@ private fun IsaacsHubScaffold(navController: NavHostController, modifier: Modifi
             composable(Routes.BANKING_HOME) {
                 BankingHomeScreen(
                     onAddConnection = { navController.navigate(Routes.BANKING_SETUP) },
-                    onConfigureBudget = { navController.navigate(Routes.BANKING_BUDGET_CONFIG) }
+                    onConfigureBudget = { navController.navigate(Routes.BANKING_BUDGET_CONFIG) },
+                    onViewTransactions = { accountId, accountName ->
+                        navController.navigate(Routes.bankingTransactions(accountId, accountName))
+                    }
                 )
             }
 
@@ -182,6 +185,7 @@ private fun IsaacsHubScaffold(navController: NavHostController, modifier: Modifi
                     database.bankConnectionDao(),
                     database.bankAccountDao(),
                     bankingDatabase.budgetDao(),
+                    database.transactionDao(),
                     com.isaacshub.app.banking.data.PlaidClient()
                 )
                 val viewModel: com.isaacshub.app.banking.ui.config.BudgetConfigViewModel = viewModel(
@@ -189,6 +193,16 @@ private fun IsaacsHubScaffold(navController: NavHostController, modifier: Modifi
                 )
                 com.isaacshub.app.banking.ui.config.BudgetConfigScreen(
                     viewModel = viewModel,
+                    onNavigateBack = { navController.popBackStack() }
+                )
+            }
+
+            composable(Routes.BANKING_TRANSACTIONS_PATTERN) { backStackEntry ->
+                val accountId = backStackEntry.arguments?.getString(Routes.BANKING_TRANSACTIONS_ACCOUNT_ID_ARG) ?: ""
+                val accountName = backStackEntry.arguments?.getString(Routes.BANKING_TRANSACTIONS_ACCOUNT_NAME_ARG) ?: ""
+                com.isaacshub.app.banking.ui.transactions.TransactionListScreen(
+                    accountId = accountId,
+                    accountName = accountName,
                     onNavigateBack = { navController.popBackStack() }
                 )
             }

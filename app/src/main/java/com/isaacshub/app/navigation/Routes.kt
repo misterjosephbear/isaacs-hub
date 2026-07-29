@@ -8,6 +8,10 @@ object Routes {
     const val BANKING_HOME = "banking_home"
     const val BANKING_SETUP = "banking_setup"
     const val BANKING_BUDGET_CONFIG = "banking_budget_config"
+    const val BANKING_TRANSACTIONS_BASE = "banking_transactions"
+    const val BANKING_TRANSACTIONS_ACCOUNT_ID_ARG = "accountId"
+    const val BANKING_TRANSACTIONS_ACCOUNT_NAME_ARG = "accountName"
+    const val BANKING_TRANSACTIONS_PATTERN = "$BANKING_TRANSACTIONS_BASE/{$BANKING_TRANSACTIONS_ACCOUNT_ID_ARG}/{$BANKING_TRANSACTIONS_ACCOUNT_NAME_ARG}"
 
     const val SLEEP_HOME = "sleep_home"
     const val SLEEP_HISTORY = "sleep_history"
@@ -80,6 +84,9 @@ object Routes {
     fun featureFunnelEdit(promptId: Long?): String = "$FEATURE_FUNNEL_EDIT_BASE/${promptId ?: NEW_TOKEN}"
     fun activityMapperEditRule(ruleId: Int?): String = "$ACTIVITY_MAPPER_EDIT_RULE_BASE/${ruleId ?: NEW_TOKEN}"
     fun activityMapperEditProfile(profileId: String?): String = "$ACTIVITY_MAPPER_EDIT_PROFILE_BASE/${profileId ?: NEW_TOKEN}"
+
+    fun bankingTransactions(accountId: String, accountName: String): String =
+        "$BANKING_TRANSACTIONS_BASE/$accountId/$accountName"
 
     fun parseId(arg: String?): Long? = arg?.takeIf { it != NEW_TOKEN }?.toLongOrNull()
     fun parseIntId(arg: String?): Int? = arg?.takeIf { it != NEW_TOKEN }?.toIntOrNull()

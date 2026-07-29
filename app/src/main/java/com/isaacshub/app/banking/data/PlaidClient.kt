@@ -2,11 +2,15 @@ package com.isaacshub.app.banking.data
 
 import com.isaacshub.app.banking.domain.AccountType
 import com.isaacshub.app.banking.domain.BankAccount
+import com.isaacshub.app.banking.domain.Transaction
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import org.json.JSONObject
 import java.net.HttpURLConnection
 import java.net.URL
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
 
 /**
  * Client for Plaid API (https://plaid.com)
@@ -106,6 +110,36 @@ class PlaidClient(
         }
     }
 
+    /**
+     * Fetch transactions for a given access token
+     * Fetches the last 90 days of transactions by default
+     */
+    suspend fun fetchTransactions(
+        accessToken: String,
+        startDate: String? = null,
+        endDate: String? = null
+    ): Result<List<Transaction>> = withContext(Dispatchers.IO) {
+        runCatching {
+            val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.US)
+            val calendar = Calendar.getInstance()
+
+            val end = endDate ?: dateFormat.format(calendar.time)
+            calendar.add(Calendar.DAY_OF_YEAR, -90)
+            val start = startDate ?: dateFormat.format(calendar.time)
+
+            val requestBody = JSONObject().apply {
+                put("client_id", clientId)
+                put("secret", secret)
+                put("access_token", accessToken)
+                put("start_date", start)
+                put("end_date", end)
+            }
+
+            val response = makeRequest("/transactions/get", requestBody)
+            parseTransactionsResponse(response)
+        }
+    }
+
     private fun makeRequest(endpoint: String, body: JSONObject): JSONObject {
         val url = URL(baseUrl + endpoint)
         val conn = url.openConnection() as HttpURLConnection
@@ -163,6 +197,46 @@ class PlaidClient(
             "loan" -> AccountType.LOAN
             "investment", "brokerage" -> AccountType.INVESTMENT
             else -> AccountType.OTHER
+        }
+    }
+
+    private fun parseTransactionsResponse(response: JSONObject): List<Transaction> {
+        val transactionsArray = response.getJSONArray("transactions")
+        val currentTime = System.currentTimeMillis()
+        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.US)
+
+        return (0 until transactionsArray.length()).map { i ->
+            val txnJson = transactionsArray.getJSONObject(i)
+
+            // Parse date string to timestamp
+            val dateString = txnJson.getString("date")
+            val date = try {
+                dateFormat.parse(dateString)?.time ?: currentTime
+            } catch (e: Exception) {
+                currentTime
+            }
+
+            // Parse category array
+            val categories = mutableListOf<String>()
+            val categoryArray = txnJson.optJSONArray("category")
+            if (categoryArray != null) {
+                for (j in 0 until categoryArray.length()) {
+                    categories.add(categoryArray.getString(j))
+                }
+            }
+
+            Transaction(
+                id = txnJson.getString("transaction_id"),
+                accountId = txnJson.getString("account_id"),
+                amount = txnJson.getDouble("amount"),
+                date = date,
+                name = txnJson.optString("name", "Transaction"),
+                merchantName = txnJson.optString("merchant_name", null),
+                category = categories.takeIf { it.isNotEmpty() },
+                pending = txnJson.optBoolean("pending", false),
+                paymentChannel = txnJson.optString("payment_channel", null),
+                lastUpdated = currentTime
+            )
         }
     }
 }

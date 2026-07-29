@@ -5,6 +5,7 @@ import com.isaacshub.app.banking.domain.BankConnection
 import com.isaacshub.app.banking.domain.BankProvider
 import com.isaacshub.app.banking.domain.BudgetCategory
 import com.isaacshub.app.banking.domain.BudgetState
+import com.isaacshub.app.banking.domain.Transaction
 import com.isaacshub.app.banking.domain.calculateBudgetState
 import com.isaacshub.app.banking.domain.toDomain
 import com.isaacshub.app.banking.domain.toEntity
@@ -17,6 +18,7 @@ class BankingRepository(
     private val connectionDao: BankConnectionDao,
     private val accountDao: BankAccountDao,
     private val budgetDao: BudgetDao,
+    private val transactionDao: TransactionDao,
     private val plaidClient: PlaidClient
 ) {
 
@@ -102,6 +104,18 @@ class BankingRepository(
             accountDao.insertAccounts(entities)
             connectionDao.updateLastSynced(connection.id, System.currentTimeMillis())
         }
+
+        // Also sync transactions for this connection
+        syncPlaidTransactions(connection)
+    }
+
+    private suspend fun syncPlaidTransactions(connection: BankConnectionEntity) {
+        plaidClient.fetchTransactions(connection.accessToken).getOrThrow().let { transactions ->
+            val entities = transactions.map { transaction ->
+                TransactionEntity.fromDomain(transaction)
+            }
+            transactionDao.insertTransactions(entities)
+        }
     }
 
     suspend fun syncAllAccounts(): Result<Unit> {
@@ -158,5 +172,28 @@ class BankingRepository(
         val totalBalance = selectedAccounts.sumOf { it.balance }
         val domainCategories = categories.map { it.toDomain() }
         calculateBudgetState(domainCategories, totalBalance)
+    }
+
+    // Transactions
+    fun observeTransactionsByAccount(accountId: String): Flow<List<Transaction>> =
+        transactionDao.getTransactionsByAccount(accountId).map { entities ->
+            entities.map { it.toDomain() }
+        }
+
+    fun observeRecentTransactions(accountId: String, limit: Int = 50): Flow<List<Transaction>> =
+        transactionDao.getRecentTransactions(accountId, limit).map { entities ->
+            entities.map { it.toDomain() }
+        }
+
+    suspend fun syncTransactions(connectionId: String): Result<Unit> {
+        return runCatching {
+            val connection = connectionDao.getConnection(connectionId)
+                ?: throw Exception("Connection not found")
+
+            when (connection.provider) {
+                BankProvider.PLAID -> syncPlaidTransactions(connection)
+                else -> throw Exception("Unsupported provider: ${connection.provider}")
+            }
+        }
     }
 }

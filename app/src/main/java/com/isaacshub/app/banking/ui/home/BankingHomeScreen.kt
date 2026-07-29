@@ -48,7 +48,8 @@ import java.util.Locale
 @Composable
 fun BankingHomeScreen(
     onAddConnection: () -> Unit,
-    onConfigureBudget: () -> Unit
+    onConfigureBudget: () -> Unit,
+    onViewTransactions: (accountId: String, accountName: String) -> Unit = { _, _ -> }
 ) {
     val context = LocalContext.current
     val database = remember { AppDatabase.getInstance(context) }
@@ -58,6 +59,7 @@ fun BankingHomeScreen(
             database.bankConnectionDao(),
             database.bankAccountDao(),
             bankingDatabase.budgetDao(),
+            database.transactionDao(),
             PlaidClient()
         )
     }
@@ -121,7 +123,8 @@ fun BankingHomeScreen(
                             accounts = state.accounts,
                             totalBalance = state.totalBalance,
                             budgetState = state.budgetState,
-                            onConfigureBudget = onConfigureBudget
+                            onConfigureBudget = onConfigureBudget,
+                            onAccountClick = onViewTransactions
                         )
                     }
                 }
@@ -172,7 +175,8 @@ private fun AccountsList(
     accounts: List<BankAccount>,
     totalBalance: Double,
     budgetState: com.isaacshub.app.banking.domain.BudgetState?,
-    onConfigureBudget: () -> Unit
+    onConfigureBudget: () -> Unit,
+    onAccountClick: (accountId: String, accountName: String) -> Unit
 ) {
     val currencyFormatter = remember {
         NumberFormat.getCurrencyInstance(Locale.US)
@@ -228,7 +232,11 @@ private fun AccountsList(
                 )
 
                 institutionAccounts.forEach { account ->
-                    AccountCard(account = account, currencyFormatter = currencyFormatter)
+                    AccountCard(
+                        account = account,
+                        currencyFormatter = currencyFormatter,
+                        onClick = { onAccountClick(account.id, account.accountName) }
+                    )
                 }
             }
         }
@@ -238,10 +246,12 @@ private fun AccountsList(
 @Composable
 private fun AccountCard(
     account: BankAccount,
-    currencyFormatter: NumberFormat
+    currencyFormatter: NumberFormat,
+    onClick: () -> Unit
 ) {
     Card(
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier.fillMaxWidth(),
+        onClick = onClick
     ) {
         Row(
             modifier = Modifier

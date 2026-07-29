@@ -52,6 +52,7 @@ fun PlaidConnectionSetupScreen(
             database.bankConnectionDao(),
             database.bankAccountDao(),
             bankingDatabase.budgetDao(),
+            database.transactionDao(),
             PlaidClient()
         )
     }
