@@ -53,6 +53,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.tween
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.geometry.Size
@@ -369,18 +371,35 @@ private fun AddressCameraScannerWithOverlay(
     var imageSize by remember { mutableStateOf(Size.Zero) }
     var imageRotation by remember { mutableStateOf(0) }
 
+    // Previous addresses for smooth tracking
+    var previousAddresses by remember { mutableStateOf<Map<String, DetectedAddress>>(emptyMap()) }
+
     // Transform addresses whenever they change or preview size changes
     LaunchedEffect(detectedAddresses, previewSize, imageSize) {
         if (previewSize != Size.Zero && imageSize != Size.Zero) {
-            transformedAddresses = detectedAddresses.map { detected ->
-                detected.copy(
-                    boundingBox = transformBoundingBox(
-                        detected.imageBoundingBox,
-                        imageSize,
-                        previewSize
-                    )
+            val newTransformed = detectedAddresses.map { detected ->
+                val transformedBox = transformBoundingBox(
+                    detected.imageBoundingBox,
+                    imageSize,
+                    previewSize
                 )
+
+                // Check if we have a previous position for smooth tracking
+                val previousBox = previousAddresses[detected.text]?.boundingBox
+                val smoothedBox = if (previousBox != null && previousBox != Rect.Zero) {
+                    // Smooth the transition using linear interpolation (lerp)
+                    smoothBoundingBox(previousBox, transformedBox, 0.3f)
+                } else {
+                    transformedBox
+                }
+
+                detected.copy(boundingBox = smoothedBox)
             }
+
+            transformedAddresses = newTransformed
+
+            // Update previous addresses map for next frame
+            previousAddresses = newTransformed.associateBy { it.text }
         }
     }
 
@@ -399,19 +418,31 @@ private fun AddressCameraScannerWithOverlay(
                         }
 
                         val recognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
+
+                        // Track frame count to reduce OCR frequency
+                        var frameCount = 0
+                        val ocrFrameInterval = 3  // Only run OCR every 3rd frame for smoother performance
+
                         val imageAnalysis = ImageAnalysis.Builder()
                             .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
                             .build()
                             .also { analysis ->
                                 analysis.setAnalyzer(Executors.newSingleThreadExecutor()) { imageProxy ->
-                                    processImageForAddresses(
-                                        imageProxy,
-                                        recognizer,
-                                        candidateAddresses
-                                    ) { addresses, imgSize, rotation ->
-                                        detectedAddresses = addresses
-                                        imageSize = imgSize
-                                        imageRotation = rotation
+                                    frameCount++
+
+                                    // Only process every Nth frame to reduce choppiness
+                                    if (frameCount % ocrFrameInterval == 0) {
+                                        processImageForAddresses(
+                                            imageProxy,
+                                            recognizer,
+                                            candidateAddresses
+                                        ) { addresses, imgSize, rotation ->
+                                            detectedAddresses = addresses
+                                            imageSize = imgSize
+                                            imageRotation = rotation
+                                        }
+                                    } else {
+                                        imageProxy.close()
                                     }
                                 }
                             }
@@ -586,6 +617,26 @@ private fun transformBoundingBox(
         top = imageBox.top * scaleY,
         right = imageBox.right * scaleX,
         bottom = imageBox.bottom * scaleY
+    )
+}
+
+/**
+ * Smooth bounding box transition using linear interpolation (lerp)
+ * This reduces jitter and makes the AR overlay more stable
+ *
+ * @param from Previous bounding box position
+ * @param to New bounding box position
+ * @param alpha Interpolation factor (0.0 = use old position, 1.0 = use new position)
+ *              Lower values = smoother but more lag, higher values = more responsive but jittery
+ */
+private fun smoothBoundingBox(from: Rect, to: Rect, alpha: Float): Rect {
+    val lerp = { a: Float, b: Float -> a + (b - a) * alpha }
+
+    return Rect(
+        left = lerp(from.left, to.left),
+        top = lerp(from.top, to.top),
+        right = lerp(from.right, to.right),
+        bottom = lerp(from.bottom, to.bottom)
     )
 }
 
