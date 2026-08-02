@@ -369,7 +369,7 @@ fun SensorDisplay(
 
             device.state.getContact()?.let { contact ->
                 SensorReading(
-                    icon = Icons.Default.Sensor,
+                    icon = Icons.Default.Sensors,
                     label = "Contact",
                     value = if (contact) "Open" else "Closed"
                 )

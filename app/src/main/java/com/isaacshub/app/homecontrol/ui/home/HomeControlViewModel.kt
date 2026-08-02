@@ -55,14 +55,14 @@ class HomeControlViewModel(
                 repository.favorites,
                 repository.isLoading,
                 repository.error
-            ) { devices, rooms, routines, favorites, isLoading, error ->
+            ) { flows: Array<*> ->
                 HomeControlUiState(
-                    isLoading = isLoading,
-                    error = error,
-                    devices = devices,
-                    rooms = rooms,
-                    routines = routines,
-                    favorites = favorites
+                    isLoading = flows[4] as Boolean,
+                    error = flows[5] as String?,
+                    devices = flows[0] as List<Device>,
+                    rooms = flows[1] as List<Room>,
+                    routines = flows[2] as List<Routine>,
+                    favorites = flows[3] as List<String>
                 )
             }.collect { state ->
                 _uiState.value = state

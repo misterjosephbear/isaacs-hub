@@ -425,17 +425,16 @@ private fun IsaacsHubScaffold(navController: NavHostController, modifier: Modifi
             // Home Control routes
             composable(Routes.HOME_CONTROL_HOME) {
                 HomeControlHomeScreen(
-                    onNavigateToDeviceList = { navController.navigate(Routes.HOME_CONTROL_DEVICE_LIST) },
-                    onNavigateToRoutineList = { navController.navigate(Routes.HOME_CONTROL_ROUTINE_LIST) },
-                    onNavigateToDeviceDetail = { deviceId -> navController.navigate(Routes.homeControlDeviceDetail(deviceId)) },
-                    onNavigateToRoutineBuilder = { routineId -> navController.navigate(Routes.homeControlRoutineBuilder(routineId)) },
+                    onDeviceClick = { deviceId -> navController.navigate(Routes.homeControlDeviceDetail(deviceId)) },
+                    onRoutineClick = { routineId -> navController.navigate(Routes.homeControlRoutineBuilder(routineId)) },
+                    onCreateRoutine = { navController.navigate(Routes.homeControlRoutineBuilder(null)) },
                     onBack = { navController.popBackStack() }
                 )
             }
 
             composable(Routes.HOME_CONTROL_DEVICE_LIST) {
                 DeviceListScreen(
-                    onNavigateToDeviceDetail = { deviceId -> navController.navigate(Routes.homeControlDeviceDetail(deviceId)) },
+                    onDeviceClick = { deviceId -> navController.navigate(Routes.homeControlDeviceDetail(deviceId)) },
                     onBack = { navController.popBackStack() }
                 )
             }
@@ -452,7 +451,8 @@ private fun IsaacsHubScaffold(navController: NavHostController, modifier: Modifi
 
             composable(Routes.HOME_CONTROL_ROUTINE_LIST) {
                 RoutineListScreen(
-                    onNavigateToRoutineBuilder = { routineId -> navController.navigate(Routes.homeControlRoutineBuilder(routineId)) },
+                    onRoutineClick = { routineId -> navController.navigate(Routes.homeControlRoutineBuilder(routineId)) },
+                    onCreateRoutine = { navController.navigate(Routes.homeControlRoutineBuilder(null)) },
                     onBack = { navController.popBackStack() }
                 )
             }
