@@ -330,7 +330,7 @@ private fun IsaacsHubScaffold(navController: NavHostController, modifier: Modifi
             composable(Routes.AMAZON_SCANNER_PATTERN) { backStackEntry ->
                 val routeId = backStackEntry.arguments?.getString(Routes.AMAZON_SCANNER_ARG)?.toLongOrNull()
                 if (routeId != null) {
-                    com.isaacshub.app.routehelper.ui.scanner.AmazonRouteScannerScreen(
+                    com.isaacshub.app.routehelper.ui.scanner.AmazonRouteScannerScreenV2(
                         routeId = routeId,
                         onComplete = {
                             navController.navigate(Routes.routeHelperEdit(routeId)) {
