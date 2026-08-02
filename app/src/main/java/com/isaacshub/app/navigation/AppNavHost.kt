@@ -67,6 +67,11 @@ import com.isaacshub.app.featurefunnel.ui.edit.EditPromptScreen
 import com.isaacshub.app.activitymapper.ui.ActivityMapperHomeScreen
 import com.isaacshub.app.activitymapper.ui.EditRuleScreen
 import com.isaacshub.app.activitymapper.ui.EditRichPresenceProfileScreen
+import com.isaacshub.app.homecontrol.ui.home.HomeControlHomeScreen
+import com.isaacshub.app.homecontrol.ui.devices.DeviceListScreen
+import com.isaacshub.app.homecontrol.ui.devices.DeviceDetailScreen
+import com.isaacshub.app.homecontrol.ui.routines.RoutineListScreen
+import com.isaacshub.app.homecontrol.ui.routines.RoutineBuilderScreen
 
 private data class TopLevelDestination(val route: String, val label: String, val icon: ImageVector)
 
@@ -152,7 +157,8 @@ private fun IsaacsHubScaffold(navController: NavHostController, modifier: Modifi
                     onOpenSettings = { navController.navigate(Routes.SETTINGS_HOME) },
                     onOpenEssentials = { navController.navigate(Routes.ESSENTIALS_HOME) },
                     onOpenFeatureFunnel = { navController.navigate(Routes.FEATURE_FUNNEL_HOME) },
-                    onOpenActivityMapper = { navController.navigate(Routes.ACTIVITY_MAPPER_HOME) }
+                    onOpenActivityMapper = { navController.navigate(Routes.ACTIVITY_MAPPER_HOME) },
+                    onOpenHomeControl = { navController.navigate(Routes.HOME_CONTROL_HOME) }
                 )
             }
 
@@ -411,6 +417,51 @@ private fun IsaacsHubScaffold(navController: NavHostController, modifier: Modifi
                     ?.let { Routes.parseStringId(it) }
                 EditRichPresenceProfileScreen(
                     profileId = profileId,
+                    onBack = { navController.popBackStack() },
+                    onSaved = { navController.popBackStack() }
+                )
+            }
+
+            // Home Control routes
+            composable(Routes.HOME_CONTROL_HOME) {
+                HomeControlHomeScreen(
+                    onNavigateToDeviceList = { navController.navigate(Routes.HOME_CONTROL_DEVICE_LIST) },
+                    onNavigateToRoutineList = { navController.navigate(Routes.HOME_CONTROL_ROUTINE_LIST) },
+                    onNavigateToDeviceDetail = { deviceId -> navController.navigate(Routes.homeControlDeviceDetail(deviceId)) },
+                    onNavigateToRoutineBuilder = { routineId -> navController.navigate(Routes.homeControlRoutineBuilder(routineId)) },
+                    onBack = { navController.popBackStack() }
+                )
+            }
+
+            composable(Routes.HOME_CONTROL_DEVICE_LIST) {
+                DeviceListScreen(
+                    onNavigateToDeviceDetail = { deviceId -> navController.navigate(Routes.homeControlDeviceDetail(deviceId)) },
+                    onBack = { navController.popBackStack() }
+                )
+            }
+
+            composable(Routes.HOME_CONTROL_DEVICE_DETAIL_PATTERN) { backStackEntry ->
+                val deviceId = backStackEntry.arguments?.getString(Routes.HOME_CONTROL_DEVICE_DETAIL_ARG)
+                if (deviceId != null) {
+                    DeviceDetailScreen(
+                        deviceId = deviceId,
+                        onBack = { navController.popBackStack() }
+                    )
+                }
+            }
+
+            composable(Routes.HOME_CONTROL_ROUTINE_LIST) {
+                RoutineListScreen(
+                    onNavigateToRoutineBuilder = { routineId -> navController.navigate(Routes.homeControlRoutineBuilder(routineId)) },
+                    onBack = { navController.popBackStack() }
+                )
+            }
+
+            composable(Routes.HOME_CONTROL_ROUTINE_BUILDER_PATTERN) { backStackEntry ->
+                val routineId = backStackEntry.arguments?.getString(Routes.HOME_CONTROL_ROUTINE_BUILDER_ARG)
+                    ?.let { Routes.parseStringId(it) }
+                RoutineBuilderScreen(
+                    routineId = routineId,
                     onBack = { navController.popBackStack() },
                     onSaved = { navController.popBackStack() }
                 )

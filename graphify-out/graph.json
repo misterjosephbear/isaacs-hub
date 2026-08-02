@@ -108,7 +108,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "transaction",
+      "id": "app_src_main_java_com_isaacshub_app_banking_data_plaidclient_kt_transaction",
       "community": 122,
       "community_name": "PlaidClient",
       "norm_label": "transaction"
@@ -178,6 +178,61 @@
       "community": 122,
       "community_name": "PlaidClient",
       "norm_label": ".parsetransactionsresponse()"
+    },
+    {
+      "label": "TransactionListScreen.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen",
+      "community": 122,
+      "community_name": "PlaidClient",
+      "norm_label": "transactionlistscreen.kt"
+    },
+    {
+      "label": "TransactionListScreen()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactionlistscreen",
+      "community": 122,
+      "community_name": "PlaidClient",
+      "norm_label": "transactionlistscreen()"
+    },
+    {
+      "label": "TransactionCard()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactioncard",
+      "community": 122,
+      "community_name": "PlaidClient",
+      "norm_label": "transactioncard()"
+    },
+    {
+      "label": "Transaction",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_kt_transaction",
+      "community": 122,
+      "community_name": "PlaidClient",
+      "norm_label": "transaction"
+    },
+    {
+      "label": "Transaction",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 94,
+      "community_name": "Transaction",
+      "norm_label": "transaction",
+      "id": "transaction"
     },
     {
       "label": "BankingRepository.kt",
@@ -658,8 +713,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/TransactionEntity.kt",
       "source_location": "L50",
       "_origin": "ast",
-      "community": 52,
-      "community_name": "TransactionDao",
+      "community": 180,
+      "community_name": "Transaction",
       "norm_label": ".todomain()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_transactionentity_transactionentity_todomain"
     },
@@ -794,39 +849,6 @@
       "community_name": "PlaidClient",
       "norm_label": "plaidconnectionsetupscreen()",
       "id": "app_src_main_java_com_isaacshub_app_banking_ui_setup_plaidconnectionsetupscreen_plaidconnectionsetupscreen"
-    },
-    {
-      "label": "TransactionListScreen.kt",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 180,
-      "community_name": "Transaction",
-      "norm_label": "transactionlistscreen.kt",
-      "id": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen"
-    },
-    {
-      "label": "TransactionListScreen()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
-      "source_location": "L42",
-      "_origin": "ast",
-      "community": 180,
-      "community_name": "Transaction",
-      "norm_label": "transactionlistscreen()",
-      "id": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactionlistscreen"
-    },
-    {
-      "label": "TransactionCard()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
-      "source_location": "L108",
-      "_origin": "ast",
-      "community": 180,
-      "community_name": "Transaction",
-      "norm_label": "transactioncard()",
-      "id": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactioncard"
     },
     {
       "label": "TransactionListViewModel.kt",
@@ -7049,9 +7071,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeatureFunnelRepository.kt",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 56,
+      "community": 35,
       "norm_label": ".getnextprompttosend()",
-      "community_name": "FeatureFunnelRepository",
+      "community_name": "FeaturePromptEntity",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_data_featurefunnelrepository_featurefunnelrepository_getnextprompttosend"
     },
     {
@@ -7060,9 +7082,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeatureFunnelRepository.kt",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 56,
+      "community": 35,
       "norm_label": ".getcurrentinprogress()",
-      "community_name": "FeatureFunnelRepository",
+      "community_name": "FeaturePromptEntity",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_data_featurefunnelrepository_featurefunnelrepository_getcurrentinprogress"
     },
     {
@@ -7082,9 +7104,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeatureFunnelRepository.kt",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 56,
+      "community": 35,
       "norm_label": ".createprompt()",
-      "community_name": "FeatureFunnelRepository",
+      "community_name": "FeaturePromptEntity",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_data_featurefunnelrepository_featurefunnelrepository_createprompt"
     },
     {
@@ -7093,9 +7115,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeatureFunnelRepository.kt",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 56,
+      "community": 35,
       "norm_label": ".updateprompt()",
-      "community_name": "FeatureFunnelRepository",
+      "community_name": "FeaturePromptEntity",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_data_featurefunnelrepository_featurefunnelrepository_updateprompt"
     },
     {
@@ -7104,9 +7126,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeatureFunnelRepository.kt",
       "source_location": "L41",
       "_origin": "ast",
-      "community": 56,
+      "community": 35,
       "norm_label": ".deleteprompt()",
-      "community_name": "FeatureFunnelRepository",
+      "community_name": "FeaturePromptEntity",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_data_featurefunnelrepository_featurefunnelrepository_deleteprompt"
     },
     {
@@ -9449,7 +9471,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "addressinterpolation.kt",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation"
     },
     {
@@ -9458,9 +9480,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 95,
+      "community": 0,
       "norm_label": "addressparity",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_addressparity"
     },
     {
@@ -9469,9 +9491,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 95,
+      "community": 0,
       "norm_label": "odd",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_addressparity_odd"
     },
     {
@@ -9480,9 +9502,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 95,
+      "community": 0,
       "norm_label": "even",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_addressparity_even"
     },
     {
@@ -9491,9 +9513,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 95,
+      "community": 0,
       "norm_label": "both",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_addressparity_both"
     },
     {
@@ -9502,9 +9524,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 95,
+      "community": 0,
       "norm_label": "unknown",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_addressparity_unknown"
     },
     {
@@ -9513,9 +9535,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 95,
+      "community": 0,
       "norm_label": "parseparity()",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_parseparity"
     },
     {
@@ -9526,7 +9548,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "housenumberrange",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_housenumberrange"
     },
     {
@@ -9535,9 +9557,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": "interpolatedaddress",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_interpolatedaddress"
     },
     {
@@ -9548,7 +9570,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "tigeraddressfeature",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_tigeraddressfeature"
     },
     {
@@ -9559,7 +9581,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "interpolateaddresses()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_interpolateaddresses"
     },
     {
@@ -9570,7 +9592,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "interpolateaddressgroups()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_interpolateaddressgroups"
     },
     {
@@ -9581,7 +9603,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "sideaddresses()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_sideaddresses"
     },
     {
@@ -9592,7 +9614,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "samplehousenumbers()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_samplehousenumbers"
     },
     {
@@ -9603,7 +9625,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "pointsalongline()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_pointsalongline"
     },
     {
@@ -9614,7 +9636,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "pointatdistance()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_pointatdistance"
     },
     {
@@ -9623,9 +9645,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilter.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": "buildingproximityfilter.kt",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_buildingproximityfilter"
     },
     {
@@ -9634,9 +9656,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilter.kt",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": "cellindex()",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_buildingproximityfilter_cellindex"
     },
     {
@@ -9645,9 +9667,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilter.kt",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": "cellkey()",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_buildingproximityfilter_cellkey"
     },
     {
@@ -9656,9 +9678,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilter.kt",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": "buildinggrid",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_buildingproximityfilter_buildinggrid"
     },
     {
@@ -9667,9 +9689,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilter.kt",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": ".nearestdistance()",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_buildingproximityfilter_buildinggrid_nearestdistance"
     },
     {
@@ -9678,9 +9700,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilter.kt",
       "source_location": "L58",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": "filteraddressgroupsnearbuildings()",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_buildingproximityfilter_filteraddressgroupsnearbuildings"
     },
     {
@@ -9689,9 +9711,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/GeoPoint.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
+      "community": 0,
       "norm_label": "geopoint.kt",
-      "community_name": "CandidateAddress",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_geopoint"
     },
     {
@@ -9700,7 +9722,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/GeoPoint.kt",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 108,
+      "community": 0,
       "norm_label": "geopoint",
       "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_geopoint_geopoint"
@@ -9711,9 +9733,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/GeoPoint.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 7,
+      "community": 0,
       "norm_label": "distancemeters()",
-      "community_name": "CandidateAddress",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_geopoint_distancemeters"
     },
     {
@@ -9832,9 +9854,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/NearestAddresses.kt",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 132,
+      "community": 7,
       "norm_label": "stickynearestslots()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_nearestaddresses_stickynearestslots"
     },
     {
@@ -9843,9 +9865,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/NearestAddresses.kt",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 132,
+      "community": 7,
       "norm_label": "nextornull()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_nearestaddresses_nextornull"
     },
     {
@@ -9854,9 +9876,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 132,
+      "community": 7,
       "norm_label": "t",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_nearestaddresses_kt_t"
     },
     {
@@ -9865,9 +9887,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/PolylineOffset.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 113,
+      "community": 0,
       "norm_label": "polylineoffset.kt",
-      "community_name": "PolylineOffset.kt",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_polylineoffset"
     },
     {
@@ -9876,9 +9898,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/PolylineOffset.kt",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 113,
+      "community": 0,
       "norm_label": "offsetpolylineresult",
-      "community_name": "PolylineOffset.kt",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_polylineoffset_offsetpolylineresult"
     },
     {
@@ -9887,9 +9909,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/PolylineOffset.kt",
       "source_location": "L42",
       "_origin": "ast",
-      "community": 113,
+      "community": 0,
       "norm_label": "offsetpolylineright()",
-      "community_name": "PolylineOffset.kt",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_polylineoffset_offsetpolylineright"
     },
     {
@@ -9898,9 +9920,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/PolylineOffset.kt",
       "source_location": "L85",
       "_origin": "ast",
-      "community": 113,
+      "community": 0,
       "norm_label": "detectturnaroundindices()",
-      "community_name": "PolylineOffset.kt",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_polylineoffset_detectturnaroundindices"
     },
     {
@@ -9909,9 +9931,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/PolylineOffset.kt",
       "source_location": "L115",
       "_origin": "ast",
-      "community": 113,
+      "community": 0,
       "norm_label": "splitatturnarounds()",
-      "community_name": "PolylineOffset.kt",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_polylineoffset_splitatturnarounds"
     },
     {
@@ -9920,9 +9942,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/PolylineOffset.kt",
       "source_location": "L142",
       "_origin": "ast",
-      "community": 113,
+      "community": 0,
       "norm_label": "offsetsegmentright()",
-      "community_name": "PolylineOffset.kt",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_polylineoffset_offsetsegmentright"
     },
     {
@@ -9931,9 +9953,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/PolylineOffset.kt",
       "source_location": "L180",
       "_origin": "ast",
-      "community": 113,
+      "community": 0,
       "norm_label": "generateuturnarc()",
-      "community_name": "PolylineOffset.kt",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_polylineoffset_generateuturnarc"
     },
     {
@@ -9942,9 +9964,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/PolylineOffset.kt",
       "source_location": "L240",
       "_origin": "ast",
-      "community": 113,
+      "community": 0,
       "norm_label": "calculatebearing()",
-      "community_name": "PolylineOffset.kt",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_polylineoffset_calculatebearing"
     },
     {
@@ -9953,9 +9975,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/PolylineOffset.kt",
       "source_location": "L255",
       "_origin": "ast",
-      "community": 113,
+      "community": 0,
       "norm_label": "normalizebearingdiff()",
-      "community_name": "PolylineOffset.kt",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_polylineoffset_normalizebearingdiff"
     },
     {
@@ -9964,9 +9986,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/PolylineOffset.kt",
       "source_location": "L263",
       "_origin": "ast",
-      "community": 113,
+      "community": 0,
       "norm_label": "averagebearing()",
-      "community_name": "PolylineOffset.kt",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_polylineoffset_averagebearing"
     },
     {
@@ -9975,9 +9997,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/PolylineOffset.kt",
       "source_location": "L277",
       "_origin": "ast",
-      "community": 113,
+      "community": 0,
       "norm_label": "interpolatebearing()",
-      "community_name": "PolylineOffset.kt",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_polylineoffset_interpolatebearing"
     },
     {
@@ -9986,9 +10008,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/PolylineOffset.kt",
       "source_location": "L291",
       "_origin": "ast",
-      "community": 113,
+      "community": 0,
       "norm_label": "offsetpoint()",
-      "community_name": "PolylineOffset.kt",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_polylineoffset_offsetpoint"
     },
     {
@@ -10030,9 +10052,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": "stopside.kt",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside"
     },
     {
@@ -10041,9 +10063,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": "stopside",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside"
     },
     {
@@ -10052,9 +10074,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": "left",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside_left"
     },
     {
@@ -10063,9 +10085,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": "right",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside_right"
     },
     {
@@ -10074,9 +10096,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": "in_drive",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside_in_drive"
     },
     {
@@ -10085,9 +10107,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": "none",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside_none"
     },
     {
@@ -10206,9 +10228,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcher.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": "buildingfootprintfetcher.kt",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_buildingfootprintfetcher"
     },
     {
@@ -10217,9 +10239,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcher.kt",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": "quadkeyfor()",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_buildingfootprintfetcher_quadkeyfor"
     },
     {
@@ -10228,9 +10250,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcher.kt",
       "source_location": "L50",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": "buildingfootprintfetcher",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_buildingfootprintfetcher_buildingfootprintfetcher"
     },
     {
@@ -10239,9 +10261,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcher.kt",
       "source_location": "L62",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": ".fetchnearbybuildingcentroids()",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_buildingfootprintfetcher_buildingfootprintfetcher_fetchnearbybuildingcentroids"
     },
     {
@@ -10250,9 +10272,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcher.kt",
       "source_location": "L78",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": ".loadtile()",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_buildingfootprintfetcher_buildingfootprintfetcher_loadtile"
     },
     {
@@ -10261,9 +10283,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": "bytearray",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_buildingfootprintfetcher_kt_bytearray"
     },
     {
@@ -10272,9 +10294,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcher.kt",
       "source_location": "L99",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": ".parsecentroids()",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_buildingfootprintfetcher_buildingfootprintfetcher_parsecentroids"
     },
     {
@@ -10283,9 +10305,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcher.kt",
       "source_location": "L112",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": "firstringpointof()",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_buildingfootprintfetcher_firstringpointof"
     },
     {
@@ -10294,9 +10316,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcher.kt",
       "source_location": "L131",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": "isnumberchar()",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_buildingfootprintfetcher_isnumberchar"
     },
     {
@@ -10492,7 +10514,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteDirectionsFetcher.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 108,
+      "community": 0,
       "norm_label": "routedirectionsfetcher.kt",
       "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routedirectionsfetcher"
@@ -10503,7 +10525,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteDirectionsFetcher.kt",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 108,
+      "community": 0,
       "norm_label": "routedirectionsfetcher",
       "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routedirectionsfetcher_routedirectionsfetcher"
@@ -10514,7 +10536,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteDirectionsFetcher.kt",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 108,
+      "community": 0,
       "norm_label": ".fetchdrivingroute()",
       "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routedirectionsfetcher_routedirectionsfetcher_fetchdrivingroute"
@@ -10525,7 +10547,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteDirectionsFetcher.kt",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 108,
+      "community": 0,
       "norm_label": ".fetchroutewithturnaroundsplits()",
       "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routedirectionsfetcher_routedirectionsfetcher_fetchroutewithturnaroundsplits"
@@ -10536,7 +10558,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteDirectionsFetcher.kt",
       "source_location": "L109",
       "_origin": "ast",
-      "community": 108,
+      "community": 0,
       "norm_label": ".detectturnarounds()",
       "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routedirectionsfetcher_routedirectionsfetcher_detectturnarounds"
@@ -10547,7 +10569,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteDirectionsFetcher.kt",
       "source_location": "L141",
       "_origin": "ast",
-      "community": 108,
+      "community": 0,
       "norm_label": ".isduplicate()",
       "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routedirectionsfetcher_routedirectionsfetcher_isduplicate"
@@ -10558,7 +10580,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteDirectionsFetcher.kt",
       "source_location": "L152",
       "_origin": "ast",
-      "community": 108,
+      "community": 0,
       "norm_label": ".fetchroutewithturnarounds()",
       "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routedirectionsfetcher_routedirectionsfetcher_fetchroutewithturnarounds"
@@ -10569,7 +10591,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteDirectionsFetcher.kt",
       "source_location": "L217",
       "_origin": "ast",
-      "community": 108,
+      "community": 0,
       "norm_label": ".offsetpoint()",
       "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routedirectionsfetcher_routedirectionsfetcher_offsetpoint"
@@ -10580,7 +10602,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteDirectionsFetcher.kt",
       "source_location": "L244",
       "_origin": "ast",
-      "community": 108,
+      "community": 0,
       "norm_label": ".calculatebearing()",
       "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routedirectionsfetcher_routedirectionsfetcher_calculatebearing"
@@ -10591,7 +10613,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteDirectionsFetcher.kt",
       "source_location": "L261",
       "_origin": "ast",
-      "community": 108,
+      "community": 0,
       "norm_label": ".normalizebearingdiff()",
       "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routedirectionsfetcher_routedirectionsfetcher_normalizebearingdiff"
@@ -10602,7 +10624,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteDirectionsFetcher.kt",
       "source_location": "L266",
       "_origin": "ast",
-      "community": 108,
+      "community": 0,
       "norm_label": ".fetchrouteinchunks()",
       "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routedirectionsfetcher_routedirectionsfetcher_fetchrouteinchunks"
@@ -10613,7 +10635,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteDirectionsFetcher.kt",
       "source_location": "L299",
       "_origin": "ast",
-      "community": 108,
+      "community": 0,
       "norm_label": ".fetchsingleroute()",
       "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routedirectionsfetcher_routedirectionsfetcher_fetchsingleroute"
@@ -10668,9 +10690,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 95,
+      "community": 0,
       "norm_label": "tigeraddressfetcher.kt",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher"
     },
     {
@@ -10679,9 +10701,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 95,
+      "community": 0,
       "norm_label": "tigeraddressfetcher",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher"
     },
     {
@@ -10690,9 +10712,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
       "source_location": "L36",
       "_origin": "ast",
-      "community": 95,
+      "community": 0,
       "norm_label": ".geocodezip()",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_geocodezip"
     },
     {
@@ -10701,9 +10723,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
       "source_location": "L40",
       "_origin": "ast",
-      "community": 95,
+      "community": 0,
       "norm_label": ".fetchaddressesforzip()",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_fetchaddressesforzip"
     },
     {
@@ -10712,9 +10734,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
       "source_location": "L88",
       "_origin": "ast",
-      "community": 95,
+      "community": 0,
       "norm_label": ".loadcountyshapefile()",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile"
     },
     {
@@ -10723,9 +10745,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 95,
+      "community": 0,
       "norm_label": "bytearray",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_kt_bytearray"
     },
     {
@@ -10734,9 +10756,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
       "source_location": "L115",
       "_origin": "ast",
-      "community": 95,
+      "community": 0,
       "norm_label": ".downloadto()",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_downloadto"
     },
     {
@@ -11152,9 +11174,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": "routebuilderviewmodel.kt",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel"
     },
     {
@@ -11163,9 +11185,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L31",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": "pendingstop",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_pendingstop"
     },
     {
@@ -11174,9 +11196,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": "routebuilderuistate",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderuistate"
     },
     {
@@ -11185,9 +11207,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L44",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": "routebuilderviewmodel",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel"
     },
     {
@@ -11196,9 +11218,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": "androidviewmodel",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_kt_androidviewmodel"
     },
     {
@@ -11207,9 +11229,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": ".start()",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_start"
     },
     {
@@ -11218,9 +11240,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": "flow",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_kt_flow"
     },
     {
@@ -11229,9 +11251,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": "stateflow",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_kt_stateflow"
     },
     {
@@ -11240,9 +11262,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L139",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": ".routestop()",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_routestop"
     },
     {
@@ -11251,9 +11273,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L152",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": ".drainpendingstops()",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_drainpendingstops"
     },
     {
@@ -11262,9 +11284,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L164",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": ".undo()",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_undo"
     },
     {
@@ -11273,9 +11295,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L169",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": ".addscannedstop()",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_addscannedstop"
     },
     {
@@ -11284,9 +11306,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 15,
+      "community": 7,
       "norm_label": "com",
-      "community_name": "LocationSample",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_kt_com"
     },
     {
@@ -16751,9 +16773,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/timetracking/data/TimeTrackingRepository.kt",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 28,
+      "community": 20,
       "norm_label": ".saveroute()",
-      "community_name": "RouteEntity",
+      "community_name": "TimeEntryEntity",
       "id": "app_src_main_java_com_isaacshub_app_timetracking_data_timetrackingrepository_timetrackingrepository_saveroute"
     },
     {
@@ -16762,9 +16784,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/timetracking/data/TimeTrackingRepository.kt",
       "source_location": "L36",
       "_origin": "ast",
-      "community": 28,
+      "community": 20,
       "norm_label": ".deleteroute()",
-      "community_name": "RouteEntity",
+      "community_name": "TimeEntryEntity",
       "id": "app_src_main_java_com_isaacshub_app_timetracking_data_timetrackingrepository_timetrackingrepository_deleteroute"
     },
     {
@@ -16784,9 +16806,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/timetracking/data/TimeTrackingRepository.kt",
       "source_location": "L40",
       "_origin": "ast",
-      "community": 33,
+      "community": 20,
       "norm_label": ".adddeduction()",
-      "community_name": "TimeTrackerSettingsViewModel",
+      "community_name": "TimeEntryEntity",
       "id": "app_src_main_java_com_isaacshub_app_timetracking_data_timetrackingrepository_timetrackingrepository_adddeduction"
     },
     {
@@ -16795,9 +16817,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/timetracking/data/TimeTrackingRepository.kt",
       "source_location": "L42",
       "_origin": "ast",
-      "community": 33,
+      "community": 20,
       "norm_label": ".deletededuction()",
-      "community_name": "TimeTrackerSettingsViewModel",
+      "community_name": "TimeEntryEntity",
       "id": "app_src_main_java_com_isaacshub_app_timetracking_data_timetrackingrepository_timetrackingrepository_deletededuction"
     },
     {
@@ -17004,9 +17026,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/timetracking/domain/WeeklySummary.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 43,
+      "community": 42,
       "norm_label": "weeklysummary",
-      "community_name": "formatNumber",
+      "community_name": "computeWeeklySummary",
       "id": "app_src_main_java_com_isaacshub_app_timetracking_domain_weeklysummary_weeklysummary"
     },
     {
@@ -17389,9 +17411,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/timetracking/ui/editentry/EditTimeEntryViewModel.kt",
       "source_location": "L115",
       "_origin": "ast",
-      "community": 20,
+      "community": 37,
       "norm_label": ".save()",
-      "community_name": "TimeEntryEntity",
+      "community_name": "EditTimeEntryViewModel",
       "id": "app_src_main_java_com_isaacshub_app_timetracking_ui_editentry_edittimeentryviewmodel_edittimeentryviewmodel_save"
     },
     {
@@ -18863,9 +18885,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/backup/AppDataBackupWorker.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 175,
+      "community": 174,
       "norm_label": "appdatabackupworker.kt",
-      "community_name": ".doWork",
+      "community_name": "preferencesToJson",
       "id": "app_src_main_java_com_isaacshub_app_vault_backup_appdatabackupworker"
     },
     {
@@ -18874,9 +18896,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/backup/AppDataBackupWorker.kt",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 175,
+      "community": 174,
       "norm_label": "appdatabackupworker",
-      "community_name": ".doWork",
+      "community_name": "preferencesToJson",
       "id": "app_src_main_java_com_isaacshub_app_vault_backup_appdatabackupworker_appdatabackupworker"
     },
     {
@@ -18885,9 +18907,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 175,
+      "community": 174,
       "norm_label": "coroutineworker",
-      "community_name": ".doWork",
+      "community_name": "preferencesToJson",
       "id": "app_src_main_java_com_isaacshub_app_vault_backup_appdatabackupworker_kt_coroutineworker"
     },
     {
@@ -18896,9 +18918,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/backup/AppDataBackupWorker.kt",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 175,
+      "community": 174,
       "norm_label": ".dowork()",
-      "community_name": ".doWork",
+      "community_name": "preferencesToJson",
       "id": "app_src_main_java_com_isaacshub_app_vault_backup_appdatabackupworker_appdatabackupworker_dowork"
     },
     {
@@ -18907,9 +18929,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 175,
+      "community": 174,
       "norm_label": "result",
-      "community_name": ".doWork",
+      "community_name": "preferencesToJson",
       "id": "app_src_main_java_com_isaacshub_app_vault_backup_appdatabackupworker_kt_result"
     },
     {
@@ -18918,9 +18940,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/backup/AppDataBackupWorker.kt",
       "source_location": "L81",
       "_origin": "ast",
-      "community": 175,
+      "community": 174,
       "norm_label": ".checkpointwal()",
-      "community_name": ".doWork",
+      "community_name": "preferencesToJson",
       "id": "app_src_main_java_com_isaacshub_app_vault_backup_appdatabackupworker_appdatabackupworker_checkpointwal"
     },
     {
@@ -18929,9 +18951,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 175,
+      "community": 174,
       "norm_label": "roomdatabase",
-      "community_name": ".doWork",
+      "community_name": "preferencesToJson",
       "id": "app_src_main_java_com_isaacshub_app_vault_backup_appdatabackupworker_kt_roomdatabase"
     },
     {
@@ -19138,9 +19160,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/data/VaultPreferencesRepository.kt",
       "source_location": "L50",
       "_origin": "ast",
-      "community": 86,
+      "community": 90,
       "norm_label": ".setconnection()",
-      "community_name": "parsePairingPayload",
+      "community_name": "VaultPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_vault_data_vaultpreferencesrepository_vaultpreferencesrepository_setconnection"
     },
     {
@@ -19259,9 +19281,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/domain/PhotoSyncPlanner.kt",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 176,
+      "community": 2,
       "norm_label": "pendingupload",
-      "community_name": ".doWork",
+      "community_name": "MediaItem",
       "id": "app_src_main_java_com_isaacshub_app_vault_domain_photosyncplanner_pendingupload"
     },
     {
@@ -20095,9 +20117,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/work/PhotoBackupWorker.kt",
       "source_location": "L61",
       "_origin": "ast",
-      "community": 176,
+      "community": 2,
       "norm_label": ".uploadone()",
-      "community_name": ".doWork",
+      "community_name": "MediaItem",
       "id": "app_src_main_java_com_isaacshub_app_vault_work_photobackupworker_photobackupworker_uploadone"
     },
     {
@@ -20108,7 +20130,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "addressinterpolationtest.kt",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest"
     },
     {
@@ -20119,7 +20141,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "addressinterpolationtest",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest"
     },
     {
@@ -20130,7 +20152,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".`samplehousenumbers respects odd parity`()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_samplehousenumbers_respects_odd_parity"
     },
     {
@@ -20141,7 +20163,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".`samplehousenumbers respects even parity`()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_samplehousenumbers_respects_even_parity"
     },
     {
@@ -20152,7 +20174,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".`samplehousenumbers handles descending from-to`()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_samplehousenumbers_handles_descending_from_to"
     },
     {
@@ -20163,7 +20185,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".`samplehousenumbers with a missing bound returns empty`()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_samplehousenumbers_with_a_missing_bound_returns_empty"
     },
     {
@@ -20174,7 +20196,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".`samplehousenumbers with count 1 returns the midpoint`()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_samplehousenumbers_with_count_1_returns_the_midpoint"
     },
     {
@@ -20185,7 +20207,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".`pointsalongline spreads points from first to last vertex`()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_pointsalongline_spreads_points_from_first_to_last_vertex"
     },
     {
@@ -20196,7 +20218,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".`pointsalongline with a single vertex repeats it`()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_pointsalongline_with_a_single_vertex_repeats_it"
     },
     {
@@ -20207,7 +20229,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".`pointsalongline with no vertices returns empty`()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_pointsalongline_with_no_vertices_returns_empty"
     },
     {
@@ -20218,7 +20240,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".`interpolateaddresses only includes the side matching the target zip`()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_interpolateaddresses_only_includes_the_side_matching_the_target_zip"
     },
     {
@@ -20229,7 +20251,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".`interpolateaddresses includes every address in a normal block-sized range`()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_interpolateaddresses_includes_every_address_in_a_normal_block_sized_range"
     },
     {
@@ -20240,7 +20262,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".`interpolateaddresses caps points per side for a large range`()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_interpolateaddresses_caps_points_per_side_for_a_large_range"
     },
     {
@@ -20251,7 +20273,7 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": ".`interpolateaddresses with no matching zip returns empty`()",
-      "community_name": "AddressInterpolationTest",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_interpolateaddresses_with_no_matching_zip_returns_empty"
     },
     {
@@ -20260,9 +20282,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/AddressInterpolationTest.kt",
       "source_location": "L128",
       "_origin": "ast",
-      "community": 95,
+      "community": 0,
       "norm_label": ".`parseparity maps known codes`()",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_parseparity_maps_known_codes"
     },
     {
@@ -20271,9 +20293,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilterTest.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": "buildingproximityfiltertest.kt",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_buildingproximityfiltertest"
     },
     {
@@ -20282,9 +20304,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilterTest.kt",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": "buildingproximityfiltertest",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_buildingproximityfiltertest_buildingproximityfiltertest"
     },
     {
@@ -20293,9 +20315,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilterTest.kt",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": ".`keeps addresses close to a building and drops distant ones within the same tight in-town group`()",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_buildingproximityfiltertest_buildingproximityfiltertest_keeps_addresses_close_to_a_building_and_drops_distant_ones_within_the_same_tight_in_town_group"
     },
     {
@@ -20304,9 +20326,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilterTest.kt",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": ".`returns everything unfiltered when there are no buildings to check against`()",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_buildingproximityfiltertest_buildingproximityfiltertest_returns_everything_unfiltered_when_there_are_no_buildings_to_check_against"
     },
     {
@@ -20315,9 +20337,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilterTest.kt",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": ".`keeps a rural group whose real houses sit well back from the road`()",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_buildingproximityfiltertest_buildingproximityfiltertest_keeps_a_rural_group_whose_real_houses_sit_well_back_from_the_road"
     },
     {
@@ -20326,9 +20348,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilterTest.kt",
       "source_location": "L43",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": ".`still drops an outlier far beyond a rural group's own nearest-building distance`()",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_buildingproximityfiltertest_buildingproximityfiltertest_still_drops_an_outlier_far_beyond_a_rural_group_s_own_nearest_building_distance"
     },
     {
@@ -20337,9 +20359,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilterTest.kt",
       "source_location": "L54",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": ".`leaves a group unfiltered when no building is found anywhere near it`()",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_buildingproximityfiltertest_buildingproximityfiltertest_leaves_a_group_unfiltered_when_no_building_is_found_anywhere_near_it"
     },
     {
@@ -20348,9 +20370,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilterTest.kt",
       "source_location": "L64",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": ".`each group is calibrated independently`()",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_buildingproximityfiltertest_buildingproximityfiltertest_each_group_is_calibrated_independently"
     },
     {
@@ -20359,9 +20381,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/BuildingProximityFilterTest.kt",
       "source_location": "L85",
       "_origin": "ast",
-      "community": 83,
+      "community": 0,
       "norm_label": ".offsetmeters()",
-      "community_name": "filterAddressGroupsNearBuildings",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_buildingproximityfiltertest_buildingproximityfiltertest_offsetmeters"
     },
     {
@@ -20524,9 +20546,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/NearestAddressesTest.kt",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 7,
+      "community": 0,
       "norm_label": ".`distancemeters is zero for the same point`()",
-      "community_name": "CandidateAddress",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_nearestaddressestest_nearestaddressestest_distancemeters_is_zero_for_the_same_point"
     },
     {
@@ -20535,9 +20557,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/NearestAddressesTest.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 7,
+      "community": 0,
       "norm_label": ".`distancemeters roughly matches known latitude degree distance`()",
-      "community_name": "CandidateAddress",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_nearestaddressestest_nearestaddressestest_distancemeters_roughly_matches_known_latitude_degree_distance"
     },
     {
@@ -20678,9 +20700,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 132,
+      "community": 7,
       "norm_label": "stickynearestslotstest.kt",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest"
     },
     {
@@ -20689,9 +20711,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 132,
+      "community": 7,
       "norm_label": "stickynearestslotstest",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest"
     },
     {
@@ -20700,9 +20722,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 132,
+      "community": 7,
       "norm_label": ".candidate()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_candidate"
     },
     {
@@ -20711,9 +20733,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 132,
+      "community": 7,
       "norm_label": ".`empty slots fill with newcomers in nearest-first order`()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_empty_slots_fill_with_newcomers_in_nearest_first_order"
     },
     {
@@ -20722,9 +20744,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 132,
+      "community": 7,
       "norm_label": ".`a candidate keeps its slot even when its rank within the nearest set changes`()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_a_candidate_keeps_its_slot_even_when_its_rank_within_the_nearest_set_changes"
     },
     {
@@ -20733,9 +20755,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 132,
+      "community": 7,
       "norm_label": ".`a candidate that falls out of the nearest set is evicted and replaced by a newcomer`()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_a_candidate_that_falls_out_of_the_nearest_set_is_evicted_and_replaced_by_a_newcomer"
     },
     {
@@ -20744,9 +20766,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L44",
       "_origin": "ast",
-      "community": 132,
+      "community": 7,
       "norm_label": ".`a routed candidate (missing entirely) is evicted the same way`()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_a_routed_candidate_missing_entirely_is_evicted_the_same_way"
     },
     {
@@ -20755,9 +20777,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L55",
       "_origin": "ast",
-      "community": 132,
+      "community": 7,
       "norm_label": ".`newcomers fill the earliest vacated slots first`()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_newcomers_fill_the_earliest_vacated_slots_first"
     },
     {
@@ -20832,9 +20854,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcherTest.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": "buildingfootprintfetchertest.kt",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_network_buildingfootprintfetchertest"
     },
     {
@@ -20843,9 +20865,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcherTest.kt",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": "buildingfootprintfetchertest",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_network_buildingfootprintfetchertest_buildingfootprintfetchertest"
     },
     {
@@ -20854,9 +20876,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcherTest.kt",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": ".`firstringpointof extracts the first lon-lat pair from a geojsonl line`()",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_network_buildingfootprintfetchertest_buildingfootprintfetchertest_firstringpointof_extracts_the_first_lon_lat_pair_from_a_geojsonl_line"
     },
     {
@@ -20865,9 +20887,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcherTest.kt",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": ".`firstringpointof returns null for a line with no coordinates key`()",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_network_buildingfootprintfetchertest_buildingfootprintfetchertest_firstringpointof_returns_null_for_a_line_with_no_coordinates_key"
     },
     {
@@ -20876,9 +20898,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcherTest.kt",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": ".`quadkeyfor matches known bing tile system reference values`()",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_network_buildingfootprintfetchertest_buildingfootprintfetchertest_quadkeyfor_matches_known_bing_tile_system_reference_values"
     },
     {
@@ -20887,9 +20909,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcherTest.kt",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": ".`quadkeyfor produces a string of length equal to the zoom level`()",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_network_buildingfootprintfetchertest_buildingfootprintfetchertest_quadkeyfor_produces_a_string_of_length_equal_to_the_zoom_level"
     },
     {
@@ -20898,9 +20920,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/network/BuildingFootprintFetcherTest.kt",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 94,
+      "community": 0,
       "norm_label": ".`quadkeyfor is stable for nearby points within the same tile`()",
-      "community_name": "firstRingPointOf",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_network_buildingfootprintfetchertest_buildingfootprintfetchertest_quadkeyfor_is_stable_for_nearby_points_within_the_same_tile"
     },
     {
@@ -23194,9 +23216,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/home/HomeScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 21,
+      "community": 83,
       "norm_label": "essentials/ui/home/homescreen.kt",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen"
     },
     {
@@ -23205,9 +23227,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/home/HomeScreen.kt",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 21,
+      "community": 83,
       "norm_label": "homescreen()",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen_homescreen"
     },
     {
@@ -23216,9 +23238,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 21,
+      "community": 83,
       "norm_label": "homeviewmodel",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "homeviewmodel"
     },
     {
@@ -23227,9 +23249,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/home/HomeScreen.kt",
       "source_location": "L174",
       "_origin": "ast",
-      "community": 21,
+      "community": 83,
       "norm_label": "completionprogresscard()",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen_completionprogresscard"
     },
     {
@@ -23238,9 +23260,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 21,
+      "community": 83,
       "norm_label": "modifier",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen_kt_modifier"
     },
     {
@@ -23249,9 +23271,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/home/HomeScreen.kt",
       "source_location": "L215",
       "_origin": "ast",
-      "community": 21,
+      "community": 83,
       "norm_label": "chorecard()",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen_chorecard"
     },
     {
@@ -26570,6 +26592,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/banking/data/PlaidClient.kt",
+      "source_location": "L117",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_banking_data_plaidclient_plaidclient_fetchtransactions",
+      "target": "app_src_main_java_com_isaacshub_app_banking_data_plaidclient_kt_transaction",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -26607,18 +26641,6 @@
     },
     {
       "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/banking/data/PlaidClient.kt",
-      "source_location": "L117",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_banking_data_plaidclient_plaidclient_fetchtransactions",
-      "target": "transaction",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
       "context": "generic_arg",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/PlaidClient.kt",
@@ -26626,7 +26648,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_isaacshub_app_banking_data_plaidclient_plaidclient_parsetransactionsresponse",
-      "target": "transaction",
+      "target": "app_src_main_java_com_isaacshub_app_banking_data_plaidclient_kt_transaction",
       "confidence_score": 1.0
     },
     {
@@ -26687,6 +26709,52 @@
       "_origin": "ast",
       "source": "app_src_main_java_com_isaacshub_app_banking_data_plaidclient_plaidclient_parseaccounttype",
       "target": "accounttype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen",
+      "target": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactioncard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen",
+      "target": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactionlistscreen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactionlistscreen",
+      "target": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactioncard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
+      "source_location": "L108",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactioncard",
+      "target": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_kt_transaction",
       "confidence_score": 1.0
     },
     {
@@ -26942,18 +27010,6 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "app_src_main_java_com_isaacshub_app_banking_ui_setup_plaidconnectionsetupscreen_plaidconnectionsetupscreen",
-      "target": "app_src_main_java_com_isaacshub_app_banking_data_bankingrepository_bankingrepository"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
-      "source_location": "L53",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactionlistscreen",
       "target": "app_src_main_java_com_isaacshub_app_banking_data_bankingrepository_bankingrepository"
     },
     {
@@ -27560,18 +27616,6 @@
     {
       "relation": "references",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
-      "source_location": "L108",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactioncard",
-      "target": "app_src_main_java_com_isaacshub_app_banking_domain_transaction_transaction"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListViewModel.kt",
       "source_location": "L14",
       "weight": 1.0,
@@ -27743,40 +27787,6 @@
       "_origin": "ast",
       "source": "app_src_main_java_com_isaacshub_app_navigation_appnavhost_isaacshubscaffold",
       "target": "app_src_main_java_com_isaacshub_app_banking_ui_setup_plaidconnectionsetupscreen_plaidconnectionsetupscreen"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
-      "source_location": "L108",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen",
-      "target": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactioncard"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
-      "source_location": "L42",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen",
-      "target": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactionlistscreen"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt",
-      "source_location": "L101",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactionlistscreen",
-      "target": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistscreen_transactioncard"
     },
     {
       "relation": "contains",
@@ -69300,5 +69310,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8a2b6c74caacc6005ce068d1b0cf78c09b9b5872"
+  "built_at_commit": "b39730a60abb2069854d26efb1869536566f6ec3"
 }

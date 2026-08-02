@@ -39,12 +39,6 @@ class FeatureFunnelWorker(
             return Result.success()
         }
 
-        val channelId = prefs.discordChannelId
-        if (channelId == null) {
-            Log.d(TAG, "No Discord channel configured - skipping")
-            return Result.success()
-        }
-
         val repository = app.featureFunnelRepository
         val apiClient = FeatureFunnelApiClient(connection)
 
@@ -53,9 +47,9 @@ class FeatureFunnelWorker(
         if (inProgress != null) {
             val completed = checkForCompletion(apiClient, repository, funnelPrefs, prefs, inProgress)
             if (completed) {
-                // Notify Discord
+                // Notify Discord using the prompt's specific channel
                 apiClient.notifyCompletion(
-                    channelId = channelId,
+                    channelId = inProgress.channelId,
                     promptTitle = inProgress.title,
                     commitHash = prefs.lastCommitHash ?: "unknown"
                 )
@@ -71,19 +65,24 @@ class FeatureFunnelWorker(
         // Step 2: Send next queued prompt if available
         val nextPrompt = repository.getNextPromptToSend()
         if (nextPrompt != null) {
-            Log.d(TAG, "Sending prompt: ${nextPrompt.title}")
-            when (val result = apiClient.sendPromptToDiscord(channelId, nextPrompt.promptText)) {
-                is SendPromptResult.Success -> {
-                    repository.markPromptSent(nextPrompt.id)
-                    Log.d(TAG, "Prompt sent successfully")
-                }
-                is SendPromptResult.LimitHit -> {
-                    Log.d(TAG, "Claude usage limit hit - will retry later")
-                    // Don't mark as failed, just wait for next cycle
-                }
-                is SendPromptResult.Failed -> {
-                    Log.e(TAG, "Failed to send prompt: ${result.message}")
-                    repository.markPromptFailed(nextPrompt.id, result.message)
+            if (nextPrompt.channelId.isBlank()) {
+                Log.e(TAG, "Prompt has no channel configured - marking as failed")
+                repository.markPromptFailed(nextPrompt.id, "No Discord channel configured for this prompt")
+            } else {
+                Log.d(TAG, "Sending prompt: ${nextPrompt.title} to channel: ${nextPrompt.channelId}")
+                when (val result = apiClient.sendPromptToDiscord(nextPrompt.channelId, nextPrompt.promptText)) {
+                    is SendPromptResult.Success -> {
+                        repository.markPromptSent(nextPrompt.id)
+                        Log.d(TAG, "Prompt sent successfully")
+                    }
+                    is SendPromptResult.LimitHit -> {
+                        Log.d(TAG, "Claude usage limit hit - will retry later")
+                        // Don't mark as failed, just wait for next cycle
+                    }
+                    is SendPromptResult.Failed -> {
+                        Log.e(TAG, "Failed to send prompt: ${result.message}")
+                        repository.markPromptFailed(nextPrompt.id, result.message)
+                    }
                 }
             }
         } else {

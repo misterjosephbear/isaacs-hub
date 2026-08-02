@@ -84,30 +84,11 @@ fun FeatureFunnelHomeScreen(
                         )
                     }
 
-                    var channelId by remember { mutableStateOf(preferences.discordChannelId ?: "") }
-                    OutlinedTextField(
-                        value = channelId,
-                        onValueChange = { channelId = it },
-                        label = { Text("Discord Channel ID") },
-                        placeholder = { Text("e.g., 1234567890123456789") },
-                        modifier = Modifier.fillMaxWidth(),
-                        singleLine = true,
-                        trailingIcon = {
-                            if (channelId.isNotBlank() && channelId != preferences.discordChannelId) {
-                                IconButton(onClick = { viewModel.setDiscordChannelId(channelId) }) {
-                                    Icon(Icons.Default.Check, "Save")
-                                }
-                            }
-                        }
+                    Text(
+                        text = "Each prompt can be sent to a different Discord channel. Configure the channel when creating or editing a prompt.",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
-
-                    if (preferences.discordChannelId == null) {
-                        Text(
-                            text = "⚠️ Discord channel ID required to send prompts",
-                            style = MaterialTheme.typography.bodySmall,
-                            color = MaterialTheme.colorScheme.error
-                        )
-                    }
 
                     if (preferences.lastCheckEpochMillis > 0) {
                         Text(

@@ -220,8 +220,8 @@
     "semantic_hash": "a92c1b60b6a7247fd0a94f4c2c17fe11"
   },
   "app/src/main/java/com/isaacshub/app/banking/data/PlaidClient.kt": {
-    "mtime": 1785285515.9990544,
-    "ast_hash": "e0ac627283e359dfa5f9429ed4ea593e",
+    "mtime": 1785286733.9283845,
+    "ast_hash": "1c11ad65e0da2cea9b60d030ac971015",
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/banking/data/PlaidConfig.kt": {
@@ -1575,8 +1575,8 @@
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListScreen.kt": {
-    "mtime": 1785283229.1240592,
-    "ast_hash": "7748bb79f2d8c895c6a12c4cae972090",
+    "mtime": 1785286790.0496302,
+    "ast_hash": "7759b350baedc7cb79bc61ccbc27c912",
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/banking/ui/transactions/TransactionListViewModel.kt": {

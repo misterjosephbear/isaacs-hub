@@ -13,6 +13,11 @@ sealed interface SendPromptResult {
     data class Failed(val message: String) : SendPromptResult
 }
 
+data class DiscordChannel(
+    val id: String,
+    val name: String
+)
+
 class FeatureFunnelApiClient(connection: VaultConnection) : BaseApiClient(connection) {
 
     /**
@@ -79,5 +84,23 @@ class FeatureFunnelApiClient(connection: VaultConnection) : BaseApiClient(connec
             true
         }
         result == true
+    }
+
+    /**
+     * Fetches the list of available Discord channels from the discord-bridge.
+     */
+    suspend fun getAvailableChannels(): List<DiscordChannel> = withContext(Dispatchers.IO) {
+        tryEachBaseUrl { baseUrl ->
+            val json = get(baseUrl, "/api/feature-funnel/channels")
+            val channelsArray = json.optJSONArray("channels") ?: return@tryEachBaseUrl emptyList()
+
+            List(channelsArray.length()) { i ->
+                val channelObj = channelsArray.getJSONObject(i)
+                DiscordChannel(
+                    id = channelObj.getString("id"),
+                    name = channelObj.getString("name")
+                )
+            }
+        } ?: emptyList()
     }
 }

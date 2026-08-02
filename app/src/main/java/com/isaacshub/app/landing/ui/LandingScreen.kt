@@ -26,6 +26,7 @@ import androidx.compose.material.icons.filled.TaskAlt
 import androidx.compose.material.icons.filled.Visibility
 import androidx.compose.material.icons.filled.VisibilityOff
 import androidx.compose.material.icons.filled.AutoAwesome
+import androidx.compose.material.icons.filled.Home
 import androidx.compose.material3.Card
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
@@ -74,7 +75,8 @@ fun LandingScreen(
     onOpenSettings: () -> Unit,
     onOpenEssentials: () -> Unit = {},
     onOpenFeatureFunnel: () -> Unit = {},
-    onOpenActivityMapper: () -> Unit = {}
+    onOpenActivityMapper: () -> Unit = {},
+    onOpenHomeControl: () -> Unit = {}
 ) {
     val context = LocalContext.current
     val app = context.applicationContext as App
@@ -140,6 +142,13 @@ fun LandingScreen(
                 title = "Activity Mapper",
                 subtitle = "Automation system for triggering actions based on conditions",
                 onClick = onOpenActivityMapper
+            ),
+            LandingCard(
+                id = "home_control",
+                icon = Icons.Filled.Home,
+                title = "Home Control",
+                subtitle = "Control Matter-enabled smart home devices and routines",
+                onClick = onOpenHomeControl
             ),
             LandingCard(
                 id = "settings",

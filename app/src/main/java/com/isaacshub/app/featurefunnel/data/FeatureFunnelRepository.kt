@@ -24,11 +24,12 @@ class FeatureFunnelRepository(
 
     suspend fun getById(id: Long): FeaturePromptEntity? = dao.getById(id)
 
-    suspend fun createPrompt(title: String, promptText: String, priority: Int = 0): Long {
+    suspend fun createPrompt(title: String, promptText: String, channelId: String, priority: Int = 0): Long {
         return dao.insert(
             FeaturePromptEntity(
                 title = title,
                 promptText = promptText,
+                channelId = channelId,
                 status = PromptStatus.QUEUED,
                 priority = priority,
                 createdAtEpochMillis = System.currentTimeMillis()

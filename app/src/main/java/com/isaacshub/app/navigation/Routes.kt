@@ -71,6 +71,16 @@ object Routes {
     const val ACTIVITY_MAPPER_EDIT_PROFILE_ARG = "profileId"
     const val ACTIVITY_MAPPER_EDIT_PROFILE_PATTERN = "$ACTIVITY_MAPPER_EDIT_PROFILE_BASE/{$ACTIVITY_MAPPER_EDIT_PROFILE_ARG}"
 
+    const val HOME_CONTROL_HOME = "home_control_home"
+    const val HOME_CONTROL_DEVICE_LIST = "home_control_device_list"
+    const val HOME_CONTROL_DEVICE_DETAIL_BASE = "home_control_device_detail"
+    const val HOME_CONTROL_DEVICE_DETAIL_ARG = "deviceId"
+    const val HOME_CONTROL_DEVICE_DETAIL_PATTERN = "$HOME_CONTROL_DEVICE_DETAIL_BASE/{$HOME_CONTROL_DEVICE_DETAIL_ARG}"
+    const val HOME_CONTROL_ROUTINE_LIST = "home_control_routine_list"
+    const val HOME_CONTROL_ROUTINE_BUILDER_BASE = "home_control_routine_builder"
+    const val HOME_CONTROL_ROUTINE_BUILDER_ARG = "routineId"
+    const val HOME_CONTROL_ROUTINE_BUILDER_PATTERN = "$HOME_CONTROL_ROUTINE_BUILDER_BASE/{$HOME_CONTROL_ROUTINE_BUILDER_ARG}"
+
     private const val NEW_TOKEN = "new"
 
     fun editSession(sessionId: Long?): String = "$EDIT_SESSION_BASE/${sessionId ?: NEW_TOKEN}"
@@ -84,6 +94,8 @@ object Routes {
     fun featureFunnelEdit(promptId: Long?): String = "$FEATURE_FUNNEL_EDIT_BASE/${promptId ?: NEW_TOKEN}"
     fun activityMapperEditRule(ruleId: Int?): String = "$ACTIVITY_MAPPER_EDIT_RULE_BASE/${ruleId ?: NEW_TOKEN}"
     fun activityMapperEditProfile(profileId: String?): String = "$ACTIVITY_MAPPER_EDIT_PROFILE_BASE/${profileId ?: NEW_TOKEN}"
+    fun homeControlDeviceDetail(deviceId: String): String = "$HOME_CONTROL_DEVICE_DETAIL_BASE/$deviceId"
+    fun homeControlRoutineBuilder(routineId: String?): String = "$HOME_CONTROL_ROUTINE_BUILDER_BASE/${routineId ?: NEW_TOKEN}"
 
     fun bankingTransactions(accountId: String, accountName: String): String =
         "$BANKING_TRANSACTIONS_BASE/$accountId/$accountName"

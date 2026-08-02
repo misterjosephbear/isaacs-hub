@@ -27,6 +27,7 @@ data class FeaturePromptEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
     val title: String,                           // Brief description for UI
     val promptText: String,                      // Full prompt to send to Claude
+    val channelId: String,                       // Discord channel ID to send to
     val status: PromptStatus,
     val priority: Int = 0,                       // For ordering (higher = more important)
     val createdAtEpochMillis: Long,
