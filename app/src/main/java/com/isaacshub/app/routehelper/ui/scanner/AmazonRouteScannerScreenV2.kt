@@ -364,9 +364,25 @@ private fun AddressCameraScannerWithOverlay(
 
     // State for detected addresses with bounding boxes
     var detectedAddresses by remember { mutableStateOf<List<DetectedAddress>>(emptyList()) }
+    var transformedAddresses by remember { mutableStateOf<List<DetectedAddress>>(emptyList()) }
     var previewSize by remember { mutableStateOf(Size.Zero) }
     var imageSize by remember { mutableStateOf(Size.Zero) }
     var imageRotation by remember { mutableStateOf(0) }
+
+    // Transform addresses whenever they change or preview size changes
+    LaunchedEffect(detectedAddresses, previewSize, imageSize) {
+        if (previewSize != Size.Zero && imageSize != Size.Zero) {
+            transformedAddresses = detectedAddresses.map { detected ->
+                detected.copy(
+                    boundingBox = transformBoundingBox(
+                        detected.imageBoundingBox,
+                        imageSize,
+                        previewSize
+                    )
+                )
+            }
+        }
+    }
 
     if (hasCameraPermission) {
         Box(modifier = Modifier.fillMaxSize()) {
@@ -419,10 +435,10 @@ private fun AddressCameraScannerWithOverlay(
                 },
                 modifier = Modifier
                     .fillMaxSize()
-                    .pointerInput(detectedAddresses) {
+                    .pointerInput(transformedAddresses) {
                         detectTapGestures { tapOffset ->
-                            // Find which address was tapped
-                            detectedAddresses.firstOrNull { detected ->
+                            // Find which address was tapped (use transformed addresses with correct coordinates)
+                            transformedAddresses.firstOrNull { detected ->
                                 detected.boundingBox.contains(tapOffset)
                             }?.let { tappedAddress ->
                                 if (tappedAddress.isMatched) {
@@ -439,16 +455,11 @@ private fun AddressCameraScannerWithOverlay(
                     }
             )
 
-            // Draw bounding boxes over camera preview
-            if (previewSize != Size.Zero && imageSize != Size.Zero) {
+            // Draw bounding boxes over camera preview using transformed addresses
+            if (transformedAddresses.isNotEmpty()) {
                 Canvas(modifier = Modifier.fillMaxSize()) {
-                    detectedAddresses.forEach { detected ->
-                        // Transform coordinates from image space to preview space
-                        val transformedBox = transformBoundingBox(
-                            detected.imageBoundingBox,
-                            imageSize,
-                            previewSize
-                        )
+                    transformedAddresses.forEach { detected ->
+                        val transformedBox = detected.boundingBox
 
                         // Draw bounding box
                         val boxColor = if (detected.isMatched) {
