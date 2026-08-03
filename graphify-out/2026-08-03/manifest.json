@@ -490,13 +490,13 @@
     "semantic_hash": "6a06704fbe4d84df2345d22263056688"
   },
   "app/src/main/java/com/isaacshub/app/navigation/AppNavHost.kt": {
-    "mtime": 1785717698.6686537,
-    "ast_hash": "749732fdf24da7b3207bc10a25bf9a56",
+    "mtime": 1785691454.7354796,
+    "ast_hash": "b1cb98dc4c7a3bebf08f12a1c37fa5d1",
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/navigation/Routes.kt": {
-    "mtime": 1785717660.9464908,
-    "ast_hash": "8a40462c1a8fcb465c147d86a60c7bdf",
+    "mtime": 1785670093.9272823,
+    "ast_hash": "a069e014fe0054058eeac3baf2863b0a",
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDao.kt": {
@@ -1590,8 +1590,8 @@
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/homecontrol/data/HomeControlApiClient.kt": {
-    "mtime": 1785717631.9383652,
-    "ast_hash": "5b5161870c0ddb95acb49065ed84f614",
+    "mtime": 1785669522.568858,
+    "ast_hash": "a2bc4c2a5aa59281c82b807f1f7792a4",
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/homecontrol/data/HomeControlModels.kt": {
@@ -1600,8 +1600,8 @@
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/homecontrol/data/HomeControlRepository.kt": {
-    "mtime": 1785717619.848313,
-    "ast_hash": "1f6c962e1f2cce2c2fb496d52dcd2cdc",
+    "mtime": 1785669563.96405,
+    "ast_hash": "4bacfd3c96ffddde6b4c711003a1a54c",
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/homecontrol/ui/components/DeviceCard.kt": {
@@ -1620,18 +1620,18 @@
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/homecontrol/ui/devices/DeviceListScreen.kt": {
-    "mtime": 1785717529.5299227,
-    "ast_hash": "34b154a5b2c001eea56e11f62bb49f70",
+    "mtime": 1785669779.5449798,
+    "ast_hash": "8c28379e9a2cd231140d862030737b3b",
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/homecontrol/ui/home/HomeControlHomeScreen.kt": {
-    "mtime": 1785717644.338419,
-    "ast_hash": "e01b812ae118b75ac9dd549273cc2926",
+    "mtime": 1785669742.8408277,
+    "ast_hash": "86c4af261ed2f7cb363dadbeb7bb16e6",
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/homecontrol/ui/home/HomeControlViewModel.kt": {
-    "mtime": 1785717611.7132778,
-    "ast_hash": "84ca214497978b0631a82a6921364d12",
+    "mtime": 1785685482.6086438,
+    "ast_hash": "e06de1ee4dbb6c926ab234ba45d60822",
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/homecontrol/ui/routines/RoutineBuilderScreen.kt": {
@@ -1652,11 +1652,6 @@
   "app/src/main/java/com/isaacshub/app/routehelper/ui/scanner/AmazonRouteScannerViewModelV2.kt": {
     "mtime": 1785691429.8663664,
     "ast_hash": "5d8f50e5a3d19b6938374cb261e3db70",
-    "semantic_hash": ""
-  },
-  "app/src/main/java/com/isaacshub/app/homecontrol/ui/pairing/DevicePairingScreen.kt": {
-    "mtime": 1785717605.4422507,
-    "ast_hash": "91df1a4224a360f8e92016291a71a327",
     "semantic_hash": ""
   }
 }
