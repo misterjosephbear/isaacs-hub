@@ -72,6 +72,7 @@ import com.isaacshub.app.homecontrol.ui.devices.DeviceListScreen
 import com.isaacshub.app.homecontrol.ui.devices.DeviceDetailScreen
 import com.isaacshub.app.homecontrol.ui.routines.RoutineListScreen
 import com.isaacshub.app.homecontrol.ui.routines.RoutineBuilderScreen
+import com.isaacshub.app.homecontrol.ui.pairing.DevicePairingScreen
 
 private data class TopLevelDestination(val route: String, val label: String, val icon: ImageVector)
 
@@ -428,6 +429,14 @@ private fun IsaacsHubScaffold(navController: NavHostController, modifier: Modifi
                     onDeviceClick = { deviceId -> navController.navigate(Routes.homeControlDeviceDetail(deviceId)) },
                     onRoutineClick = { routineId -> navController.navigate(Routes.homeControlRoutineBuilder(routineId)) },
                     onCreateRoutine = { navController.navigate(Routes.homeControlRoutineBuilder(null)) },
+                    onAddDevice = { navController.navigate(Routes.HOME_CONTROL_PAIR_DEVICE) },
+                    onBack = { navController.popBackStack() }
+                )
+            }
+
+            composable(Routes.HOME_CONTROL_PAIR_DEVICE) {
+                DevicePairingScreen(
+                    onDevicePaired = { navController.popBackStack() },
                     onBack = { navController.popBackStack() }
                 )
             }

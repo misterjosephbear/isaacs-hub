@@ -29,6 +29,7 @@ fun HomeControlHomeScreen(
     onDeviceClick: (String) -> Unit,
     onRoutineClick: (String) -> Unit,
     onCreateRoutine: () -> Unit,
+    onAddDevice: () -> Unit,
     onBack: () -> Unit
 ) {
     val context = LocalContext.current
@@ -36,17 +37,47 @@ fun HomeControlHomeScreen(
 
     val vaultConnection by app.vaultPreferencesRepository.connection.collectAsState(initial = null)
 
-    val repository = remember(vaultConnection) {
-        vaultConnection?.let {
-            HomeControlRepository(HomeControlApiClient(it))
+    // Show error if no connection
+    if (vaultConnection == null) {
+        Box(
+            modifier = Modifier.fillMaxSize(),
+            contentAlignment = Alignment.Center
+        ) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(16.dp)
+            ) {
+                Icon(
+                    Icons.Default.Warning,
+                    contentDescription = null,
+                    modifier = Modifier.size(64.dp),
+                    tint = MaterialTheme.colorScheme.error
+                )
+                Text(
+                    text = "No vault connection",
+                    style = MaterialTheme.typography.titleLarge,
+                    color = MaterialTheme.colorScheme.error
+                )
+                Text(
+                    text = "Please connect to your vault first",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Button(onClick = onBack) {
+                    Text("Go Back")
+                }
+            }
         }
+        return
     }
 
-    val viewModel: HomeControlViewModel? = repository?.let { repo ->
-        viewModel(factory = HomeControlViewModel.Factory(repo))
+    val repository = remember(vaultConnection) {
+        HomeControlRepository(HomeControlApiClient(vaultConnection!!))
     }
 
-    val uiState by (viewModel?.uiState?.collectAsState() ?: remember { mutableStateOf(HomeControlUiState()) })
+    val viewModel: HomeControlViewModel = viewModel(factory = HomeControlViewModel.Factory(repository))
+
+    val uiState by viewModel.uiState.collectAsState()
 
     var selectedTab by remember { mutableStateOf(0) }
     val tabs = listOf("Overview", "Devices", "Routines", "Rooms")
@@ -61,10 +92,13 @@ fun HomeControlHomeScreen(
                     }
                 },
                 actions = {
-                    IconButton(onClick = { viewModel?.discoverDevices() }) {
+                    IconButton(onClick = onAddDevice) {
+                        Icon(Icons.Default.Add, "Add Device")
+                    }
+                    IconButton(onClick = { viewModel.discoverDevices() }) {
                         Icon(Icons.Default.Search, "Discover Devices")
                     }
-                    IconButton(onClick = { viewModel?.refresh() }) {
+                    IconButton(onClick = { viewModel.refresh() }) {
                         Icon(Icons.Default.Refresh, "Refresh")
                     }
                 }
@@ -99,7 +133,7 @@ fun HomeControlHomeScreen(
                             color = MaterialTheme.colorScheme.onErrorContainer,
                             modifier = Modifier.weight(1f)
                         )
-                        IconButton(onClick = { viewModel?.clearError() }) {
+                        IconButton(onClick = { viewModel.clearError() }) {
                             Icon(Icons.Default.Close, "Dismiss", tint = MaterialTheme.colorScheme.onErrorContainer)
                         }
                     }
@@ -122,25 +156,25 @@ fun HomeControlHomeScreen(
                 0 -> OverviewTab(
                     uiState = uiState,
                     onDeviceClick = onDeviceClick,
-                    onToggleDevice = { deviceId -> viewModel?.toggleDevicePower(deviceId) },
-                    onExecuteRoutine = { routineId -> viewModel?.executeRoutine(routineId) }
+                    onToggleDevice = { deviceId -> viewModel.toggleDevicePower(deviceId) },
+                    onExecuteRoutine = { routineId -> viewModel.executeRoutine(routineId) }
                 )
                 1 -> DevicesTab(
                     uiState = uiState,
                     onDeviceClick = onDeviceClick,
-                    onToggleDevice = { deviceId -> viewModel?.toggleDevicePower(deviceId) }
+                    onToggleDevice = { deviceId -> viewModel.toggleDevicePower(deviceId) }
                 )
                 2 -> RoutinesTab(
                     uiState = uiState,
                     onRoutineClick = onRoutineClick,
                     onCreateRoutine = onCreateRoutine,
-                    onToggleRoutine = { routine -> viewModel?.toggleRoutineEnabled(routine) },
-                    onExecuteRoutine = { routineId -> viewModel?.executeRoutine(routineId) }
+                    onToggleRoutine = { routine -> viewModel.toggleRoutineEnabled(routine) },
+                    onExecuteRoutine = { routineId -> viewModel.executeRoutine(routineId) }
                 )
                 3 -> RoomsTab(
                     uiState = uiState,
                     onDeviceClick = onDeviceClick,
-                    onToggleDevice = { deviceId -> viewModel?.toggleDevicePower(deviceId) }
+                    onToggleDevice = { deviceId -> viewModel.toggleDevicePower(deviceId) }
                 )
             }
 
@@ -243,27 +277,25 @@ private fun DevicesTab(
     onDeviceClick: (String) -> Unit,
     onToggleDevice: (String) -> Unit
 ) {
-    LazyColumn(
-        modifier = Modifier.fillMaxSize(),
-        contentPadding = PaddingValues(16.dp),
-        verticalArrangement = Arrangement.spacedBy(12.dp)
-    ) {
-        if (uiState.devices.isEmpty() && !uiState.isLoading) {
-            item {
-                Box(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(32.dp),
-                    contentAlignment = Alignment.Center
-                ) {
-                    Text(
-                        text = "No devices found. Tap the search icon to discover devices.",
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-            }
-        } else {
+    if (uiState.devices.isEmpty() && !uiState.isLoading) {
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(32.dp),
+            contentAlignment = Alignment.Center
+        ) {
+            Text(
+                text = "No devices found. Tap the search icon to discover devices.",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+        }
+    } else {
+        LazyColumn(
+            modifier = Modifier.fillMaxSize(),
+            contentPadding = PaddingValues(16.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp)
+        ) {
             items(uiState.devices, key = { it.id }) { device ->
                 DeviceCard(
                     device = device,

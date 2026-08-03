@@ -29,17 +29,48 @@ fun DeviceListScreen(
 
     val vaultConnection by app.vaultPreferencesRepository.connection.collectAsState(initial = null)
 
-    val repository = remember(vaultConnection) {
-        vaultConnection?.let {
-            HomeControlRepository(HomeControlApiClient(it))
+    // Show error if no connection
+    if (vaultConnection == null) {
+        Box(
+            modifier = Modifier.fillMaxSize(),
+            contentAlignment = Alignment.Center
+        ) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(16.dp),
+                modifier = Modifier.padding(32.dp)
+            ) {
+                Icon(
+                    Icons.Default.Warning,
+                    contentDescription = null,
+                    modifier = Modifier.size(64.dp),
+                    tint = MaterialTheme.colorScheme.error
+                )
+                Text(
+                    text = "No vault connection",
+                    style = MaterialTheme.typography.titleLarge,
+                    color = MaterialTheme.colorScheme.error
+                )
+                Text(
+                    text = "Please connect to your vault first",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+                Button(onClick = onBack) {
+                    Text("Go Back")
+                }
+            }
         }
+        return
     }
 
-    val viewModel: HomeControlViewModel? = repository?.let { repo ->
-        viewModel(factory = HomeControlViewModel.Factory(repo))
+    val repository = remember(vaultConnection) {
+        HomeControlRepository(HomeControlApiClient(vaultConnection!!))
     }
 
-    val uiState by (viewModel?.uiState?.collectAsState() ?: remember { mutableStateOf(com.isaacshub.app.homecontrol.ui.home.HomeControlUiState()) })
+    val viewModel: HomeControlViewModel = viewModel(factory = HomeControlViewModel.Factory(repository))
+
+    val uiState by viewModel.uiState.collectAsState()
 
     var searchQuery by remember { mutableStateOf("") }
     var filterRoom by remember { mutableStateOf<String?>(null) }
@@ -72,7 +103,7 @@ fun DeviceListScreen(
                     IconButton(onClick = { showFilterDialog = true }) {
                         Icon(Icons.Default.FilterList, "Filter")
                     }
-                    IconButton(onClick = { viewModel?.refresh() }) {
+                    IconButton(onClick = { viewModel.refresh() }) {
                         Icon(Icons.Default.Refresh, "Refresh")
                     }
                 }
@@ -182,7 +213,7 @@ fun DeviceListScreen(
                         DeviceCard(
                             device = device,
                             onClick = { onDeviceClick(device.id) },
-                            onTogglePower = { viewModel?.toggleDevicePower(device.id) }
+                            onTogglePower = { viewModel.toggleDevicePower(device.id) }
                         )
                     }
                 }

@@ -34,6 +34,17 @@ class HomeControlApiClient(connection: VaultConnection) : BaseApiClient(connecti
         result?.let { Result.success(it) } ?: Result.failure(Exception("Couldn't reach the server."))
     }
 
+    suspend fun pairDeviceWithQrCode(qrCode: String): Result<DeviceDiscoveryResponse> = withContext(Dispatchers.IO) {
+        val result = tryEachBaseUrl { baseUrl ->
+            val body = JSONObject().apply {
+                put("qrCode", qrCode)
+            }
+            val json = post(baseUrl, "/api/homecontrol/devices/pair", body)
+            parseDeviceDiscoveryResponse(json)
+        }
+        result?.let { Result.success(it) } ?: Result.failure(Exception("Couldn't reach the server."))
+    }
+
     suspend fun sendDeviceCommand(deviceId: String, capability: String, value: Any): Result<Device> =
         withContext(Dispatchers.IO) {
             val result = tryEachBaseUrl { baseUrl ->

@@ -78,6 +78,27 @@ class HomeControlRepository(private val apiClient: HomeControlApiClient) {
         }
     }
 
+    suspend fun pairDeviceWithQrCode(qrCode: String): Result<DeviceDiscoveryResponse> {
+        _isLoading.value = true
+        _error.value = null
+        return try {
+            val result = apiClient.pairDeviceWithQrCode(qrCode)
+            result.fold(
+                onSuccess = { response ->
+                    // Reload devices after pairing
+                    loadDevices()
+                    Result.success(response)
+                },
+                onFailure = { exception ->
+                    _error.value = exception.message
+                    Result.failure(exception)
+                }
+            )
+        } finally {
+            _isLoading.value = false
+        }
+    }
+
     suspend fun sendDeviceCommand(deviceId: String, capability: String, value: Any): Result<Device> {
         _error.value = null
         return apiClient.sendDeviceCommand(deviceId, capability, value).also { result ->

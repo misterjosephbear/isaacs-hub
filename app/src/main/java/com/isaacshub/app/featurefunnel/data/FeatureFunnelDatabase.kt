@@ -31,6 +31,7 @@ abstract class FeatureFunnelDatabase : RoomDatabase() {
                     "feature_funnel.db"
                 )
                 .addMigrations(MIGRATION_1_2)
+                .fallbackToDestructiveMigration()  // Add this to allow schema changes during development
                 .build().also { instance = it }
             }
     }

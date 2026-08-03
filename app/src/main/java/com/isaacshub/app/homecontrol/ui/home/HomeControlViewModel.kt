@@ -121,6 +121,16 @@ class HomeControlViewModel(
         repository.clearError()
     }
 
+    fun pairDeviceWithQrCode(qrCode: String, onSuccess: () -> Unit, onError: (String) -> Unit) {
+        viewModelScope.launch {
+            val result = repository.pairDeviceWithQrCode(qrCode)
+            result.fold(
+                onSuccess = { onSuccess() },
+                onFailure = { exception -> onError(exception.message ?: "Failed to pair device") }
+            )
+        }
+    }
+
     class Factory(
         private val repository: HomeControlRepository
     ) : ViewModelProvider.Factory {

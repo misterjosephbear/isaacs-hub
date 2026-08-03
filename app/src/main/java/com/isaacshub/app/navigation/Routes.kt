@@ -80,6 +80,7 @@ object Routes {
     const val HOME_CONTROL_ROUTINE_BUILDER_BASE = "home_control_routine_builder"
     const val HOME_CONTROL_ROUTINE_BUILDER_ARG = "routineId"
     const val HOME_CONTROL_ROUTINE_BUILDER_PATTERN = "$HOME_CONTROL_ROUTINE_BUILDER_BASE/{$HOME_CONTROL_ROUTINE_BUILDER_ARG}"
+    const val HOME_CONTROL_PAIR_DEVICE = "home_control_pair_device"
 
     private const val NEW_TOKEN = "new"
 
