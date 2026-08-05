@@ -82,7 +82,7 @@ class App : Application() {
 
         // Initialize crash logger with default URLs (will use vault URLs when available)
         val crashReportingClient = CrashReportingApiClient(
-            localUrl = "http://192.168.1.1:3000",  // Default local network
+            localUrl = "http://192.168.1.1:3001",  // Development/debug server (use 3001 for dev, 3000 for prod)
             remoteUrl = "https://storage.isaacs-hub.com"  // Remote fallback
         )
         CrashLogger.install(this, applicationScope, crashReportingClient)
