@@ -5,6 +5,8 @@ import com.isaacshub.app.core.data.AppDatabase
 import com.isaacshub.app.core.data.DatabaseMigrationHelper
 import com.isaacshub.app.core.data.WorkDatabase
 import com.isaacshub.app.core.data.prefs.UserPreferencesRepository
+import com.isaacshub.app.debug.CrashLogger
+import com.isaacshub.app.debug.CrashReportingApiClient
 import com.isaacshub.app.essentials.data.EssentialsApiClient
 import com.isaacshub.app.essentials.data.EssentialsDatabase
 import com.isaacshub.app.essentials.data.EssentialsRepository
@@ -77,6 +79,13 @@ class App : Application() {
         vaultPreferencesRepository = VaultPreferencesRepository(this)
         PhotoBackupScheduler.rescheduleIfPaired(this, vaultPreferencesRepository)
         AppDataBackupScheduler.rescheduleIfPaired(this, vaultPreferencesRepository)
+
+        // Initialize crash logger with default URLs (will use vault URLs when available)
+        val crashReportingClient = CrashReportingApiClient(
+            localUrl = "http://192.168.1.1:3000",  // Default local network
+            remoteUrl = "https://storage.isaacs-hub.com"  // Remote fallback
+        )
+        CrashLogger.install(this, applicationScope, crashReportingClient)
 
         // EssentialsDatabase - kept separate (syncs with server)
         val essentialsDatabase = EssentialsDatabase.getInstance(this)
