@@ -1,11 +1,9 @@
 package com.isaacshub.app.debug
 
 import android.app.Application
-import android.os.Build
 import android.util.Log
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
-import java.lang.management.ManagementFactory
 
 /**
  * Global exception handler for the IsaacsHub app.
@@ -185,18 +183,20 @@ object CrashLogger {
         }
 
         // Try to identify which database file is involved
-        if (stackTrace.contains("sleep.db")) {
-            errors.forEach { it.databaseName = "SleepDatabase" }
-        } else if (stackTrace.contains("budget.db")) {
-            errors.forEach { it.databaseName = "BankingDatabase" }
-        } else if (stackTrace.contains("feature_funnel.db")) {
-            errors.forEach { it.databaseName = "FeatureFunnelDatabase" }
-        } else if (stackTrace.contains("app.db")) {
-            errors.forEach { it.databaseName = "AppDatabase" }
-        } else if (stackTrace.contains("work.db")) {
-            errors.forEach { it.databaseName = "WorkDatabase" }
+        val dbName = when {
+            stackTrace.contains("sleep.db") -> "SleepDatabase"
+            stackTrace.contains("budget.db") -> "BankingDatabase"
+            stackTrace.contains("feature_funnel.db") -> "FeatureFunnelDatabase"
+            stackTrace.contains("app.db") -> "AppDatabase"
+            stackTrace.contains("work.db") -> "WorkDatabase"
+            else -> null
         }
 
-        return errors
+        // Rebuild errors with correct database name if identified
+        return if (dbName != null) {
+            errors.map { it.copy(databaseName = dbName) }
+        } else {
+            errors
+        }
     }
 }

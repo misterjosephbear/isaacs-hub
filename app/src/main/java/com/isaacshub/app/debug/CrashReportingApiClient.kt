@@ -2,19 +2,18 @@ package com.isaacshub.app.debug
 
 import android.util.Log
 import com.google.gson.Gson
-import com.isaacshub.app.core.network.MultiUrlApiClient
 import java.io.OutputStreamWriter
 import java.net.HttpURLConnection
 
 /**
  * API client for reporting crashes to the server.
- * Extends MultiUrlApiClient to handle local/remote URL fallback.
+ * Handles local/remote URL fallback without requiring vault connection.
  * Uses non-blocking, fire-and-forget pattern with rate limiting.
  */
 class CrashReportingApiClient(
-    localUrl: String,
-    remoteUrl: String
-) : MultiUrlApiClient(localUrl, remoteUrl) {
+    private val localUrl: String,
+    private val remoteUrl: String
+) {
     private val gson = Gson()
     private var lastCrashReportTime = 0L
     private val minTimeBetweenReports = 5000L  // 5 seconds minimum between reports
