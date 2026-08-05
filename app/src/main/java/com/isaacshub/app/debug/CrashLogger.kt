@@ -3,7 +3,7 @@ package com.isaacshub.app.debug
 import android.app.Application
 import android.util.Log
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 /**
  * Global exception handler for the IsaacsHub app.
@@ -45,6 +45,13 @@ object CrashLogger {
     /**
      * Handle an uncaught exception.
      * This method is called when any thread throws an unhandled exception.
+     *
+     * IMPORTANT: if the crash happened on the main thread, its Looper is
+     * already dead by the time this runs - coroutines dispatched via
+     * Dispatchers.Main would never execute. We must do all work on a plain
+     * background thread using runBlocking, and BLOCK (with a bounded
+     * timeout) until it's done before returning, since the process may be
+     * killed immediately after the previous handler runs.
      */
     private fun handleUncaughtException(thread: Thread, exception: Throwable) {
         try {
@@ -53,22 +60,28 @@ object CrashLogger {
             // Build crash log with full diagnostics
             val crashLog = buildCrashLog(thread, exception)
 
-            // Store locally (blocking)
+            // Save locally and report to server on a background thread, then
+            // wait (bounded) for it to finish before letting the process die.
             try {
-                // Run synchronously since we're about to crash
-                Thread {
-                    Thread.sleep(100)  // Give some time for disk writes
-                    appScope.launch {
-                        crashLogDb.addCrash(crashLog)
-                        crashReportingClient.reportCrashAsync(crashLog)
+                val worker = Thread {
+                    runBlocking {
+                        try {
+                            crashLogDb.addCrash(crashLog)
+                        } catch (e: Exception) {
+                            Log.e("CrashLogger", "Failed to save crash locally: ${e.message}")
+                        }
                     }
-                }.start()
+                    // Blocking variant - we need this to actually complete
+                    // (or time out) before the process dies, since a fire-and-forget
+                    // call has no guarantee of running before the app is killed.
+                    crashReportingClient.reportCrashBlocking(crashLog)
+                }
+                worker.isDaemon = false
+                worker.start()
+                worker.join(8000)  // bounded wait: local save + HTTP attempt(s)
             } catch (e: Exception) {
-                Log.e("CrashLogger", "Failed to store crash log: ${e.message}")
+                Log.e("CrashLogger", "Failed to store/report crash log: ${e.message}")
             }
-
-            // Give time for async operations
-            Thread.sleep(500)
 
         } catch (e: Exception) {
             Log.e("CrashLogger", "Error in crash handler itself: ${e.message}")

@@ -21,14 +21,13 @@ class CrashReportingApiClient(
     /**
      * Report a crash to the server (non-blocking, best effort).
      * Implements rate limiting to prevent spam.
+     * NOTE: spawns its own background thread and returns immediately - does
+     * NOT wait for the network call to complete. Do not rely on this from a
+     * crash handler, where the process may be killed immediately after
+     * returning; use [reportCrashBlocking] in that context instead.
      */
     fun reportCrashAsync(crash: CrashLog) {
-        val now = System.currentTimeMillis()
-        if (now - lastCrashReportTime < minTimeBetweenReports) {
-            Log.d("CrashReporting", "Rate limited - crash report deferred")
-            return
-        }
-        lastCrashReportTime = now
+        if (!shouldReport()) return
 
         // Fire and forget in background
         Thread {
@@ -39,6 +38,31 @@ class CrashReportingApiClient(
                 // Silently fail - don't let crash reporting cause additional crashes
             }
         }.start()
+    }
+
+    /**
+     * Report a crash to the server and block the calling thread until the
+     * attempt finishes (success, failure, or timeout). Intended for use from
+     * crash handlers where the process may die shortly after returning, so a
+     * fire-and-forget call would likely never complete in time.
+     */
+    fun reportCrashBlocking(crash: CrashLog) {
+        if (!shouldReport()) return
+        try {
+            reportCrash(crash)
+        } catch (e: Exception) {
+            Log.e("CrashReporting", "Failed to report crash: ${e.message}")
+        }
+    }
+
+    private fun shouldReport(): Boolean {
+        val now = System.currentTimeMillis()
+        if (now - lastCrashReportTime < minTimeBetweenReports) {
+            Log.d("CrashReporting", "Rate limited - crash report deferred")
+            return false
+        }
+        lastCrashReportTime = now
+        return true
     }
 
     /**
