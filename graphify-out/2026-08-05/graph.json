@@ -4,48 +4,26 @@
   "graph": {},
   "nodes": [
     {
-      "label": "CrashLogger.kt",
+      "label": "App.kt",
       "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": "crashlogger.kt"
+      "id": "app_src_main_java_com_isaacshub_app_app",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "app.kt"
     },
     {
-      "label": "CrashLogger",
+      "label": "App",
       "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L13",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L30",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": "crashlogger"
-    },
-    {
-      "label": "CrashLogDatabase",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "crashlogdatabase",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": "crashlogdatabase"
-    },
-    {
-      "label": "CoroutineScope",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "coroutinescope",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": "coroutinescope"
+      "id": "app_src_main_java_com_isaacshub_app_app_app",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "app"
     },
     {
       "label": "Application",
@@ -59,169 +37,15 @@
       "norm_label": "application"
     },
     {
-      "label": ".install()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L24",
-      "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": ".install()"
-    },
-    {
-      "label": ".handleUncaughtException()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L49",
-      "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": ".handleuncaughtexception()"
-    },
-    {
-      "label": ".buildCrashLog()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L84",
-      "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": ".buildcrashlog()"
-    },
-    {
-      "label": "CrashLog",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_kt_crashlog",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": "crashlog"
-    },
-    {
-      "label": ".detectDatabaseErrors()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L132",
-      "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": ".detectdatabaseerrors()"
-    },
-    {
-      "label": "DatabaseError",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "databaseerror",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": "databaseerror"
-    },
-    {
-      "label": "CrashReportingApiClient.kt",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient",
-      "community": 206,
-      "community_name": "CrashReportingApiClient",
-      "norm_label": "crashreportingapiclient.kt"
-    },
-    {
-      "label": "CrashReportingApiClient",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L13",
-      "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
-      "community": 206,
-      "community_name": "CrashReportingApiClient",
-      "norm_label": "crashreportingapiclient"
-    },
-    {
-      "label": ".reportCrashAsync()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L25",
-      "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync",
-      "community": 206,
-      "community_name": "CrashReportingApiClient",
-      "norm_label": ".reportcrashasync()"
-    },
-    {
-      "label": "CrashLog",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_kt_crashlog",
-      "community": 206,
-      "community_name": "CrashReportingApiClient",
-      "norm_label": "crashlog"
-    },
-    {
-      "label": ".reportCrash()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L48",
-      "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash",
-      "community": 206,
-      "community_name": "CrashReportingApiClient",
-      "norm_label": ".reportcrash()"
-    },
-    {
-      "label": "App.kt",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 172,
-      "community_name": "App",
-      "norm_label": "app.kt",
-      "id": "app_src_main_java_com_isaacshub_app_app"
-    },
-    {
-      "label": "App",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L30",
-      "_origin": "ast",
-      "community": 172,
-      "community_name": "App",
-      "norm_label": "app",
-      "id": "app_src_main_java_com_isaacshub_app_app_app"
-    },
-    {
-      "label": "Application",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 172,
-      "community_name": "App",
-      "norm_label": "application",
-      "id": "app_src_main_java_com_isaacshub_app_app_kt_application"
-    },
-    {
       "label": "UserPreferencesRepository",
       "file_type": "code",
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "userpreferencesrepository",
       "community": 172,
       "community_name": "App",
-      "norm_label": "userpreferencesrepository",
-      "id": "userpreferencesrepository"
+      "norm_label": "userpreferencesrepository"
     },
     {
       "label": "SleepRepository",
@@ -229,10 +53,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "sleeprepository",
       "community": 172,
       "community_name": "App",
-      "norm_label": "sleeprepository",
-      "id": "sleeprepository"
+      "norm_label": "sleeprepository"
     },
     {
       "label": "TimeTrackingRepository",
@@ -240,10 +64,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "timetrackingrepository",
       "community": 172,
       "community_name": "App",
-      "norm_label": "timetrackingrepository",
-      "id": "timetrackingrepository"
+      "norm_label": "timetrackingrepository"
     },
     {
       "label": "VaultPreferencesRepository",
@@ -251,10 +75,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "vaultpreferencesrepository",
       "community": 172,
       "community_name": "App",
-      "norm_label": "vaultpreferencesrepository",
-      "id": "vaultpreferencesrepository"
+      "norm_label": "vaultpreferencesrepository"
     },
     {
       "label": "RouteHelperRepository",
@@ -262,10 +86,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "routehelperrepository",
       "community": 172,
       "community_name": "App",
-      "norm_label": "routehelperrepository",
-      "id": "routehelperrepository"
+      "norm_label": "routehelperrepository"
     },
     {
       "label": "EssentialsRepository",
@@ -273,10 +97,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "essentialsrepository",
       "community": 172,
       "community_name": "App",
-      "norm_label": "essentialsrepository",
-      "id": "essentialsrepository"
+      "norm_label": "essentialsrepository"
     },
     {
       "label": "FeatureFunnelRepository",
@@ -284,10 +108,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
+      "id": "featurefunnelrepository",
       "community": 172,
       "community_name": "App",
-      "norm_label": "featurefunnelrepository",
-      "id": "featurefunnelrepository"
+      "norm_label": "featurefunnelrepository"
     },
     {
       "label": "FeatureFunnelPreferencesRepository",
@@ -295,10 +119,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 203,
-      "community_name": ".checkForCompletion",
-      "norm_label": "featurefunnelpreferencesrepository",
-      "id": "featurefunnelpreferencesrepository"
+      "id": "featurefunnelpreferencesrepository",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "featurefunnelpreferencesrepository"
     },
     {
       "label": ".onCreate()",
@@ -306,10 +130,186 @@
       "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
       "source_location": "L58",
       "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
       "community": 172,
       "community_name": "App",
-      "norm_label": ".oncreate()",
-      "id": "app_src_main_java_com_isaacshub_app_app_app_oncreate"
+      "norm_label": ".oncreate()"
+    },
+    {
+      "label": "CrashLogger.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 194,
+      "community_name": "CrashLogger",
+      "norm_label": "crashlogger.kt",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger"
+    },
+    {
+      "label": "CrashLogger",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": 194,
+      "community_name": "CrashLogger",
+      "norm_label": "crashlogger",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger"
+    },
+    {
+      "label": "CrashLogDatabase",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 194,
+      "community_name": "CrashLogger",
+      "norm_label": "crashlogdatabase",
+      "id": "crashlogdatabase"
+    },
+    {
+      "label": "CoroutineScope",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 194,
+      "community_name": "CrashLogger",
+      "norm_label": "coroutinescope",
+      "id": "coroutinescope"
+    },
+    {
+      "label": ".install()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L24",
+      "_origin": "ast",
+      "community": 194,
+      "community_name": "CrashLogger",
+      "norm_label": ".install()",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install"
+    },
+    {
+      "label": ".handleUncaughtException()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L49",
+      "_origin": "ast",
+      "community": 194,
+      "community_name": "CrashLogger",
+      "norm_label": ".handleuncaughtexception()",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception"
+    },
+    {
+      "label": ".buildCrashLog()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L84",
+      "_origin": "ast",
+      "community": 194,
+      "community_name": "CrashLogger",
+      "norm_label": ".buildcrashlog()",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog"
+    },
+    {
+      "label": "CrashLog",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 194,
+      "community_name": "CrashLogger",
+      "norm_label": "crashlog",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_kt_crashlog"
+    },
+    {
+      "label": ".detectDatabaseErrors()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L132",
+      "_origin": "ast",
+      "community": 194,
+      "community_name": "CrashLogger",
+      "norm_label": ".detectdatabaseerrors()",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors"
+    },
+    {
+      "label": "DatabaseError",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 194,
+      "community_name": "CrashLogger",
+      "norm_label": "databaseerror",
+      "id": "databaseerror"
+    },
+    {
+      "label": "CrashReportingApiClient.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 206,
+      "community_name": "CrashReportingApiClient",
+      "norm_label": "crashreportingapiclient.kt",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient"
+    },
+    {
+      "label": "CrashReportingApiClient",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": 206,
+      "community_name": "CrashReportingApiClient",
+      "norm_label": "crashreportingapiclient",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient"
+    },
+    {
+      "label": ".reportCrashAsync()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L25",
+      "_origin": "ast",
+      "community": 206,
+      "community_name": "CrashReportingApiClient",
+      "norm_label": ".reportcrashasync()",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync"
+    },
+    {
+      "label": "CrashLog",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 206,
+      "community_name": "CrashReportingApiClient",
+      "norm_label": "crashlog",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_kt_crashlog"
+    },
+    {
+      "label": ".reportCrash()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L48",
+      "_origin": "ast",
+      "community": 206,
+      "community_name": "CrashReportingApiClient",
+      "norm_label": ".reportcrash()",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash"
+    },
+    {
+      "label": "Application",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 192,
+      "community_name": "Application",
+      "norm_label": "application",
+      "id": "app_src_main_java_com_isaacshub_app_app_kt_application"
     },
     {
       "label": "BankingDatabase.kt",
@@ -2407,8 +2407,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 199,
+      "community_name": "AmazonRouteScannerViewModelV2",
       "norm_label": "imageproxy",
       "id": "imageproxy"
     },
@@ -6158,9 +6158,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperApiClient.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 25,
+      "community": 140,
       "norm_label": "activitymapperapiclient.kt",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "Exception",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient"
     },
     {
@@ -6169,9 +6169,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperApiClient.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 25,
+      "community": 140,
       "norm_label": "activitymapperapiclient",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "Exception",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient_activitymapperapiclient"
     },
     {
@@ -6235,9 +6235,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperApiClient.kt",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 25,
+      "community": 140,
       "norm_label": ".getrichpresenceprofiles()",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "Exception",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient_activitymapperapiclient_getrichpresenceprofiles"
     },
     {
@@ -6246,9 +6246,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperApiClient.kt",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 25,
+      "community": 140,
       "norm_label": ".createrichpresenceprofile()",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "Exception",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient_activitymapperapiclient_createrichpresenceprofile"
     },
     {
@@ -6257,9 +6257,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperApiClient.kt",
       "source_location": "L77",
       "_origin": "ast",
-      "community": 25,
+      "community": 140,
       "norm_label": ".updaterichpresenceprofile()",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "Exception",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient_activitymapperapiclient_updaterichpresenceprofile"
     },
     {
@@ -6290,9 +6290,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperApiClient.kt",
       "source_location": "L107",
       "_origin": "ast",
-      "community": 140,
+      "community": 29,
       "norm_label": ".setvariable()",
-      "community_name": "Exception",
+      "community_name": "ActivityMapperModels.kt",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient_activitymapperapiclient_setvariable"
     },
     {
@@ -6301,9 +6301,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperApiClient.kt",
       "source_location": "L120",
       "_origin": "ast",
-      "community": 140,
+      "community": 29,
       "norm_label": ".parsevariablevalue()",
-      "community_name": "Exception",
+      "community_name": "ActivityMapperModels.kt",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient_activitymapperapiclient_parsevariablevalue"
     },
     {
@@ -6314,7 +6314,7 @@
       "_origin": "ast",
       "community": 25,
       "norm_label": "jsonobject",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient_kt_jsonobject"
     },
     {
@@ -6325,7 +6325,7 @@
       "_origin": "ast",
       "community": 25,
       "norm_label": ".parsecondition()",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient_activitymapperapiclient_parsecondition"
     },
     {
@@ -6334,9 +6334,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperApiClient.kt",
       "source_location": "L136",
       "_origin": "ast",
-      "community": 29,
+      "community": 25,
       "norm_label": ".parseaction()",
-      "community_name": "ActivityMapperModels.kt",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient_activitymapperapiclient_parseaction"
     },
     {
@@ -6356,9 +6356,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperApiClient.kt",
       "source_location": "L163",
       "_origin": "ast",
-      "community": 25,
+      "community": 140,
       "norm_label": ".parserichpresenceprofile()",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "Exception",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient_activitymapperapiclient_parserichpresenceprofile"
     },
     {
@@ -6369,7 +6369,7 @@
       "_origin": "ast",
       "community": 25,
       "norm_label": ".serializecondition()",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient_activitymapperapiclient_serializecondition"
     },
     {
@@ -6380,7 +6380,7 @@
       "_origin": "ast",
       "community": 25,
       "norm_label": ".serializeaction()",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient_activitymapperapiclient_serializeaction"
     },
     {
@@ -6391,7 +6391,7 @@
       "_origin": "ast",
       "community": 25,
       "norm_label": ".serializeautomationrule()",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient_activitymapperapiclient_serializeautomationrule"
     },
     {
@@ -6400,9 +6400,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperApiClient.kt",
       "source_location": "L211",
       "_origin": "ast",
-      "community": 25,
+      "community": 140,
       "norm_label": ".serializerichpresenceprofile()",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "Exception",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymapperapiclient_activitymapperapiclient_serializerichpresenceprofile"
     },
     {
@@ -6422,9 +6422,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperModels.kt",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 193,
+      "community": 29,
       "norm_label": "variabletype",
-      "community_name": "VariableType",
+      "community_name": "ActivityMapperModels.kt",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymappermodels_variabletype"
     },
     {
@@ -6433,9 +6433,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperModels.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 193,
+      "community": 29,
       "norm_label": "route_play_mode_active",
-      "community_name": "VariableType",
+      "community_name": "ActivityMapperModels.kt",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymappermodels_variabletype_route_play_mode_active"
     },
     {
@@ -6444,9 +6444,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperModels.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 193,
+      "community": 29,
       "norm_label": "route_completion_percent",
-      "community_name": "VariableType",
+      "community_name": "ActivityMapperModels.kt",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymappermodels_variabletype_route_completion_percent"
     },
     {
@@ -6455,9 +6455,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperModels.kt",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 193,
+      "community": 29,
       "norm_label": "sleep_time_remaining",
-      "community_name": "VariableType",
+      "community_name": "ActivityMapperModels.kt",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymappermodels_variabletype_sleep_time_remaining"
     },
     {
@@ -6466,9 +6466,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperModels.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 193,
+      "community": 29,
       "norm_label": "sleeping",
-      "community_name": "VariableType",
+      "community_name": "ActivityMapperModels.kt",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymappermodels_variabletype_sleeping"
     },
     {
@@ -6477,9 +6477,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperModels.kt",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 193,
+      "community": 29,
       "norm_label": "current_stop_number",
-      "community_name": "VariableType",
+      "community_name": "ActivityMapperModels.kt",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymappermodels_variabletype_current_stop_number"
     },
     {
@@ -6488,9 +6488,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperModels.kt",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 193,
+      "community": 29,
       "norm_label": "total_stops",
-      "community_name": "VariableType",
+      "community_name": "ActivityMapperModels.kt",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymappermodels_variabletype_total_stops"
     },
     {
@@ -6499,9 +6499,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperModels.kt",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 140,
+      "community": 29,
       "norm_label": "variablevalue",
-      "community_name": "Exception",
+      "community_name": "ActivityMapperModels.kt",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymappermodels_variablevalue"
     },
     {
@@ -6600,7 +6600,7 @@
       "_origin": "ast",
       "community": 25,
       "norm_label": "condition",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymappermodels_condition"
     },
     {
@@ -6609,9 +6609,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperModels.kt",
       "source_location": "L50",
       "_origin": "ast",
-      "community": 29,
+      "community": 25,
       "norm_label": "actiontype",
-      "community_name": "ActivityMapperModels.kt",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymappermodels_actiontype"
     },
     {
@@ -6620,9 +6620,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperModels.kt",
       "source_location": "L51",
       "_origin": "ast",
-      "community": 29,
+      "community": 25,
       "norm_label": "set_discord_rich_presence",
-      "community_name": "ActivityMapperModels.kt",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymappermodels_actiontype_set_discord_rich_presence"
     },
     {
@@ -6631,9 +6631,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperModels.kt",
       "source_location": "L54",
       "_origin": "ast",
-      "community": 29,
+      "community": 25,
       "norm_label": "action",
-      "community_name": "ActivityMapperModels.kt",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymappermodels_action"
     },
     {
@@ -6642,9 +6642,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperModels.kt",
       "source_location": "L57",
       "_origin": "ast",
-      "community": 29,
+      "community": 25,
       "norm_label": "setdiscordrichpresence",
-      "community_name": "ActivityMapperModels.kt",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymappermodels_setdiscordrichpresence"
     },
     {
@@ -6653,9 +6653,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/data/ActivityMapperModels.kt",
       "source_location": "L66",
       "_origin": "ast",
-      "community": 25,
+      "community": 140,
       "norm_label": "discordrichpresenceprofile",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "Exception",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_data_activitymappermodels_discordrichpresenceprofile"
     },
     {
@@ -7148,9 +7148,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/ui/EditRichPresenceProfileScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 25,
+      "community": 140,
       "norm_label": "editrichpresenceprofilescreen.kt",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "Exception",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_ui_editrichpresenceprofilescreen"
     },
     {
@@ -7159,9 +7159,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/activitymapper/ui/EditRichPresenceProfileScreen.kt",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 25,
+      "community": 140,
       "norm_label": "editrichpresenceprofilescreen()",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "Exception",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_ui_editrichpresenceprofilescreen_editrichpresenceprofilescreen"
     },
     {
@@ -7172,7 +7172,7 @@
       "_origin": "ast",
       "community": 25,
       "norm_label": "editrulescreen.kt",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_ui_editrulescreen"
     },
     {
@@ -7183,7 +7183,7 @@
       "_origin": "ast",
       "community": 25,
       "norm_label": "editrulescreen()",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_ui_editrulescreen_editrulescreen"
     },
     {
@@ -7194,7 +7194,7 @@
       "_origin": "ast",
       "community": 25,
       "norm_label": "conditioneditor()",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_ui_editrulescreen_conditioneditor"
     },
     {
@@ -7205,7 +7205,7 @@
       "_origin": "ast",
       "community": 25,
       "norm_label": "actioneditor()",
-      "community_name": "ActivityMapperApiClient",
+      "community_name": "JSONObject",
       "id": "app_src_main_java_com_isaacshub_app_activitymapper_ui_editrulescreen_actioneditor"
     },
     {
@@ -7214,9 +7214,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankAccountDao.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 17,
+      "community": 27,
       "norm_label": "bankaccountdao.kt",
-      "community_name": "BankingDao",
+      "community_name": "BankAccountEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankaccountdao"
     },
     {
@@ -7225,9 +7225,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankAccountDao.kt",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 17,
+      "community": 27,
       "norm_label": "bankaccountdao",
-      "community_name": "BankingDao",
+      "community_name": "BankAccountEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankaccountdao_bankaccountdao"
     },
     {
@@ -7236,9 +7236,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankAccountDao.kt",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 17,
+      "community": 27,
       "norm_label": ".insertaccount()",
-      "community_name": "BankingDao",
+      "community_name": "BankAccountEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankaccountdao_bankaccountdao_insertaccount"
     },
     {
@@ -7247,9 +7247,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankAccountDao.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 17,
+      "community": 27,
       "norm_label": ".insertaccounts()",
-      "community_name": "BankingDao",
+      "community_name": "BankAccountEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankaccountdao_bankaccountdao_insertaccounts"
     },
     {
@@ -7258,9 +7258,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankAccountDao.kt",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 17,
+      "community": 27,
       "norm_label": ".getallaccounts()",
-      "community_name": "BankingDao",
+      "community_name": "BankAccountEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankaccountdao_bankaccountdao_getallaccounts"
     },
     {
@@ -7269,9 +7269,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 17,
+      "community": 27,
       "norm_label": "flow",
-      "community_name": "BankingDao",
+      "community_name": "BankAccountEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankaccountdao_kt_flow"
     },
     {
@@ -7280,9 +7280,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankAccountDao.kt",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 17,
+      "community": 27,
       "norm_label": ".getaccountsbyconnection()",
-      "community_name": "BankingDao",
+      "community_name": "BankAccountEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankaccountdao_bankaccountdao_getaccountsbyconnection"
     },
     {
@@ -7291,9 +7291,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankAccountDao.kt",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 17,
+      "community": 27,
       "norm_label": ".deleteaccountsbyconnection()",
-      "community_name": "BankingDao",
+      "community_name": "BankAccountEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankaccountdao_bankaccountdao_deleteaccountsbyconnection"
     },
     {
@@ -7302,9 +7302,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankAccountEntity.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 17,
+      "community": 27,
       "norm_label": "bankaccountentity.kt",
-      "community_name": "BankingDao",
+      "community_name": "BankAccountEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankaccountentity"
     },
     {
@@ -7313,9 +7313,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankAccountEntity.kt",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 17,
+      "community": 27,
       "norm_label": "bankaccountentity",
-      "community_name": "BankingDao",
+      "community_name": "BankAccountEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankaccountentity_bankaccountentity"
     },
     {
@@ -7324,9 +7324,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankAccountEntity.kt",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 17,
+      "community": 54,
       "norm_label": ".todomain()",
-      "community_name": "BankingDao",
+      "community_name": "AccountType",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankaccountentity_bankaccountentity_todomain"
     },
     {
@@ -7335,9 +7335,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankAccountEntity.kt",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 17,
+      "community": 27,
       "norm_label": "fromdomain()",
-      "community_name": "BankingDao",
+      "community_name": "BankAccountEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankaccountentity_fromdomain"
     },
     {
@@ -7348,7 +7348,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": "bankconnectiondao.kt",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankconnectiondao"
     },
     {
@@ -7359,7 +7359,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": "bankconnectiondao",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankconnectiondao_bankconnectiondao"
     },
     {
@@ -7370,7 +7370,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": ".insertconnection()",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankconnectiondao_bankconnectiondao_insertconnection"
     },
     {
@@ -7381,7 +7381,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": ".getallconnections()",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankconnectiondao_bankconnectiondao_getallconnections"
     },
     {
@@ -7392,7 +7392,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": "flow",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankconnectiondao_kt_flow"
     },
     {
@@ -7403,7 +7403,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": ".getconnection()",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankconnectiondao_bankconnectiondao_getconnection"
     },
     {
@@ -7414,7 +7414,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": ".deleteconnection()",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankconnectiondao_bankconnectiondao_deleteconnection"
     },
     {
@@ -7425,7 +7425,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": ".updatelastsynced()",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankconnectiondao_bankconnectiondao_updatelastsynced"
     },
     {
@@ -7436,7 +7436,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": "bankconnectionentity.kt",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankconnectionentity"
     },
     {
@@ -7447,7 +7447,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": "bankconnectionentity",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankconnectionentity_bankconnectionentity"
     },
     {
@@ -7458,7 +7458,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": ".todomain()",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankconnectionentity_bankconnectionentity_todomain"
     },
     {
@@ -7469,7 +7469,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": "fromdomain()",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankconnectionentity_fromdomain"
     },
     {
@@ -7577,7 +7577,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingDao.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 17,
+      "community": 71,
       "norm_label": "bankingdao.kt",
       "community_name": "BankingDao",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingdao"
@@ -7588,7 +7588,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingDao.kt",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 17,
+      "community": 71,
       "norm_label": "bankingdao",
       "community_name": "BankingDao",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingdao_bankingdao"
@@ -7601,7 +7601,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": ".insertconnection()",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingdao_bankingdao_insertconnection"
     },
     {
@@ -7610,7 +7610,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingDao.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 17,
+      "community": 71,
       "norm_label": ".getallconnections()",
       "community_name": "BankingDao",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingdao_bankingdao_getallconnections"
@@ -7621,7 +7621,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 17,
+      "community": 71,
       "norm_label": "flow",
       "community_name": "BankingDao",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingdao_kt_flow"
@@ -7634,7 +7634,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": ".getconnection()",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingdao_bankingdao_getconnection"
     },
     {
@@ -7643,7 +7643,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingDao.kt",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 17,
+      "community": 71,
       "norm_label": ".deleteconnection()",
       "community_name": "BankingDao",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingdao_bankingdao_deleteconnection"
@@ -7654,7 +7654,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingDao.kt",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 17,
+      "community": 71,
       "norm_label": ".updatelastsynced()",
       "community_name": "BankingDao",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingdao_bankingdao_updatelastsynced"
@@ -7665,7 +7665,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingDao.kt",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 17,
+      "community": 71,
       "norm_label": ".insertaccount()",
       "community_name": "BankingDao",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingdao_bankingdao_insertaccount"
@@ -7676,9 +7676,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingDao.kt",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 17,
+      "community": 27,
       "norm_label": ".insertaccounts()",
-      "community_name": "BankingDao",
+      "community_name": "BankAccountEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingdao_bankingdao_insertaccounts"
     },
     {
@@ -7687,7 +7687,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingDao.kt",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 17,
+      "community": 71,
       "norm_label": ".getallaccounts()",
       "community_name": "BankingDao",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingdao_bankingdao_getallaccounts"
@@ -7698,7 +7698,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingDao.kt",
       "source_location": "L38",
       "_origin": "ast",
-      "community": 17,
+      "community": 71,
       "norm_label": ".getaccountsbyconnection()",
       "community_name": "BankingDao",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingdao_bankingdao_getaccountsbyconnection"
@@ -7709,7 +7709,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingDao.kt",
       "source_location": "L41",
       "_origin": "ast",
-      "community": 17,
+      "community": 71,
       "norm_label": ".deleteaccountsbyconnection()",
       "community_name": "BankingDao",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingdao_bankingdao_deleteaccountsbyconnection"
@@ -7720,7 +7720,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingDao.kt",
       "source_location": "L44",
       "_origin": "ast",
-      "community": 17,
+      "community": 71,
       "norm_label": ".deleteconnectionandaccounts()",
       "community_name": "BankingDao",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingdao_bankingdao_deleteconnectionandaccounts"
@@ -7940,9 +7940,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/BankAccount.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 17,
+      "community": 54,
       "norm_label": "bankaccount.kt",
-      "community_name": "BankingDao",
+      "community_name": "AccountType",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankaccount"
     },
     {
@@ -7951,9 +7951,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/BankAccount.kt",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 17,
+      "community": 54,
       "norm_label": "bankaccount",
-      "community_name": "BankingDao",
+      "community_name": "AccountType",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankaccount_bankaccount"
     },
     {
@@ -7962,9 +7962,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/BankAccount.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 17,
+      "community": 54,
       "norm_label": "accounttype",
-      "community_name": "BankingDao",
+      "community_name": "AccountType",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankaccount_accounttype"
     },
     {
@@ -7973,9 +7973,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/BankAccount.kt",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 17,
+      "community": 54,
       "norm_label": "checking",
-      "community_name": "BankingDao",
+      "community_name": "AccountType",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankaccount_accounttype_checking"
     },
     {
@@ -7984,9 +7984,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/BankAccount.kt",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 17,
+      "community": 54,
       "norm_label": "savings",
-      "community_name": "BankingDao",
+      "community_name": "AccountType",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankaccount_accounttype_savings"
     },
     {
@@ -7995,9 +7995,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/BankAccount.kt",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 17,
+      "community": 54,
       "norm_label": "credit_card",
-      "community_name": "BankingDao",
+      "community_name": "AccountType",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankaccount_accounttype_credit_card"
     },
     {
@@ -8006,9 +8006,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/BankAccount.kt",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 17,
+      "community": 54,
       "norm_label": "investment",
-      "community_name": "BankingDao",
+      "community_name": "AccountType",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankaccount_accounttype_investment"
     },
     {
@@ -8017,9 +8017,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/BankAccount.kt",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 17,
+      "community": 54,
       "norm_label": "loan",
-      "community_name": "BankingDao",
+      "community_name": "AccountType",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankaccount_accounttype_loan"
     },
     {
@@ -8028,9 +8028,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/BankAccount.kt",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 17,
+      "community": 54,
       "norm_label": "other",
-      "community_name": "BankingDao",
+      "community_name": "AccountType",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankaccount_accounttype_other"
     },
     {
@@ -8041,7 +8041,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": "bankconnection.kt",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankconnection"
     },
     {
@@ -8052,7 +8052,7 @@
       "_origin": "ast",
       "community": 17,
       "norm_label": "bankconnection",
-      "community_name": "BankingDao",
+      "community_name": "BankConnectionEntity",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankconnection_bankconnection"
     },
     {
@@ -8061,9 +8061,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/BankConnection.kt",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 17,
+      "community": 83,
       "norm_label": "bankprovider",
-      "community_name": "BankingDao",
+      "community_name": "BankProvider",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankconnection_bankprovider"
     },
     {
@@ -8072,9 +8072,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/BankConnection.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 17,
+      "community": 83,
       "norm_label": "simplefin",
-      "community_name": "BankingDao",
+      "community_name": "BankProvider",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankconnection_bankprovider_simplefin"
     },
     {
@@ -8083,9 +8083,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/BankConnection.kt",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 17,
+      "community": 83,
       "norm_label": "plaid",
-      "community_name": "BankingDao",
+      "community_name": "BankProvider",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankconnection_bankprovider_plaid"
     },
     {
@@ -8094,9 +8094,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/BankConnection.kt",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 17,
+      "community": 83,
       "norm_label": "teller",
-      "community_name": "BankingDao",
+      "community_name": "BankProvider",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankconnection_bankprovider_teller"
     },
     {
@@ -8105,9 +8105,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/BankConnection.kt",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 17,
+      "community": 83,
       "norm_label": "manual",
-      "community_name": "BankingDao",
+      "community_name": "BankProvider",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_bankconnection_bankprovider_manual"
     },
     {
@@ -8204,9 +8204,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/components/AccountSelectionDialog.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 18,
+      "community": 54,
       "norm_label": "accountselectiondialog.kt",
-      "community_name": "BudgetConfigViewModel",
+      "community_name": "AccountType",
       "id": "app_src_main_java_com_isaacshub_app_banking_ui_components_accountselectiondialog"
     },
     {
@@ -8215,9 +8215,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/ui/components/AccountSelectionDialog.kt",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 18,
+      "community": 54,
       "norm_label": "accountselectiondialog()",
-      "community_name": "BudgetConfigViewModel",
+      "community_name": "AccountType",
       "id": "app_src_main_java_com_isaacshub_app_banking_ui_components_accountselectiondialog_accountselectiondialog"
     },
     {
@@ -9295,7 +9295,7 @@
       "_origin": "ast",
       "community": 22,
       "norm_label": "baseapiclient.kt",
-      "community_name": "BaseApiClient",
+      "community_name": ".put",
       "id": "app_src_main_java_com_isaacshub_app_core_network_baseapiclient"
     },
     {
@@ -9306,7 +9306,7 @@
       "_origin": "ast",
       "community": 22,
       "norm_label": "baseapiclient",
-      "community_name": "BaseApiClient",
+      "community_name": ".put",
       "id": "app_src_main_java_com_isaacshub_app_core_network_baseapiclient_baseapiclient"
     },
     {
@@ -9317,7 +9317,7 @@
       "_origin": "ast",
       "community": 22,
       "norm_label": ".openconnection()",
-      "community_name": "BaseApiClient",
+      "community_name": ".put",
       "id": "app_src_main_java_com_isaacshub_app_core_network_baseapiclient_baseapiclient_openconnection"
     },
     {
@@ -9328,7 +9328,7 @@
       "_origin": "ast",
       "community": 22,
       "norm_label": "httpurlconnection",
-      "community_name": "BaseApiClient",
+      "community_name": ".put",
       "id": "app_src_main_java_com_isaacshub_app_core_network_baseapiclient_kt_httpurlconnection"
     },
     {
@@ -9339,7 +9339,7 @@
       "_origin": "ast",
       "community": 22,
       "norm_label": ".errormessagefrom()",
-      "community_name": "BaseApiClient",
+      "community_name": ".put",
       "id": "app_src_main_java_com_isaacshub_app_core_network_baseapiclient_baseapiclient_errormessagefrom"
     },
     {
@@ -9350,7 +9350,7 @@
       "_origin": "ast",
       "community": 22,
       "norm_label": ".get()",
-      "community_name": "BaseApiClient",
+      "community_name": ".put",
       "id": "app_src_main_java_com_isaacshub_app_core_network_baseapiclient_baseapiclient_get"
     },
     {
@@ -9361,7 +9361,7 @@
       "_origin": "ast",
       "community": 22,
       "norm_label": "jsonobject",
-      "community_name": "BaseApiClient",
+      "community_name": ".put",
       "id": "app_src_main_java_com_isaacshub_app_core_network_baseapiclient_kt_jsonobject"
     },
     {
@@ -9370,9 +9370,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/core/network/BaseApiClient.kt",
       "source_location": "L65",
       "_origin": "ast",
-      "community": 140,
+      "community": 22,
       "norm_label": ".post()",
-      "community_name": "Exception",
+      "community_name": ".put",
       "id": "app_src_main_java_com_isaacshub_app_core_network_baseapiclient_baseapiclient_post"
     },
     {
@@ -9381,7 +9381,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/core/network/BaseApiClient.kt",
       "source_location": "L90",
       "_origin": "ast",
-      "community": 96,
+      "community": 22,
       "norm_label": ".put()",
       "community_name": ".put",
       "id": "app_src_main_java_com_isaacshub_app_core_network_baseapiclient_baseapiclient_put"
@@ -9394,7 +9394,7 @@
       "_origin": "ast",
       "community": 22,
       "norm_label": ".delete()",
-      "community_name": "BaseApiClient",
+      "community_name": ".put",
       "id": "app_src_main_java_com_isaacshub_app_core_network_baseapiclient_baseapiclient_delete"
     },
     {
@@ -9405,7 +9405,7 @@
       "_origin": "ast",
       "community": 22,
       "norm_label": "multiurlapiclient.kt",
-      "community_name": "BaseApiClient",
+      "community_name": ".put",
       "id": "app_src_main_java_com_isaacshub_app_core_network_multiurlapiclient"
     },
     {
@@ -9416,7 +9416,7 @@
       "_origin": "ast",
       "community": 22,
       "norm_label": "multiurlapiclient",
-      "community_name": "BaseApiClient",
+      "community_name": ".put",
       "id": "app_src_main_java_com_isaacshub_app_core_network_multiurlapiclient_multiurlapiclient"
     },
     {
@@ -9504,7 +9504,7 @@
       "_origin": "ast",
       "community": 96,
       "norm_label": "discordrichpresencemanager.kt",
-      "community_name": ".put",
+      "community_name": "DiscordRichPresenceManager",
       "id": "app_src_main_java_com_isaacshub_app_discord_discordrichpresencemanager"
     },
     {
@@ -9515,7 +9515,7 @@
       "_origin": "ast",
       "community": 96,
       "norm_label": "discordrichpresencemanager",
-      "community_name": ".put",
+      "community_name": "DiscordRichPresenceManager",
       "id": "app_src_main_java_com_isaacshub_app_discord_discordrichpresencemanager_discordrichpresencemanager"
     },
     {
@@ -9526,7 +9526,7 @@
       "_origin": "ast",
       "community": 96,
       "norm_label": "getinstance()",
-      "community_name": ".put",
+      "community_name": "DiscordRichPresenceManager",
       "id": "app_src_main_java_com_isaacshub_app_discord_discordrichpresencemanager_getinstance"
     },
     {
@@ -9537,7 +9537,7 @@
       "_origin": "ast",
       "community": 96,
       "norm_label": "context",
-      "community_name": ".put",
+      "community_name": "DiscordRichPresenceManager",
       "id": "app_src_main_java_com_isaacshub_app_discord_discordrichpresencemanager_kt_context"
     },
     {
@@ -9548,7 +9548,7 @@
       "_origin": "ast",
       "community": 96,
       "norm_label": ".setsleepingpresence()",
-      "community_name": ".put",
+      "community_name": "DiscordRichPresenceManager",
       "id": "app_src_main_java_com_isaacshub_app_discord_discordrichpresencemanager_discordrichpresencemanager_setsleepingpresence"
     },
     {
@@ -9559,7 +9559,7 @@
       "_origin": "ast",
       "community": 96,
       "norm_label": ".setdeliveringmailpresence()",
-      "community_name": ".put",
+      "community_name": "DiscordRichPresenceManager",
       "id": "app_src_main_java_com_isaacshub_app_discord_discordrichpresencemanager_discordrichpresencemanager_setdeliveringmailpresence"
     },
     {
@@ -9570,7 +9570,7 @@
       "_origin": "ast",
       "community": 96,
       "norm_label": ".clearpresence()",
-      "community_name": ".put",
+      "community_name": "DiscordRichPresenceManager",
       "id": "app_src_main_java_com_isaacshub_app_discord_discordrichpresencemanager_discordrichpresencemanager_clearpresence"
     },
     {
@@ -9581,7 +9581,7 @@
       "_origin": "ast",
       "community": 96,
       "norm_label": ".sendpresenceupdate()",
-      "community_name": ".put",
+      "community_name": "DiscordRichPresenceManager",
       "id": "app_src_main_java_com_isaacshub_app_discord_discordrichpresencemanager_discordrichpresencemanager_sendpresenceupdate"
     },
     {
@@ -9592,7 +9592,7 @@
       "_origin": "ast",
       "community": 96,
       "norm_label": "jsonobject",
-      "community_name": ".put",
+      "community_name": "DiscordRichPresenceManager",
       "id": "app_src_main_java_com_isaacshub_app_discord_discordrichpresencemanager_kt_jsonobject"
     },
     {
@@ -10195,9 +10195,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 54,
+      "community": 5,
       "norm_label": "data/essentialsapiclient.kt",
-      "community_name": ".httpRequest",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient"
     },
     {
@@ -10206,9 +10206,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 54,
+      "community": 5,
       "norm_label": "essentialsapiclient",
-      "community_name": ".httpRequest",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_essentialsapiclient"
     },
     {
@@ -10217,9 +10217,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 54,
+      "community": 5,
       "norm_label": ".httprequest()",
-      "community_name": ".httpRequest",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_essentialsapiclient_httprequest"
     },
     {
@@ -10228,9 +10228,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 54,
+      "community": 5,
       "norm_label": "jsonobject",
-      "community_name": ".httpRequest",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_kt_jsonobject"
     },
     {
@@ -10239,9 +10239,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 54,
+      "community": 5,
       "norm_label": "result",
-      "community_name": ".httpRequest",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_kt_result"
     },
     {
@@ -10250,9 +10250,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 54,
+      "community": 5,
       "norm_label": "t",
-      "community_name": ".httpRequest",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_kt_t"
     },
     {
@@ -10261,9 +10261,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L61",
       "_origin": "ast",
-      "community": 54,
+      "community": 5,
       "norm_label": ".getchildren()",
-      "community_name": ".httpRequest",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_essentialsapiclient_getchildren"
     },
     {
@@ -10272,9 +10272,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L77",
       "_origin": "ast",
-      "community": 54,
+      "community": 5,
       "norm_label": ".createchild()",
-      "community_name": ".httpRequest",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_essentialsapiclient_createchild"
     },
     {
@@ -10283,9 +10283,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L99",
       "_origin": "ast",
-      "community": 54,
+      "community": 5,
       "norm_label": ".updatechild()",
-      "community_name": ".httpRequest",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_essentialsapiclient_updatechild"
     },
     {
@@ -10294,9 +10294,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L114",
       "_origin": "ast",
-      "community": 54,
+      "community": 5,
       "norm_label": ".deletechild()",
-      "community_name": ".httpRequest",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_essentialsapiclient_deletechild"
     },
     {
@@ -10305,9 +10305,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L123",
       "_origin": "ast",
-      "community": 76,
+      "community": 5,
       "norm_label": ".getchores()",
-      "community_name": "JSONArray",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_essentialsapiclient_getchores"
     },
     {
@@ -10316,9 +10316,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 76,
+      "community": 5,
       "norm_label": "choredto",
-      "community_name": "JSONArray",
+      "community_name": "RoutePlayerViewModel",
       "id": "choredto"
     },
     {
@@ -10327,9 +10327,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L142",
       "_origin": "ast",
-      "community": 76,
+      "community": 5,
       "norm_label": ".createchore()",
-      "community_name": "JSONArray",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_essentialsapiclient_createchore"
     },
     {
@@ -10338,9 +10338,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L171",
       "_origin": "ast",
-      "community": 54,
+      "community": 5,
       "norm_label": ".updatechore()",
-      "community_name": ".httpRequest",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_essentialsapiclient_updatechore"
     },
     {
@@ -10349,9 +10349,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L190",
       "_origin": "ast",
-      "community": 54,
+      "community": 5,
       "norm_label": ".deletechore()",
-      "community_name": ".httpRequest",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_essentialsapiclient_deletechore"
     },
     {
@@ -10360,9 +10360,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L199",
       "_origin": "ast",
-      "community": 76,
+      "community": 5,
       "norm_label": ".parsedaysofweek()",
-      "community_name": "JSONArray",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_essentialsapiclient_parsedaysofweek"
     },
     {
@@ -10371,9 +10371,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 76,
+      "community": 5,
       "norm_label": "jsonarray",
-      "community_name": "JSONArray",
+      "community_name": "RoutePlayerViewModel",
       "id": "jsonarray"
     },
     {
@@ -10382,9 +10382,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L203",
       "_origin": "ast",
-      "community": 76,
+      "community": 5,
       "norm_label": ".parsechildids()",
-      "community_name": "JSONArray",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_essentialsapiclient_parsechildids"
     },
     {
@@ -10393,9 +10393,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L212",
       "_origin": "ast",
-      "community": 54,
+      "community": 5,
       "norm_label": "childaccountdto",
-      "community_name": ".httpRequest",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_childaccountdto"
     },
     {
@@ -10404,9 +10404,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L219",
       "_origin": "ast",
-      "community": 76,
+      "community": 5,
       "norm_label": "choredto",
-      "community_name": "JSONArray",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_choredto"
     },
     {
@@ -10415,9 +10415,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/essentials/data/EssentialsApiClient.kt",
       "source_location": "L229",
       "_origin": "ast",
-      "community": 54,
+      "community": 5,
       "norm_label": "apiexception",
-      "community_name": ".httpRequest",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_essentials_data_essentialsapiclient_apiexception"
     },
     {
@@ -13495,9 +13495,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/GeoPoint.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 77,
+      "community": 127,
       "norm_label": "geopoint.kt",
-      "community_name": "distanceMeters",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_geopoint"
     },
     {
@@ -13517,9 +13517,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/GeoPoint.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 77,
+      "community": 127,
       "norm_label": "distancemeters()",
-      "community_name": "distanceMeters",
+      "community_name": "GeoPoint",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_geopoint_distancemeters"
     },
     {
@@ -13605,7 +13605,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/NearestAddresses.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 71,
+      "community": 7,
       "norm_label": "nearestaddresses.kt",
       "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_nearestaddresses"
@@ -13616,7 +13616,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/NearestAddresses.kt",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 71,
+      "community": 7,
       "norm_label": "candidateaddress",
       "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_nearestaddresses_candidateaddress"
@@ -13627,7 +13627,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/NearestAddresses.kt",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 71,
+      "community": 7,
       "norm_label": "nearestaddresses()",
       "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_nearestaddresses_nearestaddresses"
@@ -13638,9 +13638,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/NearestAddresses.kt",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 192,
+      "community": 7,
       "norm_label": "stickynearestslots()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_nearestaddresses_stickynearestslots"
     },
     {
@@ -13649,7 +13649,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/NearestAddresses.kt",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 71,
+      "community": 7,
       "norm_label": "nextornull()",
       "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_nearestaddresses_nextornull"
@@ -13660,7 +13660,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 71,
+      "community": 7,
       "norm_label": "t",
       "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_nearestaddresses_kt_t"
@@ -13836,9 +13836,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 207,
+      "community": 7,
       "norm_label": "stopside.kt",
-      "community_name": "StopSide",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside"
     },
     {
@@ -13847,9 +13847,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 207,
+      "community": 7,
       "norm_label": "stopside",
-      "community_name": "StopSide",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside"
     },
     {
@@ -13858,9 +13858,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 207,
+      "community": 7,
       "norm_label": "left",
-      "community_name": "StopSide",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside_left"
     },
     {
@@ -13869,9 +13869,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 207,
+      "community": 7,
       "norm_label": "right",
-      "community_name": "StopSide",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside_right"
     },
     {
@@ -13880,9 +13880,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 207,
+      "community": 7,
       "norm_label": "in_drive",
-      "community_name": "StopSide",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside_in_drive"
     },
     {
@@ -13891,9 +13891,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 207,
+      "community": 7,
       "norm_label": "none",
-      "community_name": "StopSide",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside_none"
     },
     {
@@ -14243,9 +14243,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/NominatimGeocoder.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 83,
+      "community": 5,
       "norm_label": "nominatimgeocoder.kt",
-      "community_name": ".geocodeZip",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_nominatimgeocoder"
     },
     {
@@ -14254,9 +14254,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/NominatimGeocoder.kt",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 83,
+      "community": 5,
       "norm_label": "ziplocation",
-      "community_name": ".geocodeZip",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_nominatimgeocoder_ziplocation"
     },
     {
@@ -14265,9 +14265,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/NominatimGeocoder.kt",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 83,
+      "community": 5,
       "norm_label": "nominatimgeocoder",
-      "community_name": ".geocodeZip",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_nominatimgeocoder_nominatimgeocoder"
     },
     {
@@ -14276,9 +14276,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/NominatimGeocoder.kt",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 83,
+      "community": 5,
       "norm_label": ".geocodeaddress()",
-      "community_name": ".geocodeZip",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_nominatimgeocoder_nominatimgeocoder_geocodeaddress"
     },
     {
@@ -14287,9 +14287,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/NominatimGeocoder.kt",
       "source_location": "L50",
       "_origin": "ast",
-      "community": 83,
+      "community": 5,
       "norm_label": ".geocodezip()",
-      "community_name": ".geocodeZip",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_nominatimgeocoder_nominatimgeocoder_geocodezip"
     },
     {
@@ -14914,9 +14914,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 195,
+      "community": 6,
       "norm_label": "routebuilderscreen.kt",
-      "community_name": "newOsmMapView",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderscreen"
     },
     {
@@ -14925,9 +14925,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderScreen.kt",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 195,
+      "community": 6,
       "norm_label": "routebuilderscreen()",
-      "community_name": "newOsmMapView",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderscreen_routebuilderscreen"
     },
     {
@@ -14936,9 +14936,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderScreen.kt",
       "source_location": "L158",
       "_origin": "ast",
-      "community": 195,
+      "community": 6,
       "norm_label": "livemap()",
-      "community_name": "newOsmMapView",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderscreen_livemap"
     },
     {
@@ -14947,9 +14947,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 195,
+      "community": 6,
       "norm_label": "modifier",
-      "community_name": "newOsmMapView",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderscreen_kt_modifier"
     },
     {
@@ -14958,9 +14958,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 27,
+      "community": 7,
       "norm_label": "routebuilderviewmodel.kt",
-      "community_name": "RouteBuilderViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel"
     },
     {
@@ -14969,9 +14969,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L31",
       "_origin": "ast",
-      "community": 27,
+      "community": 7,
       "norm_label": "pendingstop",
-      "community_name": "RouteBuilderViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_pendingstop"
     },
     {
@@ -14980,9 +14980,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 195,
+      "community": 7,
       "norm_label": "routebuilderuistate",
-      "community_name": "newOsmMapView",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderuistate"
     },
     {
@@ -14991,9 +14991,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L44",
       "_origin": "ast",
-      "community": 27,
+      "community": 7,
       "norm_label": "routebuilderviewmodel",
-      "community_name": "RouteBuilderViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel"
     },
     {
@@ -15002,9 +15002,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 27,
+      "community": 7,
       "norm_label": "androidviewmodel",
-      "community_name": "RouteBuilderViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_kt_androidviewmodel"
     },
     {
@@ -15013,9 +15013,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 27,
+      "community": 7,
       "norm_label": ".start()",
-      "community_name": "RouteBuilderViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_start"
     },
     {
@@ -15024,9 +15024,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 27,
+      "community": 7,
       "norm_label": "flow",
-      "community_name": "RouteBuilderViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_kt_flow"
     },
     {
@@ -15035,9 +15035,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 27,
+      "community": 7,
       "norm_label": "stateflow",
-      "community_name": "RouteBuilderViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_kt_stateflow"
     },
     {
@@ -15046,9 +15046,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L139",
       "_origin": "ast",
-      "community": 27,
+      "community": 7,
       "norm_label": ".routestop()",
-      "community_name": "RouteBuilderViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_routestop"
     },
     {
@@ -15057,9 +15057,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L152",
       "_origin": "ast",
-      "community": 27,
+      "community": 7,
       "norm_label": ".drainpendingstops()",
-      "community_name": "RouteBuilderViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_drainpendingstops"
     },
     {
@@ -15068,9 +15068,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L164",
       "_origin": "ast",
-      "community": 27,
+      "community": 7,
       "norm_label": ".undo()",
-      "community_name": "RouteBuilderViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_undo"
     },
     {
@@ -15079,9 +15079,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L169",
       "_origin": "ast",
-      "community": 27,
+      "community": 7,
       "norm_label": ".addscannedstop()",
-      "community_name": "RouteBuilderViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_addscannedstop"
     },
     {
@@ -15090,9 +15090,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 27,
+      "community": 7,
       "norm_label": "com",
-      "community_name": "RouteBuilderViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_kt_com"
     },
     {
@@ -15101,9 +15101,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/common/AddressActionCard.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 200,
+      "community": 6,
       "norm_label": "addressactioncard.kt",
-      "community_name": "TestMap",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_common_addressactioncard"
     },
     {
@@ -15112,9 +15112,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/common/AddressActionCard.kt",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 200,
+      "community": 6,
       "norm_label": "addressactioncard()",
-      "community_name": "TestMap",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_common_addressactioncard_addressactioncard"
     },
     {
@@ -15123,9 +15123,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/common/AddressActionCard.kt",
       "source_location": "L60",
       "_origin": "ast",
-      "community": 200,
+      "community": 6,
       "norm_label": "sidebutton()",
-      "community_name": "TestMap",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_common_addressactioncard_sidebutton"
     },
     {
@@ -15134,9 +15134,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/common/OsmMapView.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 195,
+      "community": 6,
       "norm_label": "osmmapview.kt",
-      "community_name": "newOsmMapView",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_common_osmmapview"
     },
     {
@@ -15145,9 +15145,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/common/OsmMapView.kt",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 195,
+      "community": 6,
       "norm_label": "newosmmapview()",
-      "community_name": "newOsmMapView",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_common_osmmapview_newosmmapview"
     },
     {
@@ -15156,9 +15156,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 195,
+      "community": 6,
       "norm_label": "context",
-      "community_name": "newOsmMapView",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_common_osmmapview_kt_context"
     },
     {
@@ -15167,9 +15167,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 195,
+      "community": 6,
       "norm_label": "mapview",
-      "community_name": "newOsmMapView",
+      "community_name": "PackageScanScreen.kt",
       "id": "mapview"
     },
     {
@@ -15541,9 +15541,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/MailScanScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 10,
+      "community": 6,
       "norm_label": "mailscanscreen.kt",
-      "community_name": "MailScanViewModel",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_mailscanscreen"
     },
     {
@@ -15552,9 +15552,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/MailScanScreen.kt",
       "source_location": "L62",
       "_origin": "ast",
-      "community": 10,
+      "community": 6,
       "norm_label": "mailscanscreen()",
-      "community_name": "MailScanViewModel",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_mailscanscreen_mailscanscreen"
     },
     {
@@ -15563,9 +15563,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/MailScanScreen.kt",
       "source_location": "L195",
       "_origin": "ast",
-      "community": 10,
+      "community": 6,
       "norm_label": "mailcamerapreview()",
-      "community_name": "MailScanViewModel",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_mailscanscreen_mailcamerapreview"
     },
     {
@@ -15574,9 +15574,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/MailScanScreen.kt",
       "source_location": "L241",
       "_origin": "ast",
-      "community": 10,
+      "community": 6,
       "norm_label": "processimageproxy()",
-      "community_name": "MailScanViewModel",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_mailscanscreen_processimageproxy"
     },
     {
@@ -15585,9 +15585,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 10,
+      "community": 6,
       "norm_label": "textrecognizer",
-      "community_name": "MailScanViewModel",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_mailscanscreen_kt_textrecognizer"
     },
     {
@@ -15596,9 +15596,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 10,
+      "community": 6,
       "norm_label": "imageproxy",
-      "community_name": "MailScanViewModel",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_mailscanscreen_kt_imageproxy"
     },
     {
@@ -15992,9 +15992,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 77,
+      "community": 6,
       "norm_label": "routeplayerscreen.kt",
-      "community_name": "distanceMeters",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen"
     },
     {
@@ -16014,9 +16014,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L637",
       "_origin": "ast",
-      "community": 77,
+      "community": 6,
       "norm_label": "missedpackagealert()",
-      "community_name": "distanceMeters",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_missedpackagealert"
     },
     {
@@ -16025,9 +16025,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 77,
+      "community": 6,
       "norm_label": "modifier",
-      "community_name": "distanceMeters",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_kt_modifier"
     },
     {
@@ -16036,9 +16036,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L705",
       "_origin": "ast",
-      "community": 77,
+      "community": 6,
       "norm_label": "calculatescalefactor()",
-      "community_name": "distanceMeters",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_calculatescalefactor"
     },
     {
@@ -16047,9 +16047,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L717",
       "_origin": "ast",
-      "community": 77,
+      "community": 6,
       "norm_label": "shouldshowstopmarkers()",
-      "community_name": "distanceMeters",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_shouldshowstopmarkers"
     },
     {
@@ -16058,9 +16058,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L721",
       "_origin": "ast",
-      "community": 77,
+      "community": 6,
       "norm_label": "playermap()",
-      "community_name": "distanceMeters",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_playermap"
     },
     {
@@ -16069,9 +16069,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L894",
       "_origin": "ast",
-      "community": 77,
+      "community": 6,
       "norm_label": "addarrowmarkers()",
-      "community_name": "distanceMeters",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_addarrowmarkers"
     },
     {
@@ -16080,9 +16080,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 77,
+      "community": 6,
       "norm_label": "org",
-      "community_name": "distanceMeters",
+      "community_name": "PackageScanScreen.kt",
       "id": "org"
     },
     {
@@ -16091,9 +16091,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L953",
       "_origin": "ast",
-      "community": 77,
+      "community": 6,
       "norm_label": "calculatebearing()",
-      "community_name": "distanceMeters",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_calculatebearing"
     },
     {
@@ -16102,9 +16102,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L970",
       "_origin": "ast",
-      "community": 77,
+      "community": 6,
       "norm_label": "createarrowicon()",
-      "community_name": "distanceMeters",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_createarrowicon"
     },
     {
@@ -16113,9 +16113,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 77,
+      "community": 6,
       "norm_label": "android",
-      "community_name": "distanceMeters",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_kt_android"
     },
     {
@@ -16267,9 +16267,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerViewModel.kt",
       "source_location": "L572",
       "_origin": "ast",
-      "community": 76,
+      "community": 5,
       "norm_label": ".parsepolylinejson()",
-      "community_name": "JSONArray",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerviewmodel_routeplayerviewmodel_parsepolylinejson"
     },
     {
@@ -16762,9 +16762,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/test/RouteHelperTestScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 200,
+      "community": 6,
       "norm_label": "routehelpertestscreen.kt",
-      "community_name": "TestMap",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestscreen"
     },
     {
@@ -16773,9 +16773,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/test/RouteHelperTestScreen.kt",
       "source_location": "L55",
       "_origin": "ast",
-      "community": 200,
+      "community": 6,
       "norm_label": "routehelpertestscreen()",
-      "community_name": "TestMap",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestscreen_routehelpertestscreen"
     },
     {
@@ -16784,9 +16784,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/test/RouteHelperTestScreen.kt",
       "source_location": "L151",
       "_origin": "ast",
-      "community": 200,
+      "community": 6,
       "norm_label": "testmap()",
-      "community_name": "TestMap",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestscreen_testmap"
     },
     {
@@ -16795,9 +16795,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 200,
+      "community": 6,
       "norm_label": "modifier",
-      "community_name": "TestMap",
+      "community_name": "PackageScanScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestscreen_kt_modifier"
     },
     {
@@ -16808,7 +16808,7 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "routehelpertestviewmodel.kt",
-      "community_name": "RouteHelperTestViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestviewmodel"
     },
     {
@@ -16819,7 +16819,7 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "teststop",
-      "community_name": "RouteHelperTestViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestviewmodel_teststop"
     },
     {
@@ -16830,7 +16830,7 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "routehelpertestuistate",
-      "community_name": "RouteHelperTestViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestviewmodel_routehelpertestuistate"
     },
     {
@@ -16841,7 +16841,7 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "routehelpertestviewmodel",
-      "community_name": "RouteHelperTestViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestviewmodel_routehelpertestviewmodel"
     },
     {
@@ -16852,7 +16852,7 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "androidviewmodel",
-      "community_name": "RouteHelperTestViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestviewmodel_kt_androidviewmodel"
     },
     {
@@ -16863,7 +16863,7 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "stateflow",
-      "community_name": "RouteHelperTestViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestviewmodel_kt_stateflow"
     },
     {
@@ -16874,7 +16874,7 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": ".onzipinputchange()",
-      "community_name": "RouteHelperTestViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestviewmodel_routehelpertestviewmodel_onzipinputchange"
     },
     {
@@ -16885,7 +16885,7 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": ".loadzip()",
-      "community_name": "RouteHelperTestViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestviewmodel_routehelpertestviewmodel_loadzip"
     },
     {
@@ -16896,7 +16896,7 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": ".setfakelocation()",
-      "community_name": "RouteHelperTestViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestviewmodel_routehelpertestviewmodel_setfakelocation"
     },
     {
@@ -16907,7 +16907,7 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": ".routestop()",
-      "community_name": "RouteHelperTestViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestviewmodel_routehelpertestviewmodel_routestop"
     },
     {
@@ -16918,7 +16918,7 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": ".undo()",
-      "community_name": "RouteHelperTestViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestviewmodel_routehelpertestviewmodel_undo"
     },
     {
@@ -16929,7 +16929,7 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": ".nearestunrouted()",
-      "community_name": "RouteHelperTestViewModel",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestviewmodel_routehelpertestviewmodel_nearestunrouted"
     },
     {
@@ -17048,9 +17048,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/settings/data/SettingsApiClient.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 22,
+      "community": 76,
       "norm_label": "settingsapiclient.kt",
-      "community_name": "BaseApiClient",
+      "community_name": "DebugTriggerResult",
       "id": "app_src_main_java_com_isaacshub_app_settings_data_settingsapiclient"
     },
     {
@@ -17059,9 +17059,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/settings/data/SettingsApiClient.kt",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 22,
+      "community": 76,
       "norm_label": "debugtriggerresult",
-      "community_name": "BaseApiClient",
+      "community_name": "DebugTriggerResult",
       "id": "app_src_main_java_com_isaacshub_app_settings_data_settingsapiclient_debugtriggerresult"
     },
     {
@@ -17070,9 +17070,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/settings/data/SettingsApiClient.kt",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 22,
+      "community": 76,
       "norm_label": "started",
-      "community_name": "BaseApiClient",
+      "community_name": "DebugTriggerResult",
       "id": "app_src_main_java_com_isaacshub_app_settings_data_settingsapiclient_started"
     },
     {
@@ -17081,9 +17081,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/settings/data/SettingsApiClient.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 22,
+      "community": 76,
       "norm_label": "alreadyrunning",
-      "community_name": "BaseApiClient",
+      "community_name": "DebugTriggerResult",
       "id": "app_src_main_java_com_isaacshub_app_settings_data_settingsapiclient_alreadyrunning"
     },
     {
@@ -17092,9 +17092,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/settings/data/SettingsApiClient.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 22,
+      "community": 76,
       "norm_label": "failed",
-      "community_name": "BaseApiClient",
+      "community_name": "DebugTriggerResult",
       "id": "app_src_main_java_com_isaacshub_app_settings_data_settingsapiclient_failed"
     },
     {
@@ -17103,9 +17103,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/settings/data/SettingsApiClient.kt",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 22,
+      "community": 76,
       "norm_label": "settingsapiclient",
-      "community_name": "BaseApiClient",
+      "community_name": "DebugTriggerResult",
       "id": "app_src_main_java_com_isaacshub_app_settings_data_settingsapiclient_settingsapiclient"
     },
     {
@@ -17114,9 +17114,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/settings/data/SettingsApiClient.kt",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 22,
+      "community": 76,
       "norm_label": ".triggerdiscordbridgedebug()",
-      "community_name": "BaseApiClient",
+      "community_name": "DebugTriggerResult",
       "id": "app_src_main_java_com_isaacshub_app_settings_data_settingsapiclient_settingsapiclient_triggerdiscordbridgedebug"
     },
     {
@@ -17125,9 +17125,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/settings/data/SettingsApiClient.kt",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 22,
+      "community": 76,
       "norm_label": ".postdebugtrigger()",
-      "community_name": "BaseApiClient",
+      "community_name": "DebugTriggerResult",
       "id": "app_src_main_java_com_isaacshub_app_settings_data_settingsapiclient_settingsapiclient_postdebugtrigger"
     },
     {
@@ -17257,9 +17257,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/settings/ui/SettingsViewModel.kt",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 22,
+      "community": 62,
       "norm_label": ".debugdiscordbridge()",
-      "community_name": "BaseApiClient",
+      "community_name": "SettingsViewModel",
       "id": "app_src_main_java_com_isaacshub_app_settings_ui_settingsviewmodel_settingsviewmodel_debugdiscordbridge"
     },
     {
@@ -22922,9 +22922,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/domain/PhotoSyncPlanner.kt",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 2,
+      "community": 176,
       "norm_label": "pendingupload",
-      "community_name": "MediaItem",
+      "community_name": ".doWork",
       "id": "app_src_main_java_com_isaacshub_app_vault_domain_photosyncplanner_pendingupload"
     },
     {
@@ -23329,9 +23329,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/ui/pairing/PairingViewModel.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 197,
+      "community": 86,
       "norm_label": "pairingviewmodel.kt",
-      "community_name": "PairingViewModel",
+      "community_name": "VaultPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingviewmodel"
     },
     {
@@ -23340,9 +23340,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/ui/pairing/PairingViewModel.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 197,
+      "community": 86,
       "norm_label": "pairinguistate",
-      "community_name": "PairingViewModel",
+      "community_name": "VaultPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingviewmodel_pairinguistate"
     },
     {
@@ -23351,9 +23351,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/ui/pairing/PairingViewModel.kt",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 197,
+      "community": 86,
       "norm_label": "pairingviewmodel",
-      "community_name": "PairingViewModel",
+      "community_name": "VaultPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingviewmodel_pairingviewmodel"
     },
     {
@@ -23362,9 +23362,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 197,
+      "community": 86,
       "norm_label": "androidviewmodel",
-      "community_name": "PairingViewModel",
+      "community_name": "VaultPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingviewmodel_kt_androidviewmodel"
     },
     {
@@ -23373,9 +23373,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 197,
+      "community": 86,
       "norm_label": "stateflow",
-      "community_name": "PairingViewModel",
+      "community_name": "VaultPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingviewmodel_kt_stateflow"
     },
     {
@@ -23384,9 +23384,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/ui/pairing/PairingViewModel.kt",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 197,
+      "community": 86,
       "norm_label": ".onqrcodescanned()",
-      "community_name": "PairingViewModel",
+      "community_name": "VaultPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingviewmodel_pairingviewmodel_onqrcodescanned"
     },
     {
@@ -23747,9 +23747,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/work/PhotoBackupWorker.kt",
       "source_location": "L61",
       "_origin": "ast",
-      "community": 2,
+      "community": 176,
       "norm_label": ".uploadone()",
-      "community_name": "MediaItem",
+      "community_name": ".doWork",
       "id": "app_src_main_java_com_isaacshub_app_vault_work_photobackupworker_photobackupworker_uploadone"
     },
     {
@@ -24154,7 +24154,7 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/NearestAddressesTest.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 71,
+      "community": 7,
       "norm_label": "nearestaddressestest.kt",
       "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_nearestaddressestest"
@@ -24165,7 +24165,7 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/NearestAddressesTest.kt",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 71,
+      "community": 7,
       "norm_label": "nearestaddressestest",
       "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_nearestaddressestest_nearestaddressestest"
@@ -24176,9 +24176,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/NearestAddressesTest.kt",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 77,
+      "community": 7,
       "norm_label": ".`distancemeters is zero for the same point`()",
-      "community_name": "distanceMeters",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_nearestaddressestest_nearestaddressestest_distancemeters_is_zero_for_the_same_point"
     },
     {
@@ -24187,9 +24187,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/NearestAddressesTest.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 71,
+      "community": 127,
       "norm_label": ".`distancemeters roughly matches known latitude degree distance`()",
-      "community_name": "CandidateAddress",
+      "community_name": "GeoPoint",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_nearestaddressestest_nearestaddressestest_distancemeters_roughly_matches_known_latitude_degree_distance"
     },
     {
@@ -24198,7 +24198,7 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/NearestAddressesTest.kt",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 71,
+      "community": 7,
       "norm_label": ".`nearestaddresses returns closest-first up to count`()",
       "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_nearestaddressestest_nearestaddressestest_nearestaddresses_returns_closest_first_up_to_count"
@@ -24209,7 +24209,7 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/NearestAddressesTest.kt",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 71,
+      "community": 7,
       "norm_label": ".`nearestaddresses returns fewer than count if there aren't enough candidates`()",
       "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_nearestaddressestest_nearestaddressestest_nearestaddresses_returns_fewer_than_count_if_there_aren_t_enough_candidates"
@@ -24220,7 +24220,7 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/NearestAddressesTest.kt",
       "source_location": "L42",
       "_origin": "ast",
-      "community": 71,
+      "community": 7,
       "norm_label": ".`nearestaddresses on an empty list returns empty`()",
       "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_nearestaddressestest_nearestaddressestest_nearestaddresses_on_an_empty_list_returns_empty"
@@ -24330,9 +24330,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 192,
+      "community": 7,
       "norm_label": "stickynearestslotstest.kt",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest"
     },
     {
@@ -24341,9 +24341,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 192,
+      "community": 7,
       "norm_label": "stickynearestslotstest",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest"
     },
     {
@@ -24352,9 +24352,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 192,
+      "community": 7,
       "norm_label": ".candidate()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_candidate"
     },
     {
@@ -24363,9 +24363,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 192,
+      "community": 7,
       "norm_label": ".`empty slots fill with newcomers in nearest-first order`()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_empty_slots_fill_with_newcomers_in_nearest_first_order"
     },
     {
@@ -24374,9 +24374,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 192,
+      "community": 7,
       "norm_label": ".`a candidate keeps its slot even when its rank within the nearest set changes`()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_a_candidate_keeps_its_slot_even_when_its_rank_within_the_nearest_set_changes"
     },
     {
@@ -24385,9 +24385,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 192,
+      "community": 7,
       "norm_label": ".`a candidate that falls out of the nearest set is evicted and replaced by a newcomer`()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_a_candidate_that_falls_out_of_the_nearest_set_is_evicted_and_replaced_by_a_newcomer"
     },
     {
@@ -24396,9 +24396,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L44",
       "_origin": "ast",
-      "community": 192,
+      "community": 7,
       "norm_label": ".`a routed candidate (missing entirely) is evicted the same way`()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_a_routed_candidate_missing_entirely_is_evicted_the_same_way"
     },
     {
@@ -24407,9 +24407,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L55",
       "_origin": "ast",
-      "community": 192,
+      "community": 7,
       "norm_label": ".`newcomers fill the earliest vacated slots first`()",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_newcomers_fill_the_earliest_vacated_slots_first"
     },
     {
@@ -26846,9 +26846,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/home/HomeScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 21,
+      "community": 77,
       "norm_label": "essentials/ui/home/homescreen.kt",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen"
     },
     {
@@ -26857,9 +26857,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/home/HomeScreen.kt",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 21,
+      "community": 77,
       "norm_label": "homescreen()",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen_homescreen"
     },
     {
@@ -26868,9 +26868,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 21,
+      "community": 77,
       "norm_label": "homeviewmodel",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "homeviewmodel"
     },
     {
@@ -26879,9 +26879,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/home/HomeScreen.kt",
       "source_location": "L174",
       "_origin": "ast",
-      "community": 21,
+      "community": 77,
       "norm_label": "completionprogresscard()",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen_completionprogresscard"
     },
     {
@@ -26890,9 +26890,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 21,
+      "community": 77,
       "norm_label": "modifier",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen_kt_modifier"
     },
     {
@@ -26901,9 +26901,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/home/HomeScreen.kt",
       "source_location": "L215",
       "_origin": "ast",
-      "community": 21,
+      "community": 77,
       "norm_label": "chorecard()",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen_chorecard"
     },
     {
@@ -27385,9 +27385,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/photo/PhotoCaptureScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 201,
+      "community": 44,
       "norm_label": "photocapturescreen.kt",
-      "community_name": "PhotoCaptureScreen",
+      "community_name": "PhotoCaptureViewModel",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_photo_photocapturescreen"
     },
     {
@@ -27396,9 +27396,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/photo/PhotoCaptureScreen.kt",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 201,
+      "community": 44,
       "norm_label": "photocapturescreen()",
-      "community_name": "PhotoCaptureScreen",
+      "community_name": "PhotoCaptureViewModel",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_photo_photocapturescreen_photocapturescreen"
     },
     {
@@ -27407,9 +27407,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/photo/PhotoCaptureScreen.kt",
       "source_location": "L121",
       "_origin": "ast",
-      "community": 201,
+      "community": 44,
       "norm_label": "camerapreviewscreen()",
-      "community_name": "PhotoCaptureScreen",
+      "community_name": "PhotoCaptureViewModel",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_photo_photocapturescreen_camerapreviewscreen"
     },
     {
@@ -27418,9 +27418,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 201,
+      "community": 44,
       "norm_label": "modifier",
-      "community_name": "PhotoCaptureScreen",
+      "community_name": "PhotoCaptureViewModel",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_photo_photocapturescreen_kt_modifier"
     },
     {
@@ -27429,9 +27429,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/photo/PhotoCaptureScreen.kt",
       "source_location": "L200",
       "_origin": "ast",
-      "community": 201,
+      "community": 44,
       "norm_label": "photopreviewscreen()",
-      "community_name": "PhotoCaptureScreen",
+      "community_name": "PhotoCaptureViewModel",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_photo_photocapturescreen_photopreviewscreen"
     },
     {
@@ -27440,9 +27440,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 201,
+      "community": 44,
       "norm_label": "uri",
-      "community_name": "PhotoCaptureScreen",
+      "community_name": "PhotoCaptureViewModel",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_photo_photocapturescreen_kt_uri"
     },
     {
@@ -29886,68 +29886,130 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L13",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "source": "app_src_main_java_com_isaacshub_app_app",
+      "target": "app_src_main_java_com_isaacshub_app_app_app",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L84",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L58",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog",
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
       "confidence_score": 1.0
     },
     {
-      "relation": "method",
+      "relation": "inherits",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L132",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L49",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L24",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "application",
       "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L15",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L49",
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "essentialsrepository",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L55",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "featurefunnelpreferencesrepository",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L52",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "featurefunnelrepository",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L46",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "routehelperrepository",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "sleeprepository",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "timetrackingrepository",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "userpreferencesrepository",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L43",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "vaultpreferencesrepository",
       "confidence_score": 1.0
     },
     {
@@ -29958,45 +30020,9 @@
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "application",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L16",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "coroutinescope",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L14",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "crashlogdatabase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L32",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
-      "target": "crashlogdatabase",
-      "confidence_score": 1.0
+      "target": "application"
     },
     {
       "relation": "references",
@@ -30006,303 +30032,9 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
-      "target": "coroutinescope",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L24",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
-      "target": "application",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L39",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L24",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L54",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L104",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "return_type",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L84",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_kt_crashlog",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L132",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors",
-      "target": "databaseerror",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L84",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L48",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L25",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L36",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L25",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_kt_crashlog",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L48",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_kt_crashlog",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L30",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_app",
-      "target": "app_src_main_java_com_isaacshub_app_app_app"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L58",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "app_src_main_java_com_isaacshub_app_app_app_oncreate"
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L30",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "app_src_main_java_com_isaacshub_app_app_kt_application"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L49",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "essentialsrepository"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L55",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "featurefunnelpreferencesrepository"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L52",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "featurefunnelrepository"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L46",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "routehelperrepository"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L37",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "sleeprepository"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L40",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "timetrackingrepository"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L34",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "userpreferencesrepository"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L43",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "vaultpreferencesrepository"
+      "target": "application"
     },
     {
       "relation": "calls",
@@ -30312,9 +30044,9 @@
       "source_location": "L60",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "userpreferencesrepository"
+      "target": "userpreferencesrepository",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -30324,9 +30056,9 @@
       "source_location": "L67",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "sleeprepository"
+      "target": "sleeprepository",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -30336,9 +30068,9 @@
       "source_location": "L71",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "timetrackingrepository"
+      "target": "timetrackingrepository",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -30348,9 +30080,9 @@
       "source_location": "L79",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "vaultpreferencesrepository"
+      "target": "vaultpreferencesrepository",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -30360,9 +30092,9 @@
       "source_location": "L77",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "routehelperrepository"
+      "target": "routehelperrepository",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -30372,9 +30104,9 @@
       "source_location": "L92",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "essentialsrepository"
+      "target": "essentialsrepository",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -30384,9 +30116,9 @@
       "source_location": "L121",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "featurefunnelrepository"
+      "target": "featurefunnelrepository",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -30396,9 +30128,9 @@
       "source_location": "L120",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "featurefunnelpreferencesrepository"
+      "target": "featurefunnelpreferencesrepository",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -30411,6 +30143,262 @@
       "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelworker_featurefunnelworker_checkforcompletion",
       "target": "featurefunnelpreferencesrepository"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L15",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "coroutinescope"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "crashlogdatabase"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
+      "target": "crashlogdatabase"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
+      "target": "coroutinescope"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_kt_crashlog"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors",
+      "target": "databaseerror"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_kt_crashlog"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L48",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_kt_crashlog"
     },
     {
       "relation": "contains",
@@ -79283,5 +79271,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "2c3b29ad3ed9365c14f0cea981a2abb9bfc47b5b"
+  "built_at_commit": "ef799c55c6a03936061ab70e64cb538b8bb21c6e"
 }

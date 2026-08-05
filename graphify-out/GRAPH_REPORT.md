@@ -1,7 +1,7 @@
 # Graph Report - isaacs-hub  (2026-08-05)
 
 ## Corpus Check
-- 335 files · ~138,202 words
+- 335 files · ~138,209 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ef799c55`
+- Built from commit: `0b354426`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

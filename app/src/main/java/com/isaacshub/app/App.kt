@@ -61,7 +61,7 @@ class App : Application() {
         // Install crash logger FIRST, before any other initialization
         // This ensures we catch crashes that happen during database initialization
         val crashReportingClient = CrashReportingApiClient(
-            localUrl = "http://192.168.1.1:3001",  // Development/debug server (use 3001 for dev, 3000 for prod)
+            localUrl = "http://10.0.0.237:3001",  // Development/debug server on LAN (use 3001 for dev, 3000 for prod)
             remoteUrl = "https://storage.isaacs-hub.com"  // Remote fallback
         )
         CrashLogger.install(this, applicationScope, crashReportingClient)
