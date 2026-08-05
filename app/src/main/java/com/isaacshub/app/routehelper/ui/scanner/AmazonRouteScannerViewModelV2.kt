@@ -6,6 +6,10 @@ import androidx.lifecycle.viewModelScope
 import com.isaacshub.app.App
 import com.isaacshub.app.routehelper.data.CandidateAddressEntity
 import com.isaacshub.app.routehelper.data.ScannedAddressData
+import com.isaacshub.app.routehelper.data.RoutedStopEntity
+import com.isaacshub.app.routehelper.domain.GeoPoint
+import com.isaacshub.app.routehelper.domain.NonRoutableOptimizer
+import com.isaacshub.app.routehelper.domain.toGeoPoint
 import com.isaacshub.app.routehelper.util.normalizeAddress
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -18,10 +22,19 @@ import kotlinx.coroutines.launch
  */
 data class ScannedStopV2(
     val addressLabel: String,
-    val sequenceNumber: Int,  // 1-based display number
+    val sequenceNumber: Float,  // 1-based display number (can be fractional for non-routables like 22.5)
     val matchedCandidateId: Long?,
-    val packageCount: Int = 1  // Default to 1 package per stop
+    val packageCount: Int = 1,  // Default to 1 package per stop
+    val isNonRoutable: Boolean = false  // True if this is a non-routable package
 )
+
+/**
+ * Scanning mode for the V2 scanner
+ */
+enum class ScanMode {
+    REGULAR_STOPS,      // Scanning for regular stops (only green/matched addresses allowed)
+    NON_ROUTABLES       // Scanning for non-routable packages (any address allowed)
+}
 
 /**
  * UI state for the enhanced scanner V2
@@ -32,7 +45,8 @@ data class AmazonScannerV2UiState(
     val isLoading: Boolean = true,
     val validationMessage: String? = null,
     val isCreatingStops: Boolean = false,
-    val error: String? = null
+    val error: String? = null,
+    val scanMode: ScanMode = ScanMode.REGULAR_STOPS  // Current scanning mode
 )
 
 /**
@@ -76,6 +90,13 @@ class AmazonRouteScannerViewModelV2(
     }
 
     /**
+     * Set the scanning mode (regular stops or non-routables)
+     */
+    fun setScanMode(mode: ScanMode) {
+        _uiState.update { it.copy(scanMode = mode) }
+    }
+
+    /**
      * Add a stop from a detected address (called when user taps on green bounding box)
      */
     fun addStopFromAddress(detectedAddress: DetectedAddress) {
@@ -102,13 +123,15 @@ class AmazonRouteScannerViewModelV2(
             return
         }
 
-        // Create new stop
-        val nextSequence = _uiState.value.scannedStops.size + 1
+        // Create new stop with sequential numbering
+        val regularStops = _uiState.value.scannedStops.filter { !it.isNonRoutable }
+        val nextSequence = regularStops.size + 1
         val newStop = ScannedStopV2(
             addressLabel = addressLabel,
-            sequenceNumber = nextSequence,
+            sequenceNumber = nextSequence.toFloat(),
             matchedCandidateId = matchedCandidateId,
-            packageCount = 1  // Default to 1 package
+            packageCount = 1,  // Default to 1 package
+            isNonRoutable = false
         )
 
         _uiState.update { state ->
@@ -116,6 +139,78 @@ class AmazonRouteScannerViewModelV2(
                 scannedStops = state.scannedStops + newStop,
                 validationMessage = "✓ Added: $addressLabel"
             )
+        }
+
+        // Re-optimize non-routables if any exist after adding new regular stop
+        reoptimizeNonRoutablesIfNeeded()
+    }
+
+    /**
+     * Add a non-routable address from a detected address.
+     * Non-routables will be intelligently placed between existing stops with minimal route detour
+     * when the route is saved to the database (finishScanning).
+     * During scanning, they're just assigned a temporary sequence and will be optimized later.
+     */
+    fun addNonRoutableFromAddress(detectedAddress: DetectedAddress) {
+        val addressLabel = detectedAddress.matchedLabel ?: detectedAddress.text
+
+        // Check for duplicates
+        val normalizedScanned = normalizeAddress(addressLabel)
+        val isDuplicate = _uiState.value.scannedStops.any { stop ->
+            normalizeAddress(stop.addressLabel) == normalizedScanned
+        }
+
+        if (isDuplicate) {
+            _uiState.update {
+                it.copy(validationMessage = "⚠ Duplicate address - already added")
+            }
+            return
+        }
+
+        // For non-routables during scanning, assign a temporary sequence at the end
+        // They will be re-optimized when the route is finalized and saved to the database
+        val maxSequence = _uiState.value.scannedStops.maxOfOrNull { it.sequenceNumber } ?: 0.0f
+        val tempSequence = maxSequence + 1.0f
+
+        val newStop = ScannedStopV2(
+            addressLabel = addressLabel,
+            sequenceNumber = tempSequence,
+            matchedCandidateId = detectedAddress.matchedCandidateId,
+            packageCount = 1,
+            isNonRoutable = true
+        )
+
+        _uiState.update { state ->
+            state.copy(
+                scannedStops = state.scannedStops + newStop,
+                validationMessage = "✓ Added non-routable: $addressLabel (will be re-optimized on save)"
+            )
+        }
+    }
+
+    /**
+     * Re-optimize non-routable positions if they exist and regular stops have changed.
+     * Note: This implementation is simplified for UI state management.
+     * Full optimization would happen during finishScanning when we have all coordinates.
+     */
+    private fun reoptimizeNonRoutablesIfNeeded() {
+        val nonRoutables = _uiState.value.scannedStops.filter { it.isNonRoutable }
+        if (nonRoutables.isEmpty()) return
+
+        // For now, just ensure non-routables stay sorted between regular stops
+        // Real optimization will happen when stops are saved to database
+        val regularStops = _uiState.value.scannedStops.filter { !it.isNonRoutable }
+
+        // Simple re-sequencing: ensure each non-routable has an appropriate fractional position
+        // This is a placeholder - real logic would need actual coordinates
+        val optimizedNonRoutables = nonRoutables.map { nonRoutable ->
+            // Keep it in its appropriate position relative to the nearest regular stops
+            nonRoutable  // For now, just keep as-is
+        }
+
+        _uiState.update { state ->
+            val newStops = (regularStops + optimizedNonRoutables).sortedBy { it.sequenceNumber }
+            state.copy(scannedStops = newStops)
         }
     }
 
@@ -152,16 +247,33 @@ class AmazonRouteScannerViewModelV2(
     }
 
     /**
-     * Remove a stop from the list
+     * Remove a stop from the list (handles both regular and non-routable stops)
      */
     fun removeStop(stop: ScannedStopV2) {
         _uiState.update { state ->
             val updatedList = state.scannedStops.filter { it.sequenceNumber != stop.sequenceNumber }
-            // Renumber remaining stops
-            val renumbered = updatedList.mapIndexed { index, s ->
-                s.copy(sequenceNumber = index + 1)
+
+            if (stop.isNonRoutable) {
+                // For non-routables, just remove and keep others as-is
+                state.copy(scannedStops = updatedList)
+            } else {
+                // For regular stops, renumber remaining regular stops sequentially
+                val regularStops = updatedList.filter { !it.isNonRoutable }
+                val nonRoutables = updatedList.filter { it.isNonRoutable }
+
+                val renumberedRegular = regularStops.mapIndexed { index, s ->
+                    s.copy(sequenceNumber = (index + 1).toFloat())
+                }
+
+                // Re-optimize non-routables after removing a regular stop
+                val optimizedNonRoutables = nonRoutables.map { nr ->
+                    // Keep non-routable but mark that it may need re-optimization
+                    nr
+                }
+
+                val newStops = (renumberedRegular + optimizedNonRoutables).sortedBy { it.sequenceNumber }
+                state.copy(scannedStops = newStops)
             }
-            state.copy(scannedStops = renumbered)
         }
     }
 
@@ -191,11 +303,18 @@ class AmazonRouteScannerViewModelV2(
                         sequenceNumber = stop.sequenceNumber,
                         matchedCandidateId = stop.matchedCandidateId,
                         isValid = stop.matchedCandidateId != null,
-                        expectedPackageCount = stop.packageCount
+                        expectedPackageCount = stop.packageCount,
+                        isNonRoutable = stop.isNonRoutable
                     )
                 }
 
                 repository.createStopsFromScannedAddresses(routeId, scannedData)
+
+                // If there are non-routable stops, optimize their placement
+                if (scannedData.any { it.isNonRoutable }) {
+                    repository.optimizeNonRoutableStopPlacement(routeId)
+                }
+
                 onComplete()
             } catch (e: Exception) {
                 _uiState.update {

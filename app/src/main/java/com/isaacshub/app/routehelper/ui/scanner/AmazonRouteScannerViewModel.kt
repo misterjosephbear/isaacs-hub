@@ -186,7 +186,7 @@ class AmazonRouteScannerViewModel(
                 val scannedData = addresses.map { addr ->
                     ScannedAddressData(
                         addressLabel = addr.addressLabel,
-                        sequenceNumber = addr.sequenceNumber,
+                        sequenceNumber = addr.sequenceNumber.toFloat(),
                         matchedCandidateId = addr.matchedCandidateId,
                         isValid = addr.isValid,
                         expectedPackageCount = addr.expectedPackageCount

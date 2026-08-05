@@ -35,7 +35,7 @@ data class CandidateAddressEntity(
 data class RoutedStopEntity(
     @PrimaryKey(autoGenerate = true) val id: Long = 0,
     val routeId: Long,
-    val sequenceOrder: Int,
+    val sequenceOrder: Float,  // Changed from Int to Float to support non-routable stops (e.g., 22.5)
     val addressLabel: String,
     val note: String?,
     val latitude: Double,
@@ -46,7 +46,9 @@ data class RoutedStopEntity(
     /** Recipient's last name, when this stop was added by scanning a mail piece. Not otherwise used yet - reserved for a later feature. */
     val recipientLastName: String? = null,
     /** Expected package count at this stop (from Amazon direction sheets). Null if unknown. */
-    val expectedPackageCount: Int? = null
+    val expectedPackageCount: Int? = null,
+    /** True if this is a non-routable package (no sequence number from clerk, optimally placed between regular stops). */
+    val isNonRoutable: Boolean = false
 )
 
 /** Cached OSRM road-following route for offline use. One row per route, storing the polyline as JSON. */
@@ -95,8 +97,8 @@ data class PackageWithSequence(
     val routedStopId: Long?,
     val isDelivered: Boolean,
     val scannedAtEpochMillis: Long,
-    /** Sequence number of the stop (1-based), null if not matched to a stop */
-    val sequenceNumber: Int?,
+    /** Sequence number of the stop (1-based, may be fractional like 2.5 for non-routables), null if not matched to a stop */
+    val sequenceNumber: Float?,
     val isUnknownStreetMatch: Boolean,
     val streetName: String?,
     val plotAfterStopId: Long?,

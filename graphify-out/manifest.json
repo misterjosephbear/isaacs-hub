@@ -1670,13 +1670,13 @@
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt": {
-    "mtime": 1785939269.7023876,
-    "ast_hash": "e3b3c53c0424962c054c9be400f8482e",
+    "mtime": 1785952559.6111748,
+    "ast_hash": "274544b0c6c8dcc89a133d929373dd2a",
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt": {
-    "mtime": 1785939290.3144727,
-    "ast_hash": "27e38ffe8e767147baafb4b51ba5eed7",
+    "mtime": 1785952530.6790557,
+    "ast_hash": "3834b0d9b9414da9e77f5c7d9487a56d",
     "semantic_hash": ""
   }
 }

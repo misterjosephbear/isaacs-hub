@@ -70,7 +70,7 @@ import java.util.concurrent.Executors
 data class ScannedPackage(
     val trackingNumber: String,
     val addressLabel: String,
-    val sequenceNumber: Int? = null,
+    val sequenceNumber: Float? = null,
     val sections: List<String> = emptyList(),
     val routedStopId: Long? = null,
     /** True if this package is for an unknown address on a known street */

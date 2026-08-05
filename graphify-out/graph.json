@@ -4,26 +4,48 @@
   "graph": {},
   "nodes": [
     {
-      "label": "App.kt",
+      "label": "CrashLogger.kt",
       "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_app",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger",
       "community": 172,
       "community_name": "App",
-      "norm_label": "app.kt"
+      "norm_label": "crashlogger.kt"
     },
     {
-      "label": "App",
+      "label": "CrashLogger",
       "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L30",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L13",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_app_app",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
       "community": 172,
       "community_name": "App",
-      "norm_label": "app"
+      "norm_label": "crashlogger"
+    },
+    {
+      "label": "CrashLogDatabase",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crashlogdatabase",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "crashlogdatabase"
+    },
+    {
+      "label": "CoroutineScope",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "coroutinescope",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "coroutinescope"
     },
     {
       "label": "Application",
@@ -32,152 +54,9 @@
       "source_location": "",
       "_origin": "ast",
       "id": "application",
-      "community": 194,
-      "community_name": "CrashLogger",
+      "community": 172,
+      "community_name": "App",
       "norm_label": "application"
-    },
-    {
-      "label": "UserPreferencesRepository",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "userpreferencesrepository",
-      "community": 172,
-      "community_name": "App",
-      "norm_label": "userpreferencesrepository"
-    },
-    {
-      "label": "SleepRepository",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "sleeprepository",
-      "community": 172,
-      "community_name": "App",
-      "norm_label": "sleeprepository"
-    },
-    {
-      "label": "TimeTrackingRepository",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "timetrackingrepository",
-      "community": 172,
-      "community_name": "App",
-      "norm_label": "timetrackingrepository"
-    },
-    {
-      "label": "VaultPreferencesRepository",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "vaultpreferencesrepository",
-      "community": 172,
-      "community_name": "App",
-      "norm_label": "vaultpreferencesrepository"
-    },
-    {
-      "label": "RouteHelperRepository",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "routehelperrepository",
-      "community": 172,
-      "community_name": "App",
-      "norm_label": "routehelperrepository"
-    },
-    {
-      "label": "EssentialsRepository",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "essentialsrepository",
-      "community": 172,
-      "community_name": "App",
-      "norm_label": "essentialsrepository"
-    },
-    {
-      "label": "FeatureFunnelRepository",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "featurefunnelrepository",
-      "community": 172,
-      "community_name": "App",
-      "norm_label": "featurefunnelrepository"
-    },
-    {
-      "label": "FeatureFunnelPreferencesRepository",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "featurefunnelpreferencesrepository",
-      "community": 172,
-      "community_name": "App",
-      "norm_label": "featurefunnelpreferencesrepository"
-    },
-    {
-      "label": ".onCreate()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L58",
-      "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "community": 172,
-      "community_name": "App",
-      "norm_label": ".oncreate()"
-    },
-    {
-      "label": "CrashLogger.kt",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": "crashlogger.kt",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger"
-    },
-    {
-      "label": "CrashLogger",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L13",
-      "_origin": "ast",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": "crashlogger",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger"
-    },
-    {
-      "label": "CrashLogDatabase",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": "crashlogdatabase",
-      "id": "crashlogdatabase"
-    },
-    {
-      "label": "CoroutineScope",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": "coroutinescope",
-      "id": "coroutinescope"
     },
     {
       "label": ".install()",
@@ -185,32 +64,32 @@
       "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": ".install()",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install"
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": ".install()"
     },
     {
       "label": ".handleUncaughtException()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L49",
+      "source_location": "L56",
       "_origin": "ast",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": ".handleuncaughtexception()",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception"
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": ".handleuncaughtexception()"
     },
     {
       "label": ".buildCrashLog()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L84",
+      "source_location": "L97",
       "_origin": "ast",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": ".buildcrashlog()",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog"
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": ".buildcrashlog()"
     },
     {
       "label": "CrashLog",
@@ -218,21 +97,21 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": "crashlog",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_kt_crashlog"
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_kt_crashlog",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "crashlog"
     },
     {
       "label": ".detectDatabaseErrors()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L132",
+      "source_location": "L145",
       "_origin": "ast",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": ".detectdatabaseerrors()",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors"
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": ".detectdatabaseerrors()"
     },
     {
       "label": "DatabaseError",
@@ -240,10 +119,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 194,
-      "community_name": "CrashLogger",
-      "norm_label": "databaseerror",
-      "id": "databaseerror"
+      "id": "databaseerror",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "databaseerror"
     },
     {
       "label": "CrashReportingApiClient.kt",
@@ -251,10 +130,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 206,
-      "community_name": "CrashReportingApiClient",
-      "norm_label": "crashreportingapiclient.kt",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient"
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "crashreportingapiclient.kt"
     },
     {
       "label": "CrashReportingApiClient",
@@ -262,21 +141,21 @@
       "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 206,
-      "community_name": "CrashReportingApiClient",
-      "norm_label": "crashreportingapiclient",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient"
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "crashreportingapiclient"
     },
     {
       "label": ".reportCrashAsync()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L25",
+      "source_location": "L29",
       "_origin": "ast",
-      "community": 206,
-      "community_name": "CrashReportingApiClient",
-      "norm_label": ".reportcrashasync()",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync"
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": ".reportcrashasync()"
     },
     {
       "label": "CrashLog",
@@ -284,21 +163,164 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 206,
-      "community_name": "CrashReportingApiClient",
-      "norm_label": "crashlog",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_kt_crashlog"
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_kt_crashlog",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "crashlog"
+    },
+    {
+      "label": ".reportCrashBlocking()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashblocking",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": ".reportcrashblocking()"
+    },
+    {
+      "label": ".shouldReport()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_shouldreport",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": ".shouldreport()"
     },
     {
       "label": ".reportCrash()",
       "file_type": "code",
       "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L48",
+      "source_location": "L72",
       "_origin": "ast",
-      "community": 206,
-      "community_name": "CrashReportingApiClient",
-      "norm_label": ".reportcrash()",
-      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash"
+      "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": ".reportcrash()"
+    },
+    {
+      "label": "App.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "app.kt",
+      "id": "app_src_main_java_com_isaacshub_app_app"
+    },
+    {
+      "label": "App",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L30",
+      "_origin": "ast",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "app",
+      "id": "app_src_main_java_com_isaacshub_app_app_app"
+    },
+    {
+      "label": "UserPreferencesRepository",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "userpreferencesrepository",
+      "id": "userpreferencesrepository"
+    },
+    {
+      "label": "SleepRepository",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "sleeprepository",
+      "id": "sleeprepository"
+    },
+    {
+      "label": "TimeTrackingRepository",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "timetrackingrepository",
+      "id": "timetrackingrepository"
+    },
+    {
+      "label": "VaultPreferencesRepository",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "vaultpreferencesrepository",
+      "id": "vaultpreferencesrepository"
+    },
+    {
+      "label": "RouteHelperRepository",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "routehelperrepository",
+      "id": "routehelperrepository"
+    },
+    {
+      "label": "EssentialsRepository",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "essentialsrepository",
+      "id": "essentialsrepository"
+    },
+    {
+      "label": "FeatureFunnelRepository",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "featurefunnelrepository",
+      "id": "featurefunnelrepository"
+    },
+    {
+      "label": "FeatureFunnelPreferencesRepository",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": "featurefunnelpreferencesrepository",
+      "id": "featurefunnelpreferencesrepository"
+    },
+    {
+      "label": ".onCreate()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L58",
+      "_origin": "ast",
+      "community": 172,
+      "community_name": "App",
+      "norm_label": ".oncreate()",
+      "id": "app_src_main_java_com_isaacshub_app_app_app_oncreate"
     },
     {
       "label": "Application",
@@ -1945,8 +1967,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/homecontrol/ui/devices/DeviceListScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 157,
+      "community_name": "HomeControlViewModel",
       "norm_label": "devicelistscreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_homecontrol_ui_devices_devicelistscreen"
     },
@@ -1956,8 +1978,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/homecontrol/ui/devices/DeviceListScreen.kt",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 157,
+      "community_name": "HomeControlViewModel",
       "norm_label": "devicelistscreen()",
       "id": "app_src_main_java_com_isaacshub_app_homecontrol_ui_devices_devicelistscreen_devicelistscreen"
     },
@@ -2352,8 +2374,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/homecontrol/ui/pairing/DevicePairingScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 199,
+      "community_name": "AmazonRouteScannerViewModelV2",
       "norm_label": "devicepairingscreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_homecontrol_ui_pairing_devicepairingscreen"
     },
@@ -2363,8 +2385,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/homecontrol/ui/pairing/DevicePairingScreen.kt",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 199,
+      "community_name": "AmazonRouteScannerViewModelV2",
       "norm_label": "devicepairingscreen()",
       "id": "app_src_main_java_com_isaacshub_app_homecontrol_ui_pairing_devicepairingscreen_devicepairingscreen"
     },
@@ -2374,8 +2396,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/homecontrol/ui/pairing/DevicePairingScreen.kt",
       "source_location": "L327",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 199,
+      "community_name": "AmazonRouteScannerViewModelV2",
       "norm_label": "camerapreview()",
       "id": "app_src_main_java_com_isaacshub_app_homecontrol_ui_pairing_devicepairingscreen_camerapreview"
     },
@@ -2385,8 +2407,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/homecontrol/ui/pairing/DevicePairingScreen.kt",
       "source_location": "L374",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 199,
+      "community_name": "AmazonRouteScannerViewModelV2",
       "norm_label": "processimageproxy()",
       "id": "app_src_main_java_com_isaacshub_app_homecontrol_ui_pairing_devicepairingscreen_processimageproxy"
     },
@@ -2396,8 +2418,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 199,
+      "community_name": "AmazonRouteScannerViewModelV2",
       "norm_label": "barcodescanner",
       "id": "barcodescanner"
     },
@@ -2418,8 +2440,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/navigation/AppNavHost.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 157,
+      "community_name": "HomeControlViewModel",
       "norm_label": "appnavhost.kt",
       "id": "app_src_main_java_com_isaacshub_app_navigation_appnavhost"
     },
@@ -2429,8 +2451,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/navigation/AppNavHost.kt",
       "source_location": "L77",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 157,
+      "community_name": "HomeControlViewModel",
       "norm_label": "topleveldestination",
       "id": "app_src_main_java_com_isaacshub_app_navigation_appnavhost_topleveldestination"
     },
@@ -2440,8 +2462,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/navigation/AppNavHost.kt",
       "source_location": "L91",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 157,
+      "community_name": "HomeControlViewModel",
       "norm_label": "bottomdestinationsfor()",
       "id": "app_src_main_java_com_isaacshub_app_navigation_appnavhost_bottomdestinationsfor"
     },
@@ -2451,8 +2473,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/navigation/AppNavHost.kt",
       "source_location": "L97",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 157,
+      "community_name": "HomeControlViewModel",
       "norm_label": "navigatetotab()",
       "id": "app_src_main_java_com_isaacshub_app_navigation_appnavhost_navigatetotab"
     },
@@ -2462,8 +2484,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/navigation/AppNavHost.kt",
       "source_location": "L105",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 157,
+      "community_name": "HomeControlViewModel",
       "norm_label": "isaacshubapp()",
       "id": "app_src_main_java_com_isaacshub_app_navigation_appnavhost_isaacshubapp"
     },
@@ -2473,8 +2495,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/navigation/AppNavHost.kt",
       "source_location": "L123",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 157,
+      "community_name": "HomeControlViewModel",
       "norm_label": "isaacshubscaffold()",
       "id": "app_src_main_java_com_isaacshub_app_navigation_appnavhost_isaacshubscaffold"
     },
@@ -2484,8 +2506,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 157,
+      "community_name": "HomeControlViewModel",
       "norm_label": "navhostcontroller",
       "id": "navhostcontroller"
     },
@@ -2495,8 +2517,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 100,
-      "community_name": "HomeControlRepository",
+      "community": 157,
+      "community_name": "HomeControlViewModel",
       "norm_label": "modifier",
       "id": "modifier"
     },
@@ -6103,9 +6125,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/MainActivity.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 100,
+      "community": 157,
       "norm_label": "app/mainactivity.kt",
-      "community_name": "HomeControlRepository",
+      "community_name": "HomeControlViewModel",
       "id": "app_src_main_java_com_isaacshub_app_mainactivity"
     },
     {
@@ -6114,9 +6136,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/MainActivity.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 100,
+      "community": 157,
       "norm_label": "mainactivity",
-      "community_name": "HomeControlRepository",
+      "community_name": "HomeControlViewModel",
       "id": "app_src_main_java_com_isaacshub_app_mainactivity_mainactivity"
     },
     {
@@ -6125,9 +6147,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 100,
+      "community": 157,
       "norm_label": "componentactivity",
-      "community_name": "HomeControlRepository",
+      "community_name": "HomeControlViewModel",
       "id": "app_src_main_java_com_isaacshub_app_mainactivity_kt_componentactivity"
     },
     {
@@ -6136,9 +6158,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/MainActivity.kt",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 100,
+      "community": 157,
       "norm_label": ".oncreate()",
-      "community_name": "HomeControlRepository",
+      "community_name": "HomeControlViewModel",
       "id": "app_src_main_java_com_isaacshub_app_mainactivity_mainactivity_oncreate"
     },
     {
@@ -6147,9 +6169,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 100,
+      "community": 157,
       "norm_label": "bundle",
-      "community_name": "HomeControlRepository",
+      "community_name": "HomeControlViewModel",
       "id": "app_src_main_java_com_isaacshub_app_mainactivity_kt_bundle"
     },
     {
@@ -11735,9 +11757,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/worker/FeatureFunnelScheduler.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 121,
+      "community": 47,
       "norm_label": "featurefunnelscheduler.kt",
-      "community_name": "FeatureFunnelScheduler",
+      "community_name": "FeatureFunnelPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelscheduler"
     },
     {
@@ -11746,9 +11768,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/worker/FeatureFunnelScheduler.kt",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 121,
+      "community": 47,
       "norm_label": "featurefunnelscheduler",
-      "community_name": "FeatureFunnelScheduler",
+      "community_name": "FeatureFunnelPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelscheduler_featurefunnelscheduler"
     },
     {
@@ -11757,9 +11779,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/worker/FeatureFunnelScheduler.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 121,
+      "community": 47,
       "norm_label": ".schedule()",
-      "community_name": "FeatureFunnelScheduler",
+      "community_name": "FeatureFunnelPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelscheduler_featurefunnelscheduler_schedule"
     },
     {
@@ -11768,9 +11790,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 121,
+      "community": 47,
       "norm_label": "context",
-      "community_name": "FeatureFunnelScheduler",
+      "community_name": "FeatureFunnelPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelscheduler_kt_context"
     },
     {
@@ -11779,9 +11801,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/worker/FeatureFunnelScheduler.kt",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 121,
+      "community": 47,
       "norm_label": ".cancel()",
-      "community_name": "FeatureFunnelScheduler",
+      "community_name": "FeatureFunnelPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelscheduler_featurefunnelscheduler_cancel"
     },
     {
@@ -11790,9 +11812,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/worker/FeatureFunnelScheduler.kt",
       "source_location": "L43",
       "_origin": "ast",
-      "community": 121,
+      "community": 47,
       "norm_label": ".rescheduleifenabled()",
-      "community_name": "FeatureFunnelScheduler",
+      "community_name": "FeatureFunnelPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelscheduler_featurefunnelscheduler_rescheduleifenabled"
     },
     {
@@ -11801,9 +11823,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/worker/FeatureFunnelScheduler.kt",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 121,
+      "community": 47,
       "norm_label": ".checknow()",
-      "community_name": "FeatureFunnelScheduler",
+      "community_name": "FeatureFunnelPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelscheduler_featurefunnelscheduler_checknow"
     },
     {
@@ -13264,9 +13286,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 114,
+      "community": 0,
       "norm_label": "addressparity",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "AddressInterpolationTest",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_addressparity"
     },
     {
@@ -13275,9 +13297,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 114,
+      "community": 0,
       "norm_label": "odd",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "AddressInterpolationTest",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_addressparity_odd"
     },
     {
@@ -13286,9 +13308,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 114,
+      "community": 0,
       "norm_label": "even",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "AddressInterpolationTest",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_addressparity_even"
     },
     {
@@ -13297,9 +13319,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 114,
+      "community": 0,
       "norm_label": "both",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "AddressInterpolationTest",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_addressparity_both"
     },
     {
@@ -13308,9 +13330,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 114,
+      "community": 0,
       "norm_label": "unknown",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "AddressInterpolationTest",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_addressparity_unknown"
     },
     {
@@ -13319,9 +13341,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 114,
+      "community": 0,
       "norm_label": "parseparity()",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "AddressInterpolationTest",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_parseparity"
     },
     {
@@ -13495,9 +13517,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/GeoPoint.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 127,
+      "community": 7,
       "norm_label": "geopoint.kt",
-      "community_name": "GeoPoint",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_geopoint"
     },
     {
@@ -13517,9 +13539,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/GeoPoint.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 127,
+      "community": 7,
       "norm_label": "distancemeters()",
-      "community_name": "GeoPoint",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_geopoint_distancemeters"
     },
     {
@@ -13638,9 +13660,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/NearestAddresses.kt",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 7,
+      "community": 121,
       "norm_label": "stickynearestslots()",
-      "community_name": "CandidateAddress",
+      "community_name": "stickyNearestSlots",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_nearestaddresses_stickynearestslots"
     },
     {
@@ -13649,9 +13671,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/NearestAddresses.kt",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 7,
+      "community": 121,
       "norm_label": "nextornull()",
-      "community_name": "CandidateAddress",
+      "community_name": "stickyNearestSlots",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_nearestaddresses_nextornull"
     },
     {
@@ -13660,9 +13682,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 7,
+      "community": 121,
       "norm_label": "t",
-      "community_name": "CandidateAddress",
+      "community_name": "stickyNearestSlots",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_nearestaddresses_kt_t"
     },
     {
@@ -13836,9 +13858,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": "stopside.kt",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside"
     },
     {
@@ -13847,9 +13869,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": "stopside",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside"
     },
     {
@@ -13858,9 +13880,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": "left",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside_left"
     },
     {
@@ -13869,9 +13891,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": "right",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside_right"
     },
     {
@@ -13880,9 +13902,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": "in_drive",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside_in_drive"
     },
     {
@@ -13891,9 +13913,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/StopSide.kt",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": "none",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_stopside_stopside_none"
     },
     {
@@ -14958,9 +14980,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": "routebuilderviewmodel.kt",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel"
     },
     {
@@ -14969,9 +14991,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L31",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": "pendingstop",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_pendingstop"
     },
     {
@@ -14980,9 +15002,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": "routebuilderuistate",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderuistate"
     },
     {
@@ -14991,9 +15013,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L44",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": "routebuilderviewmodel",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel"
     },
     {
@@ -15002,9 +15024,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": "androidviewmodel",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_kt_androidviewmodel"
     },
     {
@@ -15013,9 +15035,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": ".start()",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_start"
     },
     {
@@ -15024,9 +15046,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": "flow",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_kt_flow"
     },
     {
@@ -15035,9 +15057,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": "stateflow",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_kt_stateflow"
     },
     {
@@ -15046,9 +15068,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L139",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": ".routestop()",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_routestop"
     },
     {
@@ -15057,9 +15079,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L152",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": ".drainpendingstops()",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_drainpendingstops"
     },
     {
@@ -15068,9 +15090,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L164",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": ".undo()",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_undo"
     },
     {
@@ -15079,9 +15101,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/builder/RouteBuilderViewModel.kt",
       "source_location": "L169",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": ".addscannedstop()",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_routebuilderviewmodel_addscannedstop"
     },
     {
@@ -15090,9 +15112,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 7,
+      "community": 15,
       "norm_label": "com",
-      "community_name": "CandidateAddress",
+      "community_name": "LocationSample",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_builder_routebuilderviewmodel_kt_com"
     },
     {
@@ -16212,9 +16234,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerViewModel.kt",
       "source_location": "L296",
       "_origin": "ast",
-      "community": 23,
+      "community": 5,
       "norm_label": ".checkformissedpackage()",
-      "community_name": "RoutedStopEntity",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerviewmodel_routeplayerviewmodel_checkformissedpackage"
     },
     {
@@ -22108,9 +22130,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/ui/theme/Theme.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 100,
+      "community": 157,
       "norm_label": "app/ui/theme/theme.kt",
-      "community_name": "HomeControlRepository",
+      "community_name": "HomeControlViewModel",
       "id": "app_src_main_java_com_isaacshub_app_ui_theme_theme"
     },
     {
@@ -22119,9 +22141,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/ui/theme/Theme.kt",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 100,
+      "community": 157,
       "norm_label": "isaacshubtheme()",
-      "community_name": "HomeControlRepository",
+      "community_name": "HomeControlViewModel",
       "id": "app_src_main_java_com_isaacshub_app_ui_theme_theme_isaacshubtheme"
     },
     {
@@ -22603,9 +22625,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/backup/PreferencesJson.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 174,
+      "community": 5,
       "norm_label": "preferencesjson.kt",
-      "community_name": "preferencesToJson",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_vault_backup_preferencesjson"
     },
     {
@@ -22614,9 +22636,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/backup/PreferencesJson.kt",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 174,
+      "community": 5,
       "norm_label": "preferencestojson()",
-      "community_name": "preferencesToJson",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_vault_backup_preferencesjson_preferencestojson"
     },
     {
@@ -22625,9 +22647,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 174,
+      "community": 5,
       "norm_label": "preferences",
-      "community_name": "preferencesToJson",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_main_java_com_isaacshub_app_vault_backup_preferencesjson_kt_preferences"
     },
     {
@@ -23274,9 +23296,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/ui/pairing/PairingScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 100,
+      "community": 199,
       "norm_label": "pairingscreen.kt",
-      "community_name": "HomeControlRepository",
+      "community_name": "AmazonRouteScannerViewModelV2",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingscreen"
     },
     {
@@ -23285,9 +23307,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/ui/pairing/PairingScreen.kt",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 100,
+      "community": 199,
       "norm_label": "pairingscreen()",
-      "community_name": "HomeControlRepository",
+      "community_name": "AmazonRouteScannerViewModelV2",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingscreen_pairingscreen"
     },
     {
@@ -23296,9 +23318,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/ui/pairing/PairingScreen.kt",
       "source_location": "L100",
       "_origin": "ast",
-      "community": 100,
+      "community": 199,
       "norm_label": "camerapreview()",
-      "community_name": "HomeControlRepository",
+      "community_name": "AmazonRouteScannerViewModelV2",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingscreen_camerapreview"
     },
     {
@@ -23307,9 +23329,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/ui/pairing/PairingScreen.kt",
       "source_location": "L147",
       "_origin": "ast",
-      "community": 100,
+      "community": 199,
       "norm_label": "processimageproxy()",
-      "community_name": "HomeControlRepository",
+      "community_name": "AmazonRouteScannerViewModelV2",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingscreen_processimageproxy"
     },
     {
@@ -23318,9 +23340,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 100,
+      "community": 199,
       "norm_label": "imageproxy",
-      "community_name": "HomeControlRepository",
+      "community_name": "AmazonRouteScannerViewModelV2",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingscreen_kt_imageproxy"
     },
     {
@@ -23912,9 +23934,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/AddressInterpolationTest.kt",
       "source_location": "L128",
       "_origin": "ast",
-      "community": 114,
+      "community": 0,
       "norm_label": ".`parseparity maps known codes`()",
-      "community_name": ".fetchAddressesForZip",
+      "community_name": "AddressInterpolationTest",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_parseparity_maps_known_codes"
     },
     {
@@ -24187,9 +24209,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/NearestAddressesTest.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 127,
+      "community": 7,
       "norm_label": ".`distancemeters roughly matches known latitude degree distance`()",
-      "community_name": "GeoPoint",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_nearestaddressestest_nearestaddressestest_distancemeters_roughly_matches_known_latitude_degree_distance"
     },
     {
@@ -24330,9 +24352,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
+      "community": 121,
       "norm_label": "stickynearestslotstest.kt",
-      "community_name": "CandidateAddress",
+      "community_name": "stickyNearestSlots",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest"
     },
     {
@@ -24341,9 +24363,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 7,
+      "community": 121,
       "norm_label": "stickynearestslotstest",
-      "community_name": "CandidateAddress",
+      "community_name": "stickyNearestSlots",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest"
     },
     {
@@ -24352,9 +24374,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 7,
+      "community": 121,
       "norm_label": ".candidate()",
-      "community_name": "CandidateAddress",
+      "community_name": "stickyNearestSlots",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_candidate"
     },
     {
@@ -24363,9 +24385,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 7,
+      "community": 121,
       "norm_label": ".`empty slots fill with newcomers in nearest-first order`()",
-      "community_name": "CandidateAddress",
+      "community_name": "stickyNearestSlots",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_empty_slots_fill_with_newcomers_in_nearest_first_order"
     },
     {
@@ -24374,9 +24396,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 7,
+      "community": 121,
       "norm_label": ".`a candidate keeps its slot even when its rank within the nearest set changes`()",
-      "community_name": "CandidateAddress",
+      "community_name": "stickyNearestSlots",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_a_candidate_keeps_its_slot_even_when_its_rank_within_the_nearest_set_changes"
     },
     {
@@ -24385,9 +24407,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 7,
+      "community": 121,
       "norm_label": ".`a candidate that falls out of the nearest set is evicted and replaced by a newcomer`()",
-      "community_name": "CandidateAddress",
+      "community_name": "stickyNearestSlots",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_a_candidate_that_falls_out_of_the_nearest_set_is_evicted_and_replaced_by_a_newcomer"
     },
     {
@@ -24396,9 +24418,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L44",
       "_origin": "ast",
-      "community": 7,
+      "community": 121,
       "norm_label": ".`a routed candidate (missing entirely) is evicted the same way`()",
-      "community_name": "CandidateAddress",
+      "community_name": "stickyNearestSlots",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_a_routed_candidate_missing_entirely_is_evicted_the_same_way"
     },
     {
@@ -24407,9 +24429,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/StickyNearestSlotsTest.kt",
       "source_location": "L55",
       "_origin": "ast",
-      "community": 7,
+      "community": 121,
       "norm_label": ".`newcomers fill the earliest vacated slots first`()",
-      "community_name": "CandidateAddress",
+      "community_name": "stickyNearestSlots",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_stickynearestslotstest_stickynearestslotstest_newcomers_fill_the_earliest_vacated_slots_first"
     },
     {
@@ -24858,9 +24880,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/backup/PreferencesJsonTest.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 174,
+      "community": 5,
       "norm_label": "preferencesjsontest.kt",
-      "community_name": "preferencesToJson",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_test_java_com_isaacshub_app_vault_backup_preferencesjsontest"
     },
     {
@@ -24869,9 +24891,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/backup/PreferencesJsonTest.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 174,
+      "community": 5,
       "norm_label": "preferencesjsontest",
-      "community_name": "preferencesToJson",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_test_java_com_isaacshub_app_vault_backup_preferencesjsontest_preferencesjsontest"
     },
     {
@@ -24880,9 +24902,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/backup/PreferencesJsonTest.kt",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 174,
+      "community": 5,
       "norm_label": ".`serializes scalar preference values by key name`()",
-      "community_name": "preferencesToJson",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_test_java_com_isaacshub_app_vault_backup_preferencesjsontest_preferencesjsontest_serializes_scalar_preference_values_by_key_name"
     },
     {
@@ -24891,9 +24913,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/backup/PreferencesJsonTest.kt",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 174,
+      "community": 5,
       "norm_label": ".`serializes a string set as a json array`()",
-      "community_name": "preferencesToJson",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_test_java_com_isaacshub_app_vault_backup_preferencesjsontest_preferencesjsontest_serializes_a_string_set_as_a_json_array"
     },
     {
@@ -24902,9 +24924,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/backup/PreferencesJsonTest.kt",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 174,
+      "community": 5,
       "norm_label": ".`empty preferences produce an empty json object`()",
-      "community_name": "preferencesToJson",
+      "community_name": "RoutePlayerViewModel",
       "id": "app_src_test_java_com_isaacshub_app_vault_backup_preferencesjsontest_preferencesjsontest_empty_preferences_produce_an_empty_json_object"
     },
     {
@@ -27088,9 +27110,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/login/LoginScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 128,
+      "community": 75,
       "norm_label": "loginscreen.kt",
-      "community_name": "EssentialsNavGraph",
+      "community_name": "LoginViewModel",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_login_loginscreen"
     },
     {
@@ -27099,9 +27121,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/login/LoginScreen.kt",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 128,
+      "community": 75,
       "norm_label": "loginscreen()",
-      "community_name": "EssentialsNavGraph",
+      "community_name": "LoginViewModel",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_login_loginscreen_loginscreen"
     },
     {
@@ -27385,9 +27407,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/photo/PhotoCaptureScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 44,
+      "community": 174,
       "norm_label": "photocapturescreen.kt",
-      "community_name": "PhotoCaptureViewModel",
+      "community_name": "PhotoCaptureScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_photo_photocapturescreen"
     },
     {
@@ -27396,9 +27418,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/photo/PhotoCaptureScreen.kt",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 44,
+      "community": 174,
       "norm_label": "photocapturescreen()",
-      "community_name": "PhotoCaptureViewModel",
+      "community_name": "PhotoCaptureScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_photo_photocapturescreen_photocapturescreen"
     },
     {
@@ -27407,9 +27429,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/photo/PhotoCaptureScreen.kt",
       "source_location": "L121",
       "_origin": "ast",
-      "community": 44,
+      "community": 174,
       "norm_label": "camerapreviewscreen()",
-      "community_name": "PhotoCaptureViewModel",
+      "community_name": "PhotoCaptureScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_photo_photocapturescreen_camerapreviewscreen"
     },
     {
@@ -27418,9 +27440,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 44,
+      "community": 174,
       "norm_label": "modifier",
-      "community_name": "PhotoCaptureViewModel",
+      "community_name": "PhotoCaptureScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_photo_photocapturescreen_kt_modifier"
     },
     {
@@ -27429,9 +27451,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/photo/PhotoCaptureScreen.kt",
       "source_location": "L200",
       "_origin": "ast",
-      "community": 44,
+      "community": 174,
       "norm_label": "photopreviewscreen()",
-      "community_name": "PhotoCaptureViewModel",
+      "community_name": "PhotoCaptureScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_photo_photocapturescreen_photopreviewscreen"
     },
     {
@@ -27440,9 +27462,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 44,
+      "community": 174,
       "norm_label": "uri",
-      "community_name": "PhotoCaptureViewModel",
+      "community_name": "PhotoCaptureScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_photo_photocapturescreen_kt_uri"
     },
     {
@@ -27627,9 +27649,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/settings/SettingsScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 93,
+      "community": 128,
       "norm_label": "essentials/ui/settings/settingsscreen.kt",
-      "community_name": "DeviceAdminManager",
+      "community_name": "EssentialsNavGraph",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_settings_settingsscreen"
     },
     {
@@ -27638,9 +27660,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/settings/SettingsScreen.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 93,
+      "community": 128,
       "norm_label": "settingsscreen()",
-      "community_name": "DeviceAdminManager",
+      "community_name": "EssentialsNavGraph",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_settings_settingsscreen_settingsscreen"
     },
     {
@@ -29886,130 +29908,68 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L30",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_app",
-      "target": "app_src_main_java_com_isaacshub_app_app_app",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L58",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L97",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog",
       "confidence_score": 1.0
     },
     {
-      "relation": "inherits",
+      "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L30",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L145",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "application",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors",
       "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L49",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L56",
       "weight": 1.0,
-      "context": "field",
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "essentialsrepository",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception",
       "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L55",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L24",
       "weight": 1.0,
-      "context": "field",
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "featurefunnelpreferencesrepository",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L52",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "featurefunnelrepository",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
       "confidence_score": 1.0
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L46",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L15",
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "routehelperrepository",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L37",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "sleeprepository",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L40",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "timetrackingrepository",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L34",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "userpreferencesrepository",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
-      "source_location": "L43",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_app_app",
-      "target": "vaultpreferencesrepository",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
       "confidence_score": 1.0
     },
     {
@@ -30020,8 +29980,67 @@
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "application",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "coroutinescope",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
+      "target": "crashlogdatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
+      "target": "crashlogdatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
+      "target": "coroutinescope",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
       "target": "application"
     },
     {
@@ -30032,9 +30051,314 @@
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
-      "target": "application"
+      "target": "application",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L24",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_kt_crashlog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
+      "source_location": "L145",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors",
+      "target": "databaseerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashblocking",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_shouldreport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L29",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_kt_crashlog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L72",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_kt_crashlog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L49",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashblocking",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_kt_crashlog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashblocking",
+      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_app",
+      "target": "app_src_main_java_com_isaacshub_app_app_app"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "app_src_main_java_com_isaacshub_app_app_app_oncreate"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L49",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "essentialsrepository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L55",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "featurefunnelpreferencesrepository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L52",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "featurefunnelrepository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L46",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "routehelperrepository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "sleeprepository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "timetrackingrepository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L34",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "userpreferencesrepository"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/App.kt",
+      "source_location": "L43",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_app_app",
+      "target": "vaultpreferencesrepository"
     },
     {
       "relation": "calls",
@@ -30044,9 +30368,9 @@
       "source_location": "L69",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "userpreferencesrepository",
-      "confidence_score": 1.0
+      "target": "userpreferencesrepository"
     },
     {
       "relation": "calls",
@@ -30056,9 +30380,9 @@
       "source_location": "L76",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "sleeprepository",
-      "confidence_score": 1.0
+      "target": "sleeprepository"
     },
     {
       "relation": "calls",
@@ -30068,9 +30392,9 @@
       "source_location": "L80",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "timetrackingrepository",
-      "confidence_score": 1.0
+      "target": "timetrackingrepository"
     },
     {
       "relation": "calls",
@@ -30080,9 +30404,9 @@
       "source_location": "L88",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "vaultpreferencesrepository",
-      "confidence_score": 1.0
+      "target": "vaultpreferencesrepository"
     },
     {
       "relation": "calls",
@@ -30092,9 +30416,9 @@
       "source_location": "L86",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "routehelperrepository",
-      "confidence_score": 1.0
+      "target": "routehelperrepository"
     },
     {
       "relation": "calls",
@@ -30104,9 +30428,9 @@
       "source_location": "L94",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "essentialsrepository",
-      "confidence_score": 1.0
+      "target": "essentialsrepository"
     },
     {
       "relation": "calls",
@@ -30116,9 +30440,9 @@
       "source_location": "L123",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "featurefunnelrepository",
-      "confidence_score": 1.0
+      "target": "featurefunnelrepository"
     },
     {
       "relation": "calls",
@@ -30128,9 +30452,9 @@
       "source_location": "L122",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_app_app_oncreate",
-      "target": "featurefunnelpreferencesrepository",
-      "confidence_score": 1.0
+      "target": "featurefunnelpreferencesrepository"
     },
     {
       "relation": "references",
@@ -30143,262 +30467,6 @@
       "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelworker_featurefunnelworker_checkforcompletion",
       "target": "featurefunnelpreferencesrepository"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L84",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L132",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L49",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L24",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L15",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L16",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "coroutinescope"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L14",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger",
-      "target": "crashlogdatabase"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L32",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
-      "target": "crashlogdatabase"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L24",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
-      "target": "coroutinescope"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L39",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L24",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_install",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L54",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_handleuncaughtexception",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L104",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors"
-    },
-    {
-      "relation": "references",
-      "context": "return_type",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L84",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_buildcrashlog",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashlogger_kt_crashlog"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashLogger.kt",
-      "source_location": "L132",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashlogger_crashlogger_detectdatabaseerrors",
-      "target": "databaseerror"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L13",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L48",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L25",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L36",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L25",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_kt_crashlog"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
-      "source_location": "L48",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash",
-      "target": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_kt_crashlog"
     },
     {
       "relation": "contains",
@@ -79271,5 +79339,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0b3544262a7f590f9498d87351609a4029748250"
+  "built_at_commit": "424da181ba459c6cc20272fc9a95df8584526e12"
 }

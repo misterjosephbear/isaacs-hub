@@ -126,6 +126,14 @@ class RoutePlayerViewModel(application: Application) : AndroidViewModel(applicat
                     // Record where we started from
                     startingLocationFlow.value = locationFlow.value?.point
                     Log.d(TAG, "Route $routeId started at ${System.currentTimeMillis()}, location: ${startingLocationFlow.value}")
+
+                    // Re-optimize non-routable stops on play mode entry
+                    try {
+                        repository.optimizeNonRoutableStopPlacement(routeId)
+                        Log.d(TAG, "Re-optimized non-routable stops for route $routeId")
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Error optimizing non-routable stops: ${e.message}", e)
+                    }
                 }
             }
         }

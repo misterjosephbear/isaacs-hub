@@ -1,6 +1,7 @@
 package com.isaacshub.app.routehelper.data
 
 import com.isaacshub.app.routehelper.domain.GeoPoint
+import com.isaacshub.app.routehelper.domain.NonRoutableOptimizer
 import com.isaacshub.app.routehelper.network.AddressFetchResult
 import com.isaacshub.app.routehelper.network.RouteHelperAddressFetcher
 import kotlinx.coroutines.flow.Flow
@@ -13,10 +14,11 @@ sealed interface CreateRouteResult {
 /** Data class for scanned addresses used in Amazon route creation */
 data class ScannedAddressData(
     val addressLabel: String,
-    val sequenceNumber: Int,  // 1-based display number
+    val sequenceNumber: Float,  // 1-based display number (can be fractional for non-routables)
     val matchedCandidateId: Long?,
     val isValid: Boolean,  // Whether matched to a candidate
-    val expectedPackageCount: Int? = null  // Package count from direction sheets
+    val expectedPackageCount: Int? = null,  // Package count from direction sheets
+    val isNonRoutable: Boolean = false  // True if this is a non-routable package
 )
 
 class RouteHelperRepository(
@@ -107,27 +109,33 @@ class RouteHelperRepository(
     }
 
     /**
-     * Creates route stops from a list of scanned addresses in exact scan order.
+     * Creates route stops from a list of scanned addresses.
      * Used by Amazon route scanner to build route after scanning is complete.
+     * Handles both regular stops and non-routable packages (which may have fractional sequence numbers).
      */
     suspend fun createStopsFromScannedAddresses(
         routeId: Long,
         scannedAddresses: List<ScannedAddressData>
     ) {
-        scannedAddresses.forEachIndexed { index, scanned ->
+        scannedAddresses.forEach { scanned ->
             val candidate = scanned.matchedCandidateId?.let { dao.getCandidate(it) }
 
             dao.insertStop(
                 RoutedStopEntity(
                     routeId = routeId,
-                    sequenceOrder = index,  // Maintain exact scan order
+                    sequenceOrder = scanned.sequenceNumber,  // Use provided sequence (can be fractional)
                     addressLabel = scanned.addressLabel,
-                    note = if (!scanned.isValid) "Unvalidated address" else null,
+                    note = when {
+                        scanned.isNonRoutable -> "Non-routable package"
+                        !scanned.isValid -> "Unvalidated address"
+                        else -> null
+                    },
                     latitude = candidate?.latitude ?: 0.0,
                     longitude = candidate?.longitude ?: 0.0,
                     candidateAddressId = scanned.matchedCandidateId,
                     createdAtEpochMillis = System.currentTimeMillis(),
-                    expectedPackageCount = scanned.expectedPackageCount
+                    expectedPackageCount = scanned.expectedPackageCount,
+                    isNonRoutable = scanned.isNonRoutable
                 )
             )
 
@@ -143,9 +151,29 @@ class RouteHelperRepository(
 
     suspend fun getStopsOnce(routeId: Long): List<RoutedStopEntity> = dao.getStopsOnce(routeId)
 
+    /**
+     * Re-optimize all non-routable stops in a route based on minimal detour distance.
+     * Called when entering play mode or after new regular stops are added.
+     */
+    suspend fun optimizeNonRoutableStopPlacement(routeId: Long) {
+        val allStops = dao.getStopsOnce(routeId)
+        val optimizedStops = NonRoutableOptimizer.reoptimizeAllNonRoutables(allStops)
+
+        // Update all stops with new sequence numbers
+        dao.updateStops(optimizedStops)
+    }
+
+    /**
+     * Update a list of stops in the database.
+     * Used by optimization logic to update sequence numbers.
+     */
+    suspend fun updateStops(stops: List<RoutedStopEntity>) {
+        dao.updateStops(stops)
+    }
+
     /** Adds a stop at the driver's current [location], marking its source candidate (if any) as routed. */
     suspend fun addStop(routeId: Long, candidateId: Long?, addressLabel: String, note: String?, location: GeoPoint) {
-        val nextOrder = dao.maxSequenceOrder(routeId) + 1
+        val nextOrder = (dao.maxSequenceOrder(routeId) + 1).toFloat()
         dao.insertStop(
             RoutedStopEntity(
                 routeId = routeId,
@@ -175,10 +203,10 @@ class RouteHelperRepository(
     ) {
         val stops = dao.getStopsOnce(routeId)
         val insertIndex = beforeStopId?.let { id -> stops.indexOfFirst { it.id == id }.takeIf { it != -1 } } ?: stops.size
-        val insertOrder = if (insertIndex < stops.size) {
+        val insertOrder: Float = if (insertIndex < stops.size) {
             stops[insertIndex].sequenceOrder
         } else {
-            dao.maxSequenceOrder(routeId) + 1
+            (dao.maxSequenceOrder(routeId) + 1).toFloat()
         }
         if (insertIndex < stops.size) {
             dao.updateStops(stops.drop(insertIndex).map { it.copy(sequenceOrder = it.sequenceOrder + 1) })

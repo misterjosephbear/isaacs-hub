@@ -88,9 +88,48 @@ private val MIGRATION_8_9 = object : Migration(8, 9) {
     }
 }
 
+private val MIGRATION_9_10 = object : Migration(9, 10) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        // Add isNonRoutable column for non-routable package support
+        db.execSQL("ALTER TABLE `routed_stops` ADD COLUMN `isNonRoutable` INTEGER NOT NULL DEFAULT 0")
+
+        // Change sequenceOrder from INTEGER to REAL (float) to support fractional sequence numbers like 22.5
+        // This requires recreating the table since SQLite doesn't support ALTER COLUMN TYPE directly
+        db.execSQL("""
+            CREATE TABLE `routed_stops_new` (
+                `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+                `routeId` INTEGER NOT NULL,
+                `sequenceOrder` REAL NOT NULL,
+                `addressLabel` TEXT NOT NULL,
+                `note` TEXT,
+                `latitude` REAL NOT NULL,
+                `longitude` REAL NOT NULL,
+                `candidateAddressId` INTEGER,
+                `createdAtEpochMillis` INTEGER NOT NULL,
+                `recipientLastName` TEXT,
+                `expectedPackageCount` INTEGER,
+                `isNonRoutable` INTEGER NOT NULL DEFAULT 0
+            )
+        """.trimIndent())
+
+        // Copy data from old table to new table, casting sequenceOrder to REAL
+        db.execSQL("""
+            INSERT INTO `routed_stops_new`
+            SELECT `id`, `routeId`, CAST(`sequenceOrder` AS REAL), `addressLabel`, `note`,
+                   `latitude`, `longitude`, `candidateAddressId`, `createdAtEpochMillis`,
+                   `recipientLastName`, `expectedPackageCount`, `isNonRoutable`
+            FROM `routed_stops`
+        """.trimIndent())
+
+        // Drop old table and rename new table
+        db.execSQL("DROP TABLE `routed_stops`")
+        db.execSQL("ALTER TABLE `routed_stops_new` RENAME TO `routed_stops`")
+    }
+}
+
 @Database(
     entities = [RouteHelperRouteEntity::class, CandidateAddressEntity::class, RoutedStopEntity::class, CachedRoadRouteEntity::class, PackageEntity::class, RouteSectionEntity::class],
-    version = 9,
+    version = 10,
     exportSchema = true
 )
 abstract class RouteHelperDatabase : RoomDatabase() {
@@ -110,7 +149,7 @@ abstract class RouteHelperDatabase : RoomDatabase() {
                     // Same rule as every other database in this app: routes/stops are real user
                     // data - any future schema change needs an explicit Migration, never a
                     // destructive fallback.
-                    .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9)
+                    .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10)
                     .build().also { instance = it }
             }
     }
