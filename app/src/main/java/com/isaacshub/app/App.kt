@@ -57,6 +57,15 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
+
+        // Install crash logger FIRST, before any other initialization
+        // This ensures we catch crashes that happen during database initialization
+        val crashReportingClient = CrashReportingApiClient(
+            localUrl = "http://192.168.1.1:3001",  // Development/debug server (use 3001 for dev, 3000 for prod)
+            remoteUrl = "https://storage.isaacs-hub.com"  // Remote fallback
+        )
+        CrashLogger.install(this, applicationScope, crashReportingClient)
+
         preferencesRepository = UserPreferencesRepository(this)
 
         // Migrate from old separate databases to new consolidated databases
@@ -79,13 +88,6 @@ class App : Application() {
         vaultPreferencesRepository = VaultPreferencesRepository(this)
         PhotoBackupScheduler.rescheduleIfPaired(this, vaultPreferencesRepository)
         AppDataBackupScheduler.rescheduleIfPaired(this, vaultPreferencesRepository)
-
-        // Initialize crash logger with default URLs (will use vault URLs when available)
-        val crashReportingClient = CrashReportingApiClient(
-            localUrl = "http://192.168.1.1:3001",  // Development/debug server (use 3001 for dev, 3000 for prod)
-            remoteUrl = "https://storage.isaacs-hub.com"  // Remote fallback
-        )
-        CrashLogger.install(this, applicationScope, crashReportingClient)
 
         // EssentialsDatabase - kept separate (syncs with server)
         val essentialsDatabase = EssentialsDatabase.getInstance(this)

@@ -1,16 +1,16 @@
 # Graph Report - isaacs-hub  (2026-08-03)
 
 ## Corpus Check
-- 331 files · ~136,313 words
+- 331 files · ~136,677 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2661 nodes · 4226 edges · 213 communities (166 shown, 47 thin omitted)
+- 2665 nodes · 4230 edges · 215 communities (167 shown, 48 thin omitted)
 - Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 333 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5edfd29e`
+- Built from commit: `70256d87`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -32,17 +32,17 @@
 - RouteHelperDao
 - LocationSample
 - HomeScreen
-- BankConnectionEntity
+- BankingDao
 - BudgetDao
 - RouteScheduleOverrideEntity
 - TimeEntryEntity
 - HomeViewModel
-- BaseApiClient
+- .put
 - RoutedStopEntity
 - AppBlockingService
 - Exception
 - .prefs
-- GeoPoint
+- distanceMeters
 - RouteEntity
 - ActivityMapperModels.kt
 - ActivityMapperRepository
@@ -62,7 +62,7 @@
 - PhotoCaptureViewModel
 - CompletionStatus
 - EssentialsRepository
-- App
+- FeatureFunnelPreferencesRepository
 - RouteHelperRouteEntity
 - RestoreViewModel
 - AuthRepository
@@ -97,10 +97,10 @@
 - PromptStatus
 - AppDatabase
 - TigerShapefileParser.kt
-- EditRuleScreen
+- EssentialsApiClient
 - SleepSessionEntity
 - TimeTrackingDatabase
-- VaultPreferencesRepository
+- parsePairingPayload
 - .onCreate
 - WorkDatabase
 - TimeTrackingHomeViewModel
@@ -110,7 +110,7 @@
 - DeviceAdminManager
 - Transaction
 - HomeControlApiClient
-- .put
+- DiscordRichPresenceManager
 - EssentialsDatabase
 - EssentialsAdminViewModel
 - CandidateAddressEntity
@@ -141,7 +141,7 @@
 - NapNotifications
 - .downloadAndInstall
 - PolylineOffset.kt
-- RouteDirectionsFetcher
+- GeoPoint
 - EssentialsNavGraph
 - .downloadAndInstall
 - EnergyForecastCalculatorTest
@@ -153,7 +153,7 @@
 - SleepDatabase
 - BootCompletedReceiver
 - NapAlarmReceiver
-- AddressFetchResult
+- App
 - .getAccounts
 - StopSideTest
 - RouteEditViewModel
@@ -176,7 +176,7 @@
 - planPendingUploads
 - PlaidConfig.kt
 - deploy-apk.sh
-- PhotoCaptureScreen
+- VaultPreferencesRepository
 - BaseApiClient
 - preferencesToJson
 - androidx
@@ -196,17 +196,19 @@
 - Capability
 - Routine
 - RoutineBuilderScreen
-- BankAccountEntity
-- AccountType
-- BankingDao
+- JSONArray
+- VariableType
+- AppDataBackupScheduler
+- PhotoBackupScheduler
 - DeductionEntity
+- PairingViewModel
 - DeviceType
 - AmazonRouteScannerViewModelV2
+- .geocodeZip
 - PayType
 - .checkForCompletion
 - .doWork
 - RoutineCard
-- BankProvider
 - RoomDatabase
 - Flow
 - CoroutineWorker
@@ -224,7 +226,7 @@
 4. `RouteHelperDao` - 41 edges
 5. `HomeControlApiClient` - 38 edges
 6. `RoutePlayerViewModel` - 29 edges
-7. `RoutedStopEntity` - 27 edges
+7. `RoutedStopEntity` - 26 edges
 8. `ActivityMapperApiClient` - 24 edges
 9. `FeaturePromptEntity` - 23 edges
 10. `BankingRepository` - 23 edges
@@ -232,31 +234,31 @@
 ## Surprising Connections (you probably didn't know these)
 - `toSleepEntry()` --references--> `SleepEntry`  [EXTRACTED]
   app/src/main/java/com/isaacshub/app/sleep/data/SleepRepository.kt → sleepcore/src/main/kotlin/com/isaacshub/sleep/core/SleepDebt.kt
+- `extractAddressWithStop()` --calls--> `findBestRoutedStopMatch()`  [INFERRED]
+  app/src/main/java/com/isaacshub/app/routehelper/ui/player/PackageScanScreen.kt → app/src/main/java/com/isaacshub/app/routehelper/util/AddressMatching.kt
 - `DeviceDetailScreen()` --calls--> `HomeControlApiClient`  [INFERRED]
   app/src/main/java/com/isaacshub/app/homecontrol/ui/devices/DeviceDetailScreen.kt → app/src/main/java/com/isaacshub/app/homecontrol/data/HomeControlApiClient.kt
 - `DeviceListScreen()` --calls--> `HomeControlApiClient`  [INFERRED]
   app/src/main/java/com/isaacshub/app/homecontrol/ui/devices/DeviceListScreen.kt → app/src/main/java/com/isaacshub/app/homecontrol/data/HomeControlApiClient.kt
 - `HomeControlHomeScreen()` --calls--> `HomeControlApiClient`  [INFERRED]
   app/src/main/java/com/isaacshub/app/homecontrol/ui/home/HomeControlHomeScreen.kt → app/src/main/java/com/isaacshub/app/homecontrol/data/HomeControlApiClient.kt
-- `DevicePairingScreen()` --calls--> `HomeControlApiClient`  [INFERRED]
-  app/src/main/java/com/isaacshub/app/homecontrol/ui/pairing/DevicePairingScreen.kt → app/src/main/java/com/isaacshub/app/homecontrol/data/HomeControlApiClient.kt
 
 ## Import Cycles
 - None detected.
 
-## Communities (213 total, 47 thin omitted)
+## Communities (215 total, 48 thin omitted)
 
 ### Community 0 - "AddressInterpolationTest"
-Cohesion: 0.27
-Nodes (7): HouseNumberRange, interpolateAddresses(), interpolateAddressGroups(), sampleHouseNumbers(), sideAddresses(), TigerAddressFeature, AddressInterpolationTest
+Cohesion: 0.22
+Nodes (9): HouseNumberRange, interpolateAddresses(), interpolateAddressGroups(), pointAtDistance(), pointsAlongLine(), sampleHouseNumbers(), sideAddresses(), TigerAddressFeature (+1 more)
 
 ### Community 1 - "EssentialsApi"
 Cohesion: 0.05
 Nodes (31): EssentialsApi, EssentialsEndpointPaths, Result, Chore, CreateChoreRequest, UpdateChoreRequest, AdminOverrideRequest, ChoreCompletion (+23 more)
 
 ### Community 2 - "MediaItem"
-Cohesion: 0.24
-Nodes (7): MediaItem, MediaType, IMAGE, VIDEO, remoteFolderFor(), Uri, MediaStoreScanner
+Cohesion: 0.21
+Nodes (8): MediaItem, MediaType, IMAGE, VIDEO, PendingUpload, remoteFolderFor(), Uri, MediaStoreScanner
 
 ### Community 3 - "EssentialsRepository"
 Cohesion: 0.05
@@ -267,8 +269,8 @@ Cohesion: 0.08
 Nodes (23): IBinder, Intent, Service, SharedPreferences, SleepDetectionService, SensorManager, DetectionConfig, DetectionEvent (+15 more)
 
 ### Community 5 - "RoutePlayerViewModel"
-Cohesion: 0.07
-Nodes (19): ApiException, ChildAccountDto, ChoreDto, EssentialsApiClient, JSONObject, Result, T, NominatimGeocoder (+11 more)
+Cohesion: 0.09
+Nodes (8): AndroidViewModel, com, Flow, StateFlow, RoadRouteResult, RoutePlayerUiState, RoutePlayerViewModel, StopAdvanceState
 
 ### Community 6 - "PackageScanScreen.kt"
 Cohesion: 0.07
@@ -279,8 +281,8 @@ Cohesion: 0.07
 Nodes (22): CandidateAddress, T, nextOrNull(), stickyNearestSlots(), StopSide, IN_DRIVE, LEFT, NONE (+14 more)
 
 ### Community 8 - "AmazonRouteScannerViewModel"
-Cohesion: 0.10
-Nodes (24): extractAddress(), ExtractedAddress, extractFromDirectionSheet(), isValidStreetAddress(), AddressCameraScanner(), AddressListItem(), AmazonRouteScannerScreen(), com (+16 more)
+Cohesion: 0.09
+Nodes (28): extractAddress(), ExtractedAddress, extractFromDirectionSheet(), isValidStreetAddress(), AddressCameraScanner(), AddressListItem(), AmazonRouteScannerScreen(), com (+20 more)
 
 ### Community 9 - "EditRouteViewModel"
 Cohesion: 0.08
@@ -314,9 +316,9 @@ Nodes (9): LocationSample, advanceToNextStop(), resolveMapBearing(), Context, Fl
 Cohesion: 0.12
 Nodes (16): EnergyForecastChart(), formatHourOfDay(), Modifier, Modifier, SleepDebtRing(), formatDuration(), formatHourOfDay(), formatRange() (+8 more)
 
-### Community 17 - "BankConnectionEntity"
-Cohesion: 0.16
-Nodes (5): BankConnectionDao, Flow, BankConnectionEntity, fromDomain(), BankConnection
+### Community 17 - "BankingDao"
+Cohesion: 0.05
+Nodes (24): BankAccountDao, Flow, BankAccountEntity, fromDomain(), BankConnectionDao, Flow, BankConnectionEntity, fromDomain() (+16 more)
 
 ### Community 18 - "BudgetDao"
 Cohesion: 0.17
@@ -334,8 +336,8 @@ Nodes (5): Flow, TimeEntryDao, TimeEntryEntity, Flow, TimeTrackingRepository
 Cohesion: 0.16
 Nodes (8): ChoreUiState, Factory, HomeUiState, HomeViewModel, StateFlow, T, ViewModel, ViewModelProvider
 
-### Community 22 - "BaseApiClient"
-Cohesion: 0.18
+### Community 22 - ".put"
+Cohesion: 0.19
 Nodes (9): BaseApiClient, HttpURLConnection, JSONObject, MultiUrlApiClient, AlreadyRunning, DebugTriggerResult, Failed, SettingsApiClient (+1 more)
 
 ### Community 23 - "RoutedStopEntity"
@@ -347,40 +349,40 @@ Cohesion: 0.16
 Nodes (10): AppBlockingService, Context, IBinder, Intent, Notification, Service, View, WindowManager (+2 more)
 
 ### Community 25 - "Exception"
-Cohesion: 0.19
-Nodes (9): ActivityMapperApiClient, JSONObject, Result, AutomationRule, DiscordRichPresenceProfile, VariableValue, EditRichPresenceProfileScreen(), T (+1 more)
+Cohesion: 0.20
+Nodes (8): ActivityMapperApiClient, JSONObject, Result, DiscordRichPresenceProfile, VariableValue, EditRichPresenceProfileScreen(), T, Exception
 
 ### Community 26 - ".prefs"
 Cohesion: 0.16
 Nodes (10): Context, NapAlarmController, Context, SharedPreferences, NapPhase, IDLE, NAPPING, RINGING (+2 more)
 
-### Community 27 - "GeoPoint"
-Cohesion: 0.19
-Nodes (9): pointAtDistance(), pointsAlongLine(), BuildingGrid, cellIndex(), cellKey(), distanceMeters(), GeoPoint, nearestAddresses() (+1 more)
+### Community 27 - "distanceMeters"
+Cohesion: 0.29
+Nodes (3): distanceMeters(), nearestAddresses(), NearestAddressesTest
 
 ### Community 28 - "RouteEntity"
 Cohesion: 0.15
 Nodes (9): Flow, RouteDao, RouteEntity, Factory, StateFlow, T, ViewModel, ViewModelProvider (+1 more)
 
 ### Community 29 - "ActivityMapperModels.kt"
-Cohesion: 0.09
-Nodes (23): Action, ActionType, SET_DISCORD_RICH_PRESENCE, ActivityMapperData, ComparisonOperator, EQUALS, GREATER_THAN, GREATER_THAN_OR_EQUAL (+15 more)
+Cohesion: 0.12
+Nodes (20): Action, ActionType, SET_DISCORD_RICH_PRESENCE, ActivityMapperData, ComparisonOperator, EQUALS, GREATER_THAN, GREATER_THAN_OR_EQUAL (+12 more)
 
 ### Community 30 - "ActivityMapperRepository"
 Cohesion: 0.27
-Nodes (3): ActivityMapperRepository, Result, StateFlow
+Nodes (4): AutomationRule, ActivityMapperRepository, Result, StateFlow
 
 ### Community 31 - "PlaidConnectionSetupViewModel"
 Cohesion: 0.13
 Nodes (13): CreatingLinkToken, Error, ExchangingToken, Factory, Idle, StateFlow, T, ViewModel (+5 more)
 
 ### Community 32 - "IndianaAddressPointFetcher"
-Cohesion: 0.27
-Nodes (3): IndianaAddressPointFetcher, JSONObject, IndianaAddressPointFetcherTest
+Cohesion: 0.17
+Nodes (7): AddressFetchResult, Failure, FetchedAddress, Success, IndianaAddressPointFetcher, JSONObject, IndianaAddressPointFetcherTest
 
 ### Community 33 - "TimeTrackerSettingsViewModel"
-Cohesion: 0.09
-Nodes (12): DeductionType, FLAT, PERCENT, DeductionTypeConverter, DeductionFormState, Factory, StateFlow, T (+4 more)
+Cohesion: 0.14
+Nodes (8): DeductionFormState, Factory, StateFlow, T, ViewModel, ViewModelProvider, TimeTrackerSettingsUiState, TimeTrackerSettingsViewModel
 
 ### Community 34 - "ChildAccountEntity"
 Cohesion: 0.18
@@ -411,24 +413,24 @@ Cohesion: 0.14
 Nodes (7): Factory, FeatureFunnelHomeViewModel, FeatureFunnelUiState, StateFlow, T, ViewModel, ViewModelProvider
 
 ### Community 42 - "computeWeeklySummary"
-Cohesion: 0.26
-Nodes (9): computeCarryoverHours(), computeWeeklySummary(), currentWeekRange(), ClosedRange, localDate(), WeeklySummary, weekStartFor(), hourlyEntry() (+1 more)
+Cohesion: 0.28
+Nodes (8): computeCarryoverHours(), computeWeeklySummary(), currentWeekRange(), ClosedRange, localDate(), weekStartFor(), hourlyEntry(), WeeklySummaryTest
 
 ### Community 43 - "formatNumber"
-Cohesion: 0.12
-Nodes (16): Modifier, PayPeriodSummaryCard(), TimeEntryRow(), Modifier, WeeklyHoursBar(), EditTimeEntryScreen(), EntryDatePickerDialog(), RouteSelector() (+8 more)
+Cohesion: 0.11
+Nodes (17): WeeklySummary, Modifier, PayPeriodSummaryCard(), TimeEntryRow(), Modifier, WeeklyHoursBar(), EditTimeEntryScreen(), EntryDatePickerDialog() (+9 more)
 
 ### Community 44 - "PhotoCaptureViewModel"
-Cohesion: 0.14
-Nodes (9): Factory, Context, StateFlow, T, Uri, ViewModel, ViewModelProvider, PhotoCaptureUiState (+1 more)
+Cohesion: 0.11
+Nodes (14): CameraPreviewScreen(), Modifier, Uri, PhotoCaptureScreen(), PhotoPreviewScreen(), Factory, Context, StateFlow (+6 more)
 
 ### Community 45 - "CompletionStatus"
 Cohesion: 0.15
 Nodes (10): CompletionStatus, COMPLETED, FAILED, IN_PROGRESS, NOT_STARTED, PENDING_VERIFICATION, REJECTED, VERIFIED (+2 more)
 
-### Community 47 - "App"
-Cohesion: 0.18
-Nodes (7): App, Application, EssentialsRepository, FeatureFunnelPreferences, FeatureFunnelPreferencesRepository, Keys, Flow
+### Community 47 - "FeatureFunnelPreferencesRepository"
+Cohesion: 0.25
+Nodes (4): FeatureFunnelPreferences, FeatureFunnelPreferencesRepository, Keys, Flow
 
 ### Community 48 - "RouteHelperRouteEntity"
 Cohesion: 0.18
@@ -451,8 +453,8 @@ Cohesion: 0.22
 Nodes (4): Flow, TransactionDao, fromDomain(), TransactionEntity
 
 ### Community 53 - "BudgetCategory"
-Cohesion: 0.27
-Nodes (6): BudgetCategory, toDomain(), CategoryEditDialog(), BudgetCategoryConfigCard(), BudgetConfigScreen(), NumberFormat
+Cohesion: 0.21
+Nodes (7): BudgetCategory, toDomain(), AccountSelectionDialog(), CategoryEditDialog(), BudgetCategoryConfigCard(), BudgetConfigScreen(), NumberFormat
 
 ### Community 54 - "BudgetConfigViewModel"
 Cohesion: 0.18
@@ -483,7 +485,7 @@ Cohesion: 0.15
 Nodes (5): CachedRoadRouteEntity, PackageWithSequence, RouteType, AMAZON, REGULAR
 
 ### Community 62 - "SettingsViewModel"
-Cohesion: 0.18
+Cohesion: 0.16
 Nodes (11): DebugBridgeUiState, Error, Factory, Idle, StateFlow, T, ViewModel, ViewModelProvider (+3 more)
 
 ### Community 63 - "WeekScheduleViewModel"
@@ -527,8 +529,8 @@ Cohesion: 0.21
 Nodes (7): ChoreDetailUiState, ChoreDetailViewModel, Factory, StateFlow, T, ViewModel, ViewModelProvider
 
 ### Community 75 - "LoginViewModel"
-Cohesion: 0.16
-Nodes (8): LoginScreen(), Factory, StateFlow, T, ViewModel, ViewModelProvider, LoginUiState, LoginViewModel
+Cohesion: 0.20
+Nodes (7): Factory, StateFlow, T, ViewModel, ViewModelProvider, LoginUiState, LoginViewModel
 
 ### Community 76 - "HomeScreen"
 Cohesion: 0.53
@@ -550,21 +552,21 @@ Nodes (12): AppDatabase, getInstance(), FeatureFunnelDatabase, getInstance(), mi
 Cohesion: 0.38
 Nodes (8): beInt32(), ByteArray, leDouble(), leInt16(), leInt32(), TigerDbfParser, TigerRawRecord, TigerShpParser
 
-### Community 83 - "EditRuleScreen"
-Cohesion: 0.70
-Nodes (4): Condition, ActionEditor(), ConditionEditor(), EditRuleScreen()
+### Community 83 - "EssentialsApiClient"
+Cohesion: 0.34
+Nodes (6): ApiException, ChildAccountDto, EssentialsApiClient, JSONObject, Result, T
 
 ### Community 84 - "SleepSessionEntity"
 Cohesion: 0.33
 Nodes (3): Flow, SleepRepository, SleepSessionEntity
 
 ### Community 85 - "TimeTrackingDatabase"
-Cohesion: 0.27
+Cohesion: 0.24
 Nodes (7): getInstance(), insertDefaultDeductions(), Context, RoomDatabase, SupportSQLiteDatabase, migrate(), TimeTrackingDatabase
 
-### Community 86 - "VaultPreferencesRepository"
-Cohesion: 0.07
-Nodes (14): AppDataBackupScheduler, Context, Keys, Flow, VaultPreferencesRepository, parsePairingPayload(), VaultConnection, AndroidViewModel (+6 more)
+### Community 86 - "parsePairingPayload"
+Cohesion: 0.35
+Nodes (3): parsePairingPayload(), VaultConnection, VaultConnectionTest
 
 ### Community 87 - ".onCreate"
 Cohesion: 0.18
@@ -590,12 +592,16 @@ Nodes (4): ChargingMonitorReceiver, BroadcastReceiver, Context, Intent
 Cohesion: 0.20
 Nodes (7): ChoreDetail, Home, Login, PhotoCapture, Routes, Settings, Setup
 
+### Community 93 - "DeviceAdminManager"
+Cohesion: 0.25
+Nodes (3): Activity, DeviceAdminManager, SettingsScreen()
+
 ### Community 95 - "HomeControlApiClient"
 Cohesion: 0.08
 Nodes (21): AccountType, Transaction, PlaidClient, Transaction, TransactionCard(), TransactionListScreen(), HomeControlApiClient, Device (+13 more)
 
-### Community 96 - ".put"
-Cohesion: 0.40
+### Community 96 - "DiscordRichPresenceManager"
+Cohesion: 0.42
 Nodes (4): DiscordRichPresenceManager, getInstance(), Context, JSONObject
 
 ### Community 97 - "EssentialsDatabase"
@@ -708,15 +714,15 @@ Nodes (11): averageBearing(), calculateBearing(), detectTurnaroundIndices(), gen
 
 ### Community 128 - "EssentialsNavGraph"
 Cohesion: 0.29
-Nodes (4): ChoreDetailScreen(), EssentialsNavGraph(), NavHostController, SettingsScreen()
+Nodes (4): ChoreDetailScreen(), LoginScreen(), EssentialsNavGraph(), NavHostController
 
 ### Community 129 - ".downloadAndInstall"
 Cohesion: 0.33
 Nodes (4): Context, HttpURLConnection, ReleaseInfo, UpdateInstaller
 
 ### Community 132 - "filterAddressGroupsNearBuildings"
-Cohesion: 0.44
-Nodes (3): InterpolatedAddress, filterAddressGroupsNearBuildings(), BuildingProximityFilterTest
+Cohesion: 0.28
+Nodes (6): InterpolatedAddress, BuildingGrid, cellIndex(), cellKey(), filterAddressGroupsNearBuildings(), BuildingProximityFilterTest
 
 ### Community 135 - "LandingPreferencesRepository"
 Cohesion: 0.33
@@ -734,9 +740,9 @@ Nodes (4): BootCompletedReceiver, BroadcastReceiver, Context, Intent
 Cohesion: 0.33
 Nodes (4): BroadcastReceiver, Context, Intent, NapAlarmReceiver
 
-### Community 139 - "AddressFetchResult"
-Cohesion: 0.20
-Nodes (5): AddressFetchResult, Failure, FetchedAddress, Success, RouteHelperAddressFetcher
+### Community 139 - "App"
+Cohesion: 0.25
+Nodes (4): App, Application, EssentialsRepository, RouteHelperAddressFetcher
 
 ### Community 140 - ".getAccounts"
 Cohesion: 0.36
@@ -786,17 +792,17 @@ Nodes (3): gradlew script, die(), warn()
 Cohesion: 0.08
 Nodes (25): Factory, Flow, TransactionListViewModel, DevicesTab(), HomeControlHomeScreen(), Room, Routine, OverviewTab() (+17 more)
 
-### Community 172 - "PhotoCaptureScreen"
-Cohesion: 0.53
-Nodes (5): CameraPreviewScreen(), Modifier, Uri, PhotoCaptureScreen(), PhotoPreviewScreen()
+### Community 172 - "VaultPreferencesRepository"
+Cohesion: 0.20
+Nodes (3): Keys, Flow, VaultPreferencesRepository
 
 ### Community 174 - "preferencesToJson"
 Cohesion: 0.32
 Nodes (3): Preferences, preferencesToJson(), PreferencesJsonTest
 
 ### Community 176 - ".doWork"
-Cohesion: 0.29
-Nodes (4): PendingUpload, CoroutineWorker, Result, PhotoBackupWorker
+Cohesion: 0.40
+Nodes (3): CoroutineWorker, Result, PhotoBackupWorker
 
 ### Community 177 - "BankingDatabase"
 Cohesion: 0.40
@@ -818,17 +824,21 @@ Nodes (13): Capability, BATTERY, BRIGHTNESS, COLOR, COLOR_TEMPERATURE, CONTACT, 
 Cohesion: 0.30
 Nodes (13): Device, RoutineAction, RoutineCondition, RoutineTrigger, ActionCard(), AddActionDialog(), AddConditionDialog(), AddTriggerDialog() (+5 more)
 
-### Community 192 - "BankAccountEntity"
-Cohesion: 0.24
-Nodes (4): BankAccountDao, Flow, BankAccountEntity, fromDomain()
+### Community 192 - "JSONArray"
+Cohesion: 0.46
+Nodes (3): ChoreDto, ChoreDto, JSONArray
 
-### Community 193 - "AccountType"
-Cohesion: 0.17
-Nodes (9): AccountType, CHECKING, CREDIT_CARD, INVESTMENT, LOAN, OTHER, SAVINGS, BankAccount (+1 more)
+### Community 193 - "VariableType"
+Cohesion: 0.29
+Nodes (7): VariableType, CURRENT_STOP_NUMBER, ROUTE_COMPLETION_PERCENT, ROUTE_PLAY_MODE_ACTIVE, SLEEP_TIME_REMAINING, SLEEPING, TOTAL_STOPS
 
 ### Community 196 - "DeductionEntity"
-Cohesion: 0.22
-Nodes (3): DeductionDao, Flow, DeductionEntity
+Cohesion: 0.13
+Nodes (7): DeductionDao, Flow, DeductionEntity, DeductionType, FLAT, PERCENT, DeductionTypeConverter
+
+### Community 197 - "PairingViewModel"
+Cohesion: 0.40
+Nodes (4): AndroidViewModel, StateFlow, PairingUiState, PairingViewModel
 
 ### Community 198 - "DeviceType"
 Cohesion: 0.15
@@ -854,10 +864,6 @@ Nodes (4): AppDataBackupWorker, CoroutineWorker, Result, RoomDatabase
 Cohesion: 0.43
 Nodes (6): Routine, getTriggerDescription(), getTriggerIcon(), androidx, RoutineCard(), RoutineListScreen()
 
-### Community 206 - "BankProvider"
-Cohesion: 0.40
-Nodes (5): BankProvider, MANUAL, PLAID, SIMPLEFIN, TELLER
-
 ### Community 216 - "LandingScreen.kt"
 Cohesion: 0.60
 Nodes (4): LandingCard, LandingScreen(), ToolCard(), ImageVector
@@ -865,17 +871,17 @@ Nodes (4): LandingCard, LandingScreen(), ToolCard(), ImageVector
 ## Knowledge Gaps
 - **163 isolated node(s):** `Success`, `LimitHit`, `QUEUED`, `IN_PROGRESS`, `COMPLETED` (+158 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **47 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **48 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `FeatureFunnelRepository` connect `FeatureFunnelRepository` to `.checkForCompletion`, `App`?**
-  _High betweenness centrality (0.217) - this node is a cross-community bridge._
+- **Why does `FeatureFunnelRepository` connect `FeatureFunnelRepository` to `App`, `.checkForCompletion`?**
+  _High betweenness centrality (0.231) - this node is a cross-community bridge._
 - **Why does `FeatureFunnelApiClient` connect `FeatureFunnelApiClient` to `.checkForCompletion`?**
-  _High betweenness centrality (0.202) - this node is a cross-community bridge._
-- **Why does `EssentialsApiClient` connect `RoutePlayerViewModel` to `App`?**
-  _High betweenness centrality (0.167) - this node is a cross-community bridge._
+  _High betweenness centrality (0.222) - this node is a cross-community bridge._
+- **Why does `EssentialsApiClient` connect `EssentialsApiClient` to `JSONArray`, `App`?**
+  _High betweenness centrality (0.175) - this node is a cross-community bridge._
 - **Are the 16 inferred relationships involving `GeoPoint` (e.g. with `toSample()` and `.queryPage()`) actually correct?**
   _`GeoPoint` has 16 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 6 inferred relationships involving `HomeControlRepository` (e.g. with `DeviceDetailScreen()` and `DeviceListScreen()`) actually correct?**
