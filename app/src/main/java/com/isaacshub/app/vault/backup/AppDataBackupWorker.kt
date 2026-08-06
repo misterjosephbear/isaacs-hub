@@ -60,15 +60,53 @@ class AppDataBackupWorker(
             }
         }
 
-        val tempPrefsFile = File(applicationContext.cacheDir, "preferences_backup.json")
-        try {
-            val json = preferencesToJson(app.preferencesRepository.rawPreferences.first())
-            tempPrefsFile.writeText(json)
-            if (!client.uploadFile(tempPrefsFile, "$REMOTE_FOLDER/preferences.json", "application/json")) {
+        // Dynamically discover and backup all preference DataStores.
+        // This automatically includes new tools without code changes.
+        val preferenceFiles = getAllPreferenceFiles(applicationContext)
+        for (prefsFile in preferenceFiles) {
+            val datastoreName = getDataStoreNameFromFile(prefsFile)
+
+            try {
+                // Get raw preferences from the appropriate repository if available,
+                // otherwise skip (will be backed up from file directly in future enhancement)
+                val prefs = when (datastoreName) {
+                    "isaacs_hub_prefs" -> app.preferencesRepository.rawPreferences.first()
+                    "isaacs_hub_vault_prefs" -> app.vaultPreferencesRepository.getRawPreferences().first()
+                    "feature_funnel_prefs" -> app.featureFunnelPreferencesRepository.getRawPreferences().first()
+                    "landing_preferences" -> app.landingPreferencesRepository.getRawPreferences().first()
+                    else -> {
+                        // Skip preferences that aren't in repositories yet
+                        // New tools can be added to this when statement as they're created
+                        // Or backup could be implemented to read protobuf files directly
+                        android.util.Log.w("AppDataBackupWorker", "No repository found for preferences $datastoreName - skipping for now")
+                        continue
+                    }
+                }
+
+                val tempPrefsFile = File(applicationContext.cacheDir, "${datastoreName}_backup.json")
+                try {
+                    val json = preferencesToJson(prefs)
+                    tempPrefsFile.writeText(json)
+
+                    // Upload with timestamp to preserve history
+                    val timestampedPath = "$REMOTE_FOLDER/preferences/${datastoreName}.${timestamp}"
+                    if (!client.uploadFile(tempPrefsFile, timestampedPath, "application/json")) {
+                        allSucceeded = false
+                        continue
+                    }
+
+                    // Also update the "current" version for easy restoration
+                    val currentPath = "$REMOTE_FOLDER/preferences/${datastoreName}.json"
+                    if (!client.uploadFile(tempPrefsFile, currentPath, "application/json")) {
+                        allSucceeded = false
+                    }
+                } finally {
+                    tempPrefsFile.delete()
+                }
+            } catch (e: Exception) {
+                android.util.Log.e("AppDataBackupWorker", "Failed to backup preferences $datastoreName", e)
                 allSucceeded = false
             }
-        } finally {
-            tempPrefsFile.delete()
         }
 
         client.resolvedBaseUrl?.let { vaultPrefs.setPreferredBaseUrl(it) }

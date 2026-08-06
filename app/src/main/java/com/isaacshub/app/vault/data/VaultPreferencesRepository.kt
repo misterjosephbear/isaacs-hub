@@ -1,6 +1,7 @@
 package com.isaacshub.app.vault.data
 
 import android.content.Context
+import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.longPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
@@ -46,6 +47,9 @@ class VaultPreferencesRepository(private val context: Context) {
      * (or usually on it) doesn't pay a connect-timeout tax on every single request.
      */
     val preferredBaseUrl: Flow<String?> = context.vaultDataStore.data.map { prefs -> prefs[Keys.PREFERRED_BASE_URL] }
+
+    /** Get raw preferences for backup - includes all preferences as-is */
+    fun getRawPreferences(): Flow<Preferences> = context.vaultDataStore.data
 
     suspend fun setConnection(connection: VaultConnection) {
         context.vaultDataStore.edit {

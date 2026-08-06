@@ -36,6 +36,9 @@ class FeatureFunnelPreferencesRepository(private val context: Context) {
         )
     }
 
+    /** Get raw preferences for backup - includes all preferences as-is */
+    fun getRawPreferences(): Flow<Preferences> = context.featureFunnelDataStore.data
+
     suspend fun setEnabled(enabled: Boolean) {
         context.featureFunnelDataStore.edit { it[Keys.ENABLED] = enabled }
     }

@@ -26,6 +26,9 @@ class LandingPreferencesRepository(context: Context) {
         preferences[PreferencesKeys.CARD_ORDER]?.split(",")?.filter { it.isNotBlank() }
     }
 
+    /** Get raw preferences for backup - includes all preferences as-is */
+    fun getRawPreferences(): Flow<Preferences> = dataStore.data
+
     /**
      * Save a custom card order.
      */

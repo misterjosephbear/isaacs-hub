@@ -13,6 +13,7 @@ import com.isaacshub.app.essentials.data.EssentialsRepository
 import com.isaacshub.app.featurefunnel.data.FeatureFunnelPreferencesRepository
 import com.isaacshub.app.featurefunnel.data.FeatureFunnelRepository
 import com.isaacshub.app.featurefunnel.worker.FeatureFunnelScheduler
+import com.isaacshub.app.landing.data.LandingPreferencesRepository
 import com.isaacshub.app.routehelper.data.RouteHelperRepository
 import com.isaacshub.app.routehelper.network.RouteHelperAddressFetcher
 import com.isaacshub.app.sleep.data.SleepRepository
@@ -53,6 +54,9 @@ class App : Application() {
         private set
 
     lateinit var featureFunnelPreferencesRepository: FeatureFunnelPreferencesRepository
+        private set
+
+    lateinit var landingPreferencesRepository: LandingPreferencesRepository
         private set
 
     override fun onCreate() {
@@ -125,6 +129,9 @@ class App : Application() {
             featureFunnelPreferencesRepository
         )
         FeatureFunnelScheduler.rescheduleIfEnabled(this, featureFunnelPreferencesRepository)
+
+        // Landing initialization
+        landingPreferencesRepository = LandingPreferencesRepository(this)
 
         // Schedule daily package cleanup at 1am
         PackageCleanupScheduler.schedule(this)
