@@ -88,42 +88,75 @@ private val MIGRATION_8_9 = object : Migration(8, 9) {
     }
 }
 
+/**
+ * Returns the declared SQLite type of [column] on [table], or null if the column
+ * doesn't exist. Used to make migrations idempotent/safe to re-run against a database
+ * whose on-disk schema doesn't match its stored `PRAGMA user_version` (e.g. from a
+ * process death mid-migration, or an earlier partially-applied migration).
+ */
+private fun getColumnType(db: SupportSQLiteDatabase, table: String, column: String): String? {
+    db.query("PRAGMA table_info(`$table`)").use { cursor ->
+        val nameIndex = cursor.getColumnIndex("name")
+        val typeIndex = cursor.getColumnIndex("type")
+        while (cursor.moveToNext()) {
+            if (cursor.getString(nameIndex).equals(column, ignoreCase = true)) {
+                return cursor.getString(typeIndex)
+            }
+        }
+    }
+    return null
+}
+
+private fun columnExists(db: SupportSQLiteDatabase, table: String, column: String): Boolean =
+    getColumnType(db, table, column) != null
+
 private val MIGRATION_9_10 = object : Migration(9, 10) {
     override fun migrate(db: SupportSQLiteDatabase) {
-        // Add isNonRoutable column for non-routable package support
-        db.execSQL("ALTER TABLE `routed_stops` ADD COLUMN `isNonRoutable` INTEGER NOT NULL DEFAULT 0")
+        // Add isNonRoutable column for non-routable package support.
+        // Guarded because this migration can end up re-running against a database that
+        // already has this column but wasn't correctly marked as having reached version 10
+        // (e.g. partial migration from a prior run) - without the guard, this crashes with
+        // "duplicate column name: isNonRoutable".
+        if (!columnExists(db, "routed_stops", "isNonRoutable")) {
+            db.execSQL("ALTER TABLE `routed_stops` ADD COLUMN `isNonRoutable` INTEGER NOT NULL DEFAULT 0")
+        }
 
         // Change sequenceOrder from INTEGER to REAL (float) to support fractional sequence numbers like 22.5
-        // This requires recreating the table since SQLite doesn't support ALTER COLUMN TYPE directly
-        db.execSQL("""
-            CREATE TABLE `routed_stops_new` (
-                `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-                `routeId` INTEGER NOT NULL,
-                `sequenceOrder` REAL NOT NULL,
-                `addressLabel` TEXT NOT NULL,
-                `note` TEXT,
-                `latitude` REAL NOT NULL,
-                `longitude` REAL NOT NULL,
-                `candidateAddressId` INTEGER,
-                `createdAtEpochMillis` INTEGER NOT NULL,
-                `recipientLastName` TEXT,
-                `expectedPackageCount` INTEGER,
-                `isNonRoutable` INTEGER NOT NULL DEFAULT 0
-            )
-        """.trimIndent())
+        // This requires recreating the table since SQLite doesn't support ALTER COLUMN TYPE directly.
+        // Skip if sequenceOrder is already REAL - i.e. this table has already been migrated -
+        // so this step is also safe to re-run.
+        val sequenceOrderType = getColumnType(db, "routed_stops", "sequenceOrder")
+        if (!sequenceOrderType.equals("REAL", ignoreCase = true)) {
+            db.execSQL("""
+                CREATE TABLE IF NOT EXISTS `routed_stops_new` (
+                    `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+                    `routeId` INTEGER NOT NULL,
+                    `sequenceOrder` REAL NOT NULL,
+                    `addressLabel` TEXT NOT NULL,
+                    `note` TEXT,
+                    `latitude` REAL NOT NULL,
+                    `longitude` REAL NOT NULL,
+                    `candidateAddressId` INTEGER,
+                    `createdAtEpochMillis` INTEGER NOT NULL,
+                    `recipientLastName` TEXT,
+                    `expectedPackageCount` INTEGER,
+                    `isNonRoutable` INTEGER NOT NULL DEFAULT 0
+                )
+            """.trimIndent())
 
-        // Copy data from old table to new table, casting sequenceOrder to REAL
-        db.execSQL("""
-            INSERT INTO `routed_stops_new`
-            SELECT `id`, `routeId`, CAST(`sequenceOrder` AS REAL), `addressLabel`, `note`,
-                   `latitude`, `longitude`, `candidateAddressId`, `createdAtEpochMillis`,
-                   `recipientLastName`, `expectedPackageCount`, `isNonRoutable`
-            FROM `routed_stops`
-        """.trimIndent())
+            // Copy data from old table to new table, casting sequenceOrder to REAL
+            db.execSQL("""
+                INSERT INTO `routed_stops_new`
+                SELECT `id`, `routeId`, CAST(`sequenceOrder` AS REAL), `addressLabel`, `note`,
+                       `latitude`, `longitude`, `candidateAddressId`, `createdAtEpochMillis`,
+                       `recipientLastName`, `expectedPackageCount`, `isNonRoutable`
+                FROM `routed_stops`
+            """.trimIndent())
 
-        // Drop old table and rename new table
-        db.execSQL("DROP TABLE `routed_stops`")
-        db.execSQL("ALTER TABLE `routed_stops_new` RENAME TO `routed_stops`")
+            // Drop old table and rename new table
+            db.execSQL("DROP TABLE `routed_stops`")
+            db.execSQL("ALTER TABLE `routed_stops_new` RENAME TO `routed_stops`")
+        }
     }
 }
 
