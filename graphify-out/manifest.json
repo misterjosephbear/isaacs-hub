@@ -25,9 +25,9 @@
     "semantic_hash": "20288e7ae8a83f09384827ba588b4997"
   },
   "app/schemas/com.isaacshub.app.core.data.WorkDatabase/1.json": {
-    "mtime": 1785237406.6958442,
-    "ast_hash": "939f56058d353db08914fe387b1420bf",
-    "semantic_hash": "939f56058d353db08914fe387b1420bf"
+    "mtime": 1785953104.2424202,
+    "ast_hash": "1cb73663176b8c4f602103963cdc0bf6",
+    "semantic_hash": ""
   },
   "app/schemas/com.isaacshub.app.essentials.data.EssentialsDatabase/1.json": {
     "mtime": 1785237406.6958442,
@@ -505,19 +505,19 @@
     "semantic_hash": "3f0043ba7ca5d8269f03a495ecac5b4e"
   },
   "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt": {
-    "mtime": 1785237406.7142048,
-    "ast_hash": "0d1c61f804a33018196955c6ba8aa7dc",
-    "semantic_hash": "0d1c61f804a33018196955c6ba8aa7dc"
+    "mtime": 1785952896.6585643,
+    "ast_hash": "8a416ef0a5a01e1ffa0c7ee6e96b72ab",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperEntities.kt": {
-    "mtime": 1785237406.7142048,
-    "ast_hash": "384adde0dcec121e40e26106ed35a6b3",
-    "semantic_hash": "384adde0dcec121e40e26106ed35a6b3"
+    "mtime": 1785952869.932454,
+    "ast_hash": "691fb3b78ab9086ba12e70ca8db0e54c",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperRepository.kt": {
-    "mtime": 1785237406.7142048,
-    "ast_hash": "00738d0587a1c929bc05ef1077dfd11a",
-    "semantic_hash": "00738d0587a1c929bc05ef1077dfd11a"
+    "mtime": 1785953159.4176476,
+    "ast_hash": "b09276975ae5aafe0e59b6237cf13e36",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt": {
     "mtime": 1785237406.7142048,
@@ -680,19 +680,19 @@
     "semantic_hash": "8c22d3a8f8e39a75cfcd35b4f247b6ca"
   },
   "app/src/main/java/com/isaacshub/app/routehelper/ui/player/PackageScanScreen.kt": {
-    "mtime": 1785237406.7204113,
-    "ast_hash": "a274763bbe85d806e83b4ed1b6355875",
-    "semantic_hash": "a274763bbe85d806e83b4ed1b6355875"
+    "mtime": 1785953210.232857,
+    "ast_hash": "47a780bd927abb046bf496e3b11c7cea",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt": {
-    "mtime": 1785237406.7204113,
+    "mtime": 1785953213.2672417,
     "ast_hash": "f0b77a836909f43b56e06c8edcf9cad2",
     "semantic_hash": "f0b77a836909f43b56e06c8edcf9cad2"
   },
   "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerViewModel.kt": {
-    "mtime": 1785237406.7214115,
-    "ast_hash": "cb4f1baa81777d18d0a6b3b785e8e88e",
-    "semantic_hash": "cb4f1baa81777d18d0a6b3b785e8e88e"
+    "mtime": 1785953077.5913103,
+    "ast_hash": "5f3f2b67f20379e21f2500d85b57b1b9",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/routehelper/ui/scanner/AmazonAddressParser.kt": {
     "mtime": 1785237406.7214115,
@@ -705,9 +705,9 @@
     "semantic_hash": "aa24f4c50eb87dde94613597c872d6d3"
   },
   "app/src/main/java/com/isaacshub/app/routehelper/ui/scanner/AmazonRouteScannerViewModel.kt": {
-    "mtime": 1785237406.7225986,
-    "ast_hash": "2b33bda49cde106ebd00f81d0a145168",
-    "semantic_hash": "2b33bda49cde106ebd00f81d0a145168"
+    "mtime": 1785953225.9629219,
+    "ast_hash": "73006bcfbe66cf3d21f3518cfb0457c6",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/routehelper/ui/test/RouteHelperTestScreen.kt": {
     "mtime": 1785237406.7225986,
@@ -1650,8 +1650,8 @@
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/routehelper/ui/scanner/AmazonRouteScannerViewModelV2.kt": {
-    "mtime": 1785691429.8663664,
-    "ast_hash": "5d8f50e5a3d19b6938374cb261e3db70",
+    "mtime": 1785953143.0075798,
+    "ast_hash": "fc6363a3d2ae806f8227c77f3f24832b",
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/homecontrol/ui/pairing/DevicePairingScreen.kt": {
@@ -1677,6 +1677,16 @@
   "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt": {
     "mtime": 1785952530.6790557,
     "ast_hash": "3834b0d9b9414da9e77f5c7d9487a56d",
+    "semantic_hash": ""
+  },
+  "app/schemas/com.isaacshub.app.routehelper.data.RouteHelperDatabase/10.json": {
+    "mtime": 1785953104.1894197,
+    "ast_hash": "14707fd564ea2349f572b9bbecad3164",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/routehelper/domain/NonRoutableOptimizer.kt": {
+    "mtime": 1785952921.3616662,
+    "ast_hash": "4cb690084613de7915d507a3e42336c8",
     "semantic_hash": ""
   }
 }

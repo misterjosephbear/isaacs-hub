@@ -22,12 +22,52 @@ import com.isaacshub.app.timetracking.data.RouteScheduleOverrideEntity
 import com.isaacshub.app.timetracking.data.TimeEntryDao
 import com.isaacshub.app.timetracking.data.TimeEntryEntity
 
+private val MIGRATION_1_2 = object : Migration(1, 2) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        // Add isNonRoutable column for non-routable package support (defaults to 0/false)
+        db.execSQL("ALTER TABLE `routed_stops` ADD COLUMN `isNonRoutable` INTEGER NOT NULL DEFAULT 0")
+
+        // Change sequenceOrder from INTEGER to REAL (float) to support fractional sequence numbers like 22.5
+        // This requires recreating the table since SQLite doesn't support ALTER COLUMN TYPE directly
+        db.execSQL("""
+            CREATE TABLE `routed_stops_new` (
+                `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+                `routeId` INTEGER NOT NULL,
+                `sequenceOrder` REAL NOT NULL,
+                `addressLabel` TEXT NOT NULL,
+                `note` TEXT,
+                `latitude` REAL NOT NULL,
+                `longitude` REAL NOT NULL,
+                `candidateAddressId` INTEGER,
+                `createdAtEpochMillis` INTEGER NOT NULL,
+                `recipientLastName` TEXT,
+                `expectedPackageCount` INTEGER,
+                `isNonRoutable` INTEGER NOT NULL DEFAULT 0
+            )
+        """.trimIndent())
+
+        // Copy data from old table to new table, casting sequenceOrder to REAL
+        db.execSQL("""
+            INSERT INTO `routed_stops_new`
+            SELECT `id`, `routeId`, CAST(`sequenceOrder` AS REAL), `addressLabel`, `note`,
+                   `latitude`, `longitude`, `candidateAddressId`, `createdAtEpochMillis`,
+                   `recipientLastName`, `expectedPackageCount`, 0
+            FROM `routed_stops`
+        """.trimIndent())
+
+        // Drop old table and rename new table
+        db.execSQL("DROP TABLE `routed_stops`")
+        db.execSQL("ALTER TABLE `routed_stops_new` RENAME TO `routed_stops`")
+    }
+}
+
 /**
  * Consolidated database for work-related features.
  * Combines TimeTracking and RouteHelper databases.
  *
  * Version history:
  * - v1: Initial consolidated database with all entities from both sources
+ * - v2: Add isNonRoutable field and change sequenceOrder from INT to FLOAT for non-routable package support
  */
 @Database(
     entities = [
@@ -44,7 +84,7 @@ import com.isaacshub.app.timetracking.data.TimeEntryEntity
         PackageEntity::class,
         RouteSectionEntity::class
     ],
-    version = 1,
+    version = 2,
     exportSchema = true
 )
 abstract class WorkDatabase : RoomDatabase() {
@@ -81,6 +121,7 @@ abstract class WorkDatabase : RoomDatabase() {
                     WorkDatabase::class.java,
                     "work.db"
                 )
+                    .addMigrations(MIGRATION_1_2)
                     .addCallback(object : RoomDatabase.Callback() {
                         override fun onCreate(db: SupportSQLiteDatabase) {
                             super.onCreate(db)
