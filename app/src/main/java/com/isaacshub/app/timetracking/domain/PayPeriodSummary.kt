@@ -77,10 +77,9 @@ fun computePayPeriodSummary(
             .filter { (route, date) -> (route.id to date) !in loggedRouteDates }
 
         val projectedHours = paidHours + unloggedOccurrences.sumOf { (route, _) -> route.evaluatedHours }
-        val projectedActualHours = actualHours + unloggedOccurrences.sumOf { (route, _) -> route.evaluatedHours }
         val weekMiles = loggedMiles + unloggedOccurrences.sumOf { (route, _) -> route.evaluatedMiles }
 
-        val overtimeHours = (projectedActualHours - OVERTIME_THRESHOLD_HOURS).coerceAtLeast(0.0)
+        val overtimeHours = (actualHours - OVERTIME_THRESHOLD_HOURS).coerceAtLeast(0.0)
 
         regularPay += projectedHours * hourlyRate
         overtimePay += overtimeHours * hourlyRate * (overtimeMultiplier - 1.0)

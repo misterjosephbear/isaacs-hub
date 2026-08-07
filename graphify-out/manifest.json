@@ -115,8 +115,8 @@
     "semantic_hash": "547f0f4327915522332c6473a9cbd1c6"
   },
   "app/src/main/java/com/isaacshub/app/App.kt": {
-    "mtime": 1785952159.7275264,
-    "ast_hash": "c02e351fa2fd80cd7c32b1585609202c",
+    "mtime": 1786012734.5752447,
+    "ast_hash": "814c7f675b6efb9193d76b0b393c6541",
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/MainActivity.kt": {
@@ -425,9 +425,9 @@
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeatureFunnelPreferencesRepository.kt": {
-    "mtime": 1785237406.7110152,
-    "ast_hash": "78c759855873c9a7523b606498333c5a",
-    "semantic_hash": "78c759855873c9a7523b606498333c5a"
+    "mtime": 1786012680.6610224,
+    "ast_hash": "9d8bf2dd75521fac78c2fd097df62fc9",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeatureFunnelRepository.kt": {
     "mtime": 1785667643.0181298,
@@ -475,9 +475,9 @@
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/landing/data/LandingPreferencesRepository.kt": {
-    "mtime": 1785237406.713039,
-    "ast_hash": "8ad1818bf1837b7eb8fcff0d9e72437a",
-    "semantic_hash": "8ad1818bf1837b7eb8fcff0d9e72437a"
+    "mtime": 1786012739.993267,
+    "ast_hash": "7b04f0f81cc6ccfaa3ad143ec0cf6526",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/landing/ui/LandingScreen.kt": {
     "mtime": 1785670179.530637,
@@ -1080,9 +1080,9 @@
     "semantic_hash": "de8bc1d062a5b0c0a390037b545ebc21"
   },
   "app/src/main/java/com/isaacshub/app/vault/backup/AppDataBackupWorker.kt": {
-    "mtime": 1785237406.7311275,
-    "ast_hash": "9e3d40fbad231301c65070de5715bfca",
-    "semantic_hash": "9e3d40fbad231301c65070de5715bfca"
+    "mtime": 1786012754.5783272,
+    "ast_hash": "063131536f9ad60f0bef29588df7207f",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/vault/backup/PreferencesJson.kt": {
     "mtime": 1785237406.7311275,
@@ -1095,9 +1095,9 @@
     "semantic_hash": "59f319ca098cc68c839c5cafc02c0963"
   },
   "app/src/main/java/com/isaacshub/app/vault/data/VaultPreferencesRepository.kt": {
-    "mtime": 1785237406.731843,
-    "ast_hash": "9f6dd222041b7f40b8f5bc3f6b1cb0cf",
-    "semantic_hash": "9f6dd222041b7f40b8f5bc3f6b1cb0cf"
+    "mtime": 1786013198.7411582,
+    "ast_hash": "a5cea810819177d0ab32888950528c4e",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/vault/domain/PhotoSyncPlanner.kt": {
     "mtime": 1785237406.731843,
@@ -1140,9 +1140,9 @@
     "semantic_hash": "a876bbfec06fc85f7eb350685fe2ccfa"
   },
   "app/src/main/java/com/isaacshub/app/vault/ui/restore/RestoreViewModel.kt": {
-    "mtime": 1785237406.7329311,
-    "ast_hash": "f1024b726970e305ca92535261450efe",
-    "semantic_hash": "f1024b726970e305ca92535261450efe"
+    "mtime": 1786013210.4112065,
+    "ast_hash": "d2c13504a702f68739c03bfdb6c5bdc2",
+    "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/vault/work/ManualUploadWorker.kt": {
     "mtime": 1785237406.7329311,
@@ -1697,6 +1697,16 @@
   "app/schemas/com.isaacshub.app.core.data.AppDatabase/3.json": {
     "mtime": 1785985913.6916766,
     "ast_hash": "1ebbced3abd008068ed9208331654506",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/com/isaacshub/app/vault/backup/PreferencesBackup.kt": {
+    "mtime": 1786013033.9154787,
+    "ast_hash": "ad8bc56043daca57d70c0e23a169563a",
+    "semantic_hash": ""
+  },
+  "BACKUP_IMPLEMENTATION_SUMMARY.md": {
+    "mtime": 1786013622.8609066,
+    "ast_hash": "f455123a0e6ac2cb7bdb672557d5281c",
     "semantic_hash": ""
   }
 }

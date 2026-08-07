@@ -300,8 +300,8 @@
     "semantic_hash": "38a4801cf4d11d6e83b605d7a8f54811"
   },
   "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt": {
-    "mtime": 1785283088.6704473,
-    "ast_hash": "6abc5703c015cc62b8ef979a7a477f40",
+    "mtime": 1785985899.1426165,
+    "ast_hash": "4f3282dacd02bce149c0a749b48d4733",
     "semantic_hash": ""
   },
   "app/src/main/java/com/isaacshub/app/core/data/DatabaseMigrationHelper.kt": {
@@ -1692,6 +1692,11 @@
   "app/schemas/com.isaacshub.app.core.data.WorkDatabase/2.json": {
     "mtime": 1785976310.0100858,
     "ast_hash": "90805a302f3f69bf0a010b5fac33a27d",
+    "semantic_hash": ""
+  },
+  "app/schemas/com.isaacshub.app.core.data.AppDatabase/3.json": {
+    "mtime": 1785985913.6916766,
+    "ast_hash": "1ebbced3abd008068ed9208331654506",
     "semantic_hash": ""
   }
 }

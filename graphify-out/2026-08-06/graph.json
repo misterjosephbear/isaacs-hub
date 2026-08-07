@@ -4,15 +4,180 @@
   "graph": {},
   "nodes": [
     {
+      "label": "AppDatabase.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": "appdatabase.kt"
+    },
+    {
+      "label": "AppDatabase",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": "appdatabase"
+    },
+    {
+      "label": "RoomDatabase",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "roomdatabase",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": "roomdatabase"
+    },
+    {
+      "label": ".sleepSessionDao()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_sleepsessiondao",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": ".sleepsessiondao()"
+    },
+    {
+      "label": "SleepSessionDao",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "sleepsessiondao",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": "sleepsessiondao"
+    },
+    {
+      "label": ".bankConnectionDao()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_bankconnectiondao",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": ".bankconnectiondao()"
+    },
+    {
+      "label": "BankConnectionDao",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "bankconnectiondao",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": "bankconnectiondao"
+    },
+    {
+      "label": ".bankAccountDao()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_bankaccountdao",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": ".bankaccountdao()"
+    },
+    {
+      "label": "BankAccountDao",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "bankaccountdao",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": "bankaccountdao"
+    },
+    {
+      "label": ".transactionDao()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_transactiondao",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": ".transactiondao()"
+    },
+    {
+      "label": "TransactionDao",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "transactiondao",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": "transactiondao"
+    },
+    {
+      "label": ".featurePromptDao()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_featurepromptdao",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": ".featurepromptdao()"
+    },
+    {
+      "label": "FeaturePromptDao",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "featurepromptdao",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": "featurepromptdao"
+    },
+    {
+      "label": "getInstance()",
+      "file_type": "code",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_getinstance",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": "getinstance()"
+    },
+    {
+      "label": "Context",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "context",
+      "community": 81,
+      "community_name": "AppDatabase",
+      "norm_label": "context"
+    },
+    {
       "label": "WorkDatabase.kt",
       "file_type": "code",
       "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "workdatabase.kt"
+      "norm_label": "workdatabase.kt",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase"
     },
     {
       "label": "getColumnType()",
@@ -20,10 +185,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
       "source_location": "L31",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getcolumntype",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "getcolumntype()"
+      "norm_label": "getcolumntype()",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getcolumntype"
     },
     {
       "label": "SupportSQLiteDatabase",
@@ -31,10 +196,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_supportsqlitedatabase",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "supportsqlitedatabase"
+      "norm_label": "supportsqlitedatabase",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_supportsqlitedatabase"
     },
     {
       "label": "columnExists()",
@@ -42,10 +207,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
       "source_location": "L44",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_columnexists",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "columnexists()"
+      "norm_label": "columnexists()",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_columnexists"
     },
     {
       "label": "migrate()",
@@ -53,10 +218,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
       "source_location": "L48",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_migrate",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "migrate()"
+      "norm_label": "migrate()",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_migrate"
     },
     {
       "label": "WorkDatabase",
@@ -64,10 +229,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
       "source_location": "L107",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "workdatabase"
+      "norm_label": "workdatabase",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase"
     },
     {
       "label": "RoomDatabase",
@@ -75,10 +240,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_roomdatabase",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "roomdatabase"
+      "norm_label": "roomdatabase",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_roomdatabase"
     },
     {
       "label": ".timeEntryDao()",
@@ -86,10 +251,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
       "source_location": "L128",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_timeentrydao",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": ".timeentrydao()"
+      "norm_label": ".timeentrydao()",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_timeentrydao"
     },
     {
       "label": "TimeEntryDao",
@@ -97,10 +262,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "timeentrydao",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "timeentrydao"
+      "norm_label": "timeentrydao",
+      "id": "timeentrydao"
     },
     {
       "label": ".routeDao()",
@@ -108,10 +273,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
       "source_location": "L129",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routedao",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": ".routedao()"
+      "norm_label": ".routedao()",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routedao"
     },
     {
       "label": "RouteDao",
@@ -119,10 +284,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "routedao",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "routedao"
+      "norm_label": "routedao",
+      "id": "routedao"
     },
     {
       "label": ".deductionDao()",
@@ -130,10 +295,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
       "source_location": "L130",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_deductiondao",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": ".deductiondao()"
+      "norm_label": ".deductiondao()",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_deductiondao"
     },
     {
       "label": "DeductionDao",
@@ -141,10 +306,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "deductiondao",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "deductiondao"
+      "norm_label": "deductiondao",
+      "id": "deductiondao"
     },
     {
       "label": ".routeScheduleOverrideDao()",
@@ -152,10 +317,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
       "source_location": "L131",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routescheduleoverridedao",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": ".routescheduleoverridedao()"
+      "norm_label": ".routescheduleoverridedao()",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routescheduleoverridedao"
     },
     {
       "label": "RouteScheduleOverrideDao",
@@ -163,10 +328,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "routescheduleoverridedao",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "routescheduleoverridedao"
+      "norm_label": "routescheduleoverridedao",
+      "id": "routescheduleoverridedao"
     },
     {
       "label": ".routeHelperDao()",
@@ -174,10 +339,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
       "source_location": "L134",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routehelperdao",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": ".routehelperdao()"
+      "norm_label": ".routehelperdao()",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routehelperdao"
     },
     {
       "label": "RouteHelperDao",
@@ -185,10 +350,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_routehelperdao",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "routehelperdao"
+      "norm_label": "routehelperdao",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_routehelperdao"
     },
     {
       "label": "insertDefaultDeductions()",
@@ -196,10 +361,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
       "source_location": "L139",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_insertdefaultdeductions",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "insertdefaultdeductions()"
+      "norm_label": "insertdefaultdeductions()",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_insertdefaultdeductions"
     },
     {
       "label": "getInstance()",
@@ -207,10 +372,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
       "source_location": "L152",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getinstance",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "getinstance()"
+      "norm_label": "getinstance()",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getinstance"
     },
     {
       "label": "Context",
@@ -218,10 +383,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_context",
       "community": 54,
       "community_name": "WorkDatabase",
-      "norm_label": "context"
+      "norm_label": "context",
+      "id": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_context"
     },
     {
       "label": "RouteHelperDatabase.kt",
@@ -229,10 +394,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase",
       "community": 109,
       "community_name": "RouteHelperDatabase.kt",
-      "norm_label": "routehelperdatabase.kt"
+      "norm_label": "routehelperdatabase.kt",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase"
     },
     {
       "label": "migrate()",
@@ -240,10 +405,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_migrate",
       "community": 109,
       "community_name": "RouteHelperDatabase.kt",
-      "norm_label": "migrate()"
+      "norm_label": "migrate()",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_migrate"
     },
     {
       "label": "SupportSQLiteDatabase",
@@ -251,10 +416,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_supportsqlitedatabase",
       "community": 109,
       "community_name": "RouteHelperDatabase.kt",
-      "norm_label": "supportsqlitedatabase"
+      "norm_label": "supportsqlitedatabase",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_supportsqlitedatabase"
     },
     {
       "label": "getColumnType()",
@@ -262,10 +427,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
       "source_location": "L97",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getcolumntype",
       "community": 109,
       "community_name": "RouteHelperDatabase.kt",
-      "norm_label": "getcolumntype()"
+      "norm_label": "getcolumntype()",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getcolumntype"
     },
     {
       "label": "columnExists()",
@@ -273,10 +438,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
       "source_location": "L110",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_columnexists",
       "community": 109,
       "community_name": "RouteHelperDatabase.kt",
-      "norm_label": "columnexists()"
+      "norm_label": "columnexists()",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_columnexists"
     },
     {
       "label": "RouteHelperDatabase",
@@ -284,10 +449,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
       "source_location": "L163",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase",
       "community": 109,
       "community_name": "RouteHelperDatabase.kt",
-      "norm_label": "routehelperdatabase"
+      "norm_label": "routehelperdatabase",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase"
     },
     {
       "label": "RoomDatabase",
@@ -295,10 +460,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_roomdatabase",
       "community": 109,
       "community_name": "RouteHelperDatabase.kt",
-      "norm_label": "roomdatabase"
+      "norm_label": "roomdatabase",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_roomdatabase"
     },
     {
       "label": ".routeHelperDao()",
@@ -306,10 +471,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
       "source_location": "L170",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase_routehelperdao",
       "community": 109,
       "community_name": "RouteHelperDatabase.kt",
-      "norm_label": ".routehelperdao()"
+      "norm_label": ".routehelperdao()",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase_routehelperdao"
     },
     {
       "label": "RouteHelperDao",
@@ -317,10 +482,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_routehelperdao",
       "community": 109,
       "community_name": "RouteHelperDatabase.kt",
-      "norm_label": "routehelperdao"
+      "norm_label": "routehelperdao",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_routehelperdao"
     },
     {
       "label": "getInstance()",
@@ -328,10 +493,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
       "source_location": "L175",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getinstance",
       "community": 109,
       "community_name": "RouteHelperDatabase.kt",
-      "norm_label": "getinstance()"
+      "norm_label": "getinstance()",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getinstance"
     },
     {
       "label": "Context",
@@ -339,10 +504,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_context",
       "community": 109,
       "community_name": "RouteHelperDatabase.kt",
-      "norm_label": "context"
+      "norm_label": "context",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_context"
     },
     {
       "label": "TigerAddressFetcher.kt",
@@ -350,10 +515,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher",
       "community": 101,
       "community_name": "TigerAddressFetcher",
-      "norm_label": "tigeraddressfetcher.kt"
+      "norm_label": "tigeraddressfetcher.kt",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher"
     },
     {
       "label": "TigerAddressFetcher",
@@ -361,10 +526,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
       "source_location": "L30",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher",
       "community": 101,
       "community_name": "TigerAddressFetcher",
-      "norm_label": "tigeraddressfetcher"
+      "norm_label": "tigeraddressfetcher",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher"
     },
     {
       "label": ".geocodeZip()",
@@ -372,10 +537,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
       "source_location": "L37",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_geocodezip",
       "community": 101,
       "community_name": "TigerAddressFetcher",
-      "norm_label": ".geocodezip()"
+      "norm_label": ".geocodezip()",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_geocodezip"
     },
     {
       "label": "GeoPoint",
@@ -383,10 +548,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "geopoint",
       "community": 101,
       "community_name": "TigerAddressFetcher",
-      "norm_label": "geopoint"
+      "norm_label": "geopoint",
+      "id": "geopoint"
     },
     {
       "label": ".fetchAddressesForZip()",
@@ -394,10 +559,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
       "source_location": "L41",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_fetchaddressesforzip",
       "community": 101,
       "community_name": "TigerAddressFetcher",
-      "norm_label": ".fetchaddressesforzip()"
+      "norm_label": ".fetchaddressesforzip()",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_fetchaddressesforzip"
     },
     {
       "label": "AddressFetchResult",
@@ -405,10 +570,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "addressfetchresult",
       "community": 101,
       "community_name": "TigerAddressFetcher",
-      "norm_label": "addressfetchresult"
+      "norm_label": "addressfetchresult",
+      "id": "addressfetchresult"
     },
     {
       "label": ".loadCountyShapefile()",
@@ -416,10 +581,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
       "source_location": "L98",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile",
       "community": 101,
       "community_name": "TigerAddressFetcher",
-      "norm_label": ".loadcountyshapefile()"
+      "norm_label": ".loadcountyshapefile()",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile"
     },
     {
       "label": "ByteArray",
@@ -427,10 +592,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "bytearray",
       "community": 101,
       "community_name": "TigerAddressFetcher",
-      "norm_label": "bytearray"
+      "norm_label": "bytearray",
+      "id": "bytearray"
     },
     {
       "label": ".readEntryExact()",
@@ -438,10 +603,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
       "source_location": "L135",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_readentryexact",
       "community": 101,
       "community_name": "TigerAddressFetcher",
-      "norm_label": ".readentryexact()"
+      "norm_label": ".readentryexact()",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_readentryexact"
     },
     {
       "label": "ZipFile",
@@ -449,10 +614,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "zipfile",
       "community": 101,
       "community_name": "TigerAddressFetcher",
-      "norm_label": "zipfile"
+      "norm_label": "zipfile",
+      "id": "zipfile"
     },
     {
       "label": "ZipEntry",
@@ -460,10 +625,10 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "zipentry",
       "community": 101,
       "community_name": "TigerAddressFetcher",
-      "norm_label": "zipentry"
+      "norm_label": "zipentry",
+      "id": "zipentry"
     },
     {
       "label": ".downloadTo()",
@@ -471,10 +636,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
       "source_location": "L155",
       "_origin": "ast",
-      "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_downloadto",
       "community": 101,
       "community_name": "TigerAddressFetcher",
-      "norm_label": ".downloadto()"
+      "norm_label": ".downloadto()",
+      "id": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_downloadto"
     },
     {
       "label": "SupportSQLiteDatabase",
@@ -488,17 +653,6 @@
       "id": "supportsqlitedatabase"
     },
     {
-      "label": "RoomDatabase",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 81,
-      "community_name": "AppDatabase",
-      "norm_label": "roomdatabase",
-      "id": "roomdatabase"
-    },
-    {
       "label": "RouteHelperDao",
       "file_type": "code",
       "source_file": "",
@@ -508,17 +662,6 @@
       "community_name": "RouteHelperDao",
       "norm_label": "routehelperdao",
       "id": "routehelperdao"
-    },
-    {
-      "label": "Context",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 81,
-      "community_name": "AppDatabase",
-      "norm_label": "context",
-      "id": "context"
     },
     {
       "label": "RouteHelperEntities.kt",
@@ -2385,8 +2528,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 215,
-      "community_name": "CrashReportingApiClient",
+      "community": 76,
+      "community_name": "CrashLogger",
       "norm_label": "crashreportingapiclient.kt",
       "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient"
     },
@@ -2396,8 +2539,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 215,
-      "community_name": "CrashReportingApiClient",
+      "community": 76,
+      "community_name": "CrashLogger",
       "norm_label": "crashreportingapiclient",
       "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient"
     },
@@ -2407,8 +2550,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 215,
-      "community_name": "CrashReportingApiClient",
+      "community": 76,
+      "community_name": "CrashLogger",
       "norm_label": ".reportcrashasync()",
       "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashasync"
     },
@@ -2418,8 +2561,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 215,
-      "community_name": "CrashReportingApiClient",
+      "community": 76,
+      "community_name": "CrashLogger",
       "norm_label": "crashlog",
       "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_kt_crashlog"
     },
@@ -2429,8 +2572,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 215,
-      "community_name": "CrashReportingApiClient",
+      "community": 76,
+      "community_name": "CrashLogger",
       "norm_label": ".reportcrashblocking()",
       "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrashblocking"
     },
@@ -2440,8 +2583,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
       "source_location": "L58",
       "_origin": "ast",
-      "community": 215,
-      "community_name": "CrashReportingApiClient",
+      "community": 76,
+      "community_name": "CrashLogger",
       "norm_label": ".shouldreport()",
       "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_shouldreport"
     },
@@ -2451,8 +2594,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/debug/CrashReportingApiClient.kt",
       "source_location": "L72",
       "_origin": "ast",
-      "community": 215,
-      "community_name": "CrashReportingApiClient",
+      "community": 76,
+      "community_name": "CrashLogger",
       "norm_label": ".reportcrash()",
       "id": "app_src_main_java_com_isaacshub_app_debug_crashreportingapiclient_crashreportingapiclient_reportcrash"
     },
@@ -2957,8 +3100,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepDatabase.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 214,
-      "community_name": "SleepDatabase",
+      "community": 81,
+      "community_name": "AppDatabase",
       "norm_label": "sleepdatabase.kt",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepdatabase"
     },
@@ -2968,8 +3111,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepDatabase.kt",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 214,
-      "community_name": "SleepDatabase",
+      "community": 81,
+      "community_name": "AppDatabase",
       "norm_label": "sleepdatabase",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepdatabase_sleepdatabase"
     },
@@ -2979,8 +3122,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 214,
-      "community_name": "SleepDatabase",
+      "community": 81,
+      "community_name": "AppDatabase",
       "norm_label": "roomdatabase",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepdatabase_kt_roomdatabase"
     },
@@ -2990,21 +3133,10 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepDatabase.kt",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 214,
-      "community_name": "SleepDatabase",
+      "community": 81,
+      "community_name": "AppDatabase",
       "norm_label": ".sleepsessiondao()",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepdatabase_sleepdatabase_sleepsessiondao"
-    },
-    {
-      "label": "SleepSessionDao",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 214,
-      "community_name": "SleepDatabase",
-      "norm_label": "sleepsessiondao",
-      "id": "sleepsessiondao"
     },
     {
       "label": "getInstance()",
@@ -3012,8 +3144,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepDatabase.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 214,
-      "community_name": "SleepDatabase",
+      "community": 81,
+      "community_name": "AppDatabase",
       "norm_label": "getinstance()",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepdatabase_getinstance"
     },
@@ -3023,8 +3155,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 214,
-      "community_name": "SleepDatabase",
+      "community": 81,
+      "community_name": "AppDatabase",
       "norm_label": "context",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepdatabase_kt_context"
     },
@@ -3060,17 +3192,6 @@
       "community_name": "AppDatabase",
       "norm_label": ".featurepromptdao()",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_data_featurefunneldatabase_featurefunneldatabase_featurepromptdao"
-    },
-    {
-      "label": "FeaturePromptDao",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 81,
-      "community_name": "AppDatabase",
-      "norm_label": "featurepromptdao",
-      "id": "featurepromptdao"
     },
     {
       "label": "getInstance()",
@@ -7401,8 +7522,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 196,
-      "community_name": "Flow",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": "flow",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingrepository_kt_flow"
     },
@@ -7467,8 +7588,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingRepository.kt",
       "source_location": "L72",
       "_origin": "ast",
-      "community": 196,
-      "community_name": "Flow",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": ".observeallaccounts()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingrepository_bankingrepository_observeallaccounts"
     },
@@ -7478,8 +7599,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 196,
-      "community_name": "Flow",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": "bankaccount",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingrepository_kt_bankaccount"
     },
@@ -7489,8 +7610,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingRepository.kt",
       "source_location": "L77",
       "_origin": "ast",
-      "community": 196,
-      "community_name": "Flow",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": ".observeaccountsbyconnection()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingrepository_bankingrepository_observeaccountsbyconnection"
     },
@@ -7599,8 +7720,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingRepository.kt",
       "source_location": "L144",
       "_origin": "ast",
-      "community": 196,
-      "community_name": "Flow",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": ".observeselectedaccounts()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingrepository_bankingrepository_observeselectedaccounts"
     },
@@ -7632,8 +7753,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingRepository.kt",
       "source_location": "L168",
       "_origin": "ast",
-      "community": 196,
-      "community_name": "Flow",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": ".observebudgetstate()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingrepository_bankingrepository_observebudgetstate"
     },
@@ -7643,8 +7764,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 196,
-      "community_name": "Flow",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": "budgetstate",
       "id": "budgetstate"
     },
@@ -7654,8 +7775,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingRepository.kt",
       "source_location": "L178",
       "_origin": "ast",
-      "community": 196,
-      "community_name": "Flow",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": ".observetransactionsbyaccount()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingrepository_bankingrepository_observetransactionsbyaccount"
     },
@@ -7665,8 +7786,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/BankingRepository.kt",
       "source_location": "L183",
       "_origin": "ast",
-      "community": 196,
-      "community_name": "Flow",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": ".observerecenttransactions()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_bankingrepository_bankingrepository_observerecenttransactions"
     },
@@ -7709,8 +7830,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/TransactionDao.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 71,
-      "community_name": "TransactionDao",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": "transactiondao.kt",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_transactiondao"
     },
@@ -7720,8 +7841,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/TransactionDao.kt",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 71,
-      "community_name": "TransactionDao",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": "transactiondao",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_transactiondao_transactiondao"
     },
@@ -7731,8 +7852,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/TransactionDao.kt",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 71,
-      "community_name": "TransactionDao",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": ".inserttransaction()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_transactiondao_transactiondao_inserttransaction"
     },
@@ -7742,8 +7863,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/TransactionDao.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 71,
-      "community_name": "TransactionDao",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": ".inserttransactions()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_transactiondao_transactiondao_inserttransactions"
     },
@@ -7753,8 +7874,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/TransactionDao.kt",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 71,
-      "community_name": "TransactionDao",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": ".gettransactionsbyaccount()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_transactiondao_transactiondao_gettransactionsbyaccount"
     },
@@ -7764,8 +7885,8 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 71,
-      "community_name": "TransactionDao",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": "flow",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_transactiondao_kt_flow"
     },
@@ -7775,8 +7896,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/TransactionDao.kt",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 71,
-      "community_name": "TransactionDao",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": ".getrecenttransactions()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_transactiondao_transactiondao_getrecenttransactions"
     },
@@ -7786,8 +7907,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/TransactionDao.kt",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 71,
-      "community_name": "TransactionDao",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": ".deletetransactionsbyaccount()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_transactiondao_transactiondao_deletetransactionsbyaccount"
     },
@@ -7797,8 +7918,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/TransactionDao.kt",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 71,
-      "community_name": "TransactionDao",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": ".gettransactioncount()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_transactiondao_transactiondao_gettransactioncount"
     },
@@ -7808,8 +7929,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/TransactionEntity.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 71,
-      "community_name": "TransactionDao",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": "transactionentity.kt",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_transactionentity"
     },
@@ -7819,8 +7940,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/TransactionEntity.kt",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 71,
-      "community_name": "TransactionDao",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": "transactionentity",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_transactionentity_transactionentity"
     },
@@ -7830,8 +7951,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/TransactionEntity.kt",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 71,
-      "community_name": "TransactionDao",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": "fromdomain()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_transactionentity_fromdomain"
     },
@@ -7841,8 +7962,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/TransactionEntity.kt",
       "source_location": "L50",
       "_origin": "ast",
-      "community": 71,
-      "community_name": "TransactionDao",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": ".todomain()",
       "id": "app_src_main_java_com_isaacshub_app_banking_data_transactionentity_transactionentity_todomain"
     },
@@ -7852,8 +7973,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/Transaction.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 196,
-      "community_name": "Flow",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": "transaction.kt",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_transaction"
     },
@@ -7863,8 +7984,8 @@
       "source_file": "app/src/main/java/com/isaacshub/app/banking/domain/Transaction.kt",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 196,
-      "community_name": "Flow",
+      "community": 58,
+      "community_name": "BankingRepository",
       "norm_label": "transaction",
       "id": "app_src_main_java_com_isaacshub_app_banking_domain_transaction_transaction"
     },
@@ -8021,116 +8142,6 @@
       "community_name": "HomeControlViewModel",
       "norm_label": ".create()",
       "id": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistviewmodel_factory_create"
-    },
-    {
-      "label": "AppDatabase.kt",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 81,
-      "community_name": "AppDatabase",
-      "norm_label": "appdatabase.kt",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase"
-    },
-    {
-      "label": "AppDatabase",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L22",
-      "_origin": "ast",
-      "community": 81,
-      "community_name": "AppDatabase",
-      "norm_label": "appdatabase",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase"
-    },
-    {
-      "label": ".sleepSessionDao()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L35",
-      "_origin": "ast",
-      "community": 214,
-      "community_name": "SleepDatabase",
-      "norm_label": ".sleepsessiondao()",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_sleepsessiondao"
-    },
-    {
-      "label": ".bankConnectionDao()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L36",
-      "_origin": "ast",
-      "community": 81,
-      "community_name": "AppDatabase",
-      "norm_label": ".bankconnectiondao()",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_bankconnectiondao"
-    },
-    {
-      "label": "BankConnectionDao",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 81,
-      "community_name": "AppDatabase",
-      "norm_label": "bankconnectiondao",
-      "id": "bankconnectiondao"
-    },
-    {
-      "label": ".bankAccountDao()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L37",
-      "_origin": "ast",
-      "community": 81,
-      "community_name": "AppDatabase",
-      "norm_label": ".bankaccountdao()",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_bankaccountdao"
-    },
-    {
-      "label": "BankAccountDao",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "community": 81,
-      "community_name": "AppDatabase",
-      "norm_label": "bankaccountdao",
-      "id": "bankaccountdao"
-    },
-    {
-      "label": ".transactionDao()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L38",
-      "_origin": "ast",
-      "community": 71,
-      "community_name": "TransactionDao",
-      "norm_label": ".transactiondao()",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_transactiondao"
-    },
-    {
-      "label": ".featurePromptDao()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L39",
-      "_origin": "ast",
-      "community": 81,
-      "community_name": "AppDatabase",
-      "norm_label": ".featurepromptdao()",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_featurepromptdao"
-    },
-    {
-      "label": "getInstance()",
-      "file_type": "code",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L44",
-      "_origin": "ast",
-      "community": 81,
-      "community_name": "AppDatabase",
-      "norm_label": "getinstance()",
-      "id": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_getinstance"
     },
     {
       "label": "CLAUDE.md",
@@ -13693,9 +13704,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/worker/FeatureFunnelScheduler.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 176,
+      "community": 47,
       "norm_label": "featurefunnelscheduler.kt",
-      "community_name": "FeatureFunnelScheduler",
+      "community_name": "FeatureFunnelPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelscheduler"
     },
     {
@@ -13704,9 +13715,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/worker/FeatureFunnelScheduler.kt",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 176,
+      "community": 47,
       "norm_label": "featurefunnelscheduler",
-      "community_name": "FeatureFunnelScheduler",
+      "community_name": "FeatureFunnelPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelscheduler_featurefunnelscheduler"
     },
     {
@@ -13715,9 +13726,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/worker/FeatureFunnelScheduler.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 176,
+      "community": 47,
       "norm_label": ".schedule()",
-      "community_name": "FeatureFunnelScheduler",
+      "community_name": "FeatureFunnelPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelscheduler_featurefunnelscheduler_schedule"
     },
     {
@@ -13726,9 +13737,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 176,
+      "community": 47,
       "norm_label": "context",
-      "community_name": "FeatureFunnelScheduler",
+      "community_name": "FeatureFunnelPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelscheduler_kt_context"
     },
     {
@@ -13737,9 +13748,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/worker/FeatureFunnelScheduler.kt",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 176,
+      "community": 47,
       "norm_label": ".cancel()",
-      "community_name": "FeatureFunnelScheduler",
+      "community_name": "FeatureFunnelPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelscheduler_featurefunnelscheduler_cancel"
     },
     {
@@ -13748,9 +13759,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/worker/FeatureFunnelScheduler.kt",
       "source_location": "L43",
       "_origin": "ast",
-      "community": 176,
+      "community": 47,
       "norm_label": ".rescheduleifenabled()",
-      "community_name": "FeatureFunnelScheduler",
+      "community_name": "FeatureFunnelPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelscheduler_featurefunnelscheduler_rescheduleifenabled"
     },
     {
@@ -13759,9 +13770,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/worker/FeatureFunnelScheduler.kt",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 176,
+      "community": 47,
       "norm_label": ".checknow()",
-      "community_name": "FeatureFunnelScheduler",
+      "community_name": "FeatureFunnelPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_featurefunnel_worker_featurefunnelscheduler_featurefunnelscheduler_checknow"
     },
     {
@@ -14529,9 +14540,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/AddressInterpolation.kt",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 114,
+      "community": 0,
       "norm_label": "parseparity()",
-      "community_name": "AddressParity",
+      "community_name": "AddressInterpolationTest",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_addressinterpolation_parseparity"
     },
     {
@@ -14705,9 +14716,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/GeoPoint.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 127,
+      "community": 7,
       "norm_label": "geopoint.kt",
-      "community_name": "GeoPoint",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_geopoint"
     },
     {
@@ -14727,9 +14738,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/GeoPoint.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 127,
+      "community": 7,
       "norm_label": "distancemeters()",
-      "community_name": "GeoPoint",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_geopoint_distancemeters"
     },
     {
@@ -14815,9 +14826,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/domain/NearestAddresses.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 174,
+      "community": 7,
       "norm_label": "nearestaddresses.kt",
-      "community_name": "stickyNearestSlots",
+      "community_name": "CandidateAddress",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_domain_nearestaddresses"
     },
     {
@@ -15167,9 +15178,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/AddressFetchResult.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": "addressfetchresult.kt",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_addressfetchresult"
     },
     {
@@ -15178,9 +15189,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/AddressFetchResult.kt",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": "fetchedaddress",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_addressfetchresult_fetchedaddress"
     },
     {
@@ -15189,9 +15200,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/AddressFetchResult.kt",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": "addressfetchresult",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_addressfetchresult_addressfetchresult"
     },
     {
@@ -15200,9 +15211,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/AddressFetchResult.kt",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": "success",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_addressfetchresult_success"
     },
     {
@@ -15211,9 +15222,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/AddressFetchResult.kt",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": "failure",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_addressfetchresult_failure"
     },
     {
@@ -15376,9 +15387,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/IndianaAddressPointFetcher.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": "indianaaddresspointfetcher.kt",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_indianaaddresspointfetcher"
     },
     {
@@ -15387,9 +15398,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/IndianaAddressPointFetcher.kt",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": "indianaaddresspointfetcher",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_indianaaddresspointfetcher_indianaaddresspointfetcher"
     },
     {
@@ -15398,9 +15409,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/IndianaAddressPointFetcher.kt",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": ".fetchaddressesforzip()",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_indianaaddresspointfetcher_indianaaddresspointfetcher_fetchaddressesforzip"
     },
     {
@@ -15409,9 +15420,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/IndianaAddressPointFetcher.kt",
       "source_location": "L52",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": ".querypage()",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_indianaaddresspointfetcher_indianaaddresspointfetcher_querypage"
     },
     {
@@ -15420,9 +15431,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/IndianaAddressPointFetcher.kt",
       "source_location": "L93",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": ".buildlabel()",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_indianaaddresspointfetcher_indianaaddresspointfetcher_buildlabel"
     },
     {
@@ -15431,9 +15442,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": "jsonobject",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_indianaaddresspointfetcher_kt_jsonobject"
     },
     {
@@ -15442,9 +15453,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/IndianaAddressPointFetcher.kt",
       "source_location": "L109",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": ".cleanstring()",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_indianaaddresspointfetcher_indianaaddresspointfetcher_cleanstring"
     },
     {
@@ -15640,9 +15651,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteHelperAddressFetcher.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": "routehelperaddressfetcher.kt",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routehelperaddressfetcher"
     },
     {
@@ -15651,9 +15662,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteHelperAddressFetcher.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": "routehelperaddressfetcher",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routehelperaddressfetcher_routehelperaddressfetcher"
     },
     {
@@ -15662,9 +15673,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteHelperAddressFetcher.kt",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": ".geocodezip()",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routehelperaddressfetcher_routehelperaddressfetcher_geocodezip"
     },
     {
@@ -15673,9 +15684,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/RouteHelperAddressFetcher.kt",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": ".fetchaddressesforzip()",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_network_routehelperaddressfetcher_routehelperaddressfetcher_fetchaddressesforzip"
     },
     {
@@ -16245,9 +16256,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/common/AddressActionCard.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 32,
+      "community": 176,
       "norm_label": "addressactioncard.kt",
-      "community_name": "newOsmMapView",
+      "community_name": "TestMap",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_common_addressactioncard"
     },
     {
@@ -16256,9 +16267,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/common/AddressActionCard.kt",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 32,
+      "community": 176,
       "norm_label": "addressactioncard()",
-      "community_name": "newOsmMapView",
+      "community_name": "TestMap",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_common_addressactioncard_addressactioncard"
     },
     {
@@ -16267,9 +16278,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/common/AddressActionCard.kt",
       "source_location": "L60",
       "_origin": "ast",
-      "community": 32,
+      "community": 176,
       "norm_label": "sidebutton()",
-      "community_name": "newOsmMapView",
+      "community_name": "TestMap",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_common_addressactioncard_sidebutton"
     },
     {
@@ -16949,9 +16960,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 6,
+      "community": 71,
       "norm_label": "routeplayerscreen.kt",
-      "community_name": "PackageScanScreen.kt",
+      "community_name": "RoutePlayerScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen"
     },
     {
@@ -16971,9 +16982,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L637",
       "_origin": "ast",
-      "community": 6,
+      "community": 71,
       "norm_label": "missedpackagealert()",
-      "community_name": "PackageScanScreen.kt",
+      "community_name": "RoutePlayerScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_missedpackagealert"
     },
     {
@@ -16982,9 +16993,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 6,
+      "community": 71,
       "norm_label": "modifier",
-      "community_name": "PackageScanScreen.kt",
+      "community_name": "RoutePlayerScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_kt_modifier"
     },
     {
@@ -16993,9 +17004,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L705",
       "_origin": "ast",
-      "community": 6,
+      "community": 71,
       "norm_label": "calculatescalefactor()",
-      "community_name": "PackageScanScreen.kt",
+      "community_name": "RoutePlayerScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_calculatescalefactor"
     },
     {
@@ -17004,9 +17015,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L717",
       "_origin": "ast",
-      "community": 6,
+      "community": 71,
       "norm_label": "shouldshowstopmarkers()",
-      "community_name": "PackageScanScreen.kt",
+      "community_name": "RoutePlayerScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_shouldshowstopmarkers"
     },
     {
@@ -17015,9 +17026,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L721",
       "_origin": "ast",
-      "community": 6,
+      "community": 71,
       "norm_label": "playermap()",
-      "community_name": "PackageScanScreen.kt",
+      "community_name": "RoutePlayerScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_playermap"
     },
     {
@@ -17026,9 +17037,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L894",
       "_origin": "ast",
-      "community": 6,
+      "community": 71,
       "norm_label": "addarrowmarkers()",
-      "community_name": "PackageScanScreen.kt",
+      "community_name": "RoutePlayerScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_addarrowmarkers"
     },
     {
@@ -17037,9 +17048,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 6,
+      "community": 71,
       "norm_label": "org",
-      "community_name": "PackageScanScreen.kt",
+      "community_name": "RoutePlayerScreen.kt",
       "id": "org"
     },
     {
@@ -17048,9 +17059,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L953",
       "_origin": "ast",
-      "community": 6,
+      "community": 71,
       "norm_label": "calculatebearing()",
-      "community_name": "PackageScanScreen.kt",
+      "community_name": "RoutePlayerScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_calculatebearing"
     },
     {
@@ -17059,9 +17070,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/player/RoutePlayerScreen.kt",
       "source_location": "L970",
       "_origin": "ast",
-      "community": 6,
+      "community": 71,
       "norm_label": "createarrowicon()",
-      "community_name": "PackageScanScreen.kt",
+      "community_name": "RoutePlayerScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_createarrowicon"
     },
     {
@@ -17070,9 +17081,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 6,
+      "community": 71,
       "norm_label": "android",
-      "community_name": "PackageScanScreen.kt",
+      "community_name": "RoutePlayerScreen.kt",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_player_routeplayerscreen_kt_android"
     },
     {
@@ -17235,9 +17246,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/test/RouteHelperTestScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 32,
+      "community": 176,
       "norm_label": "routehelpertestscreen.kt",
-      "community_name": "newOsmMapView",
+      "community_name": "TestMap",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestscreen"
     },
     {
@@ -17246,9 +17257,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/test/RouteHelperTestScreen.kt",
       "source_location": "L55",
       "_origin": "ast",
-      "community": 32,
+      "community": 176,
       "norm_label": "routehelpertestscreen()",
-      "community_name": "newOsmMapView",
+      "community_name": "TestMap",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestscreen_routehelpertestscreen"
     },
     {
@@ -17257,9 +17268,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/routehelper/ui/test/RouteHelperTestScreen.kt",
       "source_location": "L151",
       "_origin": "ast",
-      "community": 32,
+      "community": 176,
       "norm_label": "testmap()",
-      "community_name": "newOsmMapView",
+      "community_name": "TestMap",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestscreen_testmap"
     },
     {
@@ -17268,9 +17279,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 32,
+      "community": 176,
       "norm_label": "modifier",
-      "community_name": "newOsmMapView",
+      "community_name": "TestMap",
       "id": "app_src_main_java_com_isaacshub_app_routehelper_ui_test_routehelpertestscreen_kt_modifier"
     },
     {
@@ -17785,9 +17796,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepRepository.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 68,
+      "community": 84,
       "norm_label": "sleeprepository.kt",
-      "community_name": "SleepEntry",
+      "community_name": "SleepRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleeprepository"
     },
     {
@@ -17798,7 +17809,7 @@
       "_origin": "ast",
       "community": 84,
       "norm_label": "sleeprepository",
-      "community_name": "SleepSessionEntity",
+      "community_name": "SleepRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleeprepository_sleeprepository"
     },
     {
@@ -17809,7 +17820,7 @@
       "_origin": "ast",
       "community": 84,
       "norm_label": ".observeall()",
-      "community_name": "SleepSessionEntity",
+      "community_name": "SleepRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleeprepository_sleeprepository_observeall"
     },
     {
@@ -17820,7 +17831,7 @@
       "_origin": "ast",
       "community": 84,
       "norm_label": "flow",
-      "community_name": "SleepSessionEntity",
+      "community_name": "SleepRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleeprepository_kt_flow"
     },
     {
@@ -17831,7 +17842,7 @@
       "_origin": "ast",
       "community": 84,
       "norm_label": ".observesince()",
-      "community_name": "SleepSessionEntity",
+      "community_name": "SleepRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleeprepository_sleeprepository_observesince"
     },
     {
@@ -17842,7 +17853,7 @@
       "_origin": "ast",
       "community": 84,
       "norm_label": ".getbyid()",
-      "community_name": "SleepSessionEntity",
+      "community_name": "SleepRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleeprepository_sleeprepository_getbyid"
     },
     {
@@ -17853,7 +17864,7 @@
       "_origin": "ast",
       "community": 84,
       "norm_label": ".addmanualsession()",
-      "community_name": "SleepSessionEntity",
+      "community_name": "SleepRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleeprepository_sleeprepository_addmanualsession"
     },
     {
@@ -17864,7 +17875,7 @@
       "_origin": "ast",
       "community": 84,
       "norm_label": ".addnapsession()",
-      "community_name": "SleepSessionEntity",
+      "community_name": "SleepRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleeprepository_sleeprepository_addnapsession"
     },
     {
@@ -17875,7 +17886,7 @@
       "_origin": "ast",
       "community": 84,
       "norm_label": ".adddetectedsession()",
-      "community_name": "SleepSessionEntity",
+      "community_name": "SleepRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleeprepository_sleeprepository_adddetectedsession"
     },
     {
@@ -17886,7 +17897,7 @@
       "_origin": "ast",
       "community": 84,
       "norm_label": ".confirmsession()",
-      "community_name": "SleepSessionEntity",
+      "community_name": "SleepRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleeprepository_sleeprepository_confirmsession"
     },
     {
@@ -17897,7 +17908,7 @@
       "_origin": "ast",
       "community": 84,
       "norm_label": ".deletesession()",
-      "community_name": "SleepSessionEntity",
+      "community_name": "SleepRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleeprepository_sleeprepository_deletesession"
     },
     {
@@ -17906,9 +17917,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepRepository.kt",
       "source_location": "L70",
       "_origin": "ast",
-      "community": 68,
+      "community": 84,
       "norm_label": "tosleepentry()",
-      "community_name": "SleepEntry",
+      "community_name": "SleepRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleeprepository_tosleepentry"
     },
     {
@@ -17917,7 +17928,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepSessionDao.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 84,
+      "community": 77,
       "norm_label": "sleepsessiondao.kt",
       "community_name": "SleepSessionEntity",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepsessiondao"
@@ -17928,7 +17939,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepSessionDao.kt",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 84,
+      "community": 77,
       "norm_label": "sleepsessiondao",
       "community_name": "SleepSessionEntity",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepsessiondao_sleepsessiondao"
@@ -17939,7 +17950,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepSessionDao.kt",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 84,
+      "community": 77,
       "norm_label": ".insert()",
       "community_name": "SleepSessionEntity",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepsessiondao_sleepsessiondao_insert"
@@ -17950,7 +17961,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepSessionDao.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 84,
+      "community": 77,
       "norm_label": ".update()",
       "community_name": "SleepSessionEntity",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepsessiondao_sleepsessiondao_update"
@@ -17961,7 +17972,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepSessionDao.kt",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 84,
+      "community": 77,
       "norm_label": ".delete()",
       "community_name": "SleepSessionEntity",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepsessiondao_sleepsessiondao_delete"
@@ -17972,7 +17983,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepSessionDao.kt",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 84,
+      "community": 77,
       "norm_label": ".observeall()",
       "community_name": "SleepSessionEntity",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepsessiondao_sleepsessiondao_observeall"
@@ -17983,7 +17994,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 84,
+      "community": 77,
       "norm_label": "flow",
       "community_name": "SleepSessionEntity",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepsessiondao_kt_flow"
@@ -17994,7 +18005,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepSessionDao.kt",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 84,
+      "community": 77,
       "norm_label": ".observesince()",
       "community_name": "SleepSessionEntity",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepsessiondao_sleepsessiondao_observesince"
@@ -18005,7 +18016,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepSessionDao.kt",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 84,
+      "community": 77,
       "norm_label": ".getbyid()",
       "community_name": "SleepSessionEntity",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepsessiondao_sleepsessiondao_getbyid"
@@ -18071,7 +18082,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepSessionEntity.kt",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 84,
+      "community": 77,
       "norm_label": "sleepsessionentity",
       "community_name": "SleepSessionEntity",
       "id": "app_src_main_java_com_isaacshub_app_sleep_data_sleepsessionentity_sleepsessionentity"
@@ -19897,9 +19908,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/ui/settings/SettingsViewModel.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 27,
+      "community": 39,
       "norm_label": "settings/settingsviewmodel.kt",
-      "community_name": "SettingsViewModel",
+      "community_name": "UserPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_ui_settings_settingsviewmodel"
     },
     {
@@ -19908,9 +19919,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/ui/settings/SettingsViewModel.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 27,
+      "community": 39,
       "norm_label": "settingsviewmodel",
-      "community_name": "SettingsViewModel",
+      "community_name": "UserPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_ui_settings_settingsviewmodel_settingsviewmodel"
     },
     {
@@ -19919,9 +19930,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 27,
+      "community": 39,
       "norm_label": "viewmodel",
-      "community_name": "SettingsViewModel",
+      "community_name": "UserPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_ui_settings_settingsviewmodel_kt_viewmodel"
     },
     {
@@ -19930,9 +19941,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 27,
+      "community": 39,
       "norm_label": "stateflow",
-      "community_name": "SettingsViewModel",
+      "community_name": "UserPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_ui_settings_settingsviewmodel_kt_stateflow"
     },
     {
@@ -19941,9 +19952,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/ui/settings/SettingsViewModel.kt",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 27,
+      "community": 39,
       "norm_label": ".setsleepneedminutes()",
-      "community_name": "SettingsViewModel",
+      "community_name": "UserPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_ui_settings_settingsviewmodel_settingsviewmodel_setsleepneedminutes"
     },
     {
@@ -19952,9 +19963,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/ui/settings/SettingsViewModel.kt",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 27,
+      "community": 39,
       "norm_label": ".setautodetectenabled()",
-      "community_name": "SettingsViewModel",
+      "community_name": "UserPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_ui_settings_settingsviewmodel_settingsviewmodel_setautodetectenabled"
     },
     {
@@ -19963,9 +19974,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/ui/settings/SettingsViewModel.kt",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 27,
+      "community": 39,
       "norm_label": ".setwaketime()",
-      "community_name": "SettingsViewModel",
+      "community_name": "UserPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_ui_settings_settingsviewmodel_settingsviewmodel_setwaketime"
     },
     {
@@ -19974,9 +19985,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/ui/settings/SettingsViewModel.kt",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 27,
+      "community": 39,
       "norm_label": ".setsleepdebtadjustment()",
-      "community_name": "SettingsViewModel",
+      "community_name": "UserPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_ui_settings_settingsviewmodel_settingsviewmodel_setsleepdebtadjustment"
     },
     {
@@ -19985,9 +19996,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/ui/settings/SettingsViewModel.kt",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 27,
+      "community": 39,
       "norm_label": "factory",
-      "community_name": "SettingsViewModel",
+      "community_name": "UserPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_ui_settings_settingsviewmodel_factory"
     },
     {
@@ -19996,9 +20007,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 27,
+      "community": 39,
       "norm_label": "viewmodelprovider",
-      "community_name": "SettingsViewModel",
+      "community_name": "UserPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_ui_settings_settingsviewmodel_kt_viewmodelprovider"
     },
     {
@@ -20007,9 +20018,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/ui/settings/SettingsViewModel.kt",
       "source_location": "L38",
       "_origin": "ast",
-      "community": 27,
+      "community": 39,
       "norm_label": ".create()",
-      "community_name": "SettingsViewModel",
+      "community_name": "UserPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_ui_settings_settingsviewmodel_factory_create"
     },
     {
@@ -20018,9 +20029,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 27,
+      "community": 39,
       "norm_label": "t",
-      "community_name": "SettingsViewModel",
+      "community_name": "UserPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_sleep_ui_settings_settingsviewmodel_kt_t"
     },
     {
@@ -23109,7 +23120,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/data/VaultApiClient.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 207,
+      "community": 49,
       "norm_label": "vaultapiclient.kt",
       "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_data_vaultapiclient"
@@ -23120,7 +23131,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/data/VaultApiClient.kt",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 207,
+      "community": 49,
       "norm_label": "vaultapiclient",
       "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_data_vaultapiclient_vaultapiclient"
@@ -23131,7 +23142,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/data/VaultApiClient.kt",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 207,
+      "community": 49,
       "norm_label": ".contenturl()",
       "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_data_vaultapiclient_vaultapiclient_contenturl"
@@ -23142,7 +23153,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 207,
+      "community": 49,
       "norm_label": "url",
       "community_name": "VaultApiClient",
       "id": "url"
@@ -23153,7 +23164,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/data/VaultApiClient.kt",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 207,
+      "community": 49,
       "norm_label": ".checkconnection()",
       "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_data_vaultapiclient_vaultapiclient_checkconnection"
@@ -23164,7 +23175,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/data/VaultApiClient.kt",
       "source_location": "L50",
       "_origin": "ast",
-      "community": 207,
+      "community": 49,
       "norm_label": ".uploadoffsetat()",
       "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_data_vaultapiclient_vaultapiclient_uploadoffsetat"
@@ -23175,7 +23186,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/data/VaultApiClient.kt",
       "source_location": "L65",
       "_origin": "ast",
-      "community": 207,
+      "community": 49,
       "norm_label": ".putchunk()",
       "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_data_vaultapiclient_vaultapiclient_putchunk"
@@ -23186,7 +23197,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 207,
+      "community": 49,
       "norm_label": "randomaccessfile",
       "community_name": "VaultApiClient",
       "id": "randomaccessfile"
@@ -23197,7 +23208,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/data/VaultApiClient.kt",
       "source_location": "L102",
       "_origin": "ast",
-      "community": 207,
+      "community": 49,
       "norm_label": ".putemptyfile()",
       "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_data_vaultapiclient_vaultapiclient_putemptyfile"
@@ -23208,7 +23219,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/data/VaultApiClient.kt",
       "source_location": "L128",
       "_origin": "ast",
-      "community": 207,
+      "community": 49,
       "norm_label": ".uploadfile()",
       "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_data_vaultapiclient_vaultapiclient_uploadfile"
@@ -23219,7 +23230,7 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/data/VaultApiClient.kt",
       "source_location": "L164",
       "_origin": "ast",
-      "community": 207,
+      "community": 49,
       "norm_label": ".downloadfile()",
       "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_data_vaultapiclient_vaultapiclient_downloadfile"
@@ -23340,9 +23351,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/domain/PhotoSyncPlanner.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 77,
+      "community": 49,
       "norm_label": "photosyncplanner.kt",
-      "community_name": "MediaItem",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_domain_photosyncplanner"
     },
     {
@@ -23351,9 +23362,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/domain/PhotoSyncPlanner.kt",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 77,
+      "community": 49,
       "norm_label": "mediatype",
-      "community_name": "MediaItem",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_domain_photosyncplanner_mediatype"
     },
     {
@@ -23362,9 +23373,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/domain/PhotoSyncPlanner.kt",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 77,
+      "community": 49,
       "norm_label": "image",
-      "community_name": "MediaItem",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_domain_photosyncplanner_mediatype_image"
     },
     {
@@ -23373,9 +23384,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/domain/PhotoSyncPlanner.kt",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 77,
+      "community": 49,
       "norm_label": "video",
-      "community_name": "MediaItem",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_domain_photosyncplanner_mediatype_video"
     },
     {
@@ -23384,9 +23395,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/domain/PhotoSyncPlanner.kt",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 77,
+      "community": 49,
       "norm_label": "mediaitem",
-      "community_name": "MediaItem",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_domain_photosyncplanner_mediaitem"
     },
     {
@@ -23395,9 +23406,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/domain/PhotoSyncPlanner.kt",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 77,
+      "community": 49,
       "norm_label": "pendingupload",
-      "community_name": "MediaItem",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_domain_photosyncplanner_pendingupload"
     },
     {
@@ -23406,9 +23417,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/domain/PhotoSyncPlanner.kt",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 77,
+      "community": 49,
       "norm_label": "remotefolderfor()",
-      "community_name": "MediaItem",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_domain_photosyncplanner_remotefolderfor"
     },
     {
@@ -23417,9 +23428,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/domain/PhotoSyncPlanner.kt",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 210,
+      "community": 49,
       "norm_label": "planpendinguploads()",
-      "community_name": "planPendingUploads",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_domain_photosyncplanner_planpendinguploads"
     },
     {
@@ -23461,9 +23472,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/media/MediaStoreScanner.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 77,
+      "community": 49,
       "norm_label": "mediastorescanner.kt",
-      "community_name": "MediaItem",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_media_mediastorescanner"
     },
     {
@@ -23472,9 +23483,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/media/MediaStoreScanner.kt",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 77,
+      "community": 49,
       "norm_label": "mediastorescanner",
-      "community_name": "MediaItem",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_media_mediastorescanner_mediastorescanner"
     },
     {
@@ -23483,9 +23494,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/media/MediaStoreScanner.kt",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 77,
+      "community": 49,
       "norm_label": ".querymedia()",
-      "community_name": "MediaItem",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_media_mediastorescanner_mediastorescanner_querymedia"
     },
     {
@@ -23494,9 +23505,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/media/MediaStoreScanner.kt",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 77,
+      "community": 49,
       "norm_label": ".querycollection()",
-      "community_name": "MediaItem",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_media_mediastorescanner_mediastorescanner_querycollection"
     },
     {
@@ -23505,9 +23516,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 77,
+      "community": 49,
       "norm_label": "uri",
-      "community_name": "MediaItem",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_media_mediastorescanner_kt_uri"
     },
     {
@@ -23516,9 +23527,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/media/MediaStoreScanner.kt",
       "source_location": "L63",
       "_origin": "ast",
-      "community": 77,
+      "community": 49,
       "norm_label": ".openinputstream()",
-      "community_name": "MediaItem",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_media_mediastorescanner_mediastorescanner_openinputstream"
     },
     {
@@ -23802,9 +23813,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/ui/pairing/PairingViewModel.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 225,
+      "community": 86,
       "norm_label": "pairingviewmodel.kt",
-      "community_name": "PairingViewModel",
+      "community_name": "VaultPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingviewmodel"
     },
     {
@@ -23813,9 +23824,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/ui/pairing/PairingViewModel.kt",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 225,
+      "community": 86,
       "norm_label": "pairinguistate",
-      "community_name": "PairingViewModel",
+      "community_name": "VaultPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingviewmodel_pairinguistate"
     },
     {
@@ -23824,9 +23835,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/ui/pairing/PairingViewModel.kt",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 225,
+      "community": 86,
       "norm_label": "pairingviewmodel",
-      "community_name": "PairingViewModel",
+      "community_name": "VaultPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingviewmodel_pairingviewmodel"
     },
     {
@@ -23835,9 +23846,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 225,
+      "community": 86,
       "norm_label": "androidviewmodel",
-      "community_name": "PairingViewModel",
+      "community_name": "VaultPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingviewmodel_kt_androidviewmodel"
     },
     {
@@ -23846,9 +23857,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 225,
+      "community": 86,
       "norm_label": "stateflow",
-      "community_name": "PairingViewModel",
+      "community_name": "VaultPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingviewmodel_kt_stateflow"
     },
     {
@@ -23857,9 +23868,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/ui/pairing/PairingViewModel.kt",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 225,
+      "community": 86,
       "norm_label": ".onqrcodescanned()",
-      "community_name": "PairingViewModel",
+      "community_name": "VaultPreferencesRepository",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_pairing_pairingviewmodel_pairingviewmodel_onqrcodescanned"
     },
     {
@@ -23870,7 +23881,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": "restorescreen.kt",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restorescreen"
     },
     {
@@ -23881,7 +23892,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": "restorescreen()",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restorescreen_restorescreen"
     },
     {
@@ -23892,7 +23903,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": "restoreviewmodel.kt",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restoreviewmodel"
     },
     {
@@ -23903,7 +23914,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": "backupdatabase",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restoreviewmodel_backupdatabase"
     },
     {
@@ -23914,7 +23925,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": "restorestate",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restoreviewmodel_restorestate"
     },
     {
@@ -23925,7 +23936,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": "idle",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restoreviewmodel_idle"
     },
     {
@@ -23936,7 +23947,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": "loading",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restoreviewmodel_loading"
     },
     {
@@ -23947,7 +23958,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": "success",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restoreviewmodel_success"
     },
     {
@@ -23958,7 +23969,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": "error",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restoreviewmodel_error"
     },
     {
@@ -23969,7 +23980,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": "restoreviewmodel",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restoreviewmodel_restoreviewmodel"
     },
     {
@@ -23980,7 +23991,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": "viewmodel",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restoreviewmodel_kt_viewmodel"
     },
     {
@@ -23991,7 +24002,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": "stateflow",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restoreviewmodel_kt_stateflow"
     },
     {
@@ -24002,7 +24013,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": ".toggledatabaseselection()",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restoreviewmodel_restoreviewmodel_toggledatabaseselection"
     },
     {
@@ -24013,7 +24024,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": ".restoreselecteddatabases()",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restoreviewmodel_restoreviewmodel_restoreselecteddatabases"
     },
     {
@@ -24024,7 +24035,7 @@
       "_origin": "ast",
       "community": 49,
       "norm_label": ".resetstate()",
-      "community_name": "RestoreViewModel",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_ui_restore_restoreviewmodel_restoreviewmodel_resetstate"
     },
     {
@@ -24033,9 +24044,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/work/ManualUploadWorker.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 228,
+      "community": 49,
       "norm_label": "manualuploadworker.kt",
-      "community_name": "ManualUploadWorker",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_work_manualuploadworker"
     },
     {
@@ -24044,9 +24055,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/work/ManualUploadWorker.kt",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 228,
+      "community": 49,
       "norm_label": "manualuploadworker",
-      "community_name": "ManualUploadWorker",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_work_manualuploadworker_manualuploadworker"
     },
     {
@@ -24055,9 +24066,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 228,
+      "community": 49,
       "norm_label": "coroutineworker",
-      "community_name": "ManualUploadWorker",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_work_manualuploadworker_kt_coroutineworker"
     },
     {
@@ -24066,9 +24077,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/work/ManualUploadWorker.kt",
       "source_location": "L35",
       "_origin": "ast",
-      "community": 228,
+      "community": 49,
       "norm_label": ".dowork()",
-      "community_name": "ManualUploadWorker",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_work_manualuploadworker_manualuploadworker_dowork"
     },
     {
@@ -24077,9 +24088,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 228,
+      "community": 49,
       "norm_label": "result",
-      "community_name": "ManualUploadWorker",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_work_manualuploadworker_kt_result"
     },
     {
@@ -24165,9 +24176,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/work/PhotoBackupWorker.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 229,
+      "community": 49,
       "norm_label": "photobackupworker.kt",
-      "community_name": ".doWork",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_work_photobackupworker"
     },
     {
@@ -24176,9 +24187,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/work/PhotoBackupWorker.kt",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 229,
+      "community": 49,
       "norm_label": "photobackupworker",
-      "community_name": ".doWork",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_work_photobackupworker_photobackupworker"
     },
     {
@@ -24187,9 +24198,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 229,
+      "community": 49,
       "norm_label": "coroutineworker",
-      "community_name": ".doWork",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_work_photobackupworker_kt_coroutineworker"
     },
     {
@@ -24198,9 +24209,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/work/PhotoBackupWorker.kt",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 229,
+      "community": 49,
       "norm_label": ".dowork()",
-      "community_name": ".doWork",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_work_photobackupworker_photobackupworker_dowork"
     },
     {
@@ -24209,9 +24220,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 229,
+      "community": 49,
       "norm_label": "result",
-      "community_name": ".doWork",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_work_photobackupworker_kt_result"
     },
     {
@@ -24220,9 +24231,9 @@
       "source_file": "app/src/main/java/com/isaacshub/app/vault/work/PhotoBackupWorker.kt",
       "source_location": "L61",
       "_origin": "ast",
-      "community": 77,
+      "community": 49,
       "norm_label": ".uploadone()",
-      "community_name": "MediaItem",
+      "community_name": "VaultApiClient",
       "id": "app_src_main_java_com_isaacshub_app_vault_work_photobackupworker_photobackupworker_uploadone"
     },
     {
@@ -24385,9 +24396,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/AddressInterpolationTest.kt",
       "source_location": "L128",
       "_origin": "ast",
-      "community": 114,
+      "community": 0,
       "norm_label": ".`parseparity maps known codes`()",
-      "community_name": "AddressParity",
+      "community_name": "AddressInterpolationTest",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_addressinterpolationtest_addressinterpolationtest_parseparity_maps_known_codes"
     },
     {
@@ -24649,9 +24660,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/domain/NearestAddressesTest.kt",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 127,
+      "community": 7,
       "norm_label": ".`distancemeters is zero for the same point`()",
-      "community_name": "GeoPoint",
+      "community_name": "CandidateAddress",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_domain_nearestaddressestest_nearestaddressestest_distancemeters_is_zero_for_the_same_point"
     },
     {
@@ -25034,9 +25045,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/network/IndianaAddressPointFetcherTest.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": "indianaaddresspointfetchertest.kt",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_network_indianaaddresspointfetchertest"
     },
     {
@@ -25045,9 +25056,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/network/IndianaAddressPointFetcherTest.kt",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": "indianaaddresspointfetchertest",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_network_indianaaddresspointfetchertest_indianaaddresspointfetchertest"
     },
     {
@@ -25056,9 +25067,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/network/IndianaAddressPointFetcherTest.kt",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": ".`rejects a non-5-digit zip before making any network call`()",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_network_indianaaddresspointfetchertest_indianaaddresspointfetchertest_rejects_a_non_5_digit_zip_before_making_any_network_call"
     },
     {
@@ -25067,9 +25078,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/network/IndianaAddressPointFetcherTest.kt",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": ".`rejects a zip with sql-significant characters instead of embedding them in the query`()",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_network_indianaaddresspointfetchertest_indianaaddresspointfetchertest_rejects_a_zip_with_sql_significant_characters_instead_of_embedding_them_in_the_query"
     },
     {
@@ -25078,9 +25089,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/network/IndianaAddressPointFetcherTest.kt",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": ".`buildlabel treats json null fields as absent instead of the literal string 'null'`()",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_network_indianaaddresspointfetchertest_indianaaddresspointfetchertest_buildlabel_treats_json_null_fields_as_absent_instead_of_the_literal_string_null"
     },
     {
@@ -25089,9 +25100,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/routehelper/network/IndianaAddressPointFetcherTest.kt",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 5,
+      "community": 27,
       "norm_label": ".`buildlabel returns null when there's no usable house number`()",
-      "community_name": ".httpRequest",
+      "community_name": "IndianaAddressPointFetcher",
       "id": "app_src_test_java_com_isaacshub_app_routehelper_network_indianaaddresspointfetchertest_indianaaddresspointfetchertest_buildlabel_returns_null_when_there_s_no_usable_house_number"
     },
     {
@@ -25386,9 +25397,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/domain/PhotoSyncPlannerTest.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 210,
+      "community": 49,
       "norm_label": "photosyncplannertest.kt",
-      "community_name": "planPendingUploads",
+      "community_name": "VaultApiClient",
       "id": "app_src_test_java_com_isaacshub_app_vault_domain_photosyncplannertest"
     },
     {
@@ -25397,9 +25408,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/domain/PhotoSyncPlannerTest.kt",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 210,
+      "community": 49,
       "norm_label": "photosyncplannertest",
-      "community_name": "planPendingUploads",
+      "community_name": "VaultApiClient",
       "id": "app_src_test_java_com_isaacshub_app_vault_domain_photosyncplannertest_photosyncplannertest"
     },
     {
@@ -25408,9 +25419,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/domain/PhotoSyncPlannerTest.kt",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 210,
+      "community": 49,
       "norm_label": ".image()",
-      "community_name": "planPendingUploads",
+      "community_name": "VaultApiClient",
       "id": "app_src_test_java_com_isaacshub_app_vault_domain_photosyncplannertest_photosyncplannertest_image"
     },
     {
@@ -25419,9 +25430,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/domain/PhotoSyncPlannerTest.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 210,
+      "community": 49,
       "norm_label": ".video()",
-      "community_name": "planPendingUploads",
+      "community_name": "VaultApiClient",
       "id": "app_src_test_java_com_isaacshub_app_vault_domain_photosyncplannertest_photosyncplannertest_video"
     },
     {
@@ -25430,9 +25441,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/domain/PhotoSyncPlannerTest.kt",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 210,
+      "community": 49,
       "norm_label": ".`only items added after the last sync are pending`()",
-      "community_name": "planPendingUploads",
+      "community_name": "VaultApiClient",
       "id": "app_src_test_java_com_isaacshub_app_vault_domain_photosyncplannertest_photosyncplannertest_only_items_added_after_the_last_sync_are_pending"
     },
     {
@@ -25441,9 +25452,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/domain/PhotoSyncPlannerTest.kt",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 210,
+      "community": 49,
       "norm_label": ".`pending uploads are sorted oldest first`()",
-      "community_name": "planPendingUploads",
+      "community_name": "VaultApiClient",
       "id": "app_src_test_java_com_isaacshub_app_vault_domain_photosyncplannertest_photosyncplannertest_pending_uploads_are_sorted_oldest_first"
     },
     {
@@ -25452,9 +25463,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/domain/PhotoSyncPlannerTest.kt",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 210,
+      "community": 49,
       "norm_label": ".`remote path for a photo is organized under photos by year and month`()",
-      "community_name": "planPendingUploads",
+      "community_name": "VaultApiClient",
       "id": "app_src_test_java_com_isaacshub_app_vault_domain_photosyncplannertest_photosyncplannertest_remote_path_for_a_photo_is_organized_under_photos_by_year_and_month"
     },
     {
@@ -25463,9 +25474,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/domain/PhotoSyncPlannerTest.kt",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 210,
+      "community": 49,
       "norm_label": ".`remote path for a video is organized under videos by year and month`()",
-      "community_name": "planPendingUploads",
+      "community_name": "VaultApiClient",
       "id": "app_src_test_java_com_isaacshub_app_vault_domain_photosyncplannertest_photosyncplannertest_remote_path_for_a_video_is_organized_under_videos_by_year_and_month"
     },
     {
@@ -25474,9 +25485,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/domain/PhotoSyncPlannerTest.kt",
       "source_location": "L52",
       "_origin": "ast",
-      "community": 210,
+      "community": 49,
       "norm_label": ".`photos and videos are planned together, sorted by date`()",
-      "community_name": "planPendingUploads",
+      "community_name": "VaultApiClient",
       "id": "app_src_test_java_com_isaacshub_app_vault_domain_photosyncplannertest_photosyncplannertest_photos_and_videos_are_planned_together_sorted_by_date"
     },
     {
@@ -25485,9 +25496,9 @@
       "source_file": "app/src/test/java/com/isaacshub/app/vault/domain/PhotoSyncPlannerTest.kt",
       "source_location": "L62",
       "_origin": "ast",
-      "community": 210,
+      "community": 49,
       "norm_label": ".`no items are pending when nothing is newer than the last sync`()",
-      "community_name": "planPendingUploads",
+      "community_name": "VaultApiClient",
       "id": "app_src_test_java_com_isaacshub_app_vault_domain_photosyncplannertest_photosyncplannertest_no_items_are_pending_when_nothing_is_newer_than_the_last_sync"
     },
     {
@@ -27319,9 +27330,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/home/HomeScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 21,
+      "community": 196,
       "norm_label": "essentials/ui/home/homescreen.kt",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen"
     },
     {
@@ -27330,9 +27341,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/home/HomeScreen.kt",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 21,
+      "community": 196,
       "norm_label": "homescreen()",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen_homescreen"
     },
     {
@@ -27341,9 +27352,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 21,
+      "community": 196,
       "norm_label": "homeviewmodel",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "homeviewmodel"
     },
     {
@@ -27352,9 +27363,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/home/HomeScreen.kt",
       "source_location": "L174",
       "_origin": "ast",
-      "community": 21,
+      "community": 196,
       "norm_label": "completionprogresscard()",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen_completionprogresscard"
     },
     {
@@ -27363,9 +27374,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 21,
+      "community": 196,
       "norm_label": "modifier",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen_kt_modifier"
     },
     {
@@ -27374,9 +27385,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/home/HomeScreen.kt",
       "source_location": "L215",
       "_origin": "ast",
-      "community": 21,
+      "community": 196,
       "norm_label": "chorecard()",
-      "community_name": "HomeViewModel",
+      "community_name": "HomeScreen",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_home_homescreen_chorecard"
     },
     {
@@ -27561,9 +27572,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/login/LoginScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 128,
+      "community": 75,
       "norm_label": "loginscreen.kt",
-      "community_name": "EssentialsNavGraph",
+      "community_name": "LoginViewModel",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_login_loginscreen"
     },
     {
@@ -27572,9 +27583,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/login/LoginScreen.kt",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 128,
+      "community": 75,
       "norm_label": "loginscreen()",
-      "community_name": "EssentialsNavGraph",
+      "community_name": "LoginViewModel",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_login_loginscreen_loginscreen"
     },
     {
@@ -28100,9 +28111,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/settings/SettingsScreen.kt",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 93,
+      "community": 128,
       "norm_label": "essentials/ui/settings/settingsscreen.kt",
-      "community_name": "DeviceAdminManager",
+      "community_name": "EssentialsNavGraph",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_settings_settingsscreen"
     },
     {
@@ -28111,9 +28122,9 @@
       "source_file": "essentials-family-app/src/main/java/com/isaacshub/essentials/ui/settings/SettingsScreen.kt",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 93,
+      "community": 128,
       "norm_label": "settingsscreen()",
-      "community_name": "DeviceAdminManager",
+      "community_name": "EssentialsNavGraph",
       "id": "essentials_family_app_src_main_java_com_isaacshub_essentials_ui_settings_settingsscreen_settingsscreen"
     },
     {
@@ -30359,660 +30370,78 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
       "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_columnexists",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L31",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getcolumntype",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L152",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getinstance",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L139",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_insertdefaultdeductions",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L48",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_migrate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L107",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L45",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_columnexists",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getcolumntype",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L31",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getcolumntype",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_supportsqlitedatabase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L62",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_migrate",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getcolumntype",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L44",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_columnexists",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_supportsqlitedatabase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L139",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_insertdefaultdeductions",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_supportsqlitedatabase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L48",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_migrate",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_supportsqlitedatabase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L152",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getinstance",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L107",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_roomdatabase",
+      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_getinstance",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L130",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_deductiondao",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L129",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routedao",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L134",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routehelperdao",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L131",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routescheduleoverridedao",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L128",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_timeentrydao",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L128",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_timeentrydao",
-      "target": "timeentrydao",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L129",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routedao",
-      "target": "routedao",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L130",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_deductiondao",
-      "target": "deductiondao",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L131",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routescheduleoverridedao",
-      "target": "routescheduleoverridedao",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L134",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routehelperdao",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_routehelperdao",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
-      "source_location": "L152",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getinstance",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_context",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L110",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_columnexists",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L97",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getcolumntype",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L175",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getinstance",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L114",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_migrate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L163",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L128",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_migrate",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getcolumntype",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L114",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_migrate",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_supportsqlitedatabase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L110",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_columnexists",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_supportsqlitedatabase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L97",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getcolumntype",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_supportsqlitedatabase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L111",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_columnexists",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getcolumntype",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L175",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getinstance",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "inherits",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L163",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_roomdatabase",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L170",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase_routehelperdao",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L170",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase_routehelperdao",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_routehelperdao",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
-      "source_location": "L175",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getinstance",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_context",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L30",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L155",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_downloadto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L41",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_fetchaddressesforzip",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
       "source_location": "L37",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_geocodezip",
+      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_bankaccountdao",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L98",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L36",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile",
+      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_bankconnectiondao",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L135",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L39",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_readentryexact",
+      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_featurepromptdao",
       "confidence_score": 1.0
     },
     {
-      "relation": "calls",
-      "context": "call",
+      "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L42",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L35",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_fetchaddressesforzip",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_geocodezip",
+      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_sleepsessiondao",
       "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L37",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_geocodezip",
-      "target": "geopoint",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L41",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_fetchaddressesforzip",
-      "target": "addressfetchresult",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L54",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_fetchaddressesforzip",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L103",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_downloadto",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L113",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile",
-      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_readentryexact",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L98",
-      "weight": 1.0,
-      "context": "generic_arg",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile",
-      "target": "bytearray",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L108",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile",
-      "target": "zipfile",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "return_type",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L135",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_readentryexact",
-      "target": "bytearray",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L135",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_readentryexact",
-      "target": "zipentry",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
-      "source_location": "L135",
-      "weight": 1.0,
-      "context": "parameter_type",
-      "_origin": "ast",
-      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_readentryexact",
-      "target": "zipfile",
+      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_transactiondao",
       "confidence_score": 1.0
     },
     {
@@ -31022,9 +30451,21 @@
       "source_location": "L22",
       "weight": 1.0,
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase",
-      "target": "roomdatabase"
+      "target": "roomdatabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L44",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_getinstance",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase",
+      "confidence_score": 1.0
     },
     {
       "relation": "inherits",
@@ -31041,13 +30482,97 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L35",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_sleepsessiondao",
+      "target": "sleepsessiondao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepDatabase.kt",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_sleep_data_sleepdatabase_sleepdatabase_sleepsessiondao",
+      "target": "sleepsessiondao"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L36",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_bankconnectiondao",
+      "target": "bankconnectiondao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_bankaccountdao",
+      "target": "bankaccountdao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L38",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_transactiondao",
+      "target": "transactiondao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
+      "source_location": "L39",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_featurepromptdao",
+      "target": "featurepromptdao",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeatureFunnelDatabase.kt",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_featurefunnel_data_featurefunneldatabase_featurefunneldatabase_featurepromptdao",
+      "target": "featurepromptdao"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
       "source_location": "L44",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
-      "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_getinstance",
-      "target": "context"
+      "target": "context",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -31060,6 +30585,665 @@
       "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_featurefunnel_data_featurefunneldatabase_getinstance",
       "target": "context"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_columnexists"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getcolumntype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getinstance"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_insertdefaultdeductions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_migrate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_columnexists",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getcolumntype"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getcolumntype",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_supportsqlitedatabase"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_migrate",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getcolumntype"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L44",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_columnexists",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_supportsqlitedatabase"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L139",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_insertdefaultdeductions",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_supportsqlitedatabase"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L48",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_migrate",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_supportsqlitedatabase"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L152",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getinstance",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_roomdatabase"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_deductiondao"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routedao"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routehelperdao"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routescheduleoverridedao"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_timeentrydao"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L128",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_timeentrydao",
+      "target": "timeentrydao"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L129",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routedao",
+      "target": "routedao"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L130",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_deductiondao",
+      "target": "deductiondao"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L131",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routescheduleoverridedao",
+      "target": "routescheduleoverridedao"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L134",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_workdatabase_routehelperdao",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_routehelperdao"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/core/data/WorkDatabase.kt",
+      "source_location": "L152",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_getinstance",
+      "target": "app_src_main_java_com_isaacshub_app_core_data_workdatabase_kt_context"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_columnexists"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getcolumntype"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L175",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getinstance"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_migrate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L163",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_migrate",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getcolumntype"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L114",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_migrate",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_supportsqlitedatabase"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L110",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_columnexists",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_supportsqlitedatabase"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L97",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getcolumntype",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_supportsqlitedatabase"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_columnexists",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getcolumntype"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L175",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getinstance",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L163",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_roomdatabase"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L170",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase_routehelperdao"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L170",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_routehelperdatabase_routehelperdao",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_routehelperdao"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/data/RouteHelperDatabase.kt",
+      "source_location": "L175",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_getinstance",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_data_routehelperdatabase_kt_context"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_downloadto"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_fetchaddressesforzip"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_geocodezip"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_readentryexact"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_fetchaddressesforzip",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_geocodezip"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L37",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_geocodezip",
+      "target": "geopoint"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L41",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_fetchaddressesforzip",
+      "target": "addressfetchresult"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_fetchaddressesforzip",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L103",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_downloadto"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile",
+      "target": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_readentryexact"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L98",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile",
+      "target": "bytearray"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_loadcountyshapefile",
+      "target": "zipfile"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_readentryexact",
+      "target": "bytearray"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L135",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_readentryexact",
+      "target": "zipentry"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/java/com/isaacshub/app/routehelper/network/TigerAddressFetcher.kt",
+      "source_location": "L135",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "app_src_main_java_com_isaacshub_app_routehelper_network_tigeraddressfetcher_tigeraddressfetcher_readentryexact",
+      "target": "zipfile"
     },
     {
       "relation": "contains",
@@ -35883,30 +36067,6 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepDatabase.kt",
-      "source_location": "L11",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_sleep_data_sleepdatabase_sleepdatabase_sleepsessiondao",
-      "target": "sleepsessiondao"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L35",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_sleepsessiondao",
-      "target": "sleepsessiondao"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/sleep/data/SleepDatabase.kt",
       "source_location": "L16",
       "weight": 1.0,
       "context": "parameter_type",
@@ -35959,30 +36119,6 @@
       "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_featurefunnel_data_featurefunneldatabase_getinstance",
       "target": "app_src_main_java_com_isaacshub_app_featurefunnel_data_featurefunneldatabase_featurefunneldatabase"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/featurefunnel/data/FeatureFunnelDatabase.kt",
-      "source_location": "L11",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_featurefunnel_data_featurefunneldatabase_featurefunneldatabase_featurepromptdao",
-      "target": "featurepromptdao"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L39",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_featurepromptdao",
-      "target": "featurepromptdao"
     },
     {
       "relation": "contains",
@@ -44502,18 +44638,6 @@
     {
       "relation": "references",
       "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L38",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_transactiondao",
-      "target": "app_src_main_java_com_isaacshub_app_banking_data_transactiondao_transactiondao"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
       "source_file": "app/src/main/java/com/isaacshub/app/banking/data/TransactionDao.kt",
       "source_location": "L11",
       "weight": 1.0,
@@ -44858,119 +44982,6 @@
       "confidence_score": 1.0,
       "source": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistviewmodel_factory",
       "target": "app_src_main_java_com_isaacshub_app_banking_ui_transactions_transactionlistviewmodel_factory_create"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L22",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L44",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_getinstance"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L37",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_bankaccountdao"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L36",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_bankconnectiondao"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L39",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_featurepromptdao"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L35",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_sleepsessiondao"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L38",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_transactiondao"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L44",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_getinstance",
-      "target": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L36",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_bankconnectiondao",
-      "target": "bankconnectiondao"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "app/src/main/java/com/isaacshub/app/core/data/AppDatabase.kt",
-      "source_location": "L37",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "app_src_main_java_com_isaacshub_app_core_data_appdatabase_appdatabase_bankaccountdao",
-      "target": "bankaccountdao"
     },
     {
       "relation": "contains",
@@ -80251,5 +80262,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "63a1e55aab82e50c9222369de3913fedd45dbec4"
+  "built_at_commit": "5610c8c3d32062cfb91f871544a33fd267222f79"
 }
