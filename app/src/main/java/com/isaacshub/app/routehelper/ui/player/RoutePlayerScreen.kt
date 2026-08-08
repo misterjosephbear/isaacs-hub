@@ -908,59 +908,55 @@ private fun PlayerMap(state: RoutePlayerUiState, isFreeCam: Boolean, modifier: M
 @Composable
 private fun MiniMapOverlay(state: RoutePlayerUiState, modifier: Modifier = Modifier) {
     val context = LocalContext.current
-    val miniMapView = remember { newOsmMapView(context) }
     val miniMapSize = 100.dp
-
-    DisposableEffect(Unit) {
-        onDispose { miniMapView.onDetach() }
-    }
 
     Box(modifier = modifier.size(miniMapSize).clip(RectangleShape)) {
         AndroidView(
             modifier = Modifier.fillMaxSize(),
-            factory = { miniMapView }
-        ) { view ->
-            // Keep map north-up (not rotated)
-            view.setMapOrientation(0f, false)
+            factory = { newOsmMapView(context) },
+            update = { view ->
+                // Keep map north-up (not rotated)
+                view.setMapOrientation(0f, false)
 
-            // Clear overlays and redraw
-            view.overlays.clear()
+                // Clear overlays and redraw
+                view.overlays.clear()
 
-            // Draw route polyline
-            val routeLine = state.roadRoutePoints ?: state.stops.map {
-                GeoPoint(it.latitude, it.longitude)
-            }
-            if (routeLine.size >= 2) {
-                val polyline = Polyline(view).apply {
-                    setPoints(routeLine.map { OsmGeoPoint(it.latitude, it.longitude) })
-                    outlinePaint.apply {
-                        color = 0xFF0066FF.toInt()  // Blue for mini map
-                        strokeWidth = 3.0f
-                        style = Paint.Style.STROKE
-                    }
+                // Draw route polyline
+                val routeLine = state.roadRoutePoints ?: state.stops.map {
+                    GeoPoint(it.latitude, it.longitude)
                 }
-                view.overlays.add(polyline)
-
-                // Center map on entire route with padding
-                val bounds = calculateBounds(routeLine)
-                view.zoomToBoundingBox(bounds, true)
-            }
-
-            // Add user location as red dot (no marker icon, just circle)
-            state.currentLocation?.let { location ->
-                val point = OsmGeoPoint(location.latitude, location.longitude)
-
-                // Add red dot for user
-                view.overlays.add(
-                    Marker(view).apply {
-                        position = point
-                        setIcon(createRedDotDrawable(context))  // Custom red circle
+                if (routeLine.size >= 2) {
+                    val polyline = Polyline(view).apply {
+                        setPoints(routeLine.map { OsmGeoPoint(it.latitude, it.longitude) })
+                        outlinePaint.apply {
+                            color = 0xFF0066FF.toInt()  // Blue for mini map
+                            strokeWidth = 3.0f
+                            style = Paint.Style.STROKE
+                        }
                     }
-                )
-            }
+                    view.overlays.add(polyline)
 
-            view.invalidate()
-        }
+                    // Center map on entire route with padding
+                    val bounds = calculateBounds(routeLine)
+                    view.zoomToBoundingBox(bounds, true)
+                }
+
+                // Add user location as red dot (no marker icon, just circle)
+                state.currentLocation?.let { location ->
+                    val point = OsmGeoPoint(location.latitude, location.longitude)
+
+                    // Add red dot for user
+                    view.overlays.add(
+                        Marker(view).apply {
+                            position = point
+                            setIcon(createRedDotDrawable(context))  // Custom red circle
+                        }
+                    )
+                }
+
+                view.invalidate()
+            }
+        )
     }
 }
 
