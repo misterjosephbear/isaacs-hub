@@ -25,12 +25,15 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Remove
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
@@ -44,6 +47,7 @@ import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
+import com.isaacshub.app.routehelper.ui.scanner.ScanMode
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
@@ -157,6 +161,52 @@ fun AmazonRouteScannerScreenV2(
                     .fillMaxSize()
                     .padding(paddingValues)
             ) {
+                // Mode toggle buttons (Regular Stops vs Non-Routables)
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 16.dp, vertical = 12.dp),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    Button(
+                        onClick = { viewModel.setScanMode(ScanMode.REGULAR_STOPS) },
+                        modifier = Modifier.weight(1f),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = if (uiState.scanMode == ScanMode.REGULAR_STOPS)
+                                MaterialTheme.colorScheme.primary
+                            else
+                                MaterialTheme.colorScheme.surfaceVariant
+                        )
+                    ) {
+                        Text(
+                            "Regular Stops",
+                            color = if (uiState.scanMode == ScanMode.REGULAR_STOPS)
+                                MaterialTheme.colorScheme.onPrimary
+                            else
+                                MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+
+                    Button(
+                        onClick = { viewModel.setScanMode(ScanMode.NON_ROUTABLES) },
+                        modifier = Modifier.weight(1f),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = if (uiState.scanMode == ScanMode.NON_ROUTABLES)
+                                MaterialTheme.colorScheme.tertiary
+                            else
+                                MaterialTheme.colorScheme.surfaceVariant
+                        )
+                    ) {
+                        Text(
+                            "Non-Routables",
+                            color = if (uiState.scanMode == ScanMode.NON_ROUTABLES)
+                                MaterialTheme.colorScheme.onTertiary
+                            else
+                                MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
+
                 // Camera preview with AR overlay (top 50% of screen)
                 Box(
                     modifier = Modifier
@@ -166,7 +216,10 @@ fun AmazonRouteScannerScreenV2(
                     AddressCameraScannerWithOverlay(
                         candidateAddresses = uiState.candidateAddresses,
                         onAddressSelected = { address ->
-                            viewModel.addStopFromAddress(address)
+                            when (uiState.scanMode) {
+                                ScanMode.REGULAR_STOPS -> viewModel.addStopFromAddress(address)
+                                ScanMode.NON_ROUTABLES -> viewModel.addNonRoutableFromAddress(address)
+                            }
                         }
                     )
 
@@ -184,13 +237,22 @@ fun AmazonRouteScannerScreenV2(
                             modifier = Modifier.padding(16.dp),
                             horizontalAlignment = Alignment.CenterHorizontally
                         ) {
+                            val instructionText = when (uiState.scanMode) {
+                                ScanMode.REGULAR_STOPS -> "Tap GREEN addresses to add stops"
+                                ScanMode.NON_ROUTABLES -> "Tap GREEN addresses to add floating stops"
+                            }
+                            val helpText = when (uiState.scanMode) {
+                                ScanMode.REGULAR_STOPS -> "Green = Matched | Red = Not in ZIP"
+                                ScanMode.NON_ROUTABLES -> "Floating stops placed optimally between regular stops"
+                            }
+
                             Text(
-                                "Tap GREEN addresses to add stops",
+                                instructionText,
                                 style = MaterialTheme.typography.titleMedium,
                                 fontWeight = FontWeight.Bold
                             )
                             Text(
-                                "Green = Matched | Red = Not in ZIP",
+                                helpText,
                                 style = MaterialTheme.typography.bodySmall,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )
@@ -265,7 +327,10 @@ private fun StopListItemWithPackageCounter(
     Card(
         modifier = Modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.primaryContainer
+            containerColor = if (stop.isNonRoutable)
+                MaterialTheme.colorScheme.tertiaryContainer
+            else
+                MaterialTheme.colorScheme.primaryContainer
         )
     ) {
         Row(
@@ -277,11 +342,29 @@ private fun StopListItemWithPackageCounter(
         ) {
             // Stop info
             Column(modifier = Modifier.weight(1f)) {
-                Text(
-                    "${stop.sequenceNumber}. ${stop.addressLabel}",
-                    style = MaterialTheme.typography.bodyMedium,
-                    fontWeight = FontWeight.Medium
-                )
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        "%.1f".format(stop.sequenceNumber) + ". ${stop.addressLabel}",
+                        style = MaterialTheme.typography.bodyMedium,
+                        fontWeight = FontWeight.Medium
+                    )
+                    if (stop.isNonRoutable) {
+                        Text(
+                            "Floating",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = MaterialTheme.colorScheme.onTertiaryContainer,
+                            modifier = Modifier
+                                .background(
+                                    color = MaterialTheme.colorScheme.tertiary.copy(alpha = 0.6f),
+                                    shape = RoundedCornerShape(4.dp)
+                                )
+                                .padding(horizontal = 6.dp, vertical = 2.dp)
+                        )
+                    }
+                }
             }
 
             // Package counter
