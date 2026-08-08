@@ -8,47 +8,67 @@
     app:cardElevation="8dp"
     app:cardBackgroundColor="#DD000000">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="12dp"
-        android:minWidth="200dp">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/currentStopText"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Loading..."
-            android:textColor="#FFFFFF"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            android:maxLines="2"
-            android:ellipsize="end" />
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:minWidth="200dp"
+            android:paddingEnd="36dp">
 
-        <TextView
-            android:id="@+id/nextStopText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text=""
-            android:textColor="#CCCCCC"
-            android:textSize="12sp"
-            android:maxLines="2"
-            android:ellipsize="end" />
+            <TextView
+                android:id="@+id/currentStopText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading..."
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:maxLines="2"
+                android:ellipsize="end" />
 
-        <TextView
-            android:id="@+id/packageInfoText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text=""
-            android:textColor="#FFD700"
-            android:textSize="11sp"
-            android:maxLines="1"
-            android:ellipsize="end"
-            android:visibility="gone" />
+            <TextView
+                android:id="@+id/nextStopText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text=""
+                android:textColor="#CCCCCC"
+                android:textSize="12sp"
+                android:maxLines="2"
+                android:ellipsize="end" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/packageInfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text=""
+                android:textColor="#FFD700"
+                android:textSize="11sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- Close button in top-right corner -->
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="top|end"
+            android:layout_margin="4dp"
+            android:contentDescription="Close"
+            android:background="?attr/selectableItemBackground"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:scaleType="centerInside"
+            android:tint="#FFFFFF" />
+
+    </FrameLayout>
 
 </androidx.cardview.widget.CardView>

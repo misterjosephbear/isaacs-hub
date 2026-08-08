@@ -104,6 +104,11 @@ class RoutePlayerService : Service() {
     }
 
     private fun showOverlay() {
+        // Remove any existing overlay first to prevent multiple instances
+        if (overlayView != null) {
+            removeOverlay()
+        }
+
         // Check if we have permission to draw overlays
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(this)) {
             return
@@ -156,6 +161,11 @@ class RoutePlayerService : Service() {
     }
 
     private fun startObservingState() {
+        // Set up close button
+        overlayView?.findViewById<View>(R.id.closeButton)?.setOnClickListener {
+            removeOverlay()
+        }
+
         serviceScope.launch {
             currentStopText.collect { text ->
                 overlayView?.findViewById<TextView>(R.id.currentStopText)?.text = text ?: "Loading..."

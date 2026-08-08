@@ -59,14 +59,17 @@ import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.tween
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
+import androidx.compose.foundation.layout.size
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.isaacshub.app.debug.DebugLogger
@@ -76,9 +79,14 @@ import com.isaacshub.app.routehelper.domain.offsetPolylineRight
 import com.isaacshub.app.routehelper.service.RoutePlayerService
 import com.isaacshub.app.routehelper.ui.common.newOsmMapView
 import kotlinx.coroutines.launch
+import android.content.Context
 import android.graphics.DashPathEffect
 import android.graphics.Paint
 import android.graphics.Path
+import android.graphics.drawable.Drawable
+import android.graphics.drawable.ShapeDrawable
+import android.graphics.drawable.shapes.OvalShape
+import org.osmdroid.util.BoundingBox
 import org.osmdroid.views.overlay.Marker
 import org.osmdroid.views.overlay.Polyline
 import org.osmdroid.util.GeoPoint as OsmGeoPoint
@@ -320,6 +328,12 @@ fun RoutePlayerScreen(routeId: Long, onDone: () -> Unit) {
                 state = state,
                 isFreeCam = isFreeCam,
                 modifier = Modifier.fillMaxSize().clipToBounds()
+            )
+
+            // Mini map in bottom-left corner
+            MiniMapOverlay(
+                state = state,
+                modifier = Modifier.align(Alignment.BottomStart).padding(16.dp)
             )
 
             Card(
@@ -885,6 +899,103 @@ private fun PlayerMap(state: RoutePlayerUiState, isFreeCam: Boolean, modifier: M
             }
         }
     }
+}
+
+/**
+ * Mini map overlay showing the entire route from above with user location as a red dot.
+ * Fixed size square, positioned in bottom-left corner, independent of main map.
+ */
+@Composable
+private fun MiniMapOverlay(state: RoutePlayerUiState, modifier: Modifier = Modifier) {
+    val context = LocalContext.current
+    val miniMapView = remember { newOsmMapView(context) }
+    val miniMapSize = 100.dp
+
+    DisposableEffect(Unit) {
+        onDispose { miniMapView.onDetach() }
+    }
+
+    Box(modifier = modifier.size(miniMapSize).clip(RectangleShape)) {
+        AndroidView(
+            modifier = Modifier.fillMaxSize(),
+            factory = { miniMapView }
+        ) { view ->
+            // Keep map north-up (not rotated)
+            view.setMapOrientation(0f, false)
+
+            // Clear overlays and redraw
+            view.overlays.clear()
+
+            // Draw route polyline
+            val routeLine = state.roadRoutePoints ?: state.stops.map {
+                GeoPoint(it.latitude, it.longitude)
+            }
+            if (routeLine.size >= 2) {
+                val polyline = Polyline(view).apply {
+                    setPoints(routeLine.map { OsmGeoPoint(it.latitude, it.longitude) })
+                    outlinePaint.apply {
+                        color = 0xFF0066FF.toInt()  // Blue for mini map
+                        strokeWidth = 3.0f
+                        style = Paint.Style.STROKE
+                    }
+                }
+                view.overlays.add(polyline)
+
+                // Center map on entire route with padding
+                val bounds = calculateBounds(routeLine)
+                view.zoomToBoundingBox(bounds, true)
+            }
+
+            // Add user location as red dot (no marker icon, just circle)
+            state.currentLocation?.let { location ->
+                val point = OsmGeoPoint(location.latitude, location.longitude)
+
+                // Add red dot for user
+                view.overlays.add(
+                    Marker(view).apply {
+                        position = point
+                        setIcon(createRedDotDrawable(context))  // Custom red circle
+                    }
+                )
+            }
+
+            view.invalidate()
+        }
+    }
+}
+
+/**
+ * Create a simple red dot drawable for the user location marker.
+ */
+private fun createRedDotDrawable(context: Context): Drawable {
+    val drawable = ShapeDrawable(OvalShape())
+    drawable.paint.color = Color.Red.toArgb()
+    drawable.intrinsicWidth = 16
+    drawable.intrinsicHeight = 16
+    return drawable
+}
+
+/**
+ * Calculate the bounding box that encompasses all route points.
+ */
+private fun calculateBounds(points: List<GeoPoint>): BoundingBox {
+    if (points.isEmpty()) {
+        return BoundingBox(0.0, 0.0, 0.0, 0.0)
+    }
+
+    var minLat = Double.MAX_VALUE
+    var maxLat = -Double.MAX_VALUE
+    var minLon = Double.MAX_VALUE
+    var maxLon = -Double.MAX_VALUE
+
+    points.forEach { point ->
+        minLat = minOf(minLat, point.latitude)
+        maxLat = maxOf(maxLat, point.latitude)
+        minLon = minOf(minLon, point.longitude)
+        maxLon = maxOf(maxLon, point.longitude)
+    }
+
+    return BoundingBox(maxLat, maxLon, minLat, minLon)
 }
 
 /**
