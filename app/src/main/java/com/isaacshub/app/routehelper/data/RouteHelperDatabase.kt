@@ -160,9 +160,18 @@ private val MIGRATION_9_10 = object : Migration(9, 10) {
     }
 }
 
+private val MIGRATION_10_11 = object : Migration(10, 11) {
+    override fun migrate(db: SupportSQLiteDatabase) {
+        // Schema validation fix: v10 had changes to routed_stops (sequenceOrder: REAL, isNonRoutable: BOOLEAN)
+        // but the database version wasn't incremented when those changes were made.
+        // This migration ensures the schema matches the current entity definitions.
+        // No actual data migration needed - the table already has the correct columns from MIGRATION_9_10.
+    }
+}
+
 @Database(
     entities = [RouteHelperRouteEntity::class, CandidateAddressEntity::class, RoutedStopEntity::class, CachedRoadRouteEntity::class, PackageEntity::class, RouteSectionEntity::class],
-    version = 10,
+    version = 11,
     exportSchema = true
 )
 abstract class RouteHelperDatabase : RoomDatabase() {
@@ -182,7 +191,7 @@ abstract class RouteHelperDatabase : RoomDatabase() {
                     // Same rule as every other database in this app: routes/stops are real user
                     // data - any future schema change needs an explicit Migration, never a
                     // destructive fallback.
-                    .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10)
+                    .addMigrations(MIGRATION_1_2, MIGRATION_2_3, MIGRATION_3_4, MIGRATION_4_5, MIGRATION_5_6, MIGRATION_6_7, MIGRATION_7_8, MIGRATION_8_9, MIGRATION_9_10, MIGRATION_10_11)
                     .build().also { instance = it }
             }
     }
